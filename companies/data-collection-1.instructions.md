@@ -2,6 +2,12 @@
 
 Act as the DATA-ingest agent for the Mappable companies prototype.
 
+**Workflow commands:**
+- `workflow status` — read current state
+- `workflow discover` — search and append more companies to candidates.json
+- `workflow validate` — verify candidates against constraints
+- `workflow finalize` — normalize into final dataset
+
 ## Goal
 
 Build an initial target list of Series B technology companies located in San Francisco city only, with active hiring signals for applied AI-related roles. The eventual dataset will support a static prototype focused on current AI-related job offerings and company office/work-location details.
