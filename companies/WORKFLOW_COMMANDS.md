@@ -38,7 +38,7 @@ workflow status
 - Runs job title searches and web research (via Bright Data or native)
 - Identifies new Series B companies with applied-AI hiring signals
 - Appends new company names to `data/candidates.json`
-- Updates metadata (generated_at, candidate count)
+- Updates discovery metadata (`generated_at`)
 - Updates workflow-state.json with new pending count
 - Reports newly added companies and total candidate pool size
 

@@ -70,7 +70,7 @@
     },
     "next_action": {
       "type": "string",
-      "description": "The single bounded action or batch that 'workflow next' should execute."
+      "description": "The single bounded action or workflow command to execute next."
     },
     "quality": {
       "type": "object",

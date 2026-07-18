@@ -77,7 +77,7 @@ If no workflow state exists, report the required setup and wait for direction.
 
 Search for additional companies using applied-AI job titles and adjacent queries.
 Append new companies to `data/candidates.json` (do not remove existing candidates).
-Update metadata (`generated_at`, candidate count) and `workflow-state.json` progress.
+Update discovery metadata (`generated_at`) and `workflow-state.json` progress.
 Stop and report newly added candidates and total candidate count.
 
 ## workflow validate
@@ -190,7 +190,7 @@ When a warning occurs:
 
 The operator may approve a smaller batch, a different model capability, Bright
 Data retrieval, a retry, or a constraint clarification. Record the approved
-decision in the workflow state. Do not resume through `workflow next` while
+decision in the workflow state. Do not run another workflow command while
 operator review is required.
 
 Normal candidate rejection is not a quality warning.
@@ -201,7 +201,8 @@ The operator performs all Git actions: pull, commit, push, merge, and conflict
 resolution. Agents must not perform Git operations unless explicitly asked.
 
 After the operator synchronizes a machine, run `workflow status`, choose the
-recommended model if needed, then run `workflow next`. Initially, only one
+recommended model if needed, then run the command named by the status report.
+Initially, only one
 machine should modify a dataset at a time. Parallel work requires the operator
 to assign non-overlapping batches.
 
