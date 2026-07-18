@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated_at": "2026-07-17",
-    "source": "Bright Data search_engine_batch across 15 applied-AI job title searches",
+    "generated_at": "2026-07-18",
+    "source": "Bright Data search_engine_batch (Wave 1: 15 queries 2026-07-17, Wave 2: 5 queries 2026-07-18)",
     "version": "1.0"
   },
   "candidates": [
@@ -264,6 +264,266 @@
       },
       "verification_status": "pending",
       "notes": "AI patent analytics — no specific AI job posting yet; verify active AI hiring"
+    },
+    {
+      "name": "Day One Partners",
+      "discovery_signals": {
+        "funding": "Series B (implied from LinkedIn posting)",
+        "ai_role_posting": "Senior Backend Engineer | Series B AI Startup",
+        "location_signal": "San Francisco Bay Area"
+      },
+      "verification_status": "pending",
+      "notes": "Posted 5 days ago with 200+ applicants; verify stage and SF-city office"
+    },
+    {
+      "name": "Assort Health",
+      "discovery_signals": {
+        "funding": "Series B healthcare AI (Stanford founders)",
+        "ai_role_posting": "Healthcare AI roles (inferred from LinkedIn)",
+        "location_signal": "SF Bay Area (inferred)"
+      },
+      "verification_status": "pending",
+      "notes": "Founded by Stanford researchers; verify Series B stage and SF office location"
+    },
+    {
+      "name": "Squint",
+      "discovery_signals": {
+        "funding": "$40M Series B, $265M valuation",
+        "ai_role_posting": "AI Operations Lead",
+        "location_signal": "SF (Wellfound)"
+      },
+      "verification_status": "pending",
+      "notes": "Series B posting on Wellfound 6 days ago"
+    },
+    {
+      "name": "Vectera.ai",
+      "discovery_signals": {
+        "funding": "Series B Feb 2026",
+        "ai_role_posting": null,
+        "location_signal": "SF (inferred from Wellfound)"
+      },
+      "verification_status": "pending",
+      "notes": "Latest round Series B Feb 2026; verify active AI hiring + SF office"
+    },
+    {
+      "name": "Certa",
+      "discovery_signals": {
+        "funding": "Series B, AI-first",
+        "ai_role_posting": "Initiative Application (AI elimination focus)",
+        "location_signal": "SF (Wellfound)"
+      },
+      "verification_status": "pending",
+      "notes": "Wellfound posting 5 days ago; uses AI to eliminate tasks"
+    },
+    {
+      "name": "Zero",
+      "discovery_signals": {
+        "funding": "Series B",
+        "ai_role_posting": "Senior AI Research Engineer",
+        "location_signal": "SF (inferred)"
+      },
+      "verification_status": "pending",
+      "notes": "Software development company with AI research focus; verify stage and SF office"
+    },
+    {
+      "name": "Spellbrush",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "AI Infrastructure Engineer",
+        "location_signal": "SF (inferred from job board)"
+      },
+      "verification_status": "pending",
+      "notes": "Generative AI studio (niji・journey related); verify Series B stage and SF office"
+    },
+    {
+      "name": "Moveworks",
+      "discovery_signals": {
+        "funding": "Series C/D (likely beyond Series B)",
+        "ai_role_posting": "Staff AI Agent Engineer",
+        "location_signal": "SF (builtinsf.com)"
+      },
+      "verification_status": "pending",
+      "notes": "AI Assistant Platform; likely Series C+ — verify current stage; may reject if beyond Series B"
+    },
+    {
+      "name": "Saragossa",
+      "discovery_signals": {
+        "funding": "Series B Physics AI startup, $200M+",
+        "ai_role_posting": "Founding QE Engineer, Forward Deployed Engineer (Simulations & Physics AI)",
+        "location_signal": "SF Bay Area (LinkedIn)"
+      },
+      "verification_status": "pending",
+      "notes": "Physics/simulation AI focus; verify SF-city office location"
+    },
+    {
+      "name": "Ambient.ai",
+      "discovery_signals": {
+        "funding": "Series B backed by a16z",
+        "ai_role_posting": "Staff Software Engineer - Data Platform",
+        "location_signal": "SF (on-site)"
+      },
+      "verification_status": "pending",
+      "notes": "Backed by Andreessen Horowitz; on-site SF role posted"
+    },
+    {
+      "name": "FortressIQ",
+      "discovery_signals": {
+        "funding": "Series B, $46M total",
+        "ai_role_posting": "Automation solutions with computer vision and NLP",
+        "location_signal": "SF Bay Area"
+      },
+      "verification_status": "pending",
+      "notes": "Computer vision + NLP automation; verify active AI hiring + SF office"
+    },
+    {
+      "name": "Ketch",
+      "discovery_signals": {
+        "funding": "Series B",
+        "ai_role_posting": "Frontend Engineer",
+        "location_signal": "SF (builtinsf.com, hybrid 3 days/week)"
+      },
+      "verification_status": "pending",
+      "notes": "Well-funded Series B; verify if AI-role fit (frontend may not be applied-AI)"
+    },
+    {
+      "name": "Harvey",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "AI platform for legal/enterprise",
+        "location_signal": "SF (fastaijobs top hiring)"
+      },
+      "verification_status": "pending",
+      "notes": "Top hiring on fastaijobs; verify Series B stage and SF office + active AI hiring"
+    },
+    {
+      "name": "Emergent",
+      "discovery_signals": {
+        "funding": "Series B",
+        "ai_role_posting": "Product Manager",
+        "location_signal": "SF / Bangalore"
+      },
+      "verification_status": "pending",
+      "notes": "Series B with SF/Bangalore split; verify SF office is primary and AI-role fit"
+    },
+    {
+      "name": "Patronus AI",
+      "discovery_signals": {
+        "funding": "$50M Series B",
+        "ai_role_posting": "Infrastructure to evaluate, monitor, and stress-test AI agents",
+        "location_signal": "SF (inferred)"
+      },
+      "verification_status": "pending",
+      "notes": "AI agent evaluation/monitoring platform; verify SF office + active AI hiring"
+    },
+    {
+      "name": "Metaview",
+      "discovery_signals": {
+        "funding": "Series B (Google Ventures led)",
+        "ai_role_posting": "Engagement Manager, Mid Market",
+        "location_signal": "SF (Ashby)"
+      },
+      "verification_status": "pending",
+      "notes": "GV-led Series B; growing 5x YoY; verify applied-AI role fit (customer engagement)"
+    },
+    {
+      "name": "Factory",
+      "discovery_signals": {
+        "funding": "$50M Series B (Sequoia, NEA, Nvidia, J.P.Morgan)",
+        "ai_role_posting": "AI-first control plane for engineers and agents",
+        "location_signal": "SF (Ashby)"
+      },
+      "verification_status": "pending",
+      "notes": "Series B 2025 with top-tier VCs; AI infrastructure for production management"
+    },
+    {
+      "name": "Decagon",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Founding Support Lead",
+        "location_signal": "SF (fastaijobs)"
+      },
+      "verification_status": "pending",
+      "notes": "Founding Support Lead posted on fastaijobs; verify Series B stage and applied-AI focus"
+    },
+    {
+      "name": "Sail Research",
+      "discovery_signals": {
+        "funding": "$80M funding (emerged from stealth)",
+        "ai_role_posting": "Infrastructure for autonomous AI agents",
+        "location_signal": "SF (Instagram)"
+      },
+      "verification_status": "pending",
+      "notes": "Autonomous AI agents infrastructure; emerged from stealth; verify Series B stage"
+    },
+    {
+      "name": "Arena",
+      "discovery_signals": {
+        "funding": "$100M annualized run-rate (UC Berkeley research project origin)",
+        "ai_role_posting": "AI model evaluation startup",
+        "location_signal": "SF Bay Area"
+      },
+      "verification_status": "pending",
+      "notes": "Berkeley research spin-out; $100M ARR suggests likely beyond Series B; verify current stage"
+    },
+    {
+      "name": "Abnormal Security",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Security AI roles (hybrid SF)",
+        "location_signal": "SF (hybrid)"
+      },
+      "verification_status": "pending",
+      "notes": "AI security platform; verify Series B stage + applied-AI focus"
+    },
+    {
+      "name": "Corgi",
+      "discovery_signals": {
+        "funding": "Series B, $160M raised",
+        "ai_role_posting": "Solutions Architect, AI roles",
+        "location_signal": "SF (dayonejobs)"
+      },
+      "verification_status": "pending",
+      "notes": "Series B $160M; verify applied-AI focus"
+    },
+    {
+      "name": "Roboflow",
+      "discovery_signals": {
+        "funding": "Series B (YC)",
+        "ai_role_posting": "Solutions Architect",
+        "location_signal": "SF (YC)"
+      },
+      "verification_status": "pending",
+      "notes": "Computer vision/robotics platform; Series B; verify SF office"
+    },
+    {
+      "name": "Airbyte",
+      "discovery_signals": {
+        "funding": "Series B (rapidly expanding)",
+        "ai_role_posting": "Senior Solutions Architect",
+        "location_signal": "SF (hybrid)"
+      },
+      "verification_status": "pending",
+      "notes": "Data integration platform with AI; verify applied-AI focus"
+    },
+    {
+      "name": "Scale AI",
+      "discovery_signals": {
+        "funding": "Series B (ground truth data platform)",
+        "ai_role_posting": "Senior Machine Learning Engineer, Agent Oversight",
+        "location_signal": "SF (Greenhouse)"
+      },
+      "verification_status": "pending",
+      "notes": "ML training data platform; Agent Oversight role; 191 jobs listed"
+    },
+    {
+      "name": "Ever",
+      "discovery_signals": {
+        "funding": "Series B",
+        "ai_role_posting": "Software Engineer ($140k-$300k), AI-native auto retail",
+        "location_signal": "SF (on-site/hybrid, Greenhouse)"
+      },
+      "verification_status": "pending",
+      "notes": "AI-native auto retail platform; on-site/hybrid SF"
     }
   ]
 }
