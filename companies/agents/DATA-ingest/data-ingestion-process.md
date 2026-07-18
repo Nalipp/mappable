@@ -18,7 +18,8 @@ They are plain-language triggers, not provider-specific slash commands.
 ## Files
 
 - `data-collection-N.instructions.md`: active constraints and validation rubric
-- `data/workflow-state.json`: current phase, progress, and next action
+- `data/workflow-state.json`: progress snapshot and next action (there is no
+  single "phase" — discovery and validation may run at the same time)
 - `data/candidates.json`: broad discovery list with unverified signals (schema: `candidates.schema.json`)
 - `data/candidate-validation.json`: item-level statuses, evidence, and dates
 - `data/record-index.txt`: registry of completed and in-progress datasets and
@@ -79,7 +80,7 @@ files.
 
 Report:
 
-- dataset, constraint profile, phase, and progress (pending, validated, rejected, needs_verification) — count these from `candidates.json` and `candidate-validation.json` directly; the snapshot in `workflow-state.json` may lag a parallel session
+- dataset, constraint profile, and progress (pending, validated, rejected, needs_verification) — count these from `candidates.json` and `candidate-validation.json` directly; the snapshot in `workflow-state.json` may lag a parallel session
 - last completed action
 - recommended model capability for the next phase
 - planned retrieval method and whether Bright Data is available
@@ -101,10 +102,26 @@ If no workflow state exists, report the required setup and wait for direction.
 ## workflow discover
 
 Search for additional companies using applied-AI job titles and adjacent queries.
-Append new companies to `data/candidates.json` (do not remove existing
-candidates) and update its discovery metadata (`generated_at`). Do not modify
-`workflow-state.json` or any other file — a parallel validation session may
-own them. Stop and report newly added candidates and total candidate count.
+
+Every discovery run is stateless. There are no wave or run numbers, and no run
+history is stored in any file — do not try to reconstruct how many runs came
+before, and do not write run history into `metadata.source` or anywhere else.
+The only state that matters is the set of names already collected.
+
+Rules for a run:
+
+1. Before appending, build the set of existing names from `candidates.json`
+   and `candidate-validation.json`. Skip any company already present
+   (case-insensitive name match).
+2. Append new unique companies to `data/candidates.json`; never remove or
+   rewrite existing entries.
+3. Update only `metadata.generated_at` (date of this append). Leave
+   `metadata.source` unchanged — it is a fixed description of the method, not
+   a log.
+4. Do not modify `workflow-state.json` or any other file — a parallel
+   validation session may own them.
+5. Stop and report the newly added names and new total in chat. The chat
+   report is informational only; no later session should depend on it.
 
 ## workflow validate
 

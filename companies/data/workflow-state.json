@@ -1,7 +1,6 @@
 {
   "dataset": "mappable-records1.json",
   "constraint_profile": "data-collection-1.instructions.md",
-  "phase": "validation",
   "progress": {
     "candidates_total": 63,
     "pending": 63,
@@ -9,8 +8,8 @@
     "needs_verification": 0,
     "rejected": 0
   },
-  "last_action": "Discovery wave 9: ran 5 searches (Workflow/Process/Automation AI, Search/Retrieval AI, Monitoring/Observability/Evaluation AI, Series B SF hiring, topstartups/seedtable); appended 3 new candidates. Total candidate pool now 63.",
-  "next_action": "Run `workflow validate` for batch 1: verify the first 5 candidates in data/candidates.json (Doss, Pylon, Liberate, Shepherd, HappyRobot) in the constraint order from data-collection-1.instructions.md: (1) Series B funding stage, (2) active qualifying applied-AI posting with hybrid/in-office SF work mode, (3) physical SF street address, (4) geocode. Fail fast at first decisive failure; record evidence with source URLs in data/candidate-validation.json",
+  "last_action": "Discovery: candidate pool at 63 unique companies across 45+ job-title and funding searches (2026-07-18)",
+  "next_action": "Discovery in progress at the operator's direction. Validation has not started and begins only when the operator runs `workflow validate` (batch 1 would be the first 5 pending candidates, checked in the constraint order from data-collection-1.instructions.md, fail-fast, evidence with source URLs recorded in data/candidate-validation.json).",
   "quality": {
     "status": "ok"
   }

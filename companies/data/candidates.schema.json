@@ -14,11 +14,11 @@
       "properties": {
         "generated_at": {
           "type": "string",
-          "description": "ISO date or YYYY-MM-DD when this candidate list was created"
+          "description": "YYYY-MM-DD date of the most recent discovery append"
         },
         "source": {
           "type": "string",
-          "description": "Source of discovery (e.g., 'Bright Data search_engine_batch')"
+          "description": "Stable description of the discovery method, e.g. 'Bright Data search_engine_batch, applied-AI job-title queries'. Never record run, wave, or session history here."
         },
         "version": {
           "type": "string",

@@ -7,7 +7,6 @@
   "required": [
     "dataset",
     "constraint_profile",
-    "phase",
     "progress",
     "last_action",
     "next_action",
@@ -22,14 +21,6 @@
     "constraint_profile": {
       "type": "string",
       "description": "Active constraint file, e.g. 'data-collection-1.instructions.md'."
-    },
-    "phase": {
-      "enum": [
-        "discovery",
-        "validation",
-        "review",
-        "finalization"
-      ]
     },
     "progress": {
       "type": "object",

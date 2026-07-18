@@ -10,15 +10,15 @@ This document defines the formal commands for the data ingestion workflow. Use t
 
 **Does:**
 - Reads workflow state, progress, and data files
-- Reports current phase and progress, with counts derived from candidates.json
-  and candidate-validation.json (a name with no validation entry is pending)
+- Reports progress with counts derived from candidates.json and
+  candidate-validation.json (a name with no validation entry is pending)
 - Recommends model capability for next phase
 - Identifies quality warnings or setup gaps
 - Suggests which workflow command to run next
 
 **Output:** Status report with:
 - Dataset and constraint profile
-- Phase and progress (pending, validated, rejected, needs_verification counts)
+- Progress (pending, validated, rejected, needs_verification counts)
 - Last completed action
 - Next recommended command
 - Model capability class (fast-low-cost, high-reasoning, or flagship)
@@ -38,8 +38,11 @@ workflow status
 **Does:**
 - Runs job title searches and web research (via Bright Data or native)
 - Identifies new Series B companies with applied-AI hiring signals
+- Skips companies already present in candidates.json or
+  candidate-validation.json (case-insensitive name match)
 - Appends new company names to `data/candidates.json`
-- Updates discovery metadata (`generated_at`)
+- Updates only `metadata.generated_at`; never writes run/wave history into
+  metadata (each run is stateless — no wave numbers)
 - Writes no other file (workflow-state.json is owned by validate/finalize), so
   it is safe to run alongside a validation session
 - Reports newly added companies and total candidate pool size
