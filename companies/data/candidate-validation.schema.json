@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "candidate-validation.schema.json",
+  "title": "Candidate Validation",
+  "description": "Item-level validation state for every discovered candidate company. This file is the source of truth for the ingestion workflow. Constraints are checked in the order defined by the active constraint profile; work on a company stops at the first failed constraint (fail-fast), so a rejected candidate's checks end at its failed constraint.",
+  "type": "object",
+  "required": [
+    "profile",
+    "candidates"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "profile": {
+      "type": "string",
+      "description": "Active constraint file this validation ran against, e.g. 'data-collection-1.instructions.md'."
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "company",
+          "status",
+          "checks"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "company": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "validated",
+              "needs_verification",
+              "rejected"
+            ]
+          },
+          "record_id": {
+            "type": "string",
+            "pattern": "^[1-9][0-9]*$",
+            "description": "ID of the finalized record in mappable-records.json. Set only after finalization."
+          },
+          "checks": {
+            "type": "array",
+            "description": "One entry per constraint checked, in profile order. A rejected candidate's last check is its failure.",
+            "items": {
+              "type": "object",
+              "required": [
+                "constraint",
+                "result",
+                "verified_at"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "constraint": {
+                  "enum": [
+                    "funding_stage",
+                    "qualifying_job",
+                    "sf_address",
+                    "geocode",
+                    "final_validation"
+                  ]
+                },
+                "result": {
+                  "enum": [
+                    "pass",
+                    "fail",
+                    "unverified"
+                  ]
+                },
+                "url": {
+                  "type": "string",
+                  "description": "Source URL supporting the result."
+                },
+                "evidence": {
+                  "type": "string",
+                  "description": "Short quote or summary of what the source shows."
+                },
+                "verified_at": {
+                  "type": "string",
+                  "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                }
+              }
+            }
+          },
+          "failed_constraint": {
+            "enum": [
+              "funding_stage",
+              "qualifying_job",
+              "sf_address",
+              "geocode",
+              "final_validation"
+            ],
+            "description": "First constraint that decisively failed. Required when status is 'rejected'."
+          },
+          "notes": {
+            "type": "string",
+            "description": "Unresolved questions, ambiguities, or context for review."
+          }
+        },
+        "if": {
+          "properties": {
+            "status": {
+              "const": "rejected"
+            }
+          }
+        },
+        "then": {
+          "required": [
+            "company",
+            "status",
+            "checks",
+            "failed_constraint"
+          ]
+        }
+      }
+    }
+  }
+}

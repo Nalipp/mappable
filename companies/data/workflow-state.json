@@ -1,0 +1,16 @@
+{
+  "dataset": "mappable-records.json",
+  "constraint_profile": "data-collection-1.instructions.md",
+  "phase": "validation",
+  "progress": {
+    "candidates_total": 26,
+    "validated": 0,
+    "needs_verification": 26,
+    "rejected": 0
+  },
+  "last_action": "Discovery: ran 15 Bright Data searches across the applied-AI job titles and wrote 26 candidates to data/candidates.json (2026-07-17)",
+  "next_action": "Validation batch 1: for the first 5 candidates in data/candidates.json (Doss, Pylon, Liberate, Shepherd, HappyRobot), verify in order: Series B stage, SF-city office, active applied-AI posting, hybrid/in-office work mode. Fail fast per constraint order; record each result with source URLs in data/candidate-validation.json",
+  "quality": {
+    "status": "ok"
+  }
+}

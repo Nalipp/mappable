@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /Users/natelipp/code/ai_applications/mappable/companies log --oneline)",
+      "Bash(git *)",
+      "Bash(python3 -m venv /tmp/jsv-venv)",
+      "Bash(/tmp/jsv-venv/bin/pip install *)",
+      "Bash(/tmp/jsv-venv/bin/python -c ' *)",
+      "Bash(rm -rf /tmp/jsv-venv)",
+      "Bash(claude mcp *)",
+      "Read(//Users/natelipp/code/ai_applications/mappable/**)",
+      "Read(//Users/natelipp/**)",
+      "Bash(python3 -c ' *)",
+      "Bash(env)",
+      "Bash(awk *)",
+      "mcp__brightdata__search_engine",
+      "mcp__brightdata__search_engine_batch"
+    ]
+  }
+}

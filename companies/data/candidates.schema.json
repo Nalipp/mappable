@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "candidates.schema.json",
+  "title": "Discovery Candidates",
+  "description": "Unverified candidate list output from discovery phase. Each candidate holds discovery signals (weak evidence) across funding stage, AI role postings, and location hints. Validation phase processes these in fail-fast order.",
+  "type": "object",
+  "required": ["metadata", "candidates"],
+  "additionalProperties": false,
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["generated_at", "source", "version"],
+      "additionalProperties": false,
+      "properties": {
+        "generated_at": {
+          "type": "string",
+          "description": "ISO date or YYYY-MM-DD when this candidate list was created"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of discovery (e.g., 'Bright Data search_engine_batch')"
+        },
+        "version": {
+          "type": "string",
+          "description": "Semantic version of the discovery output format"
+        }
+      }
+    },
+    "candidates": {
+      "type": "array",
+      "description": "Unordered list of candidate companies with weak discovery signals",
+      "items": {
+        "type": "object",
+        "required": ["name", "discovery_signals", "verification_status"],
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Company name as it appears in job postings / public sources"
+          },
+          "discovery_signals": {
+            "type": "object",
+            "required": ["funding", "ai_role_posting", "location_signal"],
+            "additionalProperties": false,
+            "properties": {
+              "funding": {
+                "type": ["string", "null"],
+                "description": "Snippet about funding round, stage, or amount. Null if not found."
+              },
+              "ai_role_posting": {
+                "type": ["string", "null"],
+                "description": "Example job title or role description from a posting. Null if not found."
+              },
+              "location_signal": {
+                "type": ["string", "null"],
+                "description": "Snippet about office location or hiring region from job posting. Null if not found."
+              }
+            }
+          },
+          "verification_status": {
+            "type": "string",
+            "enum": ["pending", "validated", "rejected", "needs_verification"],
+            "description": "Status of this candidate as validation proceeds."
+          },
+          "notes": {
+            "type": ["string", "null"],
+            "description": "Operator notes about ambiguities, caveats, or specific validation tasks."
+          }
+        }
+      }
+    }
+  }
+}

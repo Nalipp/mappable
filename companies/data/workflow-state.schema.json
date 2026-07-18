@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "workflow-state.schema.json",
+  "title": "Workflow State",
+  "description": "Small cursor for the data ingestion workflow. Must be checked against candidate-validation.json (the source of truth) before work resumes.",
+  "type": "object",
+  "required": [
+    "dataset",
+    "constraint_profile",
+    "phase",
+    "progress",
+    "last_action",
+    "next_action",
+    "quality"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "dataset": {
+      "type": "string",
+      "description": "Target dataset file, e.g. 'mappable-records.json'."
+    },
+    "constraint_profile": {
+      "type": "string",
+      "description": "Active constraint file, e.g. 'data-collection-1.instructions.md'."
+    },
+    "phase": {
+      "enum": [
+        "discovery",
+        "validation",
+        "review",
+        "finalization"
+      ]
+    },
+    "progress": {
+      "type": "object",
+      "required": [
+        "candidates_total",
+        "validated",
+        "needs_verification",
+        "rejected"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "candidates_total": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "validated": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "needs_verification": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "rejected": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "last_action": {
+      "type": "string"
+    },
+    "next_action": {
+      "type": "string",
+      "description": "The single bounded action or batch that 'workflow next' should execute."
+    },
+    "quality": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "ok",
+            "operator_review_required"
+          ]
+        },
+        "note": {
+          "type": "string",
+          "description": "Warning evidence or the approved operator decision."
+        }
+      }
+    }
+  }
+}

@@ -54,9 +54,22 @@ Build an initial target list of Series B technology companies located in San Fra
 - Customer Engineer, AI
 - Technical Product Manager, AI
 
+## Record grain and fail-fast rule
+
+The final dataset holds one record per validated company, with that company's
+qualifying job postings nested inside the record (see
+`data/mappable-records.schema.json`). Constraints are checked in the order
+set by the ingestion workflow; the moment a company decisively fails any
+constraint, stop all work on that company, record the failure and evidence in
+`data/candidate-validation.json`, and move to the next candidate. Do not
+collect job-level detail for a company that has not passed the checks that
+come before it.
+
 ## Expected output
 
-Create a reviewed shortlist of candidate companies before collecting full job-level data. For each candidate, include:
+Create a reviewed shortlist of candidate companies before collecting full job-level data. Output format: `data/candidates.json` (see schema at `data/candidates.schema.json`).
+
+For each candidate, include:
 
 - Company name
 - Role category or AI hiring signal

@@ -17,9 +17,12 @@ They are plain-language triggers, not provider-specific slash commands.
 
 - `data-collection-N.instructions.md`: active constraints and validation rubric
 - `data/workflow-state.json`: current phase, progress, and next action
-- `data/candidates.txt`: broad discovery list, one company per line
+- `data/candidates.json`: broad discovery list with unverified signals (schema: `candidates.schema.json`)
 - `data/candidate-validation.json`: item-level statuses, evidence, and dates
 - `data/record-index.txt`: completed datasets and their constraint profiles
+
+Every `.json` working file has a matching `.schema.json` contract in `data/`.
+Validate against it whenever the file is updated.
 
 The validation file is the source of truth. The workflow state is a small
 cursor that must be checked against it before work resumes.
@@ -67,10 +70,16 @@ short evidence, and verification date. Candidate statuses are:
 
 1. Discovery: create a broad candidate list with minimal evidence.
 2. Validation: process candidates in bounded batches and fail on the first
-   decisive constraint failure.
+   decisive constraint failure. Once a company fails any constraint, stop all
+   work on it, record the failure, and move on.
 3. Review: resolve only ambiguous or low-confidence records.
 4. Finalization: normalize validated records into the numbered dataset and
    matching schema.
+
+The record grain is the company: one finalized record per validated company,
+with its qualifying job postings nested inside that record. Jobs are never
+their own records, and job-level work happens only for companies that have
+passed every company-level constraint checked so far.
 
 The active constraint file controls validation order. For the current company
 profile, the default order is:
@@ -79,8 +88,23 @@ profile, the default order is:
 2. Active qualifying job and SF work arrangement, from the same posting where
    possible
 3. Physical San Francisco street address
-4. Immediate geocoding of the confirmed address
+4. Immediate geocoding of the confirmed address (see Geocoding)
 5. Final evidence and schema validation
+
+## Geocoding
+
+Coordinates come from looking up the confirmed street address, never from
+model memory or estimation. Default method: query OpenStreetMap Nominatim
+(`nominatim.openstreetmap.org/search`) with the full street address, via
+native web retrieval or Bright Data if blocked. Record in the finalized
+record's `location.geocode`: the method used, the precision (`rooftop`,
+`street`, or `neighborhood`), and the lookup date.
+
+Sanity bounds, enforced by the dataset schema: latitude 37.70 to 37.84,
+longitude -122.53 to -122.35. A result outside these bounds, an ambiguous
+match, or a failed lookup sends the candidate to `needs_verification` with
+the attempted query recorded; do not guess or substitute a city-center
+coordinate.
 
 ## Retrieval Rules
 

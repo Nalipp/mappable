@@ -1,0 +1,269 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-17",
+    "source": "Bright Data search_engine_batch across 15 applied-AI job title searches",
+    "version": "1.0"
+  },
+  "candidates": [
+    {
+      "name": "Doss",
+      "discovery_signals": {
+        "funding": "$55M Series B (Madrona co-led)",
+        "ai_role_posting": "Staff Applied AI Engineer",
+        "location_signal": "SF (Wellfound)"
+      },
+      "verification_status": "pending",
+      "notes": null
+    },
+    {
+      "name": "Pylon",
+      "discovery_signals": {
+        "funding": "$51M Series B (a16z, BCV)",
+        "ai_role_posting": "Software Engineer, AI / AI Agents",
+        "location_signal": "SF"
+      },
+      "verification_status": "pending",
+      "notes": null
+    },
+    {
+      "name": "Liberate",
+      "discovery_signals": {
+        "funding": "$50M Series B Oct 2025 ($72M total)",
+        "ai_role_posting": "Staff/Senior/Principal AI Agent Engineer",
+        "location_signal": "SF"
+      },
+      "verification_status": "pending",
+      "notes": "One posting says Berkeley/Bay Area hybrid — verify SF-city requirement"
+    },
+    {
+      "name": "Shepherd",
+      "discovery_signals": {
+        "funding": "$42M Series B Mar 2026",
+        "ai_role_posting": "Software Engineer, AI Product + Agents",
+        "location_signal": "SF"
+      },
+      "verification_status": "pending",
+      "notes": null
+    },
+    {
+      "name": "HappyRobot",
+      "discovery_signals": {
+        "funding": "$44M Series B ($62M total)",
+        "ai_role_posting": "Forward Deployed Engineer",
+        "location_signal": "SF"
+      },
+      "verification_status": "pending",
+      "notes": null
+    },
+    {
+      "name": "Mintlify",
+      "discovery_signals": {
+        "funding": "$45M Series B (a16z, Salesforce Ventures)",
+        "ai_role_posting": "Senior Forward Deployed Engineer",
+        "location_signal": "SF"
+      },
+      "verification_status": "pending",
+      "notes": null
+    },
+    {
+      "name": "Alembic",
+      "discovery_signals": {
+        "funding": "Series B ($145M raised), ~70 ppl",
+        "ai_role_posting": "Senior Applied AI Engineer",
+        "location_signal": "SF HQ"
+      },
+      "verification_status": "pending",
+      "notes": null
+    },
+    {
+      "name": "Sprig",
+      "discovery_signals": {
+        "funding": "Series B",
+        "ai_role_posting": "Software Engineer, AI Team",
+        "location_signal": "SF HQ"
+      },
+      "verification_status": "pending",
+      "notes": "Snippet may be cross-contaminated with Alembic — verify stage/raise independently"
+    },
+    {
+      "name": "Bland",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Forward Deployed Engineer",
+        "location_signal": "SF on-site (Ashby)"
+      },
+      "verification_status": "pending",
+      "notes": "Stage unverified"
+    },
+    {
+      "name": "SuperAnnotate",
+      "discovery_signals": {
+        "funding": "fast-growing Series B",
+        "ai_role_posting": "Forward Deployed Engineer",
+        "location_signal": "SF"
+      },
+      "verification_status": "pending",
+      "notes": "HQ location needs verification"
+    },
+    {
+      "name": "Nooks",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Agent Engineer ($215-300k, in-office SF 3+ days)",
+        "location_signal": "SF"
+      },
+      "verification_status": "pending",
+      "notes": "Stage unverified (likely Series B 2024)"
+    },
+    {
+      "name": "Netic",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Forward Deployed Agent Engineer",
+        "location_signal": "SF"
+      },
+      "verification_status": "pending",
+      "notes": "Stage unverified"
+    },
+    {
+      "name": "Klarity",
+      "discovery_signals": {
+        "funding": "Series B AI startup",
+        "ai_role_posting": "AI Frontend Engineer",
+        "location_signal": "SF"
+      },
+      "verification_status": "pending",
+      "notes": null
+    },
+    {
+      "name": "FluidStack",
+      "discovery_signals": {
+        "funding": "Series B AI infrastructure",
+        "ai_role_posting": null,
+        "location_signal": "SF listings on fastaijobs"
+      },
+      "verification_status": "pending",
+      "notes": "Verify office + role fit"
+    },
+    {
+      "name": "Relevance AI",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Solutions Engineer (AI agents), SF hybrid 3 days in-office",
+        "location_signal": "SF"
+      },
+      "verification_status": "pending",
+      "notes": "HQ Sydney — verify SF office exists and is primary; verify stage"
+    },
+    {
+      "name": "Letter AI",
+      "discovery_signals": {
+        "funding": "$40M Series B (Battery Ventures)",
+        "ai_role_posting": "Full Stack Engineer, hybrid SF",
+        "location_signal": "SF"
+      },
+      "verification_status": "pending",
+      "notes": "Verify AI-role fit (Full Stack may not meet applied-AI requirement)"
+    },
+    {
+      "name": "Felix (felixpago)",
+      "discovery_signals": {
+        "funding": "hyper-growth Series B, $100M+ backed",
+        "ai_role_posting": "AI Engineer (Agents), remote-or-hybrid",
+        "location_signal": "SF"
+      },
+      "verification_status": "pending",
+      "notes": "Verify HQ + work mode meets in-office/hybrid requirement"
+    },
+    {
+      "name": "Connectly.ai",
+      "discovery_signals": {
+        "funding": "VC-backed Series B",
+        "ai_role_posting": "Staff AI Engineer",
+        "location_signal": "SF"
+      },
+      "verification_status": "pending",
+      "notes": "Verify current stage — may have raised beyond Series B"
+    },
+    {
+      "name": "Ivo",
+      "discovery_signals": {
+        "funding": "recently raised Series B",
+        "ai_role_posting": "Senior Cloud/ML Ops Engineer",
+        "location_signal": "SF"
+      },
+      "verification_status": "pending",
+      "notes": null
+    },
+    {
+      "name": "CompScience",
+      "discovery_signals": {
+        "funding": "fast-growing Series B",
+        "ai_role_posting": "Senior MLOps Engineer",
+        "location_signal": "SF"
+      },
+      "verification_status": "pending",
+      "notes": "Job posting may be removed — verify active hiring"
+    },
+    {
+      "name": "Mercor",
+      "discovery_signals": {
+        "funding": "$100M Series B Feb 2025",
+        "ai_role_posting": "MLOps Engineer - AI Trainer",
+        "location_signal": "SF"
+      },
+      "verification_status": "pending",
+      "notes": "Verify work mode (in-office/hybrid)"
+    },
+    {
+      "name": "Afresh",
+      "discovery_signals": {
+        "funding": "Series B Aug 2022",
+        "ai_role_posting": "Senior AI Platform Engineer",
+        "location_signal": "SF"
+      },
+      "verification_status": "pending",
+      "notes": "Older B (2022) — verify still Series B stage"
+    },
+    {
+      "name": "Bluefish AI",
+      "discovery_signals": {
+        "funding": "Series B",
+        "ai_role_posting": "Staff AI Platform Engineer",
+        "location_signal": "SF"
+      },
+      "verification_status": "pending",
+      "notes": null
+    },
+    {
+      "name": "Arize AI",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "AI Product Manager",
+        "location_signal": "SF"
+      },
+      "verification_status": "pending",
+      "notes": "Likely Series C — verify stage; may reject"
+    },
+    {
+      "name": "Nexxa.ai",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Applied AI Engineer, on-site SF",
+        "location_signal": "SF"
+      },
+      "verification_status": "pending",
+      "notes": "Stage unverified (weak signal)"
+    },
+    {
+      "name": "Patlytics",
+      "discovery_signals": {
+        "funding": "Series B (fundraiseinsider list)",
+        "ai_role_posting": null,
+        "location_signal": "SF"
+      },
+      "verification_status": "pending",
+      "notes": "AI patent analytics — no specific AI job posting yet; verify active AI hiring"
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mappable-records.schema.json",
+  "title": "Mappable Records",
+  "description": "Validated company records keyed by monotonically increasing numeric string IDs. Each record is one company that passed every constraint in the active constraint profile, together with its qualifying job postings. A company that fails any constraint is never written here; it is recorded in candidate-validation.json instead. IDs start at 1 and must never be reused after deletion; use the newest unused number for inserted records. This historical rule is enforced by agent workflow, not JSON Schema validation.",
+  "type": "object",
+  "propertyNames": {
+    "pattern": "^[1-9][0-9]*$"
+  },
+  "additionalProperties": {
+    "type": "object",
+    "required": [
+      "title",
+      "location",
+      "value",
+      "company",
+      "jobs",
+      "sources",
+      "verified_at"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "description": "Company name."
+      },
+      "location": {
+        "type": "object",
+        "required": [
+          "address",
+          "coordinates",
+          "geocode"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "address": {
+            "type": "string",
+            "description": "Street address of the San Francisco office, including city and ZIP."
+          },
+          "coordinates": {
+            "type": "object",
+            "required": [
+              "lat",
+              "lng"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "lat": {
+                "type": "number",
+                "minimum": 37.7,
+                "maximum": 37.84,
+                "description": "Latitude bounded to San Francisco city limits."
+              },
+              "lng": {
+                "type": "number",
+                "minimum": -122.53,
+                "maximum": -122.35,
+                "description": "Longitude bounded to San Francisco city limits."
+              }
+            }
+          },
+          "geocode": {
+            "type": "object",
+            "required": [
+              "method",
+              "geocoded_at"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "method": {
+                "type": "string",
+                "description": "How coordinates were obtained, e.g. 'nominatim'. Never estimated from model memory."
+              },
+              "precision": {
+                "enum": [
+                  "rooftop",
+                  "street",
+                  "neighborhood"
+                ]
+              },
+              "geocoded_at": {
+                "$ref": "#/$defs/date"
+              }
+            }
+          }
+        }
+      },
+      "value": {
+        "type": "string",
+        "description": "Short display summary for the map UI, e.g. '3 applied-AI roles, hybrid'."
+      },
+      "company": {
+        "type": "object",
+        "required": [
+          "funding_stage",
+          "funding_evidence"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "funding_stage": {
+            "type": "string",
+            "description": "Funding stage required by the active constraint profile, e.g. 'Series B'."
+          },
+          "funding_evidence": {
+            "$ref": "#/$defs/evidence"
+          }
+        }
+      },
+      "jobs": {
+        "type": "array",
+        "minItems": 1,
+        "description": "Qualifying applied-AI job postings tied to the San Francisco office.",
+        "items": {
+          "type": "object",
+          "required": [
+            "title",
+            "work_mode",
+            "url",
+            "verified_at"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "work_mode": {
+              "enum": [
+                "in-office",
+                "hybrid"
+              ]
+            },
+            "url": {
+              "type": "string",
+              "description": "Job posting URL."
+            },
+            "posting_location": {
+              "type": "string",
+              "description": "Location as stated on the posting, e.g. 'San Francisco, CA'."
+            },
+            "verified_at": {
+              "$ref": "#/$defs/date"
+            }
+          }
+        }
+      },
+      "sources": {
+        "type": "array",
+        "minItems": 1,
+        "description": "Sources supporting this record beyond funding and job evidence, e.g. office address pages.",
+        "items": {
+          "$ref": "#/$defs/evidence"
+        }
+      },
+      "verified_at": {
+        "$ref": "#/$defs/date",
+        "description": "Date the record as a whole last passed final evidence and schema validation."
+      }
+    }
+  },
+  "$defs": {
+    "date": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "evidence": {
+      "type": "object",
+      "required": [
+        "url",
+        "source_type",
+        "verified_at"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "url": {
+          "type": "string"
+        },
+        "source_type": {
+          "enum": [
+            "primary",
+            "secondary"
+          ]
+        },
+        "note": {
+          "type": "string"
+        },
+        "verified_at": {
+          "$ref": "#/$defs/date"
+        }
+      }
+    }
+  }
+}
