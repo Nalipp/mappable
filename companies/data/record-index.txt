@@ -1,9 +1,8 @@
-# Record index for mappable-records.json
-#
-# highest_id_ever_issued only increases. When finalizing a new record, use
-# highest_id_ever_issued + 1 as its ID, then update this counter. Never reuse
-# an ID, even after a record is deleted from mappable-records.json.
-highest_id_ever_issued: 0
+# Dataset registry. Each numbered dataset is a separate ingestion run with its
+# own constraints and schema. Do not overwrite an existing dataset when adding
+# a new run.
 
-# Completed datasets and their constraint profiles (one line per finalized
-# dataset): <dataset file> | <constraint profile> | <finalized date>
+[mappable-records1.json]
+schema: mappable-records1.schema.json
+constraint_profile: data-collection-1.instructions.md
+status: draft

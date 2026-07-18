@@ -100,17 +100,17 @@ workflow validate
 **Does:**
 - Reads all `validated` records from candidate-validation.json
 - For each validated company:
-  - Assigns a record ID (from record-index.txt counter)
+  - Assigns a record ID within the active dataset
   - Nests qualifying job postings
   - Adds geocode metadata (lat, lon, precision, method, date)
-  - Validates against `mappable-records.schema.json`
-- Writes finalized records to `mappable-records.json`
-- Updates `record-index.txt` with completed dataset ID and highest record ID issued
+  - Validates against the matching numbered schema
+- Writes finalized records to the numbered dataset named in `workflow-state.json`
+- Updates `record-index.txt` with the dataset status and finalized date
 - Reports any schema validation failures
 
 **Output:** Summary of:
 - Records finalized
-- Dataset ID assigned
+- Finalized dataset filename
 - Record ID range (lowest to highest)
 - Schema validation results
 - Ready for prototype build
@@ -150,5 +150,5 @@ workflow finalize                # Normalize into dataset
 - `data/workflow-state.json` — Phase, progress, and next action
 - `data/candidates.json` — Candidate company names (discovery pool)
 - `data/candidate-validation.json` — Validation evidence, results, and statuses (source of truth)
-- `data/mappable-records.json` — Final normalized dataset
-- `data/record-index.txt` — Completed datasets and record ID counter
+- `data/mappable-records1.json` — Current final normalized dataset
+- `data/record-index.txt` — Dataset registry and constraint-profile summary
