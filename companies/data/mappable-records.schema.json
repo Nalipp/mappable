@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "mappable-records.schema.json",
   "title": "Mappable Records",
-  "description": "Validated company records keyed by monotonically increasing numeric string IDs. Each record is one company that passed every constraint in the active constraint profile, together with its qualifying job postings. A company that fails any constraint is never written here; it is recorded in candidate-validation.json instead. IDs start at 1 and must never be reused after deletion; use the newest unused number for inserted records. This historical rule is enforced by agent workflow, not JSON Schema validation.",
+  "description": "Validated company records keyed by monotonically increasing numeric string IDs. Each record is one company that passed every constraint in the active constraint profile, together with its qualifying job postings. A company that fails any constraint is never written here; it is recorded in candidate-validation.json instead. IDs start at 1 and must never be reused after deletion; new records take highest_id_ever_issued + 1 from data/record-index.txt, which is updated in the same step. This historical rule is enforced by agent workflow, not JSON Schema validation.",
   "type": "object",
   "propertyNames": {
     "pattern": "^[1-9][0-9]*$"
@@ -63,6 +63,7 @@
             "type": "object",
             "required": [
               "method",
+              "precision",
               "geocoded_at"
             ],
             "additionalProperties": false,

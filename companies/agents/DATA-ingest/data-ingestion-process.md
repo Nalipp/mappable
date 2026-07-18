@@ -19,7 +19,9 @@ They are plain-language triggers, not provider-specific slash commands.
 - `data/workflow-state.json`: current phase, progress, and next action
 - `data/candidates.json`: broad discovery list with unverified signals (schema: `candidates.schema.json`)
 - `data/candidate-validation.json`: item-level statuses, evidence, and dates
-- `data/record-index.txt`: completed datasets and their constraint profiles
+- `data/record-index.txt`: completed datasets, their constraint profiles, and
+  the `highest_id_ever_issued` counter for record IDs (only increases; a new
+  record takes counter + 1, and IDs are never reused even after deletion)
 
 Every `.json` working file has a matching `.schema.json` contract in `data/`.
 Validate against it whenever the file is updated.
@@ -95,10 +97,25 @@ profile, the default order is:
 
 Coordinates come from looking up the confirmed street address, never from
 model memory or estimation. Default method: query OpenStreetMap Nominatim
-(`nominatim.openstreetmap.org/search`) with the full street address, via
-native web retrieval or Bright Data if blocked. Record in the finalized
-record's `location.geocode`: the method used, the precision (`rooftop`,
-`street`, or `neighborhood`), and the lookup date.
+(`nominatim.openstreetmap.org/search`) with the full street address.
+
+Nominatim usage must follow the OSMF usage policy
+(https://operations.osmfoundation.org/policies/nominatim/):
+
+- Send an identifiable User-Agent that names this project.
+- No more than one request per second, from one machine.
+- Cache results locally; never re-geocode an address already recorded.
+- Attribute the data to OpenStreetMap (ODbL) wherever coordinates are shown.
+
+Do not use Bright Data or any proxy to route around a Nominatim block. If
+Nominatim is unavailable or blocks the request, fall back to the US Census
+geocoder (`geocoding.geo.census.gov`) or send the candidate to
+`needs_verification` with the attempted query recorded.
+
+Record in the finalized record's `location.geocode`: the method used, the
+precision, and the lookup date. Precision comes from the geocoder's match
+type: a building or house-number match is `rooftop`, a road or interpolated
+match is `street`, anything coarser is `neighborhood`.
 
 Sanity bounds, enforced by the dataset schema: latitude 37.70 to 37.84,
 longitude -122.53 to -122.35. A result outside these bounds, an ambiguous

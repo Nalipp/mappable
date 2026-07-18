@@ -35,6 +35,7 @@
       "type": "object",
       "required": [
         "candidates_total",
+        "pending",
         "validated",
         "needs_verification",
         "rejected"
@@ -44,6 +45,11 @@
         "candidates_total": {
           "type": "integer",
           "minimum": 0
+        },
+        "pending": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Candidates not yet processed by validation. Distinct from needs_verification, which means a candidate was checked but the evidence was ambiguous or retrieval failed."
         },
         "validated": {
           "type": "integer",

@@ -4,12 +4,13 @@
   "phase": "validation",
   "progress": {
     "candidates_total": 26,
+    "pending": 26,
     "validated": 0,
-    "needs_verification": 26,
+    "needs_verification": 0,
     "rejected": 0
   },
   "last_action": "Discovery: ran 15 Bright Data searches across the applied-AI job titles and wrote 26 candidates to data/candidates.json (2026-07-17)",
-  "next_action": "Validation batch 1: for the first 5 candidates in data/candidates.json (Doss, Pylon, Liberate, Shepherd, HappyRobot), verify in order: Series B stage, SF-city office, active applied-AI posting, hybrid/in-office work mode. Fail fast per constraint order; record each result with source URLs in data/candidate-validation.json",
+  "next_action": "Validation batch 1: for the first 5 candidates in data/candidates.json (Doss, Pylon, Liberate, Shepherd, HappyRobot), verify in the constraint order from the ingestion workflow: (1) Series B funding stage, (2) active qualifying applied-AI posting with hybrid/in-office SF work mode from the same posting where possible, (3) physical SF street address, (4) geocode. Fail fast at the first decisive failure; record each check with source URL and evidence in data/candidate-validation.json",
   "quality": {
     "status": "ok"
   }
