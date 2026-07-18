@@ -35,4 +35,7 @@ Read these before executing any workflow command:
 - Discovery runs are stateless: no wave/run numbers, no run history in files.
 - The operator performs all git operations. Never run git commands unless
   explicitly asked.
+- State your retrieval method (Bright Data vs native web research) in your
+  first report, and never switch methods silently — announce any fallback
+  and its reason (see Retrieval Rules in the process doc).
 - Bright Data MCP usage: see `agents/DATA-ingest/base-instructions.md`.

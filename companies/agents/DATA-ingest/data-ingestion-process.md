@@ -217,8 +217,20 @@ Select retrieval according to the active instructions and report the choice in
   heavy pages, blocked pages, or larger batches
 - Model reasoning: extract and interpret facts after content is retrieved
 
-Do not assume Bright Data tools, datasets, or credentials are available. If a
-recommended tool is unavailable, report the blocker and the fallback method.
+Do not assume Bright Data tools, datasets, or credentials are available.
+
+Retrieval preflight and no silent fallback:
+
+- In its first report, every workflow command must state which retrieval
+  method it will use and why (per the rules above).
+- If Bright Data is the selected method, confirm it before relying on it:
+  load the tools and make one minimal test call (e.g. a single
+  `search_engine` query). Report the result as "Bright Data: available" or
+  "Bright Data: unavailable — <error>".
+- Never switch retrieval methods silently. Any fallback — tool missing, call
+  erroring, or the operator denying permission — must be announced with the
+  reason before continuing, so the operator can troubleshoot the connection
+  instead of discovering the substitution later.
 
 ## Quality Control
 

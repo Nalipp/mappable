@@ -571,6 +571,1113 @@
         "location_signal": "SF (Top 40 list)"
       },
       "notes": "Ranked in Top 40 Series B AI startups; verify SF office + active AI hiring"
+    },
+    {
+      "name": "11x.AI",
+      "discovery_signals": {
+        "funding": "Series B",
+        "ai_role_posting": "AI Agent Engineer",
+        "location_signal": "San Francisco, CA"
+      },
+      "notes": "Series B AI agent systems company; verify current stage + active hiring"
+    },
+    {
+      "name": "Modal",
+      "discovery_signals": {
+        "funding": "Series B",
+        "ai_role_posting": "Forward Deployed ML Engineer",
+        "location_signal": "SF (mentioned in builtinsf job listings)"
+      },
+      "notes": "High 8-figure ARR; AI infrastructure platform; verify SF office location"
+    },
+    {
+      "name": "Choice AI Inc",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Forward Deployed Engineer",
+        "location_signal": "San Francisco, CA"
+      },
+      "notes": "Posted 30+ days ago on job boards; verify Series B stage"
+    },
+    {
+      "name": "Brain Co.",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "AI Product Engineer",
+        "location_signal": "San Francisco, CA"
+      },
+      "notes": "Automation and AI product engineering; verify Series B stage + SF office"
+    },
+    {
+      "name": "Gem",
+      "discovery_signals": {
+        "funding": "YC-backed",
+        "ai_role_posting": "AI Product Engineer",
+        "location_signal": "San Francisco, CA (HQ)"
+      },
+      "notes": "Y Combinator company with SF HQ; verify Series B funding stage"
+    },
+    {
+      "name": "Speak",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "AI Product Engineer (language learning AI)",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "AI-powered language learning; verify Series B stage + SF office"
+    },
+    {
+      "name": "Paraform",
+      "discovery_signals": {
+        "funding": "Series B",
+        "ai_role_posting": null,
+        "location_signal": "San Francisco (startup jobs list)"
+      },
+      "notes": "Series B startup mentioned in job postings; verify AI hiring + SF office"
+    },
+    {
+      "name": "Tennr",
+      "discovery_signals": {
+        "funding": "Series B (implied from startup jobs list)",
+        "ai_role_posting": null,
+        "location_signal": "Bay Area / SF (inferred)"
+      },
+      "notes": "Mentioned in Series B startup jobs list; verify stage, AI focus, and SF location"
+    },
+    {
+      "name": "Cyberhaven",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": null,
+        "location_signal": "Bay Area / SF (inferred)"
+      },
+      "notes": "Security/data platform mentioned in startup jobs; verify Series B stage + SF + AI hiring"
+    },
+    {
+      "name": "Open Select",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Software Engineer - AI Retention Infrastructure",
+        "location_signal": "San Francisco, CA"
+      },
+      "notes": "AI infrastructure (retention/subscription) team in SF; verify Series B stage + active hiring"
+    },
+    {
+      "name": "Databento",
+      "discovery_signals": {
+        "funding": "$97M Series B (Jul 2026)",
+        "ai_role_posting": null,
+        "location_signal": "Bay Area (inferred)"
+      },
+      "notes": "Recently raised $97M Series B; verify SF office location + AI hiring"
+    },
+    {
+      "name": "Unframe AI",
+      "discovery_signals": {
+        "funding": "Series B (inferred from hiring)",
+        "ai_role_posting": "AI Product Manager",
+        "location_signal": "San Francisco, CA (West Coast)"
+      },
+      "notes": "Series B AI company hiring AI Product Manager; verify current stage + SF office"
+    },
+    {
+      "name": "HartleyCo",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "AI Platform Engineer",
+        "location_signal": "San Francisco Bay Area"
+      },
+      "notes": "AI Platform Engineer role with visa sponsorship; verify Series B stage + SF city office"
+    },
+    {
+      "name": "Generally Intelligent",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Infrastructure Engineer",
+        "location_signal": "San Francisco Bay Area / Remote from US"
+      },
+      "notes": "Infrastructure Engineer for AI; verify Series B stage + SF office + applied AI focus"
+    },
+    {
+      "name": "RecruitSeq",
+      "discovery_signals": {
+        "funding": "Series B",
+        "ai_role_posting": "ML Infrastructure Engineer",
+        "location_signal": "San Francisco, CA (On-Site M-F)"
+      },
+      "notes": "Series B AI startup, ML Infrastructure Engineer, on-site SF M-F"
+    },
+    {
+      "name": "Operant AI",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Sales Engineer, Customer Success",
+        "location_signal": "Bay Area / San Francisco"
+      },
+      "notes": "AI company with sales engineer roles in Bay Area; verify Series B stage + SF city office + AI focus"
+    },
+    {
+      "name": "Snorkel AI",
+      "discovery_signals": {
+        "funding": "Series B",
+        "ai_role_posting": "Senior Software Engineer - Developer Experience",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Series B AI company; Senior Software Engineer for Developer Experience; verify SF office + active hiring"
+    },
+    {
+      "name": "Tavus",
+      "discovery_signals": {
+        "funding": "Series B (world-class backing)",
+        "ai_role_posting": "Developer Experience Engineer",
+        "location_signal": "San Francisco, CA"
+      },
+      "notes": "Series B AI company; Developer Experience Engineer role in SF"
+    },
+    {
+      "name": "BUILD, Inc",
+      "discovery_signals": {
+        "funding": "Series B (inferred from job postings)",
+        "ai_role_posting": "Head of Engineering, Founding Applied AI Engineer",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Founding Applied AI Engineer role; verify Series B stage + SF office"
+    },
+    {
+      "name": "Wildcard",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Founding Engineer",
+        "location_signal": "San Francisco (implied from YC)"
+      },
+      "notes": "YC-backed, Founding Engineer role; verify Series B stage + SF location"
+    },
+    {
+      "name": "Ellipsis Health",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Senior QA Engineer, Forward Deployed",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Healthcare/AI company; verify Series B stage + SF office + applied AI focus"
+    },
+    {
+      "name": "QualGent",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "AI Mobile App Quality Assurance",
+        "location_signal": "San Francisco (YC company)"
+      },
+      "notes": "YC-backed AI QA tester; verify Series B stage + SF office"
+    },
+    {
+      "name": "Throne Labs",
+      "discovery_signals": {
+        "funding": "Series B",
+        "ai_role_posting": "Remote QA Engineer, AI ML Quality Assurance Engineer",
+        "location_signal": "San Francisco, CA"
+      },
+      "notes": "Series B startup; AI/ML Quality Assurance roles"
+    },
+    {
+      "name": "Retell AI",
+      "discovery_signals": {
+        "funding": "YC-backed (W24)",
+        "ai_role_posting": "Senior Data Engineer",
+        "location_signal": "San Francisco Bay Area"
+      },
+      "notes": "YC (W24) AI/voice company; Senior Data Engineer SF Bay Area; verify Series B stage"
+    },
+    {
+      "name": "Cantina Labs",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Prompt Engineer (AI characters)",
+        "location_signal": "San Francisco (builtinsf.com)"
+      },
+      "notes": "Prompt Engineer for AI characters; verify Series B stage + SF office"
+    },
+    {
+      "name": "Exa",
+      "discovery_signals": {
+        "funding": "Series B (Benchmark)",
+        "ai_role_posting": "Growth Engineer",
+        "location_signal": "San Francisco, CA"
+      },
+      "notes": "Series B from Benchmark; Growth Engineer in SF; verify AI focus + active hiring"
+    },
+    {
+      "name": "EvenUp",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Product Designer, Design Systems",
+        "location_signal": "San Francisco, CA"
+      },
+      "notes": "Product Designer role with design systems focus; verify Series B stage + AI focus"
+    },
+    {
+      "name": "GC AI",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Growth Engineer, Founding Data Engineer, AI Platform",
+        "location_signal": "San Mateo / Bay Area (implied)"
+      },
+      "notes": "AI platform company with multiple engineering roles; verify Series B stage + SF city office"
+    },
+    {
+      "name": "SeeMe, Inc",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Computer Vision Engineering CTO",
+        "location_signal": "San Francisco, CA"
+      },
+      "notes": "Computer Vision engineering role; verify Series B stage + applied AI focus"
+    },
+    {
+      "name": "Deepgram",
+      "discovery_signals": {
+        "funding": "$23M Series B",
+        "ai_role_posting": "Conversational AI, NLP roles",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Series B conversational AI platform; NLP/speech focus; verify SF office + active hiring"
+    },
+    {
+      "name": "Unstructured",
+      "discovery_signals": {
+        "funding": "Series B",
+        "ai_role_posting": "NLP, Machine Learning",
+        "location_signal": "San Francisco, CA"
+      },
+      "notes": "Series B NLP platform; 51-200 employees; verify SF office + applied AI hiring"
+    },
+    {
+      "name": "Bedrock Robotics",
+      "discovery_signals": {
+        "funding": "Series B ($270M)",
+        "ai_role_posting": "Robotics, Embodied AI",
+        "location_signal": "Bay Area / SF (implied)"
+      },
+      "notes": "Series B embodied AI/robotics company; recently raised $270M; verify SF office location"
+    },
+    {
+      "name": "Physical Intelligence",
+      "discovery_signals": {
+        "funding": "$5.6B valuation (Series funding implied)",
+        "ai_role_posting": "Embodied AI, robotics foundation models",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Embodied AI/robotics foundation models; high valuation; verify Series B stage + SF location"
+    },
+    {
+      "name": "UnitX",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Embodied AI Engineer",
+        "location_signal": "SF Bay Area / San Francisco (implied)"
+      },
+      "notes": "Intelligent robotics with embodied AI; verify Series B stage + SF city office"
+    },
+    {
+      "name": "Braintrust",
+      "discovery_signals": {
+        "funding": "Series B",
+        "ai_role_posting": "Production AI infrastructure, Founding Engineer",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Series B AI infrastructure platform; verify SF office + active hiring"
+    },
+    {
+      "name": "LegalOn Technologies",
+      "discovery_signals": {
+        "funding": "Series B (OpenView led)",
+        "ai_role_posting": "AI for legal, personalization solutions",
+        "location_signal": "San Francisco, CA + Tokyo"
+      },
+      "notes": "Series B legal AI with SF office; verify SF city location + applied AI focus"
+    },
+    {
+      "name": "Osmosis",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Post-training platform, Reinforcement Learning for LLMs",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "RL post-training platform for LLMs; verify Series B stage + SF office"
+    },
+    {
+      "name": "Buoyed Labs",
+      "discovery_signals": {
+        "funding": "$750M valuation (Series stage implied)",
+        "ai_role_posting": "Reinforcement Learning Gym, training data platform",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "RL training data gym platform; $750M valuation; verify Series B stage + SF location"
+    },
+    {
+      "name": "Periodic Labs",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Distributed Training Engineer",
+        "location_signal": "San Francisco, CA"
+      },
+      "notes": "RL training/distributed systems; verify Series B stage + applied AI focus"
+    },
+    {
+      "name": "Inscribe",
+      "discovery_signals": {
+        "funding": "$25M Series B",
+        "ai_role_posting": "Fraud detection, risk intelligence",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Series B fraud detection startup; verify SF office + active hiring"
+    },
+    {
+      "name": "Variance",
+      "discovery_signals": {
+        "funding": "$21.5M (series stage implied)",
+        "ai_role_posting": "Compliance, Fraud detection, Risk investigations",
+        "location_signal": "San Francisco, CA"
+      },
+      "notes": "AI platform for compliance/fraud/risk; formerly Intrinsic; verify Series B stage"
+    },
+    {
+      "name": "Kargo",
+      "discovery_signals": {
+        "funding": "$42M Series B (Avenir led)",
+        "ai_role_posting": "Industrial AI, Supply Chain optimization",
+        "location_signal": "San Francisco, CA"
+      },
+      "notes": "Series B supply chain AI; industrial AI for logistics; SF-based"
+    },
+    {
+      "name": "Altana",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Supply Chain Management AI",
+        "location_signal": "San Francisco (builtinsf.com)"
+      },
+      "notes": "Supply chain visibility/AI; verify Series B stage + SF office"
+    },
+    {
+      "name": "Daybreak",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "AI-native supply chain planning SaaS",
+        "location_signal": "San Francisco, CA"
+      },
+      "notes": "Supply chain planning SaaS; AI-native; verify Series B stage"
+    },
+    {
+      "name": "Directly AI",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Personalized, empathetic content platform",
+        "location_signal": "San Francisco (actively hiring)"
+      },
+      "notes": "Personalized AI content platform; verify Series B stage + AI engineering roles"
+    },
+    {
+      "name": "People.ai",
+      "discovery_signals": {
+        "funding": "Series B (inferred from prominence)",
+        "ai_role_posting": "Revenue AI for sales, marketing, customer success",
+        "location_signal": "San Francisco (builtinsf.com)"
+      },
+      "notes": "Revenue intelligence AI; Series B; verify SF office + active AI hiring"
+    },
+    {
+      "name": "Antigen",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "AI adversary, Security/Red Team AI",
+        "location_signal": "San Francisco (implied from YC)"
+      },
+      "notes": "Enterprise security AI; offensive testing automation; verify Series B stage + SF"
+    },
+    {
+      "name": "Coframe",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Enterprise Product Engineer",
+        "location_signal": "San Francisco (fastaijobs.com)"
+      },
+      "notes": "Enterprise AI product platform; verify Series B stage + SF office"
+    },
+    {
+      "name": "Tessera Labs",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Enterprise automation, System modernization AI",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Enterprise automation platform for system modernization; verify Series B stage + SF"
+    },
+    {
+      "name": "Runta",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Autonomous AI infrastructure, guardrails, agent management",
+        "location_signal": "San Francisco Bay Area"
+      },
+      "notes": "Autonomous AI infrastructure and guardrails; verify Series B stage + SF city office"
+    },
+    {
+      "name": "Sierra",
+      "discovery_signals": {
+        "funding": "Series B (inferred from job postings)",
+        "ai_role_posting": "Product Manager, Agent SDK, AI experiences",
+        "location_signal": "San Francisco, CA"
+      },
+      "notes": "Series B AI platform for human-like experiences; Agent SDK; SF-based"
+    },
+    {
+      "name": "Functionize",
+      "discovery_signals": {
+        "funding": "$41M Series B",
+        "ai_role_posting": "AI-driven software testing, agentic automation",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Series B AI testing platform; agentic automation for software testing"
+    },
+    {
+      "name": "Read AI",
+      "discovery_signals": {
+        "funding": "$450M valuation, Series B",
+        "ai_role_posting": "AI automation, productivity platform",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Series B AI automation/productivity; $450M valuation; verify SF office + hiring"
+    },
+    {
+      "name": "Automation Hero",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Intelligent document processing, AI automation",
+        "location_signal": "San Francisco, CA"
+      },
+      "notes": "AI document processing platform; SF-based; verify Series B stage"
+    },
+    {
+      "name": "Yellow.ai",
+      "discovery_signals": {
+        "funding": "Series B (implied from list context)",
+        "ai_role_posting": "Multi-LLM Customer Service Automation",
+        "location_signal": "San Francisco (CX automation platforms)"
+      },
+      "notes": "Series B customer service automation; multi-LLM platform; verify SF office"
+    },
+    {
+      "name": "Comet",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "LLM evaluation, observability platform (Comet Optik)",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "LLM evaluation and observability; Comet Optik platform; verify Series B stage + SF"
+    },
+    {
+      "name": "Crusoe",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "AI Infrastructure, foundation model training",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "AI infrastructure for foundation model training; energy-focused; verify Series B stage + SF"
+    },
+    {
+      "name": "TDA",
+      "discovery_signals": {
+        "funding": "Series B",
+        "ai_role_posting": "Product Manager - Marketplace | AI",
+        "location_signal": "San Francisco, CA"
+      },
+      "notes": "Series B AI marketplace platform; Product Manager role; verify active hiring"
+    },
+    {
+      "name": "Lambda",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Group Product Manager, Platform",
+        "location_signal": "San Francisco (fastaijobs)"
+      },
+      "notes": "AI platform company; Group Product Manager; verify Series B stage + SF office"
+    },
+    {
+      "name": "Retool",
+      "discovery_signals": {
+        "funding": "Series B (inferred from prominence)",
+        "ai_role_posting": "Manager, Revenue Strategy & Operations",
+        "location_signal": "San Francisco"
+      },
+      "notes": "Series B dev tools/AI platform company; verify SF office + AI hiring"
+    },
+    {
+      "name": "Monograph",
+      "discovery_signals": {
+        "funding": "Series B",
+        "ai_role_posting": "Senior Product Manager",
+        "location_signal": "San Francisco, CA"
+      },
+      "notes": "Series B company; Senior Product Manager role; verify AI focus + active hiring"
+    },
+    {
+      "name": "Hume AI",
+      "discovery_signals": {
+        "funding": "Series B (implied from top 40 fastest-growing list)",
+        "ai_role_posting": "AI for emotional intelligence, human-AI interaction",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Series B AI company; emotional intelligence/human-AI interaction focus; verify SF office"
+    },
+    {
+      "name": "Augment Code",
+      "discovery_signals": {
+        "funding": "Series B (implied from top 40 list)",
+        "ai_role_posting": "Generative AI for software development",
+        "location_signal": "Palo Alto (Bay Area)"
+      },
+      "notes": "Series B AI code generation; Palo Alto location; verify if SF city office exists"
+    },
+    {
+      "name": "Cobot",
+      "discovery_signals": {
+        "funding": "Series B (implied from top 40 list)",
+        "ai_role_posting": "Collaborative AI, automation",
+        "location_signal": "Santa Clara / Bay Area (implied)"
+      },
+      "notes": "Series B collaborative AI/automation; verify Series B stage + SF city office"
+    },
+    {
+      "name": "iManage",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "AI for legal tech, information management",
+        "location_signal": "San Francisco (builtinsf.com list)"
+      },
+      "notes": "Legal tech with AI; 1,100+ employees; verify Series B stage + SF office"
+    },
+    {
+      "name": "Mage Legal",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "AI legal tools",
+        "location_signal": "San Francisco, CA"
+      },
+      "notes": "AI legal tools/compliance; SF-based; verify Series B stage"
+    },
+    {
+      "name": "Qventus",
+      "discovery_signals": {
+        "funding": "Series B (implied from topstartups.io)",
+        "ai_role_posting": "Healthcare AI, hospital optimization",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Hospital optimization AI; real-time decision support; verify Series B stage + SF office"
+    },
+    {
+      "name": "Numeric",
+      "discovery_signals": {
+        "funding": "$51M Series B",
+        "ai_role_posting": "AI accounting automation, finance platform",
+        "location_signal": "San Francisco, CA"
+      },
+      "notes": "Series B AI accounting automation; expanded to comprehensive finance platform"
+    },
+    {
+      "name": "Campfire",
+      "discovery_signals": {
+        "funding": "$65M Series B",
+        "ai_role_posting": "AI-native ERP for finance & accounting teams",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Series B AI-native ERP platform for finance/accounting; $65M raise"
+    },
+    {
+      "name": "Tabs",
+      "discovery_signals": {
+        "funding": "$55M Series B",
+        "ai_role_posting": "AI finance platform",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Series B AI finance platform; $55M Series B raise"
+    },
+    {
+      "name": "Cranston AI",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Full-stack AI accounting firm, bookkeeping automation",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Full-stack AI accounting/bookkeeping automation; Y Combinator; verify Series B stage"
+    },
+    {
+      "name": "Zeni AI",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "AI bookkeeping software, accounting platform",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "AI bookkeeping platform with accounting team support; verify Series B stage + SF"
+    },
+    {
+      "name": "Figure Eight",
+      "discovery_signals": {
+        "funding": "Series B (implied from builtinsf list)",
+        "ai_role_posting": "Human-in-the-loop training data, ML platform",
+        "location_signal": "San Francisco (builtinsf.com)"
+      },
+      "notes": "Series B human-in-the-loop training data platform; SF-based; active AI hiring"
+    },
+    {
+      "name": "Luminai",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "AI-powered healthcare platform",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "AI healthcare startup; verify Series B stage + SF office + clinical AI focus"
+    },
+    {
+      "name": "Telepatía",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "AI-native clinical platform",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "AI-native clinical platform transforming healthcare; verify Series B stage + SF"
+    },
+    {
+      "name": "Constructor",
+      "discovery_signals": {
+        "funding": "Series B",
+        "ai_role_posting": "E-commerce AI platform, search and discovery",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Series B e-commerce AI; customers include Sephora, Backcountry, American Eagle"
+    },
+    {
+      "name": "FERMÀT",
+      "discovery_signals": {
+        "funding": "$45M Series B",
+        "ai_role_posting": "AI-powered commerce platform, shopping journeys",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Series B AI commerce platform for human and agentic shoppers"
+    },
+    {
+      "name": "Vori",
+      "discovery_signals": {
+        "funding": "Series B",
+        "ai_role_posting": "AI platform for retail/grocery modernization",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Series B retail/grocery modernization AI; verify SF office + active hiring"
+    },
+    {
+      "name": "Hex",
+      "discovery_signals": {
+        "funding": "Series B (implied from builtinsf.com)",
+        "ai_role_posting": "Analytics, Business Intelligence, AI platform",
+        "location_signal": "San Francisco (builtinsf.com)"
+      },
+      "notes": "Series B analytics/BI platform with AI capabilities; 160 employees"
+    },
+    {
+      "name": "Blueshift",
+      "discovery_signals": {
+        "funding": "Series B (implied)",
+        "ai_role_posting": "AI-powered marketing platform, campaign optimization",
+        "location_signal": "San Francisco (builtinsf.com)"
+      },
+      "notes": "Series B marketing AI; predictive content suggestions for campaigns"
+    },
+    {
+      "name": "Profound",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "AI marketing platform, brand visibility in AI search",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Full-stack marketing platform for AI era; verify Series B stage + SF office"
+    },
+    {
+      "name": "MarqVision",
+      "discovery_signals": {
+        "funding": "$48M Series B",
+        "ai_role_posting": "Integrated AI agent suite for SMBs (scheduling, sales, support, marketing)",
+        "location_signal": "San Francisco (expanded SF office)"
+      },
+      "notes": "Series B AI agents for SMBs; $48M raise; expanding SF operations"
+    },
+    {
+      "name": "Airbyte",
+      "discovery_signals": {
+        "funding": "Series B",
+        "ai_role_posting": "Data pipeline, ETL, reverse-ETL platform",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Series B data infrastructure; open-source data pipeline platform"
+    },
+    {
+      "name": "VideoVerse",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "AI-powered video content creation, editing, distribution",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "AI video platform for streamlined content creation; verify Series B stage + SF office"
+    },
+    {
+      "name": "LanceDB",
+      "discovery_signals": {
+        "funding": "$30M",
+        "ai_role_posting": "Multimodal AI database, vector search",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Multimodal AI database platform; $30M funding; verify Series B stage + SF office"
+    },
+    {
+      "name": "Qdrant",
+      "discovery_signals": {
+        "funding": "$50M Series B",
+        "ai_role_posting": "Vector search database, production AI infrastructure",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Series B vector search as foundational infrastructure for production AI"
+    },
+    {
+      "name": "Assembled",
+      "discovery_signals": {
+        "funding": "Series B (implied)",
+        "ai_role_posting": "Customer support infrastructure, AI-powered issue resolution",
+        "location_signal": "San Francisco (builtinsf.com)"
+      },
+      "notes": "Series B customer support AI infrastructure platform; BPO collaboration"
+    },
+    {
+      "name": "Fabraix",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "AI red-teaming agents, security vulnerability detection",
+        "location_signal": "San Francisco (implied from YC)"
+      },
+      "notes": "AI red-teaming agents for security; continuous vulnerability detection; verify Series B"
+    },
+    {
+      "name": "Serval",
+      "discovery_signals": {
+        "funding": "$75M Series B (reached unicorn status)",
+        "ai_role_posting": "AI-native IT service management, workflow automation",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Series B AI-native IT service management; $75M raise; unicorn status; SF-based"
+    },
+    {
+      "name": "Parsewise",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "AI data extraction, document processing",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "AI data extraction startup; 6x processing volume growth; verify Series B stage + SF"
+    },
+    {
+      "name": "Reducto",
+      "discovery_signals": {
+        "funding": "$75M Series B",
+        "ai_role_posting": "Document intelligence, AI reasoning, language models",
+        "location_signal": "San Francisco, CA"
+      },
+      "notes": "Series B document intelligence platform; uses LLMs for AI reasoning"
+    },
+    {
+      "name": "Hebbia",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "AI for finance, document analysis, research",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Finance-focused AI platform; expert call transcript analysis; verify Series B stage"
+    },
+    {
+      "name": "Qodo",
+      "discovery_signals": {
+        "funding": "$70M Series B",
+        "ai_role_posting": "AI code generation, software engineering",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Series B AI code generation platform; $70M Series B from Qumra Capital"
+    },
+    {
+      "name": "Bifrost AI",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Generative 3D, drug design, generative AI",
+        "location_signal": "San Francisco, CA"
+      },
+      "notes": "3D generative AI for drug design; SF-based; verify Series B stage + active hiring"
+    },
+    {
+      "name": "Recraft",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "AI design platform, vector graphics generation",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "AI-powered design platform for visual content; vector graphics; verify Series B stage"
+    },
+    {
+      "name": "Cohere",
+      "discovery_signals": {
+        "funding": "Series B (implied from NLP platform context)",
+        "ai_role_posting": "NLP platform, classification, text generation",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "NLP platform with classification endpoints; verify Series B stage + SF office"
+    },
+    {
+      "name": "Sentieo",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "NLP, sentiment analysis, concept-based search",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "NLP for financial/research analysis; sentiment heatmaps; verify Series B stage + SF"
+    },
+    {
+      "name": "Vanta",
+      "discovery_signals": {
+        "funding": "Series B (implied from topstartups.io)",
+        "ai_role_posting": "Automated security monitoring, compliance automation",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Series B security monitoring for SOC 2, HIPAA, ISO 27001 certification"
+    },
+    {
+      "name": "NewCore",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "AI agent identity, cybersecurity, insider threat detection",
+        "location_signal": "San Francisco (emerged June 2026)"
+      },
+      "notes": "AI agent identity and cybersecurity; emerged from stealth June 2026; verify Series B"
+    },
+    {
+      "name": "SAFE",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Autonomous cyber risk management, threat exposure",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Autonomous cyber risk management platform; verify Series B stage + SF office"
+    },
+    {
+      "name": "Pathlight",
+      "discovery_signals": {
+        "funding": "$34.2M Series B",
+        "ai_role_posting": "AI-driven performance management for customer-facing teams",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Series B AI performance management for customer-facing teams"
+    },
+    {
+      "name": "Solve Intelligence",
+      "discovery_signals": {
+        "funding": "$40M Series B",
+        "ai_role_posting": "AI optimization, efficiency intelligence",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Series B AI optimization platform; $40M Series B from Visionaries Club"
+    },
+    {
+      "name": "AirOps",
+      "discovery_signals": {
+        "funding": "Series B (implied from Series B activity list)",
+        "ai_role_posting": "Search engine optimization with AI deployment",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "SEO platform deploying AI; Series B; verify SF office + active hiring"
+    },
+    {
+      "name": "Verse",
+      "discovery_signals": {
+        "funding": "$54M Series B",
+        "ai_role_posting": "Grid connection, AI era infrastructure",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Series B $54M from Bessemer; AI infrastructure for grid connection"
+    },
+    {
+      "name": "Synthesis AI",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Synthetic data, simulation, generative AI",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Generative AI for synthetic data/simulation; verify Series B stage + SF office"
+    },
+    {
+      "name": "Foxtrot Labs",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "AI systems with explainability focus",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "AI with explainability as product focus; verify Series B stage + SF office"
+    },
+    {
+      "name": "Inferact",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "AI inference engine, DevTools",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "AI inference engine platform; DevTools focus; verify Series B stage + SF office"
+    },
+    {
+      "name": "Fal",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "API inference engine, model library (1000+ models)",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Inference API library with 1000+ image/video/audio/3D/world models; verify Series B"
+    },
+    {
+      "name": "Tera AI",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Spatial reasoning for autonomous robots, visual navigation",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Spatial reasoning AI for robot navigation; affordable visual AI; verify Series B + SF"
+    },
+    {
+      "name": "Higgsfield AI",
+      "discovery_signals": {
+        "funding": "$50M",
+        "ai_role_posting": "AI-native video reasoning engine, click-to-video creation",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Series B $50M video reasoning platform with Sonic Inference Engine; SF-based"
+    },
+    {
+      "name": "Fireworks AI",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Inference engine optimization, fastest inference for GenAI",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "AI inference optimization platform; GPU optimization; verify Series B stage + SF"
+    },
+    {
+      "name": "depthfirst",
+      "discovery_signals": {
+        "funding": "$80M Series B",
+        "ai_role_posting": "Applied AI lab, vulnerability detection, verification",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Series B $80M Applied AI Lab; vulnerability detection/verification focus"
+    },
+    {
+      "name": "Veriff",
+      "discovery_signals": {
+        "funding": "Series B (implied from topstartups)",
+        "ai_role_posting": "AI-driven verification platform, identity verification",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Global AI verification platform; identity verification focus; verify Series B stage"
+    },
+    {
+      "name": "Contextual AI",
+      "discovery_signals": {
+        "funding": "Series B (implied, emerged from stealth)",
+        "ai_role_posting": "RAG systems, contextual AI, enterprise AI products",
+        "location_signal": "San Francisco, CA (founded 2023)"
+      },
+      "notes": "Series B contextual/RAG AI; emerged from stealth; $545M funding mentioned"
+    },
+    {
+      "name": "Standard AI",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Privacy-preserving AI, retail data analytics",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Privacy-preserving AI platform; physical/digital retail data; verify Series B stage + SF"
+    },
+    {
+      "name": "Code Metal",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Formal methods, AI systems, code verification",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Compiler/formal methods + AI bridge; code verification; verify Series B stage + SF"
+    },
+    {
+      "name": "Dust",
+      "discovery_signals": {
+        "funding": "$40M Series B",
+        "ai_role_posting": "Human-agent collaboration, multiplayer AI workspace",
+        "location_signal": "Paris-based (may have SF presence)"
+      },
+      "notes": "Series B $40M human-agent collaboration platform; verify SF office presence"
+    },
+    {
+      "name": "Persona",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Identity infrastructure for AI age, DevTools",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Identity infrastructure for AI era; DevTools focus; verify Series B stage + SF office"
+    },
+    {
+      "name": "Together AI",
+      "discovery_signals": {
+        "funding": "$305M Series B (also $800M+ valuation mentioned)",
+        "ai_role_posting": "AI acceleration cloud, inference APIs, fine-tuning, model serving",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Series B $305M AI acceleration platform for open-source + enterprise AI"
+    },
+    {
+      "name": "Tolmo",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "AI security agents, knowledge graph, live production systems",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "AI security agents with production knowledge graph; verify Series B stage + SF"
+    },
+    {
+      "name": "Relevance AI",
+      "discovery_signals": {
+        "funding": "$24M Series B",
+        "ai_role_posting": "AI agents OS, agentic AI platform",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Series B $24M AI agents operating system/platform"
+    },
+    {
+      "name": "Genspark",
+      "discovery_signals": {
+        "funding": "$545M funding mentioned",
+        "ai_role_posting": "AI tools for knowledge workers, AI engine",
+        "location_signal": "Palo Alto / Bay Area (close to SF)"
+      },
+      "notes": "AI tools for knowledge workers; significant funding; verify Series B + SF city office"
+    },
+    {
+      "name": "Anyscale",
+      "discovery_signals": {
+        "funding": "$260M raised (Series B+ implied)",
+        "ai_role_posting": "AI infrastructure, optimization, acceleration",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "AI infrastructure platform; $260M funding; verify current stage + active AI hiring"
     }
   ]
 }

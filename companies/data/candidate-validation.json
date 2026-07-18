@@ -1,4 +1,195 @@
 {
   "profile": "data-collection-1.instructions.md",
-  "candidates": []
+  "candidates": [
+    {
+      "company": "Doss",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "pass",
+          "url": "https://www.doss.com/news/doss-raises-55m-series-b",
+          "evidence": "$55M Series B co-led by Madrona and Premji Invest, announced 2026-03-24 on company news page; TechCrunch confirms same day. No later round found.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "qualifying_job",
+          "result": "pass",
+          "url": "https://jobs.ashbyhq.com/doss/f698df9b-0fe0-49e6-88d1-f936f1aa301f",
+          "evidence": "Staff Applied AI Engineer - Engineering, San Francisco, Full time, On-site, $230K-$260K. Live on Doss's own Ashby board (published 2026-07-13, confirmed via Ashby posting API: location=San Francisco, isRemote=false).",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "sf_address",
+          "result": "pass",
+          "url": "https://pitchbook.com/profiles/company/522883-99",
+          "evidence": "144 2nd Street Suite 100, San Francisco, CA 94105 (PitchBook and ZoomInfo, secondary sources). Company's own Ashby board (primary) confirms office 'located in SOMA just a few blocks from Salesforce Park, Embarcadero / Market St', consistent with 144 2nd St.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "geocode",
+          "result": "pass",
+          "url": "https://nominatim.openstreetmap.org/search?q=144+2nd+Street,+San+Francisco,+CA+94105&format=json",
+          "evidence": "Nominatim building-level match: lat 37.7872065, lon -122.3992307 (precision: rooftop). Within SF sanity bounds. Looked up 2026-07-18. Data (c) OpenStreetMap contributors, ODbL.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "final_validation",
+          "result": "pass",
+          "url": "https://jobs.ashbyhq.com/doss/f698df9b-0fe0-49e6-88d1-f936f1aa301f",
+          "evidence": "All constraints pass: latest round Series B (Mar 2026), active on-site SF applied-AI posting on company ATS, SF street address corroborated by primary SOMA description, rooftop geocode in bounds.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Exact street number (144 2nd St Ste 100) comes from secondary sources (PitchBook/ZoomInfo, marked as such); company primary sources confirm SOMA SF office but do not publish the street number."
+    },
+    {
+      "company": "Pylon",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "pass",
+          "url": "https://www.usepylon.com/blog/announcing-our-31m-series-b",
+          "evidence": "$31M Series B co-led by a16z and Bain Capital Ventures (Aug 2025), $51M total raised, per company blog. Pylon job posts from Jun-Jul 2026 still describe the company as Series B; no later round found.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "qualifying_job",
+          "result": "pass",
+          "url": "https://jobs.ashbyhq.com/pylon-labs/8d8264b7-8094-4a55-8991-7876796487ae",
+          "evidence": "Software Engineer, AI - Engineering, San Francisco, Full time, On-site. Live on Pylon's Ashby board (published 2026-07-09, confirmed via Ashby posting API: location=San Francisco, isRemote=false).",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "sf_address",
+          "result": "pass",
+          "url": "https://www.usepylon.com/privacy",
+          "evidence": "Company privacy policy (primary) lists 690 5th St, San Francisco, CA 94107. LinkedIn company page shows 144 Townsend St, San Francisco 94107. Both addresses are inside SF city limits.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "geocode",
+          "result": "pass",
+          "url": "https://nominatim.openstreetmap.org/search?q=690+5th+Street,+San+Francisco,+CA+94107&format=json",
+          "evidence": "Nominatim building-level match for 690 5th St: lat 37.7753258, lon -122.3976595 (precision: rooftop). Within SF sanity bounds. Looked up 2026-07-18. Data (c) OpenStreetMap contributors, ODbL.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "final_validation",
+          "result": "pass",
+          "url": "https://jobs.ashbyhq.com/pylon-labs/8d8264b7-8094-4a55-8991-7876796487ae",
+          "evidence": "All constraints pass: latest round Series B (Aug 2025), active on-site SF AI engineering posting on company ATS, primary-source SF street address, rooftop geocode in bounds.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Address sources conflict: privacy policy (Mar 2024) says 690 5th St; LinkedIn shows 144 Townsend St, suggesting a move. Both are in SF city so the constraint passes either way; confirm current office at finalize before publishing coordinates."
+    },
+    {
+      "company": "Liberate",
+      "status": "rejected",
+      "failed_constraint": "qualifying_job",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "pass",
+          "url": "https://www.liberateinc.com/news/liberate-raises-50m-to-build-the-first-ever-reasoning-ai-agents-for-insurance",
+          "evidence": "$50M Series B led by Battery Ventures, Oct 2025, $72M total, per company news page; current job postings repeat the same. No later round found.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "qualifying_job",
+          "result": "fail",
+          "url": "https://job-boards.greenhouse.io/liberate/jobs/5188821008",
+          "evidence": "Senior AI Agent Engineer posting is labeled 'San Francisco, CA' but its body states 'Location: Boston or San Francisco (Berkeley) hybrid role (2 day/week in-office)' - the Bay Area in-office site is Berkeley, not SF city. Built In Boston profile confirms: 'Two to Three days a week onsite in our Berkeley (San Francisco) or Boston offices. HQ Berkeley, California.'",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "AI Agent Engineer roles (Senior/Staff/Principal) are all active and AI-qualifying, but hybrid attendance is Berkeley or Boston - East Bay is excluded by the constraint profile. Company Glassdoor is listed under Palo Alto, CA (likely a prior office); no evidence of an SF-city office. Revisit if Liberate opens an SF office."
+    },
+    {
+      "company": "Shepherd",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "pass",
+          "url": "https://www.prnewswire.com/news-releases/shepherd-raises-42m-series-b-to-power-the-insurance-behind-ai-infrastructure-boom-302723122.html",
+          "evidence": "$42M Series B led by Intact Private Capital, announced 2026-03-24 via company press release; $67M total raised. No later round found.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "qualifying_job",
+          "result": "pass",
+          "url": "https://jobs.ashbyhq.com/shepherd/6cbab29e-1bbf-42b4-9308-3823693ca288",
+          "evidence": "Software Engineer, AI Product + Agents - EPD, San Francisco, Full time, On-site, $170K-$220K. Live on Shepherd's Ashby board (confirmed via Ashby posting API: location=San Francisco, isRemote=false). A second qualifying role, Software Engineer, Applied AI (SF, on-site), is also live.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "sf_address",
+          "result": "pass",
+          "url": "https://www.linkedin.com/company/withshepherd",
+          "evidence": "LinkedIn company page primary location: 500 Sansome St, San Francisco, CA 94111. Company press release (Mar 2026) confirms 'headquartered in San Francisco with offices nationwide.'",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "geocode",
+          "result": "pass",
+          "url": "https://nominatim.openstreetmap.org/search?q=500+Sansome+Street,+San+Francisco,+CA+94111&format=json",
+          "evidence": "Nominatim building-level match: lat 37.7951065, lon -122.4012099 (precision: rooftop). Within SF sanity bounds. Looked up 2026-07-18. Data (c) OpenStreetMap contributors, ODbL.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "final_validation",
+          "result": "pass",
+          "url": "https://jobs.ashbyhq.com/shepherd/6cbab29e-1bbf-42b4-9308-3823693ca288",
+          "evidence": "All constraints pass: latest round Series B (Mar 2026), two active on-site SF applied-AI postings on company ATS, SF HQ confirmed by press release with street address from LinkedIn, rooftop geocode in bounds.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Address sources conflict: LinkedIn shows 500 Sansome St 94111 (recent), ZoomInfo shows 415 Mission St Fl 37 (likely stale). Both are in SF city; confirm current office at finalize."
+    },
+    {
+      "company": "HappyRobot",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "pass",
+          "url": "https://www.happyrobot.ai/blog/series-b-announcement",
+          "evidence": "$44M Series B led by Base10 Partners (Sep 2025), $62M total raised, per company blog. Current FDE posting still describes 'over $60M raised'; no later round found.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "qualifying_job",
+          "result": "pass",
+          "url": "https://jobs.ashbyhq.com/happyrobot.ai/afd99ef3-78a8-47a1-8566-04f1cf73939d",
+          "evidence": "Forward Deployed Engineer - Deployment, San Francisco, Full time, Hybrid (Ashby posting API: workplaceType=Hybrid, address=San Francisco, CA). Company careers page lists the role under 'Deployment - Hybrid, San Francisco'. Role deploys HappyRobot's AI-agent platform into enterprises.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "sf_address",
+          "result": "pass",
+          "url": "https://ised-isde.canada.ca/cipo/trademark-search/2467933",
+          "evidence": "Official trademark filing lists Happyrobot Inc., 2325 3rd St #422, San Francisco CA 94107. Company careers page confirms San Francisco office; multiple current job listings show the same street address.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "geocode",
+          "result": "pass",
+          "url": "https://nominatim.openstreetmap.org/search?q=2325+3rd+Street,+San+Francisco,+CA+94107&format=json",
+          "evidence": "Nominatim building-level match (2325 3rd Street, Dogpatch): lat 37.7598247, lon -122.3882440 (precision: rooftop). Within SF sanity bounds. Looked up 2026-07-18. Data (c) OpenStreetMap contributors, ODbL.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "final_validation",
+          "result": "pass",
+          "url": "https://jobs.ashbyhq.com/happyrobot.ai/afd99ef3-78a8-47a1-8566-04f1cf73939d",
+          "evidence": "All constraints pass: latest round Series B (Sep 2025), active hybrid SF FDE posting on company ATS, SF street address from official filing, rooftop geocode in bounds.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Ashby API marks all HappyRobot postings isRemote=true, but workplaceType=Hybrid and the careers page's own SF-hybrid labeling are authoritative. LinkedIn shows zip 94114 (inconsistent) and a Dover, DE registered agent; street evidence converges on 2325 3rd St #422, 94107."
+    }
+  ]
 }
