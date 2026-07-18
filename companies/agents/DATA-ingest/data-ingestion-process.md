@@ -8,8 +8,10 @@ chat history.
 
 Use these prompt conventions:
 
-- `workflow status`
-- `workflow next`
+- `workflow status` — read current state, progress, and next action (no modifications)
+- `workflow discover` — search for more companies and append to `candidates.json` (discovery phase)
+- `workflow validate` — verify candidates against constraints and record evidence in `candidate-validation.json` (validation phase)
+- `workflow finalize` — normalize validated records into the numbered dataset (finalization phase)
 
 They are plain-language triggers, not provider-specific slash commands.
 
@@ -37,46 +39,65 @@ files.
 
 Report:
 
-- dataset, constraint profile, phase, and progress
-- last completed action and next bounded action
-- recommended model capability and batch size
+- dataset, constraint profile, phase, and progress (pending, validated, rejected, needs_verification)
+- last completed action
+- recommended model capability for the next phase
 - planned retrieval method and whether Bright Data is available
 - quality warnings, unresolved decisions, or setup gaps
+- which command to run next: `workflow discover`, `workflow validate`, or `workflow finalize`
 
 Use capability classes, never fixed model names:
 
-- `fast-low-cost`: routine extraction and clear validation
-- `high-reasoning`: discovery, ambiguous decisions, and review
+- `fast-low-cost`: routine extraction and clear validation (e.g., `workflow validate` with strong evidence)
+- `high-reasoning`: discovery and complex validation decisions (e.g., `workflow discover` with complex searches, `workflow validate` with edge cases)
 - `flagship`: workflow design, rubric changes, and final analysis
 
-Tell the operator to select the matching current OpenAI or Anthropic model
-before entering `workflow next`. Bright Data is a retrieval method, not a
+Tell the operator to select the matching current Claude/OpenAI model
+before entering the next `workflow` command. Bright Data is a retrieval method, not a
 model tier.
 
 If no workflow state exists, report the required setup and wait for direction.
 
-## workflow next
+## workflow discover
+
+Search for additional companies using applied-AI job titles and adjacent queries.
+Append new companies to `data/candidates.json` (do not remove existing candidates).
+Update metadata (`generated_at`, candidate count) and `workflow-state.json` progress.
+Stop and report newly added candidates and total candidate count.
+
+## workflow validate
 
 Before starting, verify the workflow state against the validation data.
-Execute exactly one recorded action or batch. Update the working data and
-workflow state together, then stop and report the next action.
+Execute exactly one validation batch (default: 5 candidates per batch).
+For each candidate, check constraints in fail-fast order; record evidence with
+source URLs in `data/candidate-validation.json`. Update workflow-state.json with
+results and stop.
 
-For each rejected candidate, record the first failed constraint, source URL,
-short evidence, and verification date. Candidate statuses are:
+For each result, record:
+- First failed constraint (if rejected)
+- Source URL(s)
+- Short evidence snippet
+- Verification date
 
-- `validated`
-- `needs_verification`
-- `rejected`
+Candidate statuses are:
 
-## Stages
+- `validated` — passed all constraints
+- `needs_verification` — evidence ambiguous or inconclusive
+- `rejected` — failed a constraint decisively
 
-1. Discovery: create a broad candidate list with minimal evidence.
-2. Validation: process candidates in bounded batches and fail on the first
-   decisive constraint failure. Once a company fails any constraint, stop all
-   work on it, record the failure, and move on.
-3. Review: resolve only ambiguous or low-confidence records.
-4. Finalization: normalize validated records into the numbered dataset and
-   matching schema.
+## workflow finalize
+
+Normalize all `validated` candidates into the numbered dataset (`mappable-records.json`).
+For each company: assign a record ID, nest qualifying job postings, add geocode
+metadata, validate against `mappable-records.schema.json`. Update `record-index.txt`
+with the completed dataset ID and highest record ID issued. Stop and report
+finalized record count and any records that failed schema validation.
+
+## Stages (tied to commands)
+
+1. **`workflow discover`** — create a broad candidate list with minimal evidence. Run multiple times to expand pool before validation.
+2. **`workflow validate`** — process candidates in bounded batches, fail on first decisive constraint failure. Once a company fails any constraint, stop all work on it, record the failure, and move on. Results: `validated`, `rejected`, or `needs_verification`.
+3. **`workflow finalize`** — normalize validated records into the numbered dataset and matching schema.
 
 The record grain is the company: one finalized record per validated company,
 with its qualifying job postings nested inside that record. Jobs are never

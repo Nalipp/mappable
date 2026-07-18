@@ -10,7 +10,7 @@
     "rejected": 0
   },
   "last_action": "Discovery: ran 15 Bright Data searches across the applied-AI job titles and wrote 26 candidates to data/candidates.json (2026-07-17)",
-  "next_action": "Validation batch 1: for the first 5 candidates in data/candidates.json (Doss, Pylon, Liberate, Shepherd, HappyRobot), verify in the constraint order from the ingestion workflow: (1) Series B funding stage, (2) active qualifying applied-AI posting with hybrid/in-office SF work mode from the same posting where possible, (3) physical SF street address, (4) geocode. Fail fast at the first decisive failure; record each check with source URL and evidence in data/candidate-validation.json",
+  "next_action": "Run `workflow validate` for batch 1: verify the first 5 candidates in data/candidates.json (Doss, Pylon, Liberate, Shepherd, HappyRobot) in the constraint order from data-collection-1.instructions.md: (1) Series B funding stage, (2) active qualifying applied-AI posting with hybrid/in-office SF work mode, (3) physical SF street address, (4) geocode. Fail fast at first decisive failure; record evidence with source URLs in data/candidate-validation.json",
   "quality": {
     "status": "ok"
   }
