@@ -12,7 +12,6 @@
         "ai_role_posting": "Staff Applied AI Engineer",
         "location_signal": "SF (Wellfound)"
       },
-      "verification_status": "pending",
       "notes": null
     },
     {
@@ -22,7 +21,6 @@
         "ai_role_posting": "Software Engineer, AI / AI Agents",
         "location_signal": "SF"
       },
-      "verification_status": "pending",
       "notes": null
     },
     {
@@ -32,8 +30,7 @@
         "ai_role_posting": "Staff/Senior/Principal AI Agent Engineer",
         "location_signal": "SF"
       },
-      "verification_status": "pending",
-      "notes": "One posting says Berkeley/Bay Area hybrid — verify SF-city requirement"
+      "notes": "One posting says Berkeley/Bay Area hybrid \u2014 verify SF-city requirement"
     },
     {
       "name": "Shepherd",
@@ -42,7 +39,6 @@
         "ai_role_posting": "Software Engineer, AI Product + Agents",
         "location_signal": "SF"
       },
-      "verification_status": "pending",
       "notes": null
     },
     {
@@ -52,7 +48,6 @@
         "ai_role_posting": "Forward Deployed Engineer",
         "location_signal": "SF"
       },
-      "verification_status": "pending",
       "notes": null
     },
     {
@@ -62,7 +57,6 @@
         "ai_role_posting": "Senior Forward Deployed Engineer",
         "location_signal": "SF"
       },
-      "verification_status": "pending",
       "notes": null
     },
     {
@@ -72,7 +66,6 @@
         "ai_role_posting": "Senior Applied AI Engineer",
         "location_signal": "SF HQ"
       },
-      "verification_status": "pending",
       "notes": null
     },
     {
@@ -82,8 +75,7 @@
         "ai_role_posting": "Software Engineer, AI Team",
         "location_signal": "SF HQ"
       },
-      "verification_status": "pending",
-      "notes": "Snippet may be cross-contaminated with Alembic — verify stage/raise independently"
+      "notes": "Snippet may be cross-contaminated with Alembic \u2014 verify stage/raise independently"
     },
     {
       "name": "Bland",
@@ -92,7 +84,6 @@
         "ai_role_posting": "Forward Deployed Engineer",
         "location_signal": "SF on-site (Ashby)"
       },
-      "verification_status": "pending",
       "notes": "Stage unverified"
     },
     {
@@ -102,7 +93,6 @@
         "ai_role_posting": "Forward Deployed Engineer",
         "location_signal": "SF"
       },
-      "verification_status": "pending",
       "notes": "HQ location needs verification"
     },
     {
@@ -112,7 +102,6 @@
         "ai_role_posting": "Agent Engineer ($215-300k, in-office SF 3+ days)",
         "location_signal": "SF"
       },
-      "verification_status": "pending",
       "notes": "Stage unverified (likely Series B 2024)"
     },
     {
@@ -122,7 +111,6 @@
         "ai_role_posting": "Forward Deployed Agent Engineer",
         "location_signal": "SF"
       },
-      "verification_status": "pending",
       "notes": "Stage unverified"
     },
     {
@@ -132,7 +120,6 @@
         "ai_role_posting": "AI Frontend Engineer",
         "location_signal": "SF"
       },
-      "verification_status": "pending",
       "notes": null
     },
     {
@@ -142,7 +129,6 @@
         "ai_role_posting": null,
         "location_signal": "SF listings on fastaijobs"
       },
-      "verification_status": "pending",
       "notes": "Verify office + role fit"
     },
     {
@@ -152,8 +138,7 @@
         "ai_role_posting": "Solutions Engineer (AI agents), SF hybrid 3 days in-office",
         "location_signal": "SF"
       },
-      "verification_status": "pending",
-      "notes": "HQ Sydney — verify SF office exists and is primary; verify stage"
+      "notes": "HQ Sydney \u2014 verify SF office exists and is primary; verify stage"
     },
     {
       "name": "Letter AI",
@@ -162,7 +147,6 @@
         "ai_role_posting": "Full Stack Engineer, hybrid SF",
         "location_signal": "SF"
       },
-      "verification_status": "pending",
       "notes": "Verify AI-role fit (Full Stack may not meet applied-AI requirement)"
     },
     {
@@ -172,7 +156,6 @@
         "ai_role_posting": "AI Engineer (Agents), remote-or-hybrid",
         "location_signal": "SF"
       },
-      "verification_status": "pending",
       "notes": "Verify HQ + work mode meets in-office/hybrid requirement"
     },
     {
@@ -182,8 +165,7 @@
         "ai_role_posting": "Staff AI Engineer",
         "location_signal": "SF"
       },
-      "verification_status": "pending",
-      "notes": "Verify current stage — may have raised beyond Series B"
+      "notes": "Verify current stage \u2014 may have raised beyond Series B"
     },
     {
       "name": "Ivo",
@@ -192,7 +174,6 @@
         "ai_role_posting": "Senior Cloud/ML Ops Engineer",
         "location_signal": "SF"
       },
-      "verification_status": "pending",
       "notes": null
     },
     {
@@ -202,8 +183,7 @@
         "ai_role_posting": "Senior MLOps Engineer",
         "location_signal": "SF"
       },
-      "verification_status": "pending",
-      "notes": "Job posting may be removed — verify active hiring"
+      "notes": "Job posting may be removed \u2014 verify active hiring"
     },
     {
       "name": "Mercor",
@@ -212,7 +192,6 @@
         "ai_role_posting": "MLOps Engineer - AI Trainer",
         "location_signal": "SF"
       },
-      "verification_status": "pending",
       "notes": "Verify work mode (in-office/hybrid)"
     },
     {
@@ -222,8 +201,7 @@
         "ai_role_posting": "Senior AI Platform Engineer",
         "location_signal": "SF"
       },
-      "verification_status": "pending",
-      "notes": "Older B (2022) — verify still Series B stage"
+      "notes": "Older B (2022) \u2014 verify still Series B stage"
     },
     {
       "name": "Bluefish AI",
@@ -232,7 +210,6 @@
         "ai_role_posting": "Staff AI Platform Engineer",
         "location_signal": "SF"
       },
-      "verification_status": "pending",
       "notes": null
     },
     {
@@ -242,8 +219,7 @@
         "ai_role_posting": "AI Product Manager",
         "location_signal": "SF"
       },
-      "verification_status": "pending",
-      "notes": "Likely Series C — verify stage; may reject"
+      "notes": "Likely Series C \u2014 verify stage; may reject"
     },
     {
       "name": "Nexxa.ai",
@@ -252,7 +228,6 @@
         "ai_role_posting": "Applied AI Engineer, on-site SF",
         "location_signal": "SF"
       },
-      "verification_status": "pending",
       "notes": "Stage unverified (weak signal)"
     },
     {
@@ -262,8 +237,7 @@
         "ai_role_posting": null,
         "location_signal": "SF"
       },
-      "verification_status": "pending",
-      "notes": "AI patent analytics — no specific AI job posting yet; verify active AI hiring"
+      "notes": "AI patent analytics \u2014 no specific AI job posting yet; verify active AI hiring"
     },
     {
       "name": "Day One Partners",
@@ -272,7 +246,6 @@
         "ai_role_posting": "Senior Backend Engineer | Series B AI Startup",
         "location_signal": "San Francisco Bay Area"
       },
-      "verification_status": "pending",
       "notes": "Posted 5 days ago with 200+ applicants; verify stage and SF-city office"
     },
     {
@@ -282,7 +255,6 @@
         "ai_role_posting": "Healthcare AI roles (inferred from LinkedIn)",
         "location_signal": "SF Bay Area (inferred)"
       },
-      "verification_status": "pending",
       "notes": "Founded by Stanford researchers; verify Series B stage and SF office location"
     },
     {
@@ -292,7 +264,6 @@
         "ai_role_posting": "AI Operations Lead",
         "location_signal": "SF (Wellfound)"
       },
-      "verification_status": "pending",
       "notes": "Series B posting on Wellfound 6 days ago"
     },
     {
@@ -302,7 +273,6 @@
         "ai_role_posting": null,
         "location_signal": "SF (inferred from Wellfound)"
       },
-      "verification_status": "pending",
       "notes": "Latest round Series B Feb 2026; verify active AI hiring + SF office"
     },
     {
@@ -312,7 +282,6 @@
         "ai_role_posting": "Initiative Application (AI elimination focus)",
         "location_signal": "SF (Wellfound)"
       },
-      "verification_status": "pending",
       "notes": "Wellfound posting 5 days ago; uses AI to eliminate tasks"
     },
     {
@@ -322,7 +291,6 @@
         "ai_role_posting": "Senior AI Research Engineer",
         "location_signal": "SF (inferred)"
       },
-      "verification_status": "pending",
       "notes": "Software development company with AI research focus; verify stage and SF office"
     },
     {
@@ -332,8 +300,7 @@
         "ai_role_posting": "AI Infrastructure Engineer",
         "location_signal": "SF (inferred from job board)"
       },
-      "verification_status": "pending",
-      "notes": "Generative AI studio (niji・journey related); verify Series B stage and SF office"
+      "notes": "Generative AI studio (niji\u30fbjourney related); verify Series B stage and SF office"
     },
     {
       "name": "Moveworks",
@@ -342,8 +309,7 @@
         "ai_role_posting": "Staff AI Agent Engineer",
         "location_signal": "SF (builtinsf.com)"
       },
-      "verification_status": "pending",
-      "notes": "AI Assistant Platform; likely Series C+ — verify current stage; may reject if beyond Series B"
+      "notes": "AI Assistant Platform; likely Series C+ \u2014 verify current stage; may reject if beyond Series B"
     },
     {
       "name": "Saragossa",
@@ -352,7 +318,6 @@
         "ai_role_posting": "Founding QE Engineer, Forward Deployed Engineer (Simulations & Physics AI)",
         "location_signal": "SF Bay Area (LinkedIn)"
       },
-      "verification_status": "pending",
       "notes": "Physics/simulation AI focus; verify SF-city office location"
     },
     {
@@ -362,7 +327,6 @@
         "ai_role_posting": "Staff Software Engineer - Data Platform",
         "location_signal": "SF (on-site)"
       },
-      "verification_status": "pending",
       "notes": "Backed by Andreessen Horowitz; on-site SF role posted"
     },
     {
@@ -372,7 +336,6 @@
         "ai_role_posting": "Automation solutions with computer vision and NLP",
         "location_signal": "SF Bay Area"
       },
-      "verification_status": "pending",
       "notes": "Computer vision + NLP automation; verify active AI hiring + SF office"
     },
     {
@@ -382,7 +345,6 @@
         "ai_role_posting": "Frontend Engineer",
         "location_signal": "SF (builtinsf.com, hybrid 3 days/week)"
       },
-      "verification_status": "pending",
       "notes": "Well-funded Series B; verify if AI-role fit (frontend may not be applied-AI)"
     },
     {
@@ -392,7 +354,6 @@
         "ai_role_posting": "AI platform for legal/enterprise",
         "location_signal": "SF (fastaijobs top hiring)"
       },
-      "verification_status": "pending",
       "notes": "Top hiring on fastaijobs; verify Series B stage and SF office + active AI hiring"
     },
     {
@@ -402,7 +363,6 @@
         "ai_role_posting": "Product Manager",
         "location_signal": "SF / Bangalore"
       },
-      "verification_status": "pending",
       "notes": "Series B with SF/Bangalore split; verify SF office is primary and AI-role fit"
     },
     {
@@ -412,7 +372,6 @@
         "ai_role_posting": "Infrastructure to evaluate, monitor, and stress-test AI agents",
         "location_signal": "SF (inferred)"
       },
-      "verification_status": "pending",
       "notes": "AI agent evaluation/monitoring platform; verify SF office + active AI hiring"
     },
     {
@@ -422,7 +381,6 @@
         "ai_role_posting": "Engagement Manager, Mid Market",
         "location_signal": "SF (Ashby)"
       },
-      "verification_status": "pending",
       "notes": "GV-led Series B; growing 5x YoY; verify applied-AI role fit (customer engagement)"
     },
     {
@@ -432,7 +390,6 @@
         "ai_role_posting": "AI-first control plane for engineers and agents",
         "location_signal": "SF (Ashby)"
       },
-      "verification_status": "pending",
       "notes": "Series B 2025 with top-tier VCs; AI infrastructure for production management"
     },
     {
@@ -442,7 +399,6 @@
         "ai_role_posting": "Founding Support Lead",
         "location_signal": "SF (fastaijobs)"
       },
-      "verification_status": "pending",
       "notes": "Founding Support Lead posted on fastaijobs; verify Series B stage and applied-AI focus"
     },
     {
@@ -452,7 +408,6 @@
         "ai_role_posting": "Infrastructure for autonomous AI agents",
         "location_signal": "SF (Instagram)"
       },
-      "verification_status": "pending",
       "notes": "Autonomous AI agents infrastructure; emerged from stealth; verify Series B stage"
     },
     {
@@ -462,7 +417,6 @@
         "ai_role_posting": "AI model evaluation startup",
         "location_signal": "SF Bay Area"
       },
-      "verification_status": "pending",
       "notes": "Berkeley research spin-out; $100M ARR suggests likely beyond Series B; verify current stage"
     },
     {
@@ -472,7 +426,6 @@
         "ai_role_posting": "Security AI roles (hybrid SF)",
         "location_signal": "SF (hybrid)"
       },
-      "verification_status": "pending",
       "notes": "AI security platform; verify Series B stage + applied-AI focus"
     },
     {
@@ -482,7 +435,6 @@
         "ai_role_posting": "Solutions Architect, AI roles",
         "location_signal": "SF (dayonejobs)"
       },
-      "verification_status": "pending",
       "notes": "Series B $160M; verify applied-AI focus"
     },
     {
@@ -492,7 +444,6 @@
         "ai_role_posting": "Solutions Architect",
         "location_signal": "SF (YC)"
       },
-      "verification_status": "pending",
       "notes": "Computer vision/robotics platform; Series B; verify SF office"
     },
     {
@@ -502,7 +453,6 @@
         "ai_role_posting": "Senior Solutions Architect",
         "location_signal": "SF (hybrid)"
       },
-      "verification_status": "pending",
       "notes": "Data integration platform with AI; verify applied-AI focus"
     },
     {
@@ -512,7 +462,6 @@
         "ai_role_posting": "Senior Machine Learning Engineer, Agent Oversight",
         "location_signal": "SF (Greenhouse)"
       },
-      "verification_status": "pending",
       "notes": "ML training data platform; Agent Oversight role; 191 jobs listed"
     },
     {
@@ -522,8 +471,106 @@
         "ai_role_posting": "Software Engineer ($140k-$300k), AI-native auto retail",
         "location_signal": "SF (on-site/hybrid, Greenhouse)"
       },
-      "verification_status": "pending",
       "notes": "AI-native auto retail platform; on-site/hybrid SF"
+    },
+    {
+      "name": "Sesame AI",
+      "discovery_signals": {
+        "funding": "Series B, on-site SF",
+        "ai_role_posting": "AI voice assistant",
+        "location_signal": "SF (on-site)"
+      },
+      "notes": "Ultra-realistic voice AI platform; on-site SF requirement"
+    },
+    {
+      "name": "David AI",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Software Engineer (New Grad), real-time speech data + generative audio",
+        "location_signal": "SF (builtinsf)"
+      },
+      "notes": "Real-time speech pipelines and generative audio models; verify Series B stage"
+    },
+    {
+      "name": "Vapi",
+      "discovery_signals": {
+        "funding": "$50M Series B (voice AI platform)",
+        "ai_role_posting": "Voice AI engineers",
+        "location_signal": "SF (implied)"
+      },
+      "notes": "Enterprise voice AI; Series B $50M; verify SF office + active hiring"
+    },
+    {
+      "name": "Phonic",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Speech-to-speech voice agent platform, in-house audio models",
+        "location_signal": "SF (ASES Career Fair)"
+      },
+      "notes": "Voice agent platform; verify Series B stage + SF office"
+    },
+    {
+      "name": "Cognition AI",
+      "discovery_signals": {
+        "funding": "$175M+ Series B",
+        "ai_role_posting": "AI coding agents",
+        "location_signal": "SF (Forbes list)"
+      },
+      "notes": "AI coding agents platform; verify SF office + active hiring"
+    },
+    {
+      "name": "Goodfire",
+      "discovery_signals": {
+        "funding": "Series B (AI model understanding focus)",
+        "ai_role_posting": "AI model understanding, learning, design",
+        "location_signal": "SF (implied)"
+      },
+      "notes": "Series B Feb 2026; AI model understanding; verify SF office"
+    },
+    {
+      "name": "Oxide",
+      "discovery_signals": {
+        "funding": "Series B, on-site SF",
+        "ai_role_posting": "AI contract review",
+        "location_signal": "SF (on-site)"
+      },
+      "notes": "AI contract review platform; on-site SF requirement"
+    },
+    {
+      "name": "ReadMe",
+      "discovery_signals": {
+        "funding": "$38M Series B, $250M valuation",
+        "ai_role_posting": "Developer experience, AI tools",
+        "location_signal": "SF (AI Conference sponsor)"
+      },
+      "notes": "AI developer experience platform; Series B $38M; verify SF office"
+    },
+    {
+      "name": "Galileo",
+      "discovery_signals": {
+        "funding": "Series B (AI observability platform)",
+        "ai_role_posting": "AI observability and evaluation platform",
+        "location_signal": "SF (implied)"
+      },
+      "notes": "AI observability/evaluation platform; verify Series B stage + SF office + active hiring"
+    },
+    {
+      "name": "Sazabi",
+      "discovery_signals": {
+        "funding": "Emerged from stealth April 2026",
+        "ai_role_posting": "AI-native observability platform",
+        "location_signal": "SF (stealth emergence announcement)"
+      },
+      "notes": "Stealth-to-public April 2026; AI observability; verify Series B stage + SF office"
+    },
+    {
+      "name": "Concierge AI",
+      "discovery_signals": {
+        "funding": "Series B (Top 40 fastest-growing list)",
+        "ai_role_posting": "AI for concierge services",
+        "location_signal": "SF (Top 40 list)"
+      },
+      "notes": "Ranked in Top 40 Series B AI startups; verify SF office + active AI hiring"
     }
   ]
 }

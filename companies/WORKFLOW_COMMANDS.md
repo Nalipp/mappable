@@ -10,7 +10,8 @@ This document defines the formal commands for the data ingestion workflow. Use t
 
 **Does:**
 - Reads workflow state, progress, and data files
-- Reports current phase, candidate counts, progress
+- Reports current phase and progress, with counts derived from candidates.json
+  and candidate-validation.json (a name with no validation entry is pending)
 - Recommends model capability for next phase
 - Identifies quality warnings or setup gaps
 - Suggests which workflow command to run next
@@ -39,7 +40,8 @@ workflow status
 - Identifies new Series B companies with applied-AI hiring signals
 - Appends new company names to `data/candidates.json`
 - Updates discovery metadata (`generated_at`)
-- Updates workflow-state.json with new pending count
+- Writes no other file (workflow-state.json is owned by validate/finalize), so
+  it is safe to run alongside a validation session
 - Reports newly added companies and total candidate pool size
 
 **Input:** None required (uses active constraint profile: `data-collection-1.instructions.md`)
@@ -62,7 +64,9 @@ workflow discover
 **Purpose:** Verify candidates against constraints. Run once per batch (default: 5 companies per batch).
 
 **Does:**
-- Processes next batch of pending candidates (fail-fast order)
+- Selects the next batch by derived status: the first 5 names in
+  candidates.json order with no entry in candidate-validation.json
+- Never writes to candidates.json (owned by discover)
 - Checks constraints in order:
   1. Series B funding stage
   2. Active qualifying applied-AI job posting
@@ -100,7 +104,8 @@ workflow validate
 **Does:**
 - Reads all `validated` records from candidate-validation.json
 - For each validated company:
-  - Assigns a record ID within the active dataset
+  - Assigns a record ID within the active dataset (sequential from 1; a
+    record added later takes the highest existing key + 1)
   - Nests qualifying job postings
   - Adds geocode metadata (lat, lon, precision, method, date)
   - Validates against the matching numbered schema
@@ -129,6 +134,9 @@ The three phases are tied to commands:
 1. **Discovery** (`workflow discover`) — Search for companies, expand candidate pool. Can run multiple times before validation.
 2. **Validation** (`workflow validate`) — Verify candidates in batches, fail-fast. Record evidence (validated, rejected, or needs_verification).
 3. **Finalization** (`workflow finalize`) — Normalize validated records into dataset.
+
+Discovery and validation may run in parallel sessions — each writes different
+files. Never run two sessions of the same command at once.
 
 ## Typical Workflow
 

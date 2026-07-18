@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "candidates.schema.json",
   "title": "Discovery Candidates",
-  "description": "Unverified candidate list output from discovery phase. Each candidate holds discovery signals (weak evidence) across funding stage, AI role postings, and location hints. This file is frozen after discovery: validation reads it but never updates it. Authoritative, evolving statuses live in candidate-validation.json.",
+  "description": "Unverified candidate list output from discovery phase. Each candidate holds discovery signals (weak evidence) across funding stage, AI role postings, and location hints. Written only by 'workflow discover' (append-only); validation never writes here. Candidate status is not stored in this file — it is derived: a name with no entry in candidate-validation.json is pending, otherwise its status is that entry.",
   "type": "object",
   "required": ["metadata", "candidates"],
   "additionalProperties": false,
@@ -31,7 +31,7 @@
       "description": "Unordered list of candidate companies with weak discovery signals",
       "items": {
         "type": "object",
-        "required": ["name", "discovery_signals", "verification_status"],
+        "required": ["name", "discovery_signals"],
         "additionalProperties": false,
         "properties": {
           "name": {
@@ -56,11 +56,6 @@
                 "description": "Snippet about office location or hiring region from job posting. Null if not found."
               }
             }
-          },
-          "verification_status": {
-            "type": "string",
-            "enum": ["pending"],
-            "description": "Always 'pending': set once at discovery and never updated. The authoritative status of a candidate lives in candidate-validation.json."
           },
           "notes": {
             "type": ["string", "null"],

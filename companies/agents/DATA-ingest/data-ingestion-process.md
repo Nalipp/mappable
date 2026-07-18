@@ -30,6 +30,31 @@ Validate against it whenever the file is updated.
 The validation file is the source of truth. The workflow state is a small
 cursor that must be checked against it before work resumes.
 
+## File Ownership and Derived Status
+
+Each working file has exactly one writer, so `workflow discover` and
+`workflow validate` can run in parallel sessions without coordination:
+
+- `workflow discover` writes only `candidates.json` (append-only).
+- `workflow validate` writes `candidate-validation.json` and
+  `workflow-state.json`.
+- `workflow finalize` writes the numbered dataset, `record-index.txt`, and
+  `workflow-state.json`.
+
+Never run two sessions of the same command at once: at most one `workflow
+validate` (or `finalize`) session and one `workflow discover` session may
+exist at a time.
+
+A candidate's status is never stored in `candidates.json`. It is derived:
+
+- **pending**: the name appears in `candidates.json` but has no entry in
+  `candidate-validation.json`
+- otherwise: the status recorded in the candidate's
+  `candidate-validation.json` entry
+
+Compute this set difference fresh at the start of every validation batch and
+every status report. Do not cache it, store it, or add a sync step.
+
 ## Dataset Runs
 
 Each constraint-driven ingestion run creates its own numbered dataset pair:
@@ -54,7 +79,7 @@ files.
 
 Report:
 
-- dataset, constraint profile, phase, and progress (pending, validated, rejected, needs_verification)
+- dataset, constraint profile, phase, and progress (pending, validated, rejected, needs_verification) — count these from `candidates.json` and `candidate-validation.json` directly; the snapshot in `workflow-state.json` may lag a parallel session
 - last completed action
 - recommended model capability for the next phase
 - planned retrieval method and whether Bright Data is available
@@ -76,14 +101,18 @@ If no workflow state exists, report the required setup and wait for direction.
 ## workflow discover
 
 Search for additional companies using applied-AI job titles and adjacent queries.
-Append new companies to `data/candidates.json` (do not remove existing candidates).
-Update discovery metadata (`generated_at`) and `workflow-state.json` progress.
-Stop and report newly added candidates and total candidate count.
+Append new companies to `data/candidates.json` (do not remove existing
+candidates) and update its discovery metadata (`generated_at`). Do not modify
+`workflow-state.json` or any other file — a parallel validation session may
+own them. Stop and report newly added candidates and total candidate count.
 
 ## workflow validate
 
 Before starting, verify the workflow state against the validation data.
-Execute exactly one validation batch (default: 5 candidates per batch).
+Select exactly one batch by derived status: the first 5 names (default batch
+size) in `data/candidates.json` order that have no entry in
+`data/candidate-validation.json`. A parallel discovery session may append to
+`candidates.json` at any time; never write to that file.
 For each candidate, check constraints in fail-fast order; record evidence with
 source URLs in `data/candidate-validation.json`. Update workflow-state.json with
 results and stop.
@@ -104,7 +133,8 @@ Candidate statuses are:
 
 Normalize all `validated` candidates into the active numbered dataset named in
 `workflow-state.json` (currently `mappable-records1.json`).
-For each company: assign a record ID, nest qualifying job postings, add geocode
+For each company: assign a record ID (sequential from 1; a record added later
+takes the highest existing key + 1), nest qualifying job postings, add geocode
 metadata, and validate against the matching numbered schema. Update
 `record-index.txt` with the dataset status and finalized date. Stop and report
 finalized record count and any records that failed schema validation.
@@ -202,9 +232,9 @@ resolution. Agents must not perform Git operations unless explicitly asked.
 
 After the operator synchronizes a machine, run `workflow status`, choose the
 recommended model if needed, then run the command named by the status report.
-Initially, only one
-machine should modify a dataset at a time. Parallel work requires the operator
-to assign non-overlapping batches.
+Across machines, only one
+machine should modify a dataset at a time. Within one machine, parallel
+sessions must follow the File Ownership rules above.
 
 ## Simplicity Rule
 

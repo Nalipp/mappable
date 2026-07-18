@@ -3,13 +3,13 @@
   "constraint_profile": "data-collection-1.instructions.md",
   "phase": "validation",
   "progress": {
-    "candidates_total": 52,
-    "pending": 52,
+    "candidates_total": 63,
+    "pending": 63,
     "validated": 0,
     "needs_verification": 0,
     "rejected": 0
   },
-  "last_action": "Discovery wave 6: ran 5 searches (Solutions Architect/Technical Director roles, Robotics/Autonomous/Embodied AI, Crunchbase funding, Funding announcements $M, Greenhouse job boards); appended 5 new candidates. Total candidate pool now 52.",
+  "last_action": "Discovery wave 9: ran 5 searches (Workflow/Process/Automation AI, Search/Retrieval AI, Monitoring/Observability/Evaluation AI, Series B SF hiring, topstartups/seedtable); appended 3 new candidates. Total candidate pool now 63.",
   "next_action": "Run `workflow validate` for batch 1: verify the first 5 candidates in data/candidates.json (Doss, Pylon, Liberate, Shepherd, HappyRobot) in the constraint order from data-collection-1.instructions.md: (1) Series B funding stage, (2) active qualifying applied-AI posting with hybrid/in-office SF work mode, (3) physical SF street address, (4) geocode. Fail fast at first decisive failure; record evidence with source URLs in data/candidate-validation.json",
   "quality": {
     "status": "ok"
