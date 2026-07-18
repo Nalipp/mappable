@@ -17,7 +17,7 @@
   "properties": {
     "dataset": {
       "type": "string",
-      "description": "Target dataset file, e.g. 'mappable-records.json'."
+      "description": "Target numbered dataset file, e.g. 'mappable-records1.json'."
     },
     "constraint_profile": {
       "type": "string",

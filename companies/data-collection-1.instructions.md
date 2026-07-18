@@ -91,7 +91,7 @@ Apply these definitions during validation to keep results consistent:
 
 The final dataset holds one record per validated company, with that company's
 qualifying job postings nested inside the record (see
-`data/mappable-records.schema.json`). Constraints are checked in the order
+`data/mappable-records1.schema.json`). Constraints are checked in the order
 set by the ingestion workflow; the moment a company decisively fails any
 constraint, stop all work on that company, record the failure and evidence in
 `data/candidate-validation.json`, and move to the next candidate. Do not

@@ -21,15 +21,30 @@ They are plain-language triggers, not provider-specific slash commands.
 - `data/workflow-state.json`: current phase, progress, and next action
 - `data/candidates.json`: broad discovery list with unverified signals (schema: `candidates.schema.json`)
 - `data/candidate-validation.json`: item-level statuses, evidence, and dates
-- `data/record-index.txt`: completed datasets, their constraint profiles, and
-  the `highest_id_ever_issued` counter for record IDs (only increases; a new
-  record takes counter + 1, and IDs are never reused even after deletion)
+- `data/record-index.txt`: registry of completed and in-progress datasets and
+  their constraint profiles
 
 Every `.json` working file has a matching `.schema.json` contract in `data/`.
 Validate against it whenever the file is updated.
 
 The validation file is the source of truth. The workflow state is a small
 cursor that must be checked against it before work resumes.
+
+## Dataset Runs
+
+Each constraint-driven ingestion run creates its own numbered dataset pair:
+
+- `mappable-records1.json`
+- `mappable-records1.schema.json`
+
+The number identifies the dataset run, not a company record. Different runs
+may have different constraints and schemas, and their datasets coexist. Never
+overwrite an existing numbered dataset when starting a new run. The active
+target dataset is named in `workflow-state.json`; `record-index.txt` records
+each dataset, its schema, constraint profile, and status.
+
+Company record IDs are internal to their dataset and are separate from the
+dataset-run number.
 
 ## workflow status
 
@@ -87,10 +102,11 @@ Candidate statuses are:
 
 ## workflow finalize
 
-Normalize all `validated` candidates into the numbered dataset (`mappable-records.json`).
+Normalize all `validated` candidates into the active numbered dataset named in
+`workflow-state.json` (currently `mappable-records1.json`).
 For each company: assign a record ID, nest qualifying job postings, add geocode
-metadata, validate against `mappable-records.schema.json`. Update `record-index.txt`
-with the completed dataset ID and highest record ID issued. Stop and report
+metadata, and validate against the matching numbered schema. Update
+`record-index.txt` with the dataset status and finalized date. Stop and report
 finalized record count and any records that failed schema validation.
 
 ## Stages (tied to commands)
