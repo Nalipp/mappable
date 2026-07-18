@@ -2,12 +2,9 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "mappable-records1.schema.json",
   "title": "Mappable Records",
-  "description": "Validated company records keyed by numeric string IDs. Each record is one company that passed every constraint in the active constraint profile, together with its qualifying job postings. A company that fails any constraint is never written here; it is recorded in candidate-validation.json instead. Record IDs are internal to this dataset and are unrelated to the dataset-run number in the filename.",
-  "type": "object",
-  "propertyNames": {
-    "pattern": "^[1-9][0-9]*$"
-  },
-  "additionalProperties": {
+  "description": "Validated company records. Each record is one company that passed every constraint in the active constraint profile, together with its qualifying job postings. A company that fails any constraint is never written here; it is recorded in candidate-validation.json instead.",
+  "type": "array",
+  "items": {
     "type": "object",
     "required": [
       "title",

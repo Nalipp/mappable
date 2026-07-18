@@ -107,19 +107,21 @@ workflow validate
 **Does:**
 - Reads all `validated` records from candidate-validation.json
 - For each validated company:
-  - Assigns a record ID within the active dataset (sequential from 1; a
-    record added later takes the highest existing key + 1)
   - Nests qualifying job postings
-  - Adds geocode metadata (lat, lon, precision, method, date)
+  - Copies the already-recorded geocode metadata (lat, lon, precision, method, date)
   - Validates against the matching numbered schema
 - Writes finalized records to the numbered dataset named in `workflow-state.json`
 - Updates `record-index.txt` with the dataset status and finalized date
 - Reports any schema validation failures
 
+**Boundary:** This is a local-only transformation. It must not browse, scrape,
+use Bright Data or another MCP, geocode, or re-validate companies. Missing
+final-record fields are reported as incomplete validation data, not fetched
+during finalization.
+
 **Output:** Summary of:
 - Records finalized
 - Finalized dataset filename
-- Record ID range (lowest to highest)
 - Schema validation results
 - Ready for prototype build
 

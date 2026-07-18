@@ -1,1 +1,246 @@
-{}
+[
+  {
+    "title": "Doss",
+    "location": {
+      "address": "680 Folsom Street, Suite 550, San Francisco, CA 94107",
+      "coordinates": {
+        "lat": 37.784210511615,
+        "lng": -122.398495186403
+      },
+      "geocode": {
+        "method": "US Census geocoder",
+        "precision": "street",
+        "geocoded_at": "2026-07-18"
+      }
+    },
+    "value": "1 applied-AI role, on-site",
+    "company": {
+      "funding_stage": "Series B",
+      "funding_evidence": {
+        "url": "https://www.doss.com/news/doss-raises-55m-series-b",
+        "source_type": "primary",
+        "note": "$55M Series B announced by Doss on 2026-03-24.",
+        "verified_at": "2026-07-18"
+      }
+    },
+    "jobs": [
+      {
+        "title": "Staff Applied AI Engineer",
+        "work_mode": "in-office",
+        "url": "https://jobs.ashbyhq.com/doss/f698df9b-0fe0-49e6-88d1-f936f1aa301f",
+        "posting_location": "San Francisco",
+        "verified_at": "2026-07-18"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://api.ashbyhq.com/posting-api/job-board/doss?includeCompensation=true",
+        "source_type": "primary",
+        "note": "Official ATS lists the current SF office as 680 Folsom Street, Suite 550 and enumerates the active job board.",
+        "verified_at": "2026-07-18"
+      },
+      {
+        "url": "https://geocoding.geo.census.gov/geocoder/locations/address",
+        "source_type": "secondary",
+        "note": "Exact-address Census match after Nominatim returned no result; coordinates are a street-range interpolation.",
+        "verified_at": "2026-07-18"
+      }
+    ],
+    "verified_at": "2026-07-18"
+  },
+  {
+    "title": "Pylon",
+    "location": {
+      "address": "690 5th St, San Francisco, CA 94107",
+      "coordinates": {
+        "lat": 37.7753258,
+        "lng": -122.3976595
+      },
+      "geocode": {
+        "method": "nominatim",
+        "precision": "rooftop",
+        "geocoded_at": "2026-07-18"
+      }
+    },
+    "value": "1 applied-AI role, on-site",
+    "company": {
+      "funding_stage": "Series B",
+      "funding_evidence": {
+        "url": "https://www.usepylon.com/blog/announcing-our-31m-series-b",
+        "source_type": "primary",
+        "note": "$31M Series B co-led by a16z and Bain Capital Ventures, bringing total funding to $51M.",
+        "verified_at": "2026-07-18"
+      }
+    },
+    "jobs": [
+      {
+        "title": "Software Engineer, AI",
+        "work_mode": "in-office",
+        "url": "https://jobs.ashbyhq.com/pylon-labs/8d8264b7-8094-4a55-8991-7876796487ae",
+        "posting_location": "San Francisco",
+        "verified_at": "2026-07-18"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.usepylon.com/legal/privacy",
+        "source_type": "primary",
+        "note": "Pylon Labs, Inc. contact address lists 690 5th St., San Francisco, CA 94107.",
+        "verified_at": "2026-07-18"
+      },
+      {
+        "url": "https://nominatim.openstreetmap.org/search?q=690+5th+Street,+San+Francisco,+CA+94107&format=json",
+        "source_type": "secondary",
+        "note": "OpenStreetMap Nominatim rooftop geocode; data (c) OpenStreetMap contributors, ODbL.",
+        "verified_at": "2026-07-18"
+      }
+    ],
+    "verified_at": "2026-07-18"
+  },
+  {
+    "title": "Shepherd",
+    "location": {
+      "address": "500 Sansome Street, San Francisco, CA 94111",
+      "coordinates": {
+        "lat": 37.7951065,
+        "lng": -122.4012099
+      },
+      "geocode": {
+        "method": "nominatim",
+        "precision": "rooftop",
+        "geocoded_at": "2026-07-18"
+      }
+    },
+    "value": "3 applied-AI roles, on-site",
+    "company": {
+      "funding_stage": "Series B",
+      "funding_evidence": {
+        "url": "https://www.prnewswire.com/news-releases/shepherd-raises-42m-series-b-to-power-the-insurance-behind-ai-infrastructure-boom-302723122.html",
+        "source_type": "primary",
+        "note": "$42M Series B led by Intact Private Capital, announced 2026-03-24.",
+        "verified_at": "2026-07-18"
+      }
+    },
+    "jobs": [
+      {
+        "title": "Software Engineer, Applied AI",
+        "work_mode": "in-office",
+        "url": "https://jobs.ashbyhq.com/shepherd/26959124-aab2-446e-aa4d-7265c83e0be5",
+        "posting_location": "San Francisco",
+        "verified_at": "2026-07-18"
+      },
+      {
+        "title": "Software Engineer, AI Product + Agents",
+        "work_mode": "in-office",
+        "url": "https://jobs.ashbyhq.com/shepherd/6cbab29e-1bbf-42b4-9308-3823693ca288",
+        "posting_location": "San Francisco",
+        "verified_at": "2026-07-18"
+      },
+      {
+        "title": "Founding Machine Learning Engineer",
+        "work_mode": "in-office",
+        "url": "https://jobs.ashbyhq.com/shepherd/797316b4-bdcc-4c0c-8bc2-46d4648db240",
+        "posting_location": "San Francisco",
+        "verified_at": "2026-07-18"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://api.ashbyhq.com/posting-api/job-board/shepherd?includeCompensation=true",
+        "source_type": "primary",
+        "note": "Official ATS confirms 500 Sansome Street as the current SF office and enumerates the active job board.",
+        "verified_at": "2026-07-18"
+      },
+      {
+        "url": "https://nominatim.openstreetmap.org/search?q=500+Sansome+Street,+San+Francisco,+CA+94111&format=json",
+        "source_type": "secondary",
+        "note": "OpenStreetMap Nominatim rooftop geocode; data (c) OpenStreetMap contributors, ODbL.",
+        "verified_at": "2026-07-18"
+      }
+    ],
+    "verified_at": "2026-07-18"
+  },
+  {
+    "title": "HappyRobot",
+    "location": {
+      "address": "2325 3rd St #422, San Francisco, CA 94107",
+      "coordinates": {
+        "lat": 37.7598247,
+        "lng": -122.388244
+      },
+      "geocode": {
+        "method": "nominatim",
+        "precision": "rooftop",
+        "geocoded_at": "2026-07-18"
+      }
+    },
+    "value": "5 applied-AI roles, hybrid",
+    "company": {
+      "funding_stage": "Series B",
+      "funding_evidence": {
+        "url": "https://www.happyrobot.ai/blog/series-b-announcement",
+        "source_type": "primary",
+        "note": "$44M Series B led by Base10 Partners, bringing total funding to $62M.",
+        "verified_at": "2026-07-18"
+      }
+    },
+    "jobs": [
+      {
+        "title": "Forward Deployed Engineer",
+        "work_mode": "hybrid",
+        "url": "https://jobs.ashbyhq.com/happyrobot.ai/afd99ef3-78a8-47a1-8566-04f1cf73939d",
+        "posting_location": "San Francisco",
+        "verified_at": "2026-07-18"
+      },
+      {
+        "title": "Data Operations Engineer",
+        "work_mode": "hybrid",
+        "url": "https://jobs.ashbyhq.com/happyrobot.ai/4768c3cb-9a60-40d9-8704-3fa8b5042553",
+        "posting_location": "San Francisco",
+        "verified_at": "2026-07-18"
+      },
+      {
+        "title": "Deployment Strategist",
+        "work_mode": "hybrid",
+        "url": "https://jobs.ashbyhq.com/happyrobot.ai/4061af5c-c35d-4f59-851d-52854facfdb0",
+        "posting_location": "San Francisco",
+        "verified_at": "2026-07-18"
+      },
+      {
+        "title": "Data Operations Lead",
+        "work_mode": "hybrid",
+        "url": "https://jobs.ashbyhq.com/happyrobot.ai/be2ee07b-0d3f-4894-a557-429c5f64a14e",
+        "posting_location": "San Francisco",
+        "verified_at": "2026-07-18"
+      },
+      {
+        "title": "Data Scientist",
+        "work_mode": "hybrid",
+        "url": "https://jobs.ashbyhq.com/happyrobot.ai/ffb28efb-3bfd-4306-ba2e-53141a1c476e",
+        "posting_location": "San Francisco",
+        "verified_at": "2026-07-18"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://ised-isde.canada.ca/cipo/trademark-search/2467933",
+        "source_type": "secondary",
+        "note": "Official trademark filing lists Happyrobot Inc. at 2325 3rd St #422, San Francisco, CA 94107.",
+        "verified_at": "2026-07-18"
+      },
+      {
+        "url": "https://api.ashbyhq.com/posting-api/job-board/happyrobot.ai?includeCompensation=true",
+        "source_type": "primary",
+        "note": "Official ATS enumerates the active SF hybrid job board used to identify qualifying applied-AI roles.",
+        "verified_at": "2026-07-18"
+      },
+      {
+        "url": "https://nominatim.openstreetmap.org/search?q=2325+3rd+Street,+San+Francisco,+CA+94107&format=json",
+        "source_type": "secondary",
+        "note": "OpenStreetMap Nominatim rooftop geocode; data (c) OpenStreetMap contributors, ODbL.",
+        "verified_at": "2026-07-18"
+      }
+    ],
+    "verified_at": "2026-07-18"
+  }
+]

@@ -2,15 +2,16 @@
   "dataset": "mappable-records1.json",
   "constraint_profile": "data-collection-1.instructions.md",
   "progress": {
-    "candidates_total": 63,
-    "pending": 63,
-    "validated": 0,
-    "needs_verification": 0,
-    "rejected": 0
+    "candidates_total": 186,
+    "pending": 145,
+    "validated": 11,
+    "needs_verification": 9,
+    "rejected": 20
   },
-  "last_action": "Discovery: candidate pool at 63 unique companies across 45+ job-title and funding searches (2026-07-18)",
-  "next_action": "Discovery in progress at the operator's direction. Validation has not started and begins only when the operator runs `workflow validate` (batch 1 would be the first 5 pending candidates, checked in the constraint order from data-collection-1.instructions.md, fail-fast, evidence with source URLs recorded in data/candidate-validation.json).",
+  "last_action": "Validated batch of 5 candidates using native web research: Ambient.ai, FortressIQ, and Ketch rejected at job constraint; Harvey rejected at funding stage; Emergent needs current funding-stage clarification (2026-07-18).",
+  "next_action": "Run workflow validate to process the next pending batch of 5 candidates.",
   "quality": {
-    "status": "ok"
+    "status": "ok",
+    "note": "Operator approved normal validation to continue. Address-verification holds remain recorded; agency-posted candidates need underlying client identities before validation."
   }
 }

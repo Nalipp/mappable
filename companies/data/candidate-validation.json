@@ -190,6 +190,844 @@
         }
       ],
       "notes": "Ashby API marks all HappyRobot postings isRemote=true, but workplaceType=Hybrid and the careers page's own SF-hybrid labeling are authoritative. LinkedIn shows zip 94114 (inconsistent) and a Dover, DE registered agent; street evidence converges on 2325 3rd St #422, 94107."
+    },
+    {
+      "company": "Mintlify",
+      "status": "rejected",
+      "failed_constraint": "qualifying_job",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "pass",
+          "url": "https://www.mintlify.com/blog/series-b",
+          "evidence": "Mintlify announced a $45M Series B led by Andreessen Horowitz and Salesforce Ventures on 2026-04-14, bringing total funding to $67M. No later round found.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "qualifying_job",
+          "result": "fail",
+          "url": "https://jobs.ashbyhq.com/Mintlify/4716fd90-e038-4112-b319-aff7cf17a568",
+          "evidence": "The discovered Senior Forward Deployed Engineer role is San Francisco-based but focuses on enterprise deployments, self-hosting, VPC, SSO, and customer implementation; it does not clearly involve AI, LLMs, agents, generative AI, AI infrastructure, AI product work, or applied AI delivery. Other current Mintlify postings found were either not AI-specific or had remote/ambiguous work-mode evidence.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Mintlify itself is AI-adjacent and has a physical SF office, but the current active role evidence did not satisfy the job-level applied-AI constraint."
+    },
+    {
+      "company": "Alembic",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "pass",
+          "url": "https://www.businesswire.com/news/home/20251117276054/en/Alembic-Raises-%24145-Million-to-Accelerate-Enterprise-Adoption-of-Causal-AI",
+          "evidence": "Alembic announced $145M in Series B and growth funding led by Prysm Capital and Accenture on 2025-11-17. No later round found.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "qualifying_job",
+          "result": "pass",
+          "url": "https://jobs.ashbyhq.com/alembic/66b22b80-faf3-45a6-a6c8-02472b3ee18c/",
+          "evidence": "Senior Applied AI Engineer is live on Alembic's Ashby board: San Francisco HQ, full time, on-site, Applied AI department. The role builds backend systems for causal, graph-based, and neural systems in production.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "sf_address",
+          "result": "pass",
+          "url": "https://alembic.com/privacy",
+          "evidence": "Alembic privacy policy lists Alembic Technologies, Inc. postal contact at 123 Townsend St Floor 5, San Francisco, CA 94107.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "geocode",
+          "result": "pass",
+          "url": "https://nominatim.openstreetmap.org/search?q=123%20Townsend%20Street%2C%20San%20Francisco%2C%20CA%2094107&format=json&limit=1",
+          "evidence": "Nominatim match for 123 Townsend Street: lat 37.7802110, lon -122.3908810 (precision: rooftop/house-number). Within SF sanity bounds. Looked up 2026-07-18. Data (c) OpenStreetMap contributors, ODbL.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "final_validation",
+          "result": "pass",
+          "url": "https://alembic.com/careers",
+          "evidence": "All constraints pass: latest disclosed round is Series B/growth funding, active on-site SF Applied AI posting on company ATS, primary-source SF street address, and in-bounds Nominatim geocode.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Nominatim did not match the floor-specific address, so geocoding used the same confirmed street address without floor detail."
+    },
+    {
+      "company": "Sprig",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "pass",
+          "url": "https://sprig.com/blog/sprig-launches-concept-usability-testing",
+          "evidence": "Sprig announced $30M in new funding on 2022-08-02; a16z separately identifies its 2021 round as Series B, and Forge/CB Insights show later Series B extension/B-1 financing rather than Series C. Current company careers page says Sprig is backed by $85M from a16z, Accel, and First Round Capital. No later Series C found.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "qualifying_job",
+          "result": "pass",
+          "url": "https://jobs.ashbyhq.com/sprig/cc59b995-16ab-4c60-a0e7-7f2cc287f31b",
+          "evidence": "Software Engineer, AI Team is live on Sprig's Ashby board: San Francisco, CA, full time. Posting says it is a hybrid role with three days per week in the downtown San Francisco office and includes backend APIs, AI flows, and integration with applied AI.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "sf_address",
+          "result": "pass",
+          "url": "https://www.linkedin.com/company/sprig-official",
+          "evidence": "LinkedIn company page lists Sprig primary location as 71 Stevenson St, San Francisco, CA 94105. Sprig careers page confirms work from San Francisco and New York offices.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "geocode",
+          "result": "pass",
+          "url": "https://nominatim.openstreetmap.org/search?q=71%20Stevenson%20St%2C%20San%20Francisco%2C%20CA%2094105&format=json&limit=1",
+          "evidence": "Nominatim match for 71 Stevenson Street: lat 37.7893587, lon -122.3996970 (precision: rooftop/house-number). Within SF sanity bounds. Looked up 2026-07-18. Data (c) OpenStreetMap contributors, ODbL.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "final_validation",
+          "result": "pass",
+          "url": "https://sprig.com/careers",
+          "evidence": "All constraints pass: latest disclosed financing remains Series B/extension, active hybrid SF AI Team engineering posting on company ATS, SF street address, and in-bounds Nominatim geocode.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Funding labels vary by source (Series B, Series B-II, Series B-1), but no source found a later Series C or later round."
+    },
+    {
+      "company": "Bland",
+      "status": "rejected",
+      "failed_constraint": "funding_stage",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "fail",
+          "url": "https://www.prnewswire.com/news-releases/bland-surpasses-100m-funding-with-new-series-c-to-advance-voice-ai-for-complex-high-stakes-conversations-302801583.html",
+          "evidence": "Bland announced a $50M Series C led by Dell Technologies Capital on 2026-06-16. Because the latest disclosed funding round is Series C, Bland fails the Series B constraint.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Fail-fast rejection; job and SF office evidence were not checked after the funding-stage failure."
+    },
+    {
+      "company": "SuperAnnotate",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "pass",
+          "url": "https://www.superannotate.com/company",
+          "evidence": "Company milestones show a $36M Series B in November 2024 and a $13.5M Dell Technologies Capital investment in June 2025 that made the Series B total $50M. No later Series C found.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "qualifying_job",
+          "result": "pass",
+          "url": "https://jobs.lever.co/superannotate/e66852a8-7408-433f-a6f1-6cbcf3a0462b",
+          "evidence": "Strategic Projects Lead (Technical) is live on SuperAnnotate's Lever board: San Francisco, full time, hybrid. The role leads LLM and GenAI data programs, scopes data collection workflows, works with researchers and client engineering teams, and designs pipelines and quality frameworks.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "sf_address",
+          "result": "pass",
+          "url": "https://www.linkedin.com/company/superannotate",
+          "evidence": "LinkedIn company page lists SuperAnnotate primary location as 100 Bush St, Suite 410, San Francisco, CA 94104.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "geocode",
+          "result": "pass",
+          "url": "https://nominatim.openstreetmap.org/search?q=100%20Bush%20St%2C%20San%20Francisco%2C%20CA%2094104&format=json&limit=1",
+          "evidence": "Nominatim match for 100 Bush Street / Shell Building: lat 37.7915277, lon -122.3999716 (precision: rooftop/building). Within SF sanity bounds. Looked up 2026-07-18. Data (c) OpenStreetMap contributors, ODbL.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "final_validation",
+          "result": "pass",
+          "url": "https://www.superannotate.com/careers",
+          "evidence": "All constraints pass: latest disclosed funding remains Series B/Series B extension, active hybrid SF technical AI-delivery posting on company Lever board, SF street address, and in-bounds Nominatim geocode.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Nominatim did not match the suite-specific address, so geocoding used the same confirmed street address without suite detail."
+    },
+    {
+      "company": "Nooks",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "pass",
+          "url": "https://www.nooks.ai/blog-posts/series-b",
+          "evidence": "Nooks announced a $43M Series B led by Kleiner Perkins on 2024-10-24. Current company materials report $70M+ raised, with no later Series C found.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "qualifying_job",
+          "result": "pass",
+          "url": "https://api.ashbyhq.com/posting-api/job-board/nooks?includeCompensation=true",
+          "evidence": "The official ATS lists six active SF hybrid roles that clearly involve agents or AI: Product Manager - Agent Platform, Agent Engineer - Agent Studio, Product Manager - AI Sequencing, Senior Software Engineer - Voice AI, Senior Software Engineer - Agent Studio, and Engineering Manager - Agent Studio.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "sf_address",
+          "result": "pass",
+          "url": "https://www.nooks.ai/terms-versions/terms-nooks-test",
+          "evidence": "Nooks' official terms identify Nooks Communications, Inc. at 101 Montgomery Street, Suite 350, San Francisco, CA 94104 and state that the service operates from its San Francisco offices.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "geocode",
+          "result": "pass",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/address",
+          "evidence": "Nominatim returned no result. The US Census geocoder matched 101 Montgomery St at lat 37.78986976813, lon -122.402229838207 (precision: street interpolation), within SF bounds.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "final_validation",
+          "result": "pass",
+          "url": "https://www.nooks.ai/careers",
+          "evidence": "All constraints pass: latest disclosed round is Series B, multiple active hybrid SF applied-AI roles are on the official ATS, a primary-source SF street address is available, and the Census geocode is in bounds.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "The Census result is street-level rather than rooftop precision because Nominatim returned no match for the confirmed address."
+    },
+    {
+      "company": "Netic",
+      "status": "needs_verification",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "pass",
+          "url": "https://jobs.ashbyhq.com/netic/286a085a-2942-455a-a384-8c44ff5b7e85",
+          "evidence": "Netic's official ATS states that Founders Fund, Greylock, Hanabi, and Dylan Field led its Series B and that the company has raised $43M. No later round was found.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "qualifying_job",
+          "result": "pass",
+          "url": "https://api.ashbyhq.com/posting-api/job-board/netic?includeCompensation=true",
+          "evidence": "The official ATS lists multiple active on-site SF applied-AI roles, including Applied AI Research Engineer, Software Engineer - Agent Infrastructure, Agent Product Manager, and Agent Platform/FDE university roles.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "sf_address",
+          "result": "unverified",
+          "url": "https://uspto.report/TM/99172899",
+          "evidence": "Primary company and ATS pages confirm an SF office but provide no street address. A third-party mirror of a USPTO filing lists 3661 Buchanan St Fl 4, San Francisco, CA 94123, but the primary filing was not directly verified.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Needs a directly accessible primary company source or official filing confirming the exact SF street address before geocoding."
+    },
+    {
+      "company": "Klarity",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "pass",
+          "url": "https://www.klarity.ai/resources/blog/series-b-funding",
+          "evidence": "Klarity announced a $70M Series B on 2024-06-24, bringing total funding to $90M. No later round was found.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "qualifying_job",
+          "result": "pass",
+          "url": "https://api.ashbyhq.com/posting-api/job-board/klarity-ai?includeCompensation=true",
+          "evidence": "The official ATS lists eight active on-site SF applied-AI roles across AI frontend/backend engineering, AI design, and AI value delivery, including AI Frontend Engineer and AI Backend Engineer.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "sf_address",
+          "result": "pass",
+          "url": "https://api.ashbyhq.com/posting-api/job-board/klarity-ai?includeCompensation=true",
+          "evidence": "Klarity's official ATS provides the HQ address as 55 2nd Street, San Francisco, CA 94105.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "geocode",
+          "result": "pass",
+          "url": "https://nominatim.openstreetmap.org/search?q=55+2nd+Street,+San+Francisco,+CA+94105&format=jsonv2",
+          "evidence": "Nominatim returned an exact building match for 55 2nd Street at lat 37.7888148, lon -122.4003340 (precision: rooftop), within SF bounds.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "final_validation",
+          "result": "pass",
+          "url": "https://jobs.ashbyhq.com/klarity-ai/fc094114-4d6e-4bf5-977f-c5b37d7e33e1",
+          "evidence": "All constraints pass: latest disclosed round is Series B, multiple active on-site SF AI roles are on the official ATS, the ATS provides an exact SF HQ address, and the building geocode is in bounds.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Nominatim identifies the exact building but reports ZIP 94104 while Klarity's official ATS reports 94105; the street and coordinates are unambiguous and inside SF."
+    },
+    {
+      "company": "FluidStack",
+      "status": "rejected",
+      "failed_constraint": "funding_stage",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "fail",
+          "url": "https://www.blackrock.com/us/individual/literature/first-quarter-report/fqr-retail-blackrock-strategic-income-opportunities-portfolio.pdf",
+          "evidence": "BlackRock's March 31, 2026 portfolio report classifies Fluidstack as Series A; Crunchbase also identifies the company and its latest disclosed funding as Series A. It therefore fails the required Series B stage.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Fail-fast rejection; job and SF office checks were not performed after the funding-stage failure."
+    },
+    {
+      "company": "Relevance AI",
+      "status": "needs_verification",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "pass",
+          "url": "https://relevanceai.com/blog/the-ai-workforce-revolution-24m-series-b-to-accelerate-our-mission",
+          "evidence": "Relevance AI announced a $24M Series B led by Bessemer Venture Partners on 2025-05-06, bringing total funding to $37M. No later round was found.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "qualifying_job",
+          "result": "pass",
+          "url": "https://jobs.ashbyhq.com/relevanceai/3706dc6e-f7ff-4c26-bdcb-a99d8af96eab",
+          "evidence": "Head of Implementation is active on Relevance AI's official ATS in San Francisco, hybrid. The role leads enterprise deployment of agentic-AI use cases, adoption roadmaps, integrations, and measurable AI outcomes.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "sf_address",
+          "result": "unverified",
+          "url": "https://www.bizprofile.net/ca/san-francisco/relevance-ai-inc",
+          "evidence": "Primary company and ATS pages confirm an SF office but provide no street address. A third-party mirror of a California filing lists 944 Market St, Floor 8, San Francisco, CA 94102, but the primary filing was not directly verified.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "The previously discovered Senior Solutions Engineer role is no longer on the current ATS. The current Head of Implementation role qualifies, but an exact SF address still needs direct primary-source verification before geocoding."
+    },
+    {
+      "company": "Letter AI",
+      "status": "needs_verification",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "pass",
+          "url": "https://www.letter.ai/blog/announcing-our-series-b-and-letter-compass-launch",
+          "evidence": "Letter AI announced a $40M Series B led by Battery Ventures on 2026-02-24. No later funding round was found.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "qualifying_job",
+          "result": "pass",
+          "url": "https://jobs.gem.com/letter-ai/am9icG9zdDqPcO_vVsgXBHmwzBD_gQH2",
+          "evidence": "Letter AI's live Gem careers link is for Full Stack Engineer in San Francisco. The posting describes LLM-powered features across text, image, video, and audio; its current listing identifies the role as hybrid in San Francisco.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "sf_address",
+          "result": "unverified",
+          "url": "https://jobs.gem.com/letter-ai",
+          "evidence": "The official careers site confirms the company is hiring in San Francisco, but no primary company page, job page, or official filing located in this pass gives a specific SF street address. Search results only supplied third-party location listings, which do not meet the profile requirement.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Needs a primary-source San Francisco street address before geocoding."
+    },
+    {
+      "company": "Felix (felixpago)",
+      "status": "rejected",
+      "failed_constraint": "qualifying_job",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "pass",
+          "url": "https://www.morrisoncohen.com/insights/morrison-cohen-represents-felix-in-75-million-series-b-investment-round",
+          "evidence": "Morrison Cohen's announcement confirms Felix Pago's $75M Series B led by QED Investors in April 2025. No later round was found.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "qualifying_job",
+          "result": "fail",
+          "url": "https://builtin.com/job/ai-engineer-agents/9834369",
+          "evidence": "The current AI Engineer (Agents) listing describes a remote work environment and identifies only Miami and Mexico City offices for optional hybrid work. It is not tied to San Francisco, so it fails the SF hybrid/in-office work-mode requirement.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Fail-fast rejection; the company legal contact address was not treated as evidence of a physical SF office after the job constraint failed."
+    },
+    {
+      "company": "Connectly.ai",
+      "status": "needs_verification",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "pass",
+          "url": "https://www.businesswire.com/news/home/20240911320150/en/Connectly-Raises-%2420-Million-Series-B-Investment-to-Expand-AI-Conversational-Commerce-Scale-Business",
+          "evidence": "Connectly announced a $20M Series B led by Alibaba on 2024-09-11. No later funding round was found.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "qualifying_job",
+          "result": "pass",
+          "url": "https://api.ashbyhq.com/posting-api/job-board/connectly",
+          "evidence": "Connectly's official Ashby board lists a live Staff AI engineer role in San Francisco with workplaceType Hybrid. The role covers LLMs, retrieval-augmented generation, multi-agent orchestration, model evaluation, and AI infrastructure.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "sf_address",
+          "result": "unverified",
+          "url": "https://jobs.ashbyhq.com/connectly/d4e82fbb-8f7f-4d8f-a6f2-5ebf2c84edc9",
+          "evidence": "The official posting confirms a San Francisco office and hybrid work, but neither it nor the company site located in this pass supplies a specific SF street address. No primary official filing with the address was directly available.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Needs a primary-source San Francisco street address before geocoding."
+    },
+    {
+      "company": "Ivo",
+      "status": "needs_verification",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "pass",
+          "url": "https://www.ivo.ai/llms-info",
+          "evidence": "Ivo's company information page reports a $55M Series B in January 2026, its latest disclosed funding round.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "qualifying_job",
+          "result": "pass",
+          "url": "https://www.ivo.ai/careers",
+          "evidence": "Ivo's official careers page lists Senior Cloud/ML Ops Engineer among current openings, states all current openings are in-office in San Francisco, New York, or London, and describes Ivo as a five-days-in-office company. The role is an applied ML infrastructure role.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "sf_address",
+          "result": "unverified",
+          "url": "https://www.ivo.ai/careers",
+          "evidence": "Ivo's official careers page confirms its global HQ is in San Francisco but does not publish a specific street address. No primary company page or official filing with an exact address was located in this pass.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Needs a primary-source San Francisco street address before geocoding."
+    },
+    {
+      "company": "CompScience",
+      "status": "rejected",
+      "failed_constraint": "qualifying_job",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "pass",
+          "url": "https://www.compscience.com/blog/compscience-raises-27-6m-to-advance-ai-powered-workplace-safety/",
+          "evidence": "CompScience announced a $27.6M Series B on 2025-02-27. No later funding round was found.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "qualifying_job",
+          "result": "fail",
+          "url": "https://api.ashbyhq.com/posting-api/job-board/compscience",
+          "evidence": "CompScience's official Ashby board currently lists only two remote sales roles and no active applied-AI position. The previously discovered Senior MLOps Engineer posting is no longer listed.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Fail-fast rejection; SF address and geocode were not checked after no qualifying active job was found."
+    },
+    {
+      "company": "Mercor",
+      "status": "rejected",
+      "failed_constraint": "funding_stage",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "fail",
+          "url": "https://www.mercor.com/blog/series-c/",
+          "evidence": "Mercor announced a $350M Series C in October 2025, explicitly describing it as five times its Series B valuation. Its latest disclosed round is therefore Series C, not Series B.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Fail-fast rejection; job and SF office evidence were not checked after the funding-stage failure."
+    },
+    {
+      "company": "Afresh",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "pass",
+          "url": "https://www.afresh.com/resources/afresh-raises-34m",
+          "evidence": "Afresh announced $34M in new funding on 2026-04-21. Forge identifies that latest financing as Series B-2, an extension of Afresh's $115M Series B; no later Series C was found.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "qualifying_job",
+          "result": "pass",
+          "url": "https://boards-api.greenhouse.io/v1/boards/afresh/jobs?content=true",
+          "evidence": "Afresh's official Greenhouse board lists four active hybrid SF roles: Senior AI Platform Engineer, Staff AI Platform Engineer, Senior Forward Deployed Engineer, and Staff Forward Deployed Engineer. Each states it is based in the San Francisco office two days per week and covers LLM retrieval, agent systems, MLOps, or AI delivery.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "sf_address",
+          "result": "pass",
+          "url": "https://www.afresh.com/company/contact-us",
+          "evidence": "Afresh's official contact page gives its address as 564 Market Street, Suite 525, San Francisco, CA 94104.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "geocode",
+          "result": "pass",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress",
+          "evidence": "Nominatim denied the compliant request. The US Census geocoder matched 564 Market St at lat 37.790292940806, lon -122.400255819407 (precision: street interpolation), within SF bounds.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "final_validation",
+          "result": "pass",
+          "url": "https://job-boards.greenhouse.io/afresh/jobs/6108318004",
+          "evidence": "All constraints pass: latest financing remains Series B extension, four active hybrid SF applied-AI roles are on the official ATS, the company supplies an SF street address, and the Census geocode is in bounds.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Census provided street-level precision after Nominatim denied the request."
+    },
+    {
+      "company": "Bluefish AI",
+      "status": "rejected",
+      "failed_constraint": "qualifying_job",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "pass",
+          "url": "https://www.bluefishai.com/blog",
+          "evidence": "Bluefish announced a $43M Series B on 2026-04-14. No later funding round was found.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "qualifying_job",
+          "result": "fail",
+          "url": "https://job-boards.greenhouse.io/bluefishai/jobs/5189320008",
+          "evidence": "Bluefish's active Staff AI Platform Engineer posting is remote in the United Kingdom. Its official board lists AI engineering roles only in London or Berlin, not San Francisco, so it fails the SF work-location constraint.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Fail-fast rejection; SF address and geocode were not checked after the job-location failure."
+    },
+    {
+      "company": "Arize AI",
+      "status": "rejected",
+      "failed_constraint": "funding_stage",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "fail",
+          "url": "https://arize.com/press/",
+          "evidence": "Arize's official press page reports a $70M Series C on 2025-02-20. Because the latest disclosed round is Series C, it fails the required Series B stage.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Fail-fast rejection; job and SF office evidence were not checked after the funding-stage failure."
+    },
+    {
+      "company": "Nexxa.ai",
+      "status": "rejected",
+      "failed_constraint": "funding_stage",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "fail",
+          "url": "https://www.axios.com/pro/supply-chain-deals/2026/01/21/exclusive-nexxaai-eyes-series-a-with-9m-seed-for-automated-engineering",
+          "evidence": "Axios reports Nexxa.ai raised a $9M seed round in January 2026 after its $4.4M pre-seed. Its latest disclosed stage is seed, not Series B.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Fail-fast rejection; job and SF office evidence were not checked after the funding-stage failure."
+    },
+    {
+      "company": "Patlytics",
+      "status": "rejected",
+      "failed_constraint": "qualifying_job",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "pass",
+          "url": "https://www.patlytics.ai/news",
+          "evidence": "Patlytics announced a $40M Series B in April 2026. No later funding round was found.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "qualifying_job",
+          "result": "fail",
+          "url": "https://api.ashbyhq.com/posting-api/job-board/patlytics",
+          "evidence": "Patlytics' official Ashby board lists its active AI Engineer and related product roles in New York, with no active applied-AI role in San Francisco. It fails the SF work-location requirement.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Fail-fast rejection; SF address and geocode were not checked after the job-location failure."
+    },
+    {
+      "company": "Day One Partners",
+      "status": "needs_verification",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "unverified",
+          "url": "https://www.dayonepartners.io/",
+          "evidence": "Day One Partners presents itself as a talent and recruiting partner, not as the unnamed Series B AI Startup in its job advertisement. The actual employer and its funding stage cannot be established from the candidate name or a primary source.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Needs the underlying hiring company name before any funding, job, or office validation can proceed."
+    },
+    {
+      "company": "Assort Health",
+      "status": "rejected",
+      "failed_constraint": "funding_stage",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "fail",
+          "url": "https://www.assorthealth.com/blog/assort-health-raises-120-million-series-c-to-scale-largest-deployment-of-ai-agents-for-the-patient-journey",
+          "evidence": "Assort Health announced a $120M Series C on 2026-06-24. Because the latest disclosed round is Series C, it fails the required Series B stage.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Fail-fast rejection; job and SF office evidence were not checked after the funding-stage failure."
+    },
+    {
+      "company": "Squint",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "pass",
+          "url": "https://www.squint.ai/blog/squint-raises-40mm-series-b-expanding-revolutionary-agentic-manufacturing-to-new-industries-and-new-heights",
+          "evidence": "Squint announced a $40M Series B in August 2025. No later funding round was found.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "qualifying_job",
+          "result": "pass",
+          "url": "https://jobs.ashbyhq.com/squint.ai/c9dc7e5b-48d0-4930-98f3-13a6ca4f64db",
+          "evidence": "AI Operations Lead is active on Squint's official Ashby board: San Francisco, full time, on-site. The role builds and ships internal AI agents and workflows and owns their evaluation and monitoring.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "sf_address",
+          "result": "pass",
+          "url": "https://www.squint.ai/for/brett-mcqueen",
+          "evidence": "A Squint company-domain page lists 140 2nd St, San Francisco, CA 94105 as its address; the active job posting separately confirms the SF office.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "geocode",
+          "result": "pass",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress",
+          "evidence": "The US Census geocoder matched 140 2nd St at lat 37.787426337444, lon -122.399168640179 (precision: street interpolation), within SF bounds.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "final_validation",
+          "result": "pass",
+          "url": "https://jobs.ashbyhq.com/squint.ai/c9dc7e5b-48d0-4930-98f3-13a6ca4f64db",
+          "evidence": "All constraints pass: latest disclosed funding is Series B, an active on-site SF AI-agent operations role is on the official ATS, the company supplies an SF street address, and the Census geocode is in bounds.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Census provided street-level precision for the confirmed address."
+    },
+    {
+      "company": "Vectera.ai",
+      "status": "needs_verification",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "unverified",
+          "url": "https://wellfound.com/company/vectera-ai",
+          "evidence": "Wellfound reports a February 2026 Series B, but Vectera.ai's own website does not disclose a funding round or investor details. No primary funding announcement or official filing was located in this pass.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Needs a primary source confirming the Series B before job and SF-office checks can proceed."
+    },
+    {
+      "company": "Certa",
+      "status": "rejected",
+      "failed_constraint": "qualifying_job",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "pass",
+          "url": "https://www.certa.ai/press/certa-hires-first-ever-cro-eric-brown-following-series-b-funding",
+          "evidence": "Certa's company press release confirms its $35M Series B in September 2023. No later funding round was found.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "qualifying_job",
+          "result": "fail",
+          "url": "https://jobs.ashbyhq.com/certa/6a284ca6-e6aa-4d4b-89a4-0352afbcca8b",
+          "evidence": "Certa's current official Ashby board exposes a remote Sales Development Representative role, not an active applied-AI role tied to San Francisco. Its careers page describes fully remote work, so it fails the qualifying-job constraint.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Fail-fast rejection; SF address and geocode were not checked after no qualifying active job was found."
+    },
+    {
+      "company": "Zero",
+      "status": "rejected",
+      "failed_constraint": "funding_stage",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "fail",
+          "url": "https://www.globenewswire.com/news-release/2026/03/16/3256324/0/en/tech-veteran-kp-reddy-launches-ai-platform-company-to-transform-construction-industry-secures-backing-of-general-catalyst-with-13-8m-seed-round.html",
+          "evidence": "The candidate's AI role belongs to Zero RFI. Its company announcement states it launched with a $13.8M seed round in March 2026, so it fails the Series B requirement.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Fail-fast rejection; job and SF office evidence were not checked after the funding-stage failure."
+    },
+    {
+      "company": "Spellbrush",
+      "status": "rejected",
+      "failed_constraint": "funding_stage",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "fail",
+          "url": "https://www.crunchbase.com/organization/spellbrush/company_financials",
+          "evidence": "Spellbrush's available funding record shows one seed round in 2018 and no Series B. It therefore fails the required Series B stage.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Fail-fast rejection; job and SF office evidence were not checked after the funding-stage failure."
+    },
+    {
+      "company": "Moveworks",
+      "status": "rejected",
+      "failed_constraint": "funding_stage",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "fail",
+          "url": "https://www.moveworks.com/us/en/company/news/press-releases/moveworks-raises-200-million-series-c-funding",
+          "evidence": "Moveworks announced a $200M Series C in 2021 and was acquired by ServiceNow in December 2025. It fails the required Series B stage.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Fail-fast rejection; job and SF office evidence were not checked after the funding-stage failure."
+    },
+    {
+      "company": "Saragossa",
+      "status": "needs_verification",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "unverified",
+          "url": "https://www.linkedin.com/jobs/view/lead-delivery-engineer-physics-ai-startup-technical-leadership-at-saragossa-4426412428",
+          "evidence": "Saragossa is a recruiting agency. Its listing describes an unnamed Series B Physics AI startup rather than Saragossa itself, and the shown role is in San Mateo. The client identity and funding cannot be independently verified from a primary source.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Needs the unnamed client company before funding, job, and SF-office validation can proceed."
+    },
+    {
+      "company": "Ambient.ai",
+      "status": "rejected",
+      "failed_constraint": "qualifying_job",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "pass",
+          "url": "https://www.ambient.ai/ai-info",
+          "evidence": "Ambient.ai's company information page identifies the company as private Series B. No later funding round was found.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "qualifying_job",
+          "result": "fail",
+          "url": "https://api.ashbyhq.com/posting-api/job-board/ambient.ai",
+          "evidence": "Ambient.ai's current official Ashby board lists AI Infrastructure and AI Data Systems roles as hybrid in Redwood City, not San Francisco; no active qualifying SF role was listed.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Fail-fast rejection; SF address and geocode were not checked after the job-location failure."
+    },
+    {
+      "company": "FortressIQ",
+      "status": "rejected",
+      "failed_constraint": "qualifying_job",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "pass",
+          "url": "https://www.globenewswire.com/news-release/2020/05/13/2032704/0/en/FortressIQ-Announces-30-Million-in-Series-B-Funding-building-AI-to-Decode-Work.html",
+          "evidence": "FortressIQ announced a $30M Series B in 2020. No later funding round was found.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "qualifying_job",
+          "result": "fail",
+          "url": "https://www.automationanywhere.com/company/press-room/automation-anywhere-to-acquire-fortressiq-to-reimagine-intelligent-automation",
+          "evidence": "Automation Anywhere officially announced its acquisition of FortressIQ. FortressIQ no longer operates a standalone careers board with an active qualifying SF role.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Fail-fast rejection; SF address and geocode were not checked after no active standalone qualifying job was found."
+    },
+    {
+      "company": "Ketch",
+      "status": "rejected",
+      "failed_constraint": "qualifying_job",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "pass",
+          "url": "https://www.ketch.com/about",
+          "evidence": "Ketch's company history states that it raised Series B funding. No later funding round was found.",
+          "verified_at": "2026-07-18"
+        },
+        {
+          "constraint": "qualifying_job",
+          "result": "fail",
+          "url": "https://jobs.lever.co/Ketch/043266ee-ec94-4ae0-be8a-bc4e01bb901e",
+          "evidence": "Ketch's active official Lever board has a hybrid Backend Software Engineer role in San Francisco, but the description is for privacy and cybersecurity platform engineering and does not describe AI, LLM, agent, generative-AI, or AI-infrastructure work.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Fail-fast rejection; SF address and geocode were not checked after no qualifying applied-AI role was found."
+    },
+    {
+      "company": "Harvey",
+      "status": "rejected",
+      "failed_constraint": "funding_stage",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "fail",
+          "url": "https://www.harvey.ai/blog/harvey-raises-series-e",
+          "evidence": "Harvey announced a $300M Series E in June 2025. Its latest disclosed round is beyond Series B, so it fails the required funding stage.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Fail-fast rejection; job and SF office evidence were not checked after the funding-stage failure."
+    },
+    {
+      "company": "Emergent",
+      "status": "needs_verification",
+      "checks": [
+        {
+          "constraint": "funding_stage",
+          "result": "unverified",
+          "url": "https://emergent.sh/careers",
+          "evidence": "Emergent's careers page currently embeds a video titled 'We Raised a $30M Series C,' while its January 2026 funding announcement says it raised $70M Series B. The conflicting company-controlled funding signals leave the latest stage unresolved.",
+          "verified_at": "2026-07-18"
+        }
+      ],
+      "notes": "Needs an authoritative current funding announcement or company clarification before job and SF-office checks can proceed."
     }
   ]
 }
