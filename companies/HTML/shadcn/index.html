@@ -13,51 +13,79 @@
         <a class="wordmark" href="index.html" aria-label="Mappable home">Mappable</a>
         <span class="status-badge" role="status">
           <span class="status-dot" aria-hidden="true"></span>
-          Syncing
+          4 companies
         </span>
       </header>
 
-      <section class="summary-card card" aria-label="Loading search summary">
-        <div class="skeleton skeleton-label"></div>
-        <div class="skeleton skeleton-title"></div>
-        <div class="skeleton skeleton-line"></div>
+      <section class="summary-card card" aria-labelledby="summary-title">
+        <p class="eyebrow">San Francisco</p>
+        <h1 id="summary-title">Series B companies hiring for applied AI</h1>
+        <p>Choose a company to view its details.</p>
       </section>
 
       <div class="workspace">
-        <section class="results-panel" aria-label="Loading companies">
+        <section class="results-panel" aria-labelledby="results-title">
           <div class="results-heading">
-            <div class="skeleton skeleton-heading"></div>
-            <div class="skeleton skeleton-count"></div>
+            <h2 id="results-title">Companies</h2>
+            <span>4 results</span>
           </div>
           <div class="results-list">
-            <article class="result-card card" aria-label="Loading result"><div class="skeleton skeleton-icon"></div><div class="result-copy"><div class="skeleton skeleton-result-title"></div><div class="skeleton skeleton-result-line"></div><div class="skeleton skeleton-result-line short"></div></div></article>
-            <article class="result-card card" aria-label="Loading result"><div class="skeleton skeleton-icon"></div><div class="result-copy"><div class="skeleton skeleton-result-title"></div><div class="skeleton skeleton-result-line"></div><div class="skeleton skeleton-result-line short"></div></div></article>
-            <article class="result-card card" aria-label="Loading result"><div class="skeleton skeleton-icon"></div><div class="result-copy"><div class="skeleton skeleton-result-title"></div><div class="skeleton skeleton-result-line"></div><div class="skeleton skeleton-result-line short"></div></div></article>
-            <article class="result-card card" aria-label="Loading result"><div class="skeleton skeleton-icon"></div><div class="result-copy"><div class="skeleton skeleton-result-title"></div><div class="skeleton skeleton-result-line"></div><div class="skeleton skeleton-result-line short"></div></div></article>
-            <article class="result-card card" aria-label="Loading result"><div class="skeleton skeleton-icon"></div><div class="result-copy"><div class="skeleton skeleton-result-title"></div><div class="skeleton skeleton-result-line"></div><div class="skeleton skeleton-result-line short"></div></div></article>
-            <article class="result-card card" aria-label="Loading result"><div class="skeleton skeleton-icon"></div><div class="result-copy"><div class="skeleton skeleton-result-title"></div><div class="skeleton skeleton-result-line"></div><div class="skeleton skeleton-result-line short"></div></div></article>
+            <button class="result-card card" type="button" data-company="Doss">Doss</button>
+            <button class="result-card card" type="button" data-company="Pylon">Pylon</button>
+            <button class="result-card card" type="button" data-company="Shepherd">Shepherd</button>
+            <button class="result-card card" type="button" data-company="HappyRobot">HappyRobot</button>
           </div>
         </section>
 
-        <section class="map-card card" aria-label="Loading map">
+        <section class="map-card card" aria-label="San Francisco company map">
           <div class="map-toolbar">
-            <div class="skeleton skeleton-map-label"></div>
-            <div class="skeleton skeleton-map-control"></div>
+            <span>San Francisco</span>
+            <span class="map-count">4</span>
           </div>
-          <div class="map-canvas" aria-hidden="true">
-            <span class="map-road road-a"></span>
-            <span class="map-road road-b"></span>
-            <span class="map-road road-c"></span>
-            <span class="map-block block-a"></span>
-            <span class="map-block block-b"></span>
-            <span class="map-block block-c"></span>
-            <span class="map-pin pin-a"></span>
-            <span class="map-pin pin-b"></span>
-            <span class="map-pin pin-c"></span>
-            <span class="map-pin pin-d"></span>
+          <div class="map-canvas">
+            <svg class="sf-map" viewBox="0 0 1000 760" role="img" aria-labelledby="sf-map-title">
+              <title id="sf-map-title">San Francisco company map</title>
+              <image href="assets/san-francisco-basemap.svg" width="1000" height="760"></image>
+              <g id="map-pin-layer"></g>
+            </svg>
           </div>
         </section>
       </div>
     </main>
+
+    <dialog class="company-dialog" aria-labelledby="dialog-company-name">
+      <div class="app-shell dialog-shell">
+        <header class="app-header">
+          <a class="wordmark" href="index.html" aria-label="Mappable home">Mappable</a>
+          <button class="close-button" type="button" aria-label="Close company details">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </header>
+        <div class="dialog-content">
+          <p class="eyebrow">Company</p>
+          <h2 id="dialog-company-name"></h2>
+        </div>
+      </div>
+    </dialog>
+
+    <script>
+      const dialog = document.querySelector('.company-dialog');
+      const dialogName = document.querySelector('#dialog-company-name');
+      const closeButton = document.querySelector('.close-button');
+
+      document.querySelectorAll('[data-company]').forEach((card) => {
+        card.addEventListener('click', () => {
+          dialogName.textContent = card.dataset.company;
+          dialog.showModal();
+          closeButton.focus();
+        });
+      });
+
+      closeButton.addEventListener('click', () => dialog.close());
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && dialog.open) dialog.close();
+      });
+    </script>
   </body>
 </html>

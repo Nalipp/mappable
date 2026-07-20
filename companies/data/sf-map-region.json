@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "source_dataset": "data/mappable-records1.json",
+  "bounds": {
+    "north": 37.84,
+    "south": 37.7,
+    "west": -122.53,
+    "east": -122.35
+  },
+  "view_box": {
+    "min_x": 0,
+    "min_y": 0,
+    "width": 1000,
+    "height": 760
+  },
+  "basemap": {
+    "asset": "HTML/shadcn/assets/san-francisco-basemap.svg",
+    "source": "OpenStreetMap",
+    "license": "ODbL",
+    "attribution": "© OpenStreetMap contributors",
+    "geometry": [
+      "coastline",
+      "motorway",
+      "trunk",
+      "primary"
+    ],
+    "generated_at": "2026-07-20"
+  }
+}
