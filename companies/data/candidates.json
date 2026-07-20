@@ -30,7 +30,7 @@
         "ai_role_posting": "Staff/Senior/Principal AI Agent Engineer",
         "location_signal": "SF"
       },
-      "notes": "One posting says Berkeley/Bay Area hybrid \u2014 verify SF-city requirement"
+      "notes": "One posting says Berkeley/Bay Area hybrid — verify SF-city requirement"
     },
     {
       "name": "Shepherd",
@@ -75,7 +75,7 @@
         "ai_role_posting": "Software Engineer, AI Team",
         "location_signal": "SF HQ"
       },
-      "notes": "Snippet may be cross-contaminated with Alembic \u2014 verify stage/raise independently"
+      "notes": "Snippet may be cross-contaminated with Alembic — verify stage/raise independently"
     },
     {
       "name": "Bland",
@@ -138,7 +138,7 @@
         "ai_role_posting": "Solutions Engineer (AI agents), SF hybrid 3 days in-office",
         "location_signal": "SF"
       },
-      "notes": "HQ Sydney \u2014 verify SF office exists and is primary; verify stage"
+      "notes": "HQ Sydney — verify SF office exists and is primary; verify stage"
     },
     {
       "name": "Letter AI",
@@ -165,7 +165,7 @@
         "ai_role_posting": "Staff AI Engineer",
         "location_signal": "SF"
       },
-      "notes": "Verify current stage \u2014 may have raised beyond Series B"
+      "notes": "Verify current stage — may have raised beyond Series B"
     },
     {
       "name": "Ivo",
@@ -183,7 +183,7 @@
         "ai_role_posting": "Senior MLOps Engineer",
         "location_signal": "SF"
       },
-      "notes": "Job posting may be removed \u2014 verify active hiring"
+      "notes": "Job posting may be removed — verify active hiring"
     },
     {
       "name": "Mercor",
@@ -201,7 +201,7 @@
         "ai_role_posting": "Senior AI Platform Engineer",
         "location_signal": "SF"
       },
-      "notes": "Older B (2022) \u2014 verify still Series B stage"
+      "notes": "Older B (2022) — verify still Series B stage"
     },
     {
       "name": "Bluefish AI",
@@ -219,7 +219,7 @@
         "ai_role_posting": "AI Product Manager",
         "location_signal": "SF"
       },
-      "notes": "Likely Series C \u2014 verify stage; may reject"
+      "notes": "Likely Series C — verify stage; may reject"
     },
     {
       "name": "Nexxa.ai",
@@ -237,7 +237,7 @@
         "ai_role_posting": null,
         "location_signal": "SF"
       },
-      "notes": "AI patent analytics \u2014 no specific AI job posting yet; verify active AI hiring"
+      "notes": "AI patent analytics — no specific AI job posting yet; verify active AI hiring"
     },
     {
       "name": "Day One Partners",
@@ -300,7 +300,7 @@
         "ai_role_posting": "AI Infrastructure Engineer",
         "location_signal": "SF (inferred from job board)"
       },
-      "notes": "Generative AI studio (niji\u30fbjourney related); verify Series B stage and SF office"
+      "notes": "Generative AI studio (niji・journey related); verify Series B stage and SF office"
     },
     {
       "name": "Moveworks",
@@ -309,7 +309,7 @@
         "ai_role_posting": "Staff AI Agent Engineer",
         "location_signal": "SF (builtinsf.com)"
       },
-      "notes": "AI Assistant Platform; likely Series C+ \u2014 verify current stage; may reject if beyond Series B"
+      "notes": "AI Assistant Platform; likely Series C+ — verify current stage; may reject if beyond Series B"
     },
     {
       "name": "Saragossa",
@@ -1311,15 +1311,6 @@
       "notes": "Series B AI agents for SMBs; $48M raise; expanding SF operations"
     },
     {
-      "name": "Airbyte",
-      "discovery_signals": {
-        "funding": "Series B",
-        "ai_role_posting": "Data pipeline, ETL, reverse-ETL platform",
-        "location_signal": "San Francisco (implied)"
-      },
-      "notes": "Series B data infrastructure; open-source data pipeline platform"
-    },
-    {
       "name": "VideoVerse",
       "discovery_signals": {
         "funding": null,
@@ -1653,15 +1644,6 @@
       "notes": "AI security agents with production knowledge graph; verify Series B stage + SF"
     },
     {
-      "name": "Relevance AI",
-      "discovery_signals": {
-        "funding": "$24M Series B",
-        "ai_role_posting": "AI agents OS, agentic AI platform",
-        "location_signal": "San Francisco (implied)"
-      },
-      "notes": "Series B $24M AI agents operating system/platform"
-    },
-    {
       "name": "Genspark",
       "discovery_signals": {
         "funding": "$545M funding mentioned",
@@ -1678,6 +1660,285 @@
         "location_signal": "San Francisco (implied)"
       },
       "notes": "AI infrastructure platform; $260M funding; verify current stage + active AI hiring"
+    },
+    {
+      "name": "Cartesia",
+      "discovery_signals": {
+        "funding": "Series A ($27M, Index/a16z) — verify if later round",
+        "ai_role_posting": "Applied AI / real-time voice + audio model engineering",
+        "location_signal": "San Francisco, CA"
+      },
+      "notes": "Real-time voice/audio foundation models (SSM-based); SF-based; verify current stage (may still be Series A) + active applied-AI hiring"
+    },
+    {
+      "name": "Rox",
+      "discovery_signals": {
+        "funding": "Series A (~$50M, Sequoia-led per startup job digests)",
+        "ai_role_posting": "Applied AI Engineer",
+        "location_signal": "San Francisco, CA"
+      },
+      "notes": "Agentic AI for enterprise sales; SF. Signal says Series A — likely fails Series B constraint; verify latest round before validating"
+    },
+    {
+      "name": "Vultron",
+      "discovery_signals": {
+        "funding": "Series A (implied from startup job digests) — verify",
+        "ai_role_posting": "Applied AI / Forward Deployed Engineer (GovCon proposal automation)",
+        "location_signal": "San Francisco (implied) — verify HQ"
+      },
+      "notes": "AI-native platform for government-contractor proposals; verify Series B stage and SF-city office (HQ location uncertain)"
+    },
+    {
+      "name": "Clera",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Applied AI Engineer (Matching & Search); Founding AI/ML Engineer, on-site",
+        "location_signal": "San Francisco, CA (on-site)"
+      },
+      "notes": "SF AI startup with on-site founding/applied-AI engineering roles (Indeed/Teal); stage unverified — verify Series B + SF office"
+    },
+    {
+      "name": "Fractional AI",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "AI Engineer (build/ship AI applications for customers)",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "SF applied-AI product/services firm building customer AI apps; stage likely seed/Series A — verify Series B + SF office + active in-office role"
+    },
+    {
+      "name": "NavigateAI",
+      "discovery_signals": {
+        "funding": "$25M raise (Jun 2026, per ConTech digest) — stage ambiguous",
+        "ai_role_posting": null,
+        "location_signal": "San Francisco (per funding announcement)"
+      },
+      "notes": "SF construction-tech AI startup; $25M round could be Series A or B — verify latest stage and confirm an active applied-AI in-office/hybrid role"
+    },
+    {
+      "name": "TruckSmarter",
+      "discovery_signals": {
+        "funding": "Series B (implied; ~$27M+ raised) — verify latest round",
+        "ai_role_posting": "AI Product Engineer; Staff Platform Engineer (AI dispatching)",
+        "location_signal": "San Francisco, CA (careers page: on-site)"
+      },
+      "notes": "SF freight/load-board fintech with AI dispatching; on-site SF roles on company careers page; verify Series B stage and applied-AI fit of the role"
+    },
+    {
+      "name": "Exaforce",
+      "discovery_signals": {
+        "funding": "Series B (San Francisco AI cybersecurity firm, per May 2026 funding roundup)",
+        "ai_role_posting": "Agentic security operations engineering",
+        "location_signal": "San Francisco (per TechCrunch/Exaforce funding item)"
+      },
+      "notes": "SF-based agentic AI cybersecurity (security operations); funding roundup labels it Series B — verify exact latest round, SF street office, and an active applied-AI in-office/hybrid role"
+    },
+    {
+      "name": "Ollama",
+      "discovery_signals": {
+        "funding": "$65M Series B (Theory Ventures, Jul 9 2026)",
+        "ai_role_posting": null,
+        "location_signal": "San Francisco (implied) — verify HQ"
+      },
+      "notes": "Local LLM runtime / AI infra devtool; $65M Series B Jul 2026; verify SF-city office and an active applied-AI in-office/hybrid posting"
+    },
+    {
+      "name": "Twelve Labs",
+      "discovery_signals": {
+        "funding": "Series A signal (~$50M+) — verify if later round",
+        "ai_role_posting": "Senior Backend Engineer (video-understanding AI platform)",
+        "location_signal": "San Francisco, CA (on-site)"
+      },
+      "notes": "Video-understanding foundation models; SF backend/AI roles. Signal suggests Series A — likely fails Series B constraint; verify latest round"
+    },
+    {
+      "name": "Arbor AI",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Backend / Full-stack / AI-native Software Engineer",
+        "location_signal": "San Francisco"
+      },
+      "notes": "New SF startup from ex-Google founders; stage unverified (likely early/seed) — verify Series B + SF office + applied-AI role"
+    },
+    {
+      "name": "LangChain",
+      "discovery_signals": {
+        "funding": "Series A signal (~$25M) — verify if later round",
+        "ai_role_posting": "Fullstack Software Engineer, Applied AI (on-site SF)",
+        "location_signal": "San Francisco, CA (on-site)"
+      },
+      "notes": "LLM-app dev framework/platform (LangSmith); on-site SF Applied AI role. Signal suggests Series A — verify latest round before validating"
+    },
+    {
+      "name": "Sully.ai",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "AI engineering (AI medical agents)",
+        "location_signal": "San Francisco Bay Area (Wellfound)"
+      },
+      "notes": "Healthcare AI agents startup; stage unverified — verify Series B + SF-city office + active applied-AI in-office/hybrid role"
+    },
+    {
+      "name": "Letta (MemGPT)",
+      "discovery_signals": {
+        "funding": "Series A signal — verify if later round",
+        "ai_role_posting": "AI agents / memory infrastructure engineering",
+        "location_signal": "San Francisco Bay Area (Berkeley origin)"
+      },
+      "notes": "Agent memory/stateful-agents platform (MemGPT); verify Series B stage and SF-city office (Berkeley/East Bay roots are a location risk)"
+    },
+    {
+      "name": "Prime Intellect",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Member of Technical Staff (decentralized AI training)",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Decentralized AI model-training infrastructure; stage unverified (likely seed/Series A) — verify Series B + SF office + active applied-AI role"
+    },
+    {
+      "name": "Supio",
+      "discovery_signals": {
+        "funding": "$60M Series B Apr 2025 ($91M total, Sapphire Ventures)",
+        "ai_role_posting": "Senior Applied AI Engineer",
+        "location_signal": "Seattle • San Francisco (hybrid)"
+      },
+      "notes": "Legal AI (plaintiff/PI litigation); HQ described as Seattle in some sources, SF GenAI in others — verify SF-city office is a real work location for the applied-AI role"
+    },
+    {
+      "name": "Fieldguide",
+      "discovery_signals": {
+        "funding": "$30M Series B Mar 2024 (Bessemer)",
+        "ai_role_posting": "AI Engineer (all levels)",
+        "location_signal": "San Francisco / Bay Area"
+      },
+      "notes": "AI platform for audit & advisory (CPA firms); older B (2024) — verify still Series B stage, SF-city office, and active in-office/hybrid applied-AI role"
+    },
+    {
+      "name": "Cekura",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Applied AI Engineer",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Voice/agent AI testing & simulation (YC); stage unverified (likely seed/Series A) — verify Series B + SF office"
+    },
+    {
+      "name": "Onyx",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Forward Deployed Engineer (US)",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Open-source enterprise AI search/assistant (formerly Danswer); stage unverified — verify Series B + SF-city office"
+    },
+    {
+      "name": "Baseten",
+      "discovery_signals": {
+        "funding": "well-funded (likely Series C+)",
+        "ai_role_posting": "AI Solutions Engineer",
+        "location_signal": "San Francisco, CA"
+      },
+      "notes": "Model inference/deployment platform; likely raised beyond Series B — verify current stage, may reject on funding_stage"
+    },
+    {
+      "name": "Decart",
+      "discovery_signals": {
+        "funding": "Series B (~$300M raised, real-time generative AI)",
+        "ai_role_posting": "AI engineering (real-time interactive generative models)",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "Real-time interactive generative AI models; verify SF-city office (possible Israel/other HQ) and active in-office/hybrid applied-AI role"
+    },
+    {
+      "name": "Lassie",
+      "discovery_signals": {
+        "funding": "Series B (revli recently-funded list, Jun 2026)",
+        "ai_role_posting": null,
+        "location_signal": "San Francisco, CA"
+      },
+      "notes": "Name collides with a European pet-insurance 'Lassie' — verify this is the SF AI company, confirm Series B stage, and find an active applied-AI in-office/hybrid role"
+    },
+    {
+      "name": "Amigo AI",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Applied AI Engineer (Pre-Sale)",
+        "location_signal": "San Francisco, CA (Lensa)"
+      },
+      "notes": "Stage unverified (likely seed/Series A) — verify Series B, SF-city office, and that the applied-AI role is in-office/hybrid"
+    },
+    {
+      "name": "Flint",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Software Engineer (on-site)",
+        "location_signal": "San Francisco (Ashby, on-site)"
+      },
+      "notes": "AI education/tutoring platform; team described as all founding engineers — stage unverified (likely seed/Series A); verify Series B + applied-AI role fit"
+    },
+    {
+      "name": "Jobright.ai",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Founding Member of Technical Staff",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "AI job-search/matching platform; stage unverified (likely Series A) — verify Series B + SF-city office"
+    },
+    {
+      "name": "AdsGency AI",
+      "discovery_signals": {
+        "funding": "Techstars-backed (early stage)",
+        "ai_role_posting": "Senior Member of Technical Staff – Full Stack / AI Systems",
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "AI advertising/agents platform; Techstars → likely seed/early stage; verify Series B stage + SF-city office (funding_stage is the likely reject)"
+    },
+    {
+      "name": "Eve (Legal AI)",
+      "discovery_signals": {
+        "funding": "$103M Series B at $1B valuation (a16z, Sep 2025)",
+        "ai_role_posting": "Legal AI engineering",
+        "location_signal": "San Francisco, CA"
+      },
+      "notes": "eve.legal — SF-based legal AI (plaintiff/employment); unicorn valuation but round is Series B. Generic name 'Eve' — confirm identity, SF-city street office, and an active in-office/hybrid applied-AI role"
+    },
+    {
+      "name": "Noon",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "Senior Applied AI Engineer",
+        "location_signal": "San Francisco (Ashby, noon-design)"
+      },
+      "notes": "AI features for product designers; stage unverified — verify Series B stage + SF-city office"
+    },
+    {
+      "name": "Ruli.ai",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": null,
+        "location_signal": "San Francisco (implied)"
+      },
+      "notes": "SF-based legal AI provider; stage unverified and no AI role captured yet — verify Series B + active applied-AI in-office/hybrid role"
+    },
+    {
+      "name": "Distyl",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "AI research / applied engineer",
+        "location_signal": "San Francisco / New York (Migrate Mate)"
+      },
+      "notes": "Enterprise applied-AI delivery; SF/NYC split — verify SF-city office is a real work location and confirm Series B stage"
+    },
+    {
+      "name": "Achira",
+      "discovery_signals": {
+        "funding": null,
+        "ai_role_posting": "AI research engineer",
+        "location_signal": "San Francisco Bay Area (implied)"
+      },
+      "notes": "Molecular-simulation / bio AI research; likely seed/Series A — verify Series B stage + SF-city office + applied-AI (vs pure research) role"
     }
   ]
 }

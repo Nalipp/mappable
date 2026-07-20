@@ -2,16 +2,16 @@
   "dataset": "mappable-records1.json",
   "constraint_profile": "data-collection-1.instructions.md",
   "progress": {
-    "candidates_total": 186,
-    "pending": 145,
+    "candidates_total": 215,
+    "pending": 175,
     "validated": 11,
-    "needs_verification": 9,
-    "rejected": 20
+    "needs_verification": 12,
+    "rejected": 17
   },
-  "last_action": "Validated batch of 5 candidates using native web research: Ambient.ai, FortressIQ, and Ketch rejected at job constraint; Harvey rejected at funding stage; Emergent needs current funding-stage clarification (2026-07-18).",
-  "next_action": "Run workflow validate to process the next pending batch of 5 candidates.",
+  "last_action": "Merged concurrent native-web validation work through candidate 40 (2026-07-18), retaining the incoming evidence for candidates 1-30 and the local results for candidates 31-40. Removed duplicate discovery entries created by the merge.",
+  "next_action": "Run workflow validate for the next pending batch: Patronus AI, Metaview, Factory, Decagon, Sail Research (check constraints in order and fail-fast). Counts are derived from candidates.json and candidate-validation.json.",
   "quality": {
     "status": "ok",
-    "note": "Operator approved normal validation to continue. Address-verification holds remain recorded; agency-posted candidates need underlying client identities before validation."
+    "note": "Incoming batch 5 found candidate-specific evidence gaps for Patlytics, Squint, and Vectera.ai; no systemic retrieval or rubric issue is recorded. Continue validation while monitoring for a repeated pattern."
   }
 }
