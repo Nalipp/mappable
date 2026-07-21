@@ -850,7 +850,8 @@
     },
     {
       "company": "Certa",
-      "status": "needs_verification",
+      "status": "rejected",
+      "failed_constraint": "qualifying_job",
       "checks": [
         {
           "constraint": "funding_stage",
@@ -861,33 +862,28 @@
         },
         {
           "constraint": "qualifying_job",
-          "result": "unverified",
+          "result": "fail",
           "url": "https://www.certa.ai/careers",
-          "evidence": "The only Certa AI-role found is 'AI Engineer' listed India / Remote (Wellfound) - building LLM/generative-AI agents and workflow automation. No active San Francisco-city applied-AI posting (hybrid/in-office) could be confirmed on a company-owned board. Certa describes itself as 'Silicon Valley-based' / 'San Francisco Bay Area' with ~249 employees across Asia/NA/Europe.",
-          "verified_at": "2026-07-20"
-        },
-        {
-          "constraint": "sf_address",
-          "result": "unverified",
-          "url": "https://www.zoominfo.com/c/certa/473112628",
-          "evidence": "Registered HQ per data providers is 20824 Pamela Way, Saratoga, CA 95070 (South Bay, excluded by scope). Certa markets itself as 'San Francisco Bay Area' / 'Silicon Valley-based' but no primary source confirms a physical San Francisco-city office with a street address. SF-city presence is asserted only at Bay-Area granularity.",
+          "evidence": "No SF-city applied-AI in-office/hybrid role exists: the only Certa AI-role found is 'AI Engineer' listed India / Remote (Wellfound). Certa's registered HQ is Saratoga, CA 95070 (South Bay, excluded), and it markets itself only at 'Silicon Valley' / 'SF Bay Area' granularity (~249 employees across Asia/NA/Europe); no physical SF-city office or SF-tied applied-AI posting could be confirmed.",
           "verified_at": "2026-07-20"
         }
       ],
-      "notes": "Funding passes (Series B, Mar 2025). Two blockers: (1) no active SF-city applied-AI hybrid/in-office posting confirmed - the visible AI Engineer role is India/Remote; and (2) the only registered address is Saratoga (South Bay), with SF claimed only at 'Bay Area' granularity. Needs verification of a live SF-city applied-AI role and a physical SF office before validating or rejecting; South Bay HQ is a real risk of rejection on location."
+      "notes": "Reclassified from needs_verification to rejected on 2026-07-21 (operator decision, adopting the parallel session's call). Funding passes (Series B, Mar 2025) but there is no SF-city applied-AI in-office/hybrid role (only an India/Remote AI Engineer role) and the registered HQ is Saratoga (South Bay, excluded) - no physical SF-city office. Fail-fast at qualifying_job. Revisit only if Certa opens an SF-city office with a live SF applied-AI role."
     },
     {
       "company": "Zero",
-      "status": "needs_verification",
+      "status": "rejected",
+      "failed_constraint": "funding_stage",
       "checks": [
         {
           "constraint": "funding_stage",
-          "result": "unverified",
-          "evidence": "Could not identify which company 'Zero' refers to. The name collides across multiple entities (Zero Labs Inc - local voice-AI; Zero Zero Robotics; and others), and no source confirms a Series B round for a San Francisco AI company named simply 'Zero' with a 'Senior AI Research Engineer' posting. Web search returned only generic SF AI-job listings and unrelated 'Zero*' companies.",
+          "result": "fail",
+          "url": "https://www.crunchbase.com/",
+          "evidence": "No identifiable Series B San Francisco AI company named 'Zero' exists: the bare name collides across unrelated entities (Zero Labs Inc - local voice-AI; Zero Zero Robotics; etc.), and no source confirms a Series B round for a 'Zero' matching the discovery signal ('Senior AI Research Engineer', 'SF inferred'). Treated as a discovery artifact with no fundable Series B entity.",
           "verified_at": "2026-07-20"
         }
       ],
-      "notes": "Entity unidentifiable from the discovery signal (bare name 'Zero', location 'SF inferred', no funding). Likely a discovery artifact or needs a fuller legal name. Retry with the exact company name / a primary funding announcement; if none resolves, treat as a discovery artifact and reject."
+      "notes": "Reclassified from needs_verification to rejected on 2026-07-21 (operator decision, adopting the parallel session's call). 'Zero' is a discovery artifact - a bare, unidentifiable name with no fundable Series B SF entity behind it. Fail-fast at funding_stage. If a specific legal entity later surfaces with a confirmed Series B and SF office, add it as a new candidate."
     },
     {
       "company": "Spellbrush",

@@ -69,9 +69,6 @@ overwrite an existing numbered dataset when starting a new run. The active
 target dataset is named in `workflow-state.json`; `record-index.txt` records
 each dataset, its schema, constraint profile, and status.
 
-Company record IDs are internal to their dataset and are separate from the
-dataset-run number.
-
 ## workflow status
 
 Read the project charter, DATA-ingest instructions, active constraint file,
@@ -134,6 +131,13 @@ For each candidate, check constraints in fail-fast order; record evidence with
 source URLs in `data/candidate-validation.json`. Update workflow-state.json with
 results and stop.
 
+For every `validated` candidate, capture the complete facts needed by the
+numbered dataset while performing validation: qualifying job details, confirmed
+SF address, and geocode result (coordinates, precision, method, and lookup
+date), as well as the funding facts and their source URLs. Validation is the
+only workflow command permitted to perform external research, scraping, or
+geocoding for candidate data.
+
 For each result, record:
 - First failed constraint (if rejected)
 - Source URL(s)
@@ -150,9 +154,13 @@ Candidate statuses are:
 
 Normalize all `validated` candidates into the active numbered dataset named in
 `workflow-state.json` (currently `mappable-records1.json`).
-For each company: assign a record ID (sequential from 1; a record added later
-takes the highest existing key + 1), nest qualifying job postings, add geocode
-metadata, and validate against the matching numbered schema. Update
+This is a local-only transformation: read the recorded validation facts, nest
+qualifying job postings, map recorded geocode metadata, and validate against
+the matching numbered schema. It must not browse, search, scrape, call an MCP,
+call a geocoder, or re-verify any company. If a validated entry lacks a field
+required by the numbered schema, leave it out of the finalized dataset and
+report the missing validation data; do not retrieve it during finalization.
+Update
 `record-index.txt` with the dataset status and finalized date. Stop and report
 finalized record count and any records that failed schema validation.
 
@@ -160,7 +168,7 @@ finalized record count and any records that failed schema validation.
 
 1. **`workflow discover`** — create a broad candidate list with minimal evidence. Run multiple times to expand pool before validation.
 2. **`workflow validate`** — process candidates in bounded batches, fail on first decisive constraint failure. Once a company fails any constraint, stop all work on it, record the failure, and move on. Results: `validated`, `rejected`, or `needs_verification`.
-3. **`workflow finalize`** — normalize validated records into the numbered dataset and matching schema.
+3. **`workflow finalize`** — perform a local-only normalization of validated records into the numbered dataset and matching schema; it never performs research or geocoding.
 
 The record grain is the company: one finalized record per validated company,
 with its qualifying job postings nested inside that record. Jobs are never
@@ -196,8 +204,9 @@ Nominatim is unavailable or blocks the request, fall back to the US Census
 geocoder (`geocoding.geo.census.gov`) or send the candidate to
 `needs_verification` with the attempted query recorded.
 
-Record in the finalized record's `location.geocode`: the method used, the
-precision, and the lookup date. Precision comes from the geocoder's match
+Record the geocode result during validation so it can be copied into the
+finalized record's `location.geocode`: the method used, the precision, and the
+lookup date. Precision comes from the geocoder's match
 type: a building or house-number match is `rooftop`, a road or interpolated
 match is `street`, anything coarser is `neighborhood`.
 

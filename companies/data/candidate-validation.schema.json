@@ -35,11 +35,6 @@
               "rejected"
             ]
           },
-          "record_id": {
-            "type": "string",
-            "pattern": "^[1-9][0-9]*$",
-            "description": "ID of the finalized record in the active numbered dataset. Set only after finalization."
-          },
           "checks": {
             "type": "array",
             "description": "One entry per constraint checked, in profile order. A rejected candidate's last check is its failure.",

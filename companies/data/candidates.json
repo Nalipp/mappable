@@ -30,7 +30,7 @@
         "ai_role_posting": "Staff/Senior/Principal AI Agent Engineer",
         "location_signal": "SF"
       },
-      "notes": "One posting says Berkeley/Bay Area hybrid \u2014 verify SF-city requirement"
+      "notes": "One posting says Berkeley/Bay Area hybrid — verify SF-city requirement"
     },
     {
       "name": "Shepherd",
@@ -75,7 +75,7 @@
         "ai_role_posting": "Software Engineer, AI Team",
         "location_signal": "SF HQ"
       },
-      "notes": "Snippet may be cross-contaminated with Alembic \u2014 verify stage/raise independently"
+      "notes": "Snippet may be cross-contaminated with Alembic — verify stage/raise independently"
     },
     {
       "name": "Bland",
@@ -138,7 +138,7 @@
         "ai_role_posting": "Solutions Engineer (AI agents), SF hybrid 3 days in-office",
         "location_signal": "SF"
       },
-      "notes": "HQ Sydney \u2014 verify SF office exists and is primary; verify stage"
+      "notes": "HQ Sydney — verify SF office exists and is primary; verify stage"
     },
     {
       "name": "Letter AI",
@@ -165,7 +165,7 @@
         "ai_role_posting": "Staff AI Engineer",
         "location_signal": "SF"
       },
-      "notes": "Verify current stage \u2014 may have raised beyond Series B"
+      "notes": "Verify current stage — may have raised beyond Series B"
     },
     {
       "name": "Ivo",
@@ -183,7 +183,7 @@
         "ai_role_posting": "Senior MLOps Engineer",
         "location_signal": "SF"
       },
-      "notes": "Job posting may be removed \u2014 verify active hiring"
+      "notes": "Job posting may be removed — verify active hiring"
     },
     {
       "name": "Mercor",
@@ -201,7 +201,7 @@
         "ai_role_posting": "Senior AI Platform Engineer",
         "location_signal": "SF"
       },
-      "notes": "Older B (2022) \u2014 verify still Series B stage"
+      "notes": "Older B (2022) — verify still Series B stage"
     },
     {
       "name": "Bluefish AI",
@@ -219,7 +219,7 @@
         "ai_role_posting": "AI Product Manager",
         "location_signal": "SF"
       },
-      "notes": "Likely Series C \u2014 verify stage; may reject"
+      "notes": "Likely Series C — verify stage; may reject"
     },
     {
       "name": "Nexxa.ai",
@@ -237,7 +237,7 @@
         "ai_role_posting": null,
         "location_signal": "SF"
       },
-      "notes": "AI patent analytics \u2014 no specific AI job posting yet; verify active AI hiring"
+      "notes": "AI patent analytics — no specific AI job posting yet; verify active AI hiring"
     },
     {
       "name": "Day One Partners",
@@ -300,7 +300,7 @@
         "ai_role_posting": "AI Infrastructure Engineer",
         "location_signal": "SF (inferred from job board)"
       },
-      "notes": "Generative AI studio (niji\u30fbjourney related); verify Series B stage and SF office"
+      "notes": "Generative AI studio (niji・journey related); verify Series B stage and SF office"
     },
     {
       "name": "Moveworks",
@@ -309,7 +309,7 @@
         "ai_role_posting": "Staff AI Agent Engineer",
         "location_signal": "SF (builtinsf.com)"
       },
-      "notes": "AI Assistant Platform; likely Series C+ \u2014 verify current stage; may reject if beyond Series B"
+      "notes": "AI Assistant Platform; likely Series C+ — verify current stage; may reject if beyond Series B"
     },
     {
       "name": "Saragossa",
@@ -1311,15 +1311,6 @@
       "notes": "Series B AI agents for SMBs; $48M raise; expanding SF operations"
     },
     {
-      "name": "Airbyte",
-      "discovery_signals": {
-        "funding": "Series B",
-        "ai_role_posting": "Data pipeline, ETL, reverse-ETL platform",
-        "location_signal": "San Francisco (implied)"
-      },
-      "notes": "Series B data infrastructure; open-source data pipeline platform"
-    },
-    {
       "name": "VideoVerse",
       "discovery_signals": {
         "funding": null,
@@ -1651,15 +1642,6 @@
         "location_signal": "San Francisco (implied)"
       },
       "notes": "AI security agents with production knowledge graph; verify Series B stage + SF"
-    },
-    {
-      "name": "Relevance AI",
-      "discovery_signals": {
-        "funding": "$24M Series B",
-        "ai_role_posting": "AI agents OS, agentic AI platform",
-        "location_signal": "San Francisco (implied)"
-      },
-      "notes": "Series B $24M AI agents operating system/platform"
     },
     {
       "name": "Genspark",

@@ -5,10 +5,10 @@
     "candidates_total": 215,
     "pending": 0,
     "validated": 23,
-    "needs_verification": 60,
-    "rejected": 132
+    "needs_verification": 58,
+    "rejected": 134
   },
-  "last_action": "Validation: processed the final batch Eve (Legal AI), Noon, Ruli.ai, Distyl, Achira (batch 42, 2026-07-20) via native web research. Validated: Distyl (Distyl AI; Series B $175M/$1.8B Khosla/Lightspeed, SF-hybrid AI Engineer, 55 Hawthorne St, rooftop geocode). Rejected: Eve/Legal AI (qualifying_job - San Mateo office, not SF), Achira (funding_stage - seed, NYC/Greece), Noon (funding_stage - $44M seed), Ruli.ai (funding_stage - $6M seed). ALL 215 CANDIDATES NOW PROCESSED: 23 validated, 60 needs_verification, 132 rejected, 0 pending.",
+  "last_action": "Merge reconciliation (2026-07-21): resolved git conflicts with the parallel machine's push (origin through candidate 40) by keeping the local complete validation (215 entries, superset). Then, per operator decision, reclassified Certa and Zero from needs_verification to rejected (adopting the parallel session's calls): Certa (qualifying_job - Saratoga/South Bay HQ, only India/Remote AI role), Zero (funding_stage - unidentifiable discovery artifact). ALL 215 PROCESSED: 23 validated, 58 needs_verification, 134 rejected, 0 pending.",
   "next_action": "Validation pass COMPLETE - 0 pending. Recommended next steps for the operator: (1) run `workflow finalize` to normalize the 23 validated companies into mappable-records1.json; (2) optionally run a targeted address-resolution pass (CA Secretary of State Statement-of-Information filings) to convert address-blocked needs_verification candidates to validated; (3) discovery-hygiene: de-duplicate candidates.json ('Relevance AI', 'Airbyte'). If the parallel discovery session appends new candidates, re-run `workflow validate` for the new pending names.",
   "quality": {
     "status": "ok",

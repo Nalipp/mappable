@@ -5,4 +5,6 @@
 [mappable-records1.json]
 schema: mappable-records1.schema.json
 constraint_profile: data-collection-1.instructions.md
-status: draft
+status: finalized
+finalized_at: 2026-07-18
+record_count: 4
