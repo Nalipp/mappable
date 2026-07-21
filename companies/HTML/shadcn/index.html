@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light">
     <title>Mappable</title>
+    <link rel="stylesheet" href="vendor/maplibre-gl-5.24.0/maplibre-gl.css">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -13,51 +14,295 @@
         <a class="wordmark" href="index.html" aria-label="Mappable home">Mappable</a>
         <span class="status-badge" role="status">
           <span class="status-dot" aria-hidden="true"></span>
-          Syncing
+          4 companies
         </span>
       </header>
 
-      <section class="summary-card card" aria-label="Loading search summary">
-        <div class="skeleton skeleton-label"></div>
-        <div class="skeleton skeleton-title"></div>
-        <div class="skeleton skeleton-line"></div>
+      <section class="summary-card card" aria-labelledby="summary-title">
+        <div class="summary-copy">
+          <p class="eyebrow">San Francisco hiring map</p>
+          <h1 id="summary-title">Series B companies hiring for applied AI</h1>
+          <p>Explore 10 current roles across four verified companies.</p>
+        </div>
+        <div class="summary-metrics" aria-label="Dataset summary">
+          <div><strong>4</strong><span>Companies</span></div>
+          <div><strong>10</strong><span>Open roles</span></div>
+        </div>
       </section>
 
       <div class="workspace">
-        <section class="results-panel" aria-label="Loading companies">
+        <section class="results-panel" aria-labelledby="results-title">
           <div class="results-heading">
-            <div class="skeleton skeleton-heading"></div>
-            <div class="skeleton skeleton-count"></div>
+            <h2 id="results-title">Companies</h2>
+            <span>4 results</span>
           </div>
           <div class="results-list">
-            <article class="result-card card" aria-label="Loading result"><div class="skeleton skeleton-icon"></div><div class="result-copy"><div class="skeleton skeleton-result-title"></div><div class="skeleton skeleton-result-line"></div><div class="skeleton skeleton-result-line short"></div></div></article>
-            <article class="result-card card" aria-label="Loading result"><div class="skeleton skeleton-icon"></div><div class="result-copy"><div class="skeleton skeleton-result-title"></div><div class="skeleton skeleton-result-line"></div><div class="skeleton skeleton-result-line short"></div></div></article>
-            <article class="result-card card" aria-label="Loading result"><div class="skeleton skeleton-icon"></div><div class="result-copy"><div class="skeleton skeleton-result-title"></div><div class="skeleton skeleton-result-line"></div><div class="skeleton skeleton-result-line short"></div></div></article>
-            <article class="result-card card" aria-label="Loading result"><div class="skeleton skeleton-icon"></div><div class="result-copy"><div class="skeleton skeleton-result-title"></div><div class="skeleton skeleton-result-line"></div><div class="skeleton skeleton-result-line short"></div></div></article>
-            <article class="result-card card" aria-label="Loading result"><div class="skeleton skeleton-icon"></div><div class="result-copy"><div class="skeleton skeleton-result-title"></div><div class="skeleton skeleton-result-line"></div><div class="skeleton skeleton-result-line short"></div></div></article>
-            <article class="result-card card" aria-label="Loading result"><div class="skeleton skeleton-icon"></div><div class="result-copy"><div class="skeleton skeleton-result-title"></div><div class="skeleton skeleton-result-line"></div><div class="skeleton skeleton-result-line short"></div></div></article>
+            <button class="result-card card" type="button" data-company="Doss">
+              <span class="result-card-heading"><strong>Doss</strong><span class="card-arrow" aria-hidden="true">→</span></span>
+              <span class="result-summary">1 applied-AI role, on-site</span>
+              <span class="result-location">680 Folsom Street · SoMa</span>
+              <span class="result-tags"><span>Series B</span><span>In office</span></span>
+            </button>
+            <button class="result-card card" type="button" data-company="Pylon">
+              <span class="result-card-heading"><strong>Pylon</strong><span class="card-arrow" aria-hidden="true">→</span></span>
+              <span class="result-summary">1 applied-AI role, on-site</span>
+              <span class="result-location">690 5th Street · SoMa</span>
+              <span class="result-tags"><span>Series B</span><span>In office</span></span>
+            </button>
+            <button class="result-card card" type="button" data-company="Shepherd">
+              <span class="result-card-heading"><strong>Shepherd</strong><span class="card-arrow" aria-hidden="true">→</span></span>
+              <span class="result-summary">3 applied-AI roles, on-site</span>
+              <span class="result-location">500 Sansome Street · Financial District</span>
+              <span class="result-tags"><span>Series B</span><span>In office</span></span>
+            </button>
+            <button class="result-card card" type="button" data-company="HappyRobot">
+              <span class="result-card-heading"><strong>HappyRobot</strong><span class="card-arrow" aria-hidden="true">→</span></span>
+              <span class="result-summary">5 applied-AI roles, hybrid</span>
+              <span class="result-location">2325 3rd Street · Dogpatch</span>
+              <span class="result-tags"><span>Series B</span><span>Hybrid</span></span>
+            </button>
           </div>
         </section>
 
-        <section class="map-card card" aria-label="Loading map">
+        <section class="map-card card" aria-label="San Francisco company map">
           <div class="map-toolbar">
-            <div class="skeleton skeleton-map-label"></div>
-            <div class="skeleton skeleton-map-control"></div>
+            <span>San Francisco</span>
+            <div class="map-toolbar-actions">
+              <span class="map-status" id="map-status" role="status">Loading map</span>
+              <span class="map-count">4</span>
+            </div>
           </div>
-          <div class="map-canvas" aria-hidden="true">
-            <span class="map-road road-a"></span>
-            <span class="map-road road-b"></span>
-            <span class="map-road road-c"></span>
-            <span class="map-block block-a"></span>
-            <span class="map-block block-b"></span>
-            <span class="map-block block-c"></span>
-            <span class="map-pin pin-a"></span>
-            <span class="map-pin pin-b"></span>
-            <span class="map-pin pin-c"></span>
-            <span class="map-pin pin-d"></span>
+          <div class="map-canvas">
+            <div id="map" aria-label="Interactive map of San Francisco companies"></div>
           </div>
         </section>
       </div>
     </main>
+
+    <dialog class="company-dialog" aria-labelledby="dialog-company-name">
+      <div class="app-shell dialog-shell">
+        <header class="app-header">
+          <a class="wordmark" href="index.html" aria-label="Mappable home">Mappable</a>
+          <button class="close-button" type="button" aria-label="Close company details">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </header>
+        <div class="dialog-content">
+          <section class="company-hero" aria-labelledby="dialog-company-name">
+            <p class="eyebrow">Company profile</p>
+            <div class="company-title-row">
+              <h2 id="dialog-company-name"></h2>
+              <span class="detail-badge" id="dialog-funding-stage"></span>
+            </div>
+            <p class="company-summary" id="dialog-company-summary"></p>
+          </section>
+
+          <div class="detail-layout">
+            <section class="roles-section" aria-labelledby="roles-title">
+              <div class="section-heading">
+                <div>
+                  <p class="eyebrow">Current openings</p>
+                  <h3 id="roles-title">Applied AI roles</h3>
+                </div>
+                <span class="section-count" id="dialog-role-count"></span>
+              </div>
+              <div class="role-list" id="dialog-role-list"></div>
+            </section>
+
+            <aside class="company-facts" aria-label="Company details">
+              <section class="fact-card card">
+                <p class="fact-label">San Francisco office</p>
+                <p class="fact-value" id="dialog-address"></p>
+                <p class="fact-note">Roles are tied to this office location.</p>
+              </section>
+              <section class="fact-card card">
+                <p class="fact-label">Data confidence</p>
+                <div class="verified-row"><span class="verified-dot" aria-hidden="true"></span><strong>Verified</strong></div>
+                <p class="fact-note" id="dialog-verified-date"></p>
+              </section>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="vendor/maplibre-gl-5.24.0/maplibre-gl.js"></script>
+    <script>
+      const dialog = document.querySelector('.company-dialog');
+      const dialogName = document.querySelector('#dialog-company-name');
+      const dialogFundingStage = document.querySelector('#dialog-funding-stage');
+      const dialogCompanySummary = document.querySelector('#dialog-company-summary');
+      const dialogRoleCount = document.querySelector('#dialog-role-count');
+      const dialogRoleList = document.querySelector('#dialog-role-list');
+      const dialogAddress = document.querySelector('#dialog-address');
+      const dialogVerifiedDate = document.querySelector('#dialog-verified-date');
+      const closeButton = document.querySelector('.close-button');
+      const mapStatus = document.querySelector('#map-status');
+      const companies = [
+        {
+          name: 'Doss',
+          summary: '1 applied-AI role, on-site',
+          fundingStage: 'Series B',
+          address: '680 Folsom Street, Suite 550, San Francisco, CA 94107',
+          verifiedAt: '2026-07-18',
+          coordinates: [-122.398495186403, 37.784210511615],
+          jobs: [
+            { title: 'Staff Applied AI Engineer', workMode: 'in-office', location: 'San Francisco', url: 'https://jobs.ashbyhq.com/doss/f698df9b-0fe0-49e6-88d1-f936f1aa301f' }
+          ]
+        },
+        {
+          name: 'Pylon',
+          summary: '1 applied-AI role, on-site',
+          fundingStage: 'Series B',
+          address: '690 5th St, San Francisco, CA 94107',
+          verifiedAt: '2026-07-18',
+          coordinates: [-122.3976595, 37.7753258],
+          jobs: [
+            { title: 'Software Engineer, AI', workMode: 'in-office', location: 'San Francisco', url: 'https://jobs.ashbyhq.com/pylon-labs/8d8264b7-8094-4a55-8991-7876796487ae' }
+          ]
+        },
+        {
+          name: 'Shepherd',
+          summary: '3 applied-AI roles, on-site',
+          fundingStage: 'Series B',
+          address: '500 Sansome Street, San Francisco, CA 94111',
+          verifiedAt: '2026-07-18',
+          coordinates: [-122.4012099, 37.7951065],
+          jobs: [
+            { title: 'Software Engineer, Applied AI', workMode: 'in-office', location: 'San Francisco', url: 'https://jobs.ashbyhq.com/shepherd/26959124-aab2-446e-aa4d-7265c83e0be5' },
+            { title: 'Software Engineer, AI Product + Agents', workMode: 'in-office', location: 'San Francisco', url: 'https://jobs.ashbyhq.com/shepherd/6cbab29e-1bbf-42b4-9308-3823693ca288' },
+            { title: 'Founding Machine Learning Engineer', workMode: 'in-office', location: 'San Francisco', url: 'https://jobs.ashbyhq.com/shepherd/797316b4-bdcc-4c0c-8bc2-46d4648db240' }
+          ]
+        },
+        {
+          name: 'HappyRobot',
+          summary: '5 applied-AI roles, hybrid',
+          fundingStage: 'Series B',
+          address: '2325 3rd St #422, San Francisco, CA 94107',
+          verifiedAt: '2026-07-18',
+          coordinates: [-122.388244, 37.7598247],
+          jobs: [
+            { title: 'Forward Deployed Engineer', workMode: 'hybrid', location: 'San Francisco', url: 'https://jobs.ashbyhq.com/happyrobot.ai/afd99ef3-78a8-47a1-8566-04f1cf73939d' },
+            { title: 'Data Operations Engineer', workMode: 'hybrid', location: 'San Francisco', url: 'https://jobs.ashbyhq.com/happyrobot.ai/4768c3cb-9a60-40d9-8704-3fa8b5042553' },
+            { title: 'Deployment Strategist', workMode: 'hybrid', location: 'San Francisco', url: 'https://jobs.ashbyhq.com/happyrobot.ai/4061af5c-c35d-4f59-851d-52854facfdb0' },
+            { title: 'Data Operations Lead', workMode: 'hybrid', location: 'San Francisco', url: 'https://jobs.ashbyhq.com/happyrobot.ai/be2ee07b-0d3f-4894-a557-429c5f64a14e' },
+            { title: 'Data Scientist', workMode: 'hybrid', location: 'San Francisco', url: 'https://jobs.ashbyhq.com/happyrobot.ai/ffb28efb-3bfd-4306-ba2e-53141a1c476e' }
+          ]
+        }
+      ];
+
+      function markerLabel(name) {
+        return name.length > 12 ? `${name.slice(0, 11)}…` : name;
+      }
+
+      function formatWorkMode(workMode) {
+        return workMode === 'in-office' ? 'In office' : 'Hybrid';
+      }
+
+      function formatDate(date) {
+        return new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
+          .format(new Date(`${date}T12:00:00`));
+      }
+
+      function renderRoles(jobs) {
+        const roleCards = jobs.map((job) => {
+          const role = document.createElement('article');
+          role.className = 'role-card card';
+
+          const roleCopy = document.createElement('div');
+          roleCopy.className = 'role-copy';
+
+          const roleTitle = document.createElement('h4');
+          roleTitle.textContent = job.title;
+
+          const roleMeta = document.createElement('p');
+          roleMeta.textContent = `${formatWorkMode(job.workMode)} · ${job.location}`;
+
+          const roleLink = document.createElement('a');
+          roleLink.className = 'role-link';
+          roleLink.href = job.url;
+          roleLink.target = '_blank';
+          roleLink.rel = 'noreferrer';
+          roleLink.textContent = 'View role ↗';
+
+          roleCopy.append(roleTitle, roleMeta);
+          role.append(roleCopy, roleLink);
+          return role;
+        });
+
+        dialogRoleList.replaceChildren(...roleCards);
+      }
+
+      function showCompany(name) {
+        const company = companies.find((item) => item.name === name);
+        if (!company) return;
+
+        dialogName.textContent = company.name;
+        dialogFundingStage.textContent = company.fundingStage;
+        dialogCompanySummary.textContent = company.summary;
+        dialogRoleCount.textContent = `${company.jobs.length} ${company.jobs.length === 1 ? 'role' : 'roles'}`;
+        dialogAddress.textContent = company.address;
+        dialogVerifiedDate.textContent = `Last checked ${formatDate(company.verifiedAt)}`;
+        renderRoles(company.jobs);
+        dialog.showModal();
+        dialog.scrollTop = 0;
+        closeButton.focus();
+      }
+
+      document.querySelectorAll('[data-company]').forEach((card) => {
+        card.addEventListener('click', () => {
+          showCompany(card.dataset.company);
+        });
+      });
+
+      closeButton.addEventListener('click', () => dialog.close());
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && dialog.open) dialog.close();
+      });
+
+      const map = new maplibregl.Map({
+        container: 'map',
+        style: 'https://tiles.openfreemap.org/styles/liberty',
+        center: [-122.4194, 37.7749],
+        zoom: 12.25,
+        attributionControl: true
+      });
+
+      map.addControl(new maplibregl.NavigationControl(), 'top-right');
+
+      map.on('load', () => {
+        companies.forEach((company) => {
+          const markerAnchor = document.createElement('div');
+          markerAnchor.className = 'company-marker-anchor';
+
+          const markerElement = document.createElement('button');
+          markerElement.className = 'company-marker';
+          markerElement.type = 'button';
+          markerElement.setAttribute('aria-label', `View ${company.name}`);
+          markerElement.textContent = markerLabel(company.name);
+          markerElement.addEventListener('click', () => showCompany(company.name));
+          markerAnchor.append(markerElement);
+
+          new maplibregl.Marker({ element: markerAnchor, anchor: 'center' })
+            .setLngLat(company.coordinates)
+            .addTo(map);
+        });
+
+        const companyBounds = new maplibregl.LngLatBounds();
+        companies.forEach((company) => companyBounds.extend(company.coordinates));
+        map.fitBounds(companyBounds, {
+          padding: 48,
+          maxZoom: 11.25,
+          duration: 0
+        });
+
+        mapStatus.textContent = 'Map loaded';
+      });
+
+      map.on('error', () => {
+        if (!map.loaded()) mapStatus.textContent = 'Map unavailable';
+      });
+    </script>
   </body>
 </html>
