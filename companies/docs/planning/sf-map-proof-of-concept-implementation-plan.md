@@ -2,53 +2,49 @@
 
 ## Status
 
-PR-01 is implemented locally with an OpenStreetMap-derived local SVG basemap.
-The company-detail interaction is in place. This plan adds a local SVG-backed
-map only; it does not add workflow-map behavior.
+PR-01 and PR-02 are implemented locally with a bundled MapLibre renderer and
+the keyless OpenFreeMap Liberty basemap. The map opens from `file://`, but
+requires internet access to obtain its remote style and tiles.
 
 ## PR Status
 
 | PR | Scope | Status |
 | --- | --- | --- |
-| PR-01 | Map contract and static basemap | Implemented locally |
-| PR-02 | Company pin rendering and selection | Planned |
+| PR-01 | Keyless interactive basemap | Implemented locally |
+| PR-02 | Company pin rendering and selection | Implemented locally |
 | PR-03 | Responsive polish and verification | Planned |
 
 ## Parallel Execution Notes
 
-PR-01 must land before PR-02 because it defines the geographic projection and
-local SVG surface. PR-03 follows PR-02 because it verifies the wired UI.
+PR-01 must land before PR-02 because it provides the interactive map surface.
+PR-03 follows PR-02 because it verifies the wired UI.
 
 ## PR / Review Strategy
 
-Keep each PR to one focused implementation pass. Review the static map before
-binding data, then review interactions before responsive polish.
+Keep each PR to one focused implementation pass. Review the interactive map
+before follow-on responsive polish.
 
-## PR-01 — Local map contract and basemap
+## PR-01 — Keyless interactive basemap
 
 **Status:** Implemented locally
 
-**Objective:** Add a schema-validated regional map contract and a restrained,
-geographically grounded local SVG basemap for San Francisco.
+**Objective:** Add a bundled MapLibre renderer that loads a keyless,
+geographically accurate San Francisco basemap from OpenFreeMap.
 
 **Dependencies:** None.
 
-**Parallelism:** None; this establishes the shared geometry.
+**Parallelism:** None; this establishes the shared map surface.
 
-- [x] P1-T01 Define a regional map JSON contract: geographic bounds, SVG
-  viewBox, and source dataset identifier.
-- [x] P1-T02 Add the matching JSON schema and validate the contract.
-- [x] P1-T03 Create a local SVG from OpenStreetMap coastline and major-road
-  geometry, with local attribution and no runtime map request.
-- [x] P1-T04 Replace the decorative CSS map canvas with the local SVG surface.
+- [x] P1-T01 Bundle MapLibre JavaScript, CSS, and license text locally.
+- [x] P1-T02 Configure the keyless OpenFreeMap Liberty style.
+- [x] P1-T03 Replace the static SVG map surface with an interactive map panel.
 
-**Validation:** Open directly through `file://`; confirm no network requests,
-the SVG scales inside the existing desktop map panel, and map JSON conforms to
-its schema.
+**Validation:** Open directly through `file://`; confirm the remote map style
+and tiles render when an internet connection is available.
 
 ## PR-02 — Finalized-company pins and selection
 
-**Status:** Planned
+**Status:** Implemented locally
 
 **Objective:** Render the finalized company records as SVG pins and make map
 and result-list selection agree.
@@ -57,17 +53,14 @@ and result-list selection agree.
 
 **Parallelism:** None; consumes the PR-01 bounds and viewBox.
 
-- [ ] P2-T01 Create a local UI data module derived from
-  `data/mappable-records1.json`; do not use `fetch()` so `file://` remains
-  supported.
-- [ ] P2-T02 Implement latitude/longitude-to-SVG coordinate projection from
-  the map contract bounds.
-- [ ] P2-T03 Render one accessible pin per finalized company.
-- [ ] P2-T04 Synchronize pin and result-card selection; either action opens
-  the existing company-detail dialog.
+- [x] P2-T01 Define the current finalized company coordinates locally; no
+  local JSON request is required at runtime.
+- [x] P2-T02 Render one accessible pin per finalized company.
+- [x] P2-T03 Synchronize result cards and pin clicks with the existing
+  company-detail dialog.
 
-**Validation:** Confirm all current records render once, each pin falls within
-the SF map bounds, and card/pin actions open the expected company dialog.
+**Validation:** Confirm all current records render once and card/pin actions
+open the expected company dialog.
 
 ## PR-03 — Responsive polish and verification
 
@@ -86,9 +79,8 @@ the SF map bounds, and card/pin actions open the expected company dialog.
 - [ ] P3-T04 Confirm Escape, close-control, and Mappable-home behaviors still
   work from the detail view.
 
-**Validation:** Direct `file://` testing at desktop and mobile widths, plus a
-local script/schema check. No external libraries, tiles, routing, or workflow
-connections.
+**Validation:** Direct `file://` testing at desktop and mobile widths. No
+server, API key, routing, or workflow connections.
 
 ## Open Questions
 
