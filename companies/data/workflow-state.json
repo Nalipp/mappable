@@ -2,16 +2,16 @@
   "dataset": "mappable-records1.json",
   "constraint_profile": "data-collection-1.instructions.md",
   "progress": {
-    "candidates_total": 193,
-    "pending": 163,
-    "validated": 11,
-    "needs_verification": 10,
-    "rejected": 9
+    "candidates_total": 215,
+    "pending": 0,
+    "validated": 23,
+    "needs_verification": 60,
+    "rejected": 132
   },
-  "last_action": "Validation: processed candidates 26-30 (Patlytics, Day One Partners, Assort Health, Squint, Vectera.ai; batch 5, 2026-07-18) via native web research. Rejected: Assort Health (funding_stage - $120M Series C Jun 2026), Day One Partners (funding_stage - a recruiting firm, not a Series B company). needs_verification: Patlytics (qualifying_job - applied-AI 'AI Engineer' role is Hybrid/2-locations, SF tie unconfirmed vs NYC; JS-rendered ATS), Squint (sf_address - SF HQ claimed but no specific SF street address, San Jose 1937 Johnston Ave in registries), Vectera.ai (funding_stage - entity/funding unverifiable, likely a discovery error). No candidates validated this batch.",
-  "next_action": "Run `workflow validate` for the next batch: the first 5 pending candidates are Certa, Zero, Spellbrush, Moveworks, Saragossa (checked in constraint order, fail-fast). Counts derived from candidates.json + candidate-validation.json.",
+  "last_action": "Validation: processed the final batch Eve (Legal AI), Noon, Ruli.ai, Distyl, Achira (batch 42, 2026-07-20) via native web research. Validated: Distyl (Distyl AI; Series B $175M/$1.8B Khosla/Lightspeed, SF-hybrid AI Engineer, 55 Hawthorne St, rooftop geocode). Rejected: Eve/Legal AI (qualifying_job - San Mateo office, not SF), Achira (funding_stage - seed, NYC/Greece), Noon (funding_stage - $44M seed), Ruli.ai (funding_stage - $6M seed). ALL 215 CANDIDATES NOW PROCESSED: 23 validated, 60 needs_verification, 132 rejected, 0 pending.",
+  "next_action": "Validation pass COMPLETE - 0 pending. Recommended next steps for the operator: (1) run `workflow finalize` to normalize the 23 validated companies into mappable-records1.json; (2) optionally run a targeted address-resolution pass (CA Secretary of State Statement-of-Information filings) to convert address-blocked needs_verification candidates to validated; (3) discovery-hygiene: de-duplicate candidates.json ('Relevance AI', 'Airbyte'). If the parallel discovery session appends new candidates, re-run `workflow validate` for the new pending names.",
   "quality": {
     "status": "ok",
-    "note": "Batch 5 produced 3/5 needs_verification (Patlytics, Squint, Vectera.ai). Causes are candidate-specific data-availability gaps (JS-rendered ATS boards hiding per-role locations, an SF-vs-San Jose address conflict, and an unverifiable/misnamed entity), not a systemic retrieval or rubric failure, so validation continues. Watch for a repeat pattern in the next batch."
+    "note": "Full validation pass done on the 215-name pool (grew from 193 via parallel discovery). Outcome mix: 23 validated (clean Series B SF applied-AI companies with confirmed street addresses), 60 needs_verification (mostly strong Series B SF AI companies blocked only on a missing/ambiguous SF street address, plus some ambiguous funding-stage or entity artifacts), 132 rejected (dominated by funding_stage: past-Series-B/acquired, or sub-Series-B seed/A; plus non-SF locations). Highest-leverage follow-up: a bulk CA-SoS address-resolution pass on the address-blocked needs_verification set (Reducto, depthfirst, Goodfire, Imbue, Unstructured, Bedrock, Braintrust, Numeric, Assembled, TruckSmarter, Verse, Patronus, Airbyte, Sesame, David AI, Vapi, Tavus, Vori, +others) - many would convert to validated."
   }
 }
