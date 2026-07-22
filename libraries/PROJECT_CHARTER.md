@@ -13,11 +13,17 @@ Mappable is a fast static prototype system driven by agent-collected data. The g
 ## Architecture Rules
 
 - No database.
-- No HTTP requests from the prototype.
+- No application-data HTTP requests from the prototype. The sole runtime
+  network exception is the keyless OpenFreeMap Liberty basemap style and its
+  tiles, loaded by the approved vendored MapLibre renderer.
 - No Python server, Node server, dev server, or local API.
-- No frameworks, package managers, build steps, or external libraries.
+- No frameworks, package managers, or build steps. MapLibre GL JS 5.24.0 may
+  be vendored under `HTML/shadcn/vendor/` as the only approved UI library;
+  preserve its license and do not load it from a CDN.
 - Use vanilla JavaScript only when needed for interaction or rendering local JSON data.
-- Preserve `file://` compatibility as a first-class constraint.
+- Preserve `file://` compatibility as a first-class constraint. Local HTML,
+  application data, MapLibre code, and CSS must load without a server; an
+  internet connection is required only for the remote basemap style and tiles.
 
 ## Agent Workflow
 

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light">
     <title>Mappable</title>
+    <link rel="stylesheet" href="vendor/maplibre-gl-5.24.0/maplibre-gl.css">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -39,25 +40,38 @@
           </div>
         </section>
 
-        <section class="map-card card" aria-label="Loading map">
+        <section class="map-card card" aria-label="Interactive map">
           <div class="map-toolbar">
             <div class="skeleton skeleton-map-label"></div>
-            <div class="skeleton skeleton-map-control"></div>
+            <span class="map-status" id="map-status" role="status">Loading map</span>
           </div>
-          <div class="map-canvas" aria-hidden="true">
-            <span class="map-road road-a"></span>
-            <span class="map-road road-b"></span>
-            <span class="map-road road-c"></span>
-            <span class="map-block block-a"></span>
-            <span class="map-block block-b"></span>
-            <span class="map-block block-c"></span>
-            <span class="map-pin pin-a"></span>
-            <span class="map-pin pin-b"></span>
-            <span class="map-pin pin-c"></span>
-            <span class="map-pin pin-d"></span>
+          <div class="map-canvas">
+            <div id="map" aria-label="Interactive map of finalized records"></div>
           </div>
         </section>
       </div>
     </main>
+
+    <script src="vendor/maplibre-gl-5.24.0/maplibre-gl.js"></script>
+    <script>
+      const mapStatus = document.querySelector('#map-status');
+      const map = new maplibregl.Map({
+        container: 'map',
+        style: 'https://tiles.openfreemap.org/styles/liberty',
+        center: [-98.5, 38.5],
+        zoom: 3.25,
+        attributionControl: true
+      });
+
+      map.addControl(new maplibregl.NavigationControl(), 'top-right');
+
+      map.on('load', () => {
+        mapStatus.textContent = 'Map loaded';
+      });
+
+      map.on('error', () => {
+        if (!map.loaded()) mapStatus.textContent = 'Map unavailable';
+      });
+    </script>
   </body>
 </html>

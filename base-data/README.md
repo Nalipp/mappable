@@ -4,6 +4,20 @@ This starter extends the lightweight Mappable prototype base with a durable
 data-ingestion loop. It turns public research into a local, schema-backed
 dataset without adding a database, server, build step, or runtime dependency.
 
+## Map implementation
+
+The starter includes a locally vendored MapLibre GL JS 5.24.0 browser
+distribution under `HTML/shadcn/vendor/`. Build agents must use it with the
+keyless OpenFreeMap Liberty style instead of creating synthetic CSS/SVG maps or
+hand-positioned markers. Finalized records supply numeric longitude/latitude;
+the map renders one accessible marker per record and fits the initial viewport
+to those coordinates.
+
+The page still opens directly from `file://`. Local HTML, data, MapLibre code,
+and CSS do not need a server, but the OpenFreeMap style and tiles require an
+internet connection. Preserve visible OpenMapTiles/OpenStreetMap attribution
+and the bundled MapLibre BSD license.
+
 ## Start a dataset run
 
 1. Copy `data-collection-template.instructions.md` to

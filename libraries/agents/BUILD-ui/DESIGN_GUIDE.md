@@ -24,10 +24,14 @@ Useful Wemo files:
 - Plain HTML
 - Plain CSS
 - Vanilla JavaScript only if behavior is needed later
+- Locally vendored MapLibre GL JS 5.24.0 for the interactive map only
 - No build step
 - No framework dependency
 
-Do not install shadcn, React, Tailwind, Mantine, or Vite for this prototype. Treat shadcn as a visual reference, not a dependency.
+Do not install shadcn, React, Tailwind, Mantine, or Vite for this prototype.
+Treat shadcn as a visual reference, not a dependency. Do not replace the
+approved vendored MapLibre/OpenFreeMap stack with a synthetic map or another
+mapping provider.
 
 ## Local Tokens
 
@@ -102,6 +106,21 @@ Current Mappable pattern:
 
 For map-first product flows, the map remains the anchor. Supporting results can scroll around it.
 
+## Map Strategy
+
+- Render a geographically accurate, interactive MapLibre map using the local
+  `HTML/shadcn/vendor/maplibre-gl-5.24.0/` browser distribution.
+- Use the keyless OpenFreeMap Liberty style at
+  `https://tiles.openfreemap.org/styles/liberty` and keep attribution visible.
+- Position markers from finalized longitude/latitude values; never estimate
+  pixel positions or draw a substitute CSS/SVG geography.
+- Fit the initial viewport to all visible records. Marker and result-card
+  actions should resolve to the same selected record.
+- Use Wemo blue for default/selected markers, clear keyboard focus, and compact
+  labels or tooltips that do not obscure the map.
+- Provide a visible map loading/error state. `file://` remains the entry point,
+  but the basemap requires internet access for its remote style and tiles.
+
 ## Verification
 
 Before finishing a styling pass, check:
@@ -112,3 +131,7 @@ Before finishing a styling pass, check:
 4. Desktop keeps the results/map split.
 5. Mobile stacks summary, sticky map, then results.
 6. Text and badges do not overflow.
+7. The MapLibre renderer and CSS load locally, the OpenFreeMap basemap renders
+   with attribution when online, and failure is communicated when offline.
+8. Every finalized record with coordinates produces one accessible marker,
+   the viewport fits those records, and list/marker selection stays in sync.

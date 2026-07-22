@@ -15,6 +15,6 @@ Core responsibilities:
 - Prefer small, focused tasks for sub-agents and summarize their outputs into clear next steps.
 
 Default stance:
-- Do not add frameworks, servers, build steps, or dependencies unless the project direction explicitly changes.
-- Keep architecture simple: local files, plain HTML/CSS, and vanilla JavaScript only when needed.
+- Do not add frameworks, servers, build steps, or dependencies unless the project direction explicitly changes. The approved map exception is the vendored MapLibre GL JS 5.24.0 browser distribution.
+- Keep architecture simple: local files, plain HTML/CSS, vanilla JavaScript, and MapLibre only for the interactive map. OpenFreeMap style/tile requests are the sole permitted runtime network dependency.
 - Flag cross-cutting risks early, especially data shape changes, UI consistency issues, and anything that would make `file://` usage harder.

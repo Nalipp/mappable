@@ -13,7 +13,7 @@
     resultsList: document.querySelector("#results-list"),
     emptyState: document.querySelector("#empty-state"),
     search: document.querySelector("#library-search"),
-    markers: document.querySelector("#map-markers"),
+    mapStatus: document.querySelector("#map-status"),
     selectedRank: document.querySelector("#selected-rank"),
     selectedTitle: document.querySelector("#selected-title"),
     selectedAddress: document.querySelector("#selected-address"),
@@ -30,15 +30,10 @@
     maximumFractionDigits: 1,
   });
 
-  const mapBounds = {
-    west: -125,
-    east: -66,
-    north: 49.5,
-    south: 24.25,
-  };
-
+  const mapMarkers = new Map();
   let selectedRank = libraries.length ? libraries[0].rank : null;
   let filteredRanks = new Set(libraries.map((library) => library.rank));
+  let map = null;
 
   function titleCase(value) {
     return value
@@ -52,25 +47,12 @@
     return Number.isFinite(value) ? compactFormatter.format(value) : "Not reported";
   }
 
-  function clamp(value, minimum, maximum) {
-    return Math.min(Math.max(value, minimum), maximum);
-  }
-
-  function markerPosition(coordinates) {
-    const x = ((coordinates.lng - mapBounds.west) / (mapBounds.east - mapBounds.west)) * 100;
-    const y = ((mapBounds.north - coordinates.lat) / (mapBounds.north - mapBounds.south)) * 100;
-    return {
-      x: clamp(x, 0, 100),
-      y: clamp(y, 0, 100),
-    };
-  }
-
   function markerSize(squareFeet) {
     const values = libraries.map((library) => Math.sqrt(library.square_feet));
     const minimum = Math.min(...values);
     const maximum = Math.max(...values);
     const normalized = (Math.sqrt(squareFeet) - minimum) / (maximum - minimum || 1);
-    return 11 + normalized * 11;
+    return 14 + normalized * 12;
   }
 
   function createElement(tagName, className, text) {
@@ -92,30 +74,69 @@
     elements.totalArea.textContent = `${formatCompact(totalSquareFeet)} sq ft`;
   }
 
-  function renderMarkers() {
-    const fragment = document.createDocumentFragment();
+  function createMapMarker(library) {
+    const anchor = createElement("div", "library-marker-anchor");
+    const markerButton = createElement("button", "library-marker");
+    const name = titleCase(library.title);
+    const coordinates = library.location.coordinates;
 
-    libraries.forEach((library) => {
-      const marker = createElement("button", "map-marker");
-      const position = markerPosition(library.location.coordinates);
-      const name = titleCase(library.title);
+    markerButton.type = "button";
+    markerButton.dataset.rank = String(library.rank);
+    markerButton.dataset.label = `#${library.rank} ${name}`;
+    markerButton.setAttribute(
+      "aria-label",
+      `Rank ${library.rank}, ${name}, ${library.location.city}, ${library.location.state}, ${library.value}`
+    );
+    markerButton.setAttribute("aria-pressed", "false");
+    markerButton.style.setProperty("--marker-size", `${markerSize(library.square_feet)}px`);
+    markerButton.addEventListener("click", () => selectLibrary(library, { scrollList: true }));
+    anchor.append(markerButton);
 
-      marker.type = "button";
-      marker.dataset.rank = String(library.rank);
-      marker.dataset.label = `#${library.rank} ${name}`;
-      marker.setAttribute(
-        "aria-label",
-        `Rank ${library.rank}, ${name}, ${library.location.city}, ${library.location.state}, ${library.value}`
-      );
-      marker.setAttribute("aria-pressed", "false");
-      marker.style.setProperty("--marker-x", `${position.x}%`);
-      marker.style.setProperty("--marker-y", `${position.y}%`);
-      marker.style.setProperty("--marker-size", `${markerSize(library.square_feet)}px`);
-      marker.addEventListener("click", () => selectLibrary(library, { scrollList: true }));
-      fragment.appendChild(marker);
+    const marker = new maplibregl.Marker({ element: anchor, anchor: "center" })
+      .setLngLat([coordinates.lng, coordinates.lat])
+      .addTo(map);
+
+    mapMarkers.set(library.rank, { anchor, button: markerButton, marker });
+  }
+
+  function initializeMap() {
+    if (!window.maplibregl) {
+      elements.mapStatus.textContent = "Map unavailable";
+      return;
+    }
+
+    map = new maplibregl.Map({
+      container: "map",
+      style: "https://tiles.openfreemap.org/styles/liberty",
+      center: [-98.5, 38.5],
+      zoom: 3.25,
+      attributionControl: true,
     });
 
-    elements.markers.replaceChildren(fragment);
+    map.addControl(new maplibregl.NavigationControl(), "top-right");
+
+    const bounds = new maplibregl.LngLatBounds();
+    libraries.forEach((library) => {
+      const coordinates = library.location.coordinates;
+      createMapMarker(library);
+      bounds.extend([coordinates.lng, coordinates.lat]);
+    });
+
+    map.fitBounds(bounds, {
+      padding: 52,
+      maxZoom: 4.5,
+      duration: 0,
+    });
+
+    updateSelectedStyles();
+
+    map.on("load", () => {
+      elements.mapStatus.textContent = "Map loaded";
+    });
+
+    map.on("error", () => {
+      if (!map.loaded()) elements.mapStatus.textContent = "Map unavailable";
+    });
   }
 
   function resultCard(library) {
@@ -159,10 +180,17 @@
   }
 
   function updateSelectedStyles() {
-    document.querySelectorAll(".result-card, .map-marker").forEach((node) => {
+    document.querySelectorAll(".result-card").forEach((node) => {
       const isSelected = Number(node.dataset.rank) === selectedRank;
       node.classList.toggle("is-selected", isSelected);
       node.setAttribute("aria-pressed", String(isSelected));
+    });
+
+    mapMarkers.forEach(({ anchor, button }, rank) => {
+      const isSelected = rank === selectedRank;
+      button.classList.toggle("is-selected", isSelected);
+      button.setAttribute("aria-pressed", String(isSelected));
+      anchor.style.zIndex = isSelected ? "10" : String(100 - rank);
     });
   }
 
@@ -211,8 +239,8 @@
     renderResults(matches);
     elements.selectionCard.hidden = matches.length === 0;
 
-    document.querySelectorAll(".map-marker").forEach((marker) => {
-      marker.hidden = !filteredRanks.has(Number(marker.dataset.rank));
+    mapMarkers.forEach(({ anchor }, rank) => {
+      anchor.hidden = !filteredRanks.has(rank);
     });
 
     if (matches.length && !filteredRanks.has(selectedRank)) {
@@ -226,13 +254,14 @@
       elements.emptyState.hidden = false;
       elements.emptyState.textContent = "The local library dataset could not be loaded.";
       elements.selectionCard.hidden = true;
+      elements.mapStatus.textContent = "Map unavailable";
       return;
     }
 
     renderSummary();
-    renderMarkers();
     renderResults(libraries);
     selectLibrary(libraries[0]);
+    initializeMap();
     elements.search.addEventListener("input", applySearch);
   }
 

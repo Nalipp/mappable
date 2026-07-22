@@ -452,56 +452,45 @@ h1 {
   margin-left: -2px;
 }
 
+.map-status {
+  margin-left: 4px;
+  padding-left: 9px;
+  border-left: 1px solid var(--border);
+}
+
 .map-canvas {
   position: relative;
   isolation: isolate;
-  min-height: 445px;
+  height: 445px;
   overflow: hidden;
-  border: 1px solid var(--wemo-blue-200);
+  border: 1px solid var(--border);
   border-radius: var(--radius-xs);
-  background-color: #edf4f7;
-}
-
-.us-silhouette,
-.map-grid,
-.map-markers {
-  position: absolute;
-  inset: 8% 5% 12%;
-}
-
-.us-silhouette,
-.map-grid {
-  clip-path: polygon(
-    1% 13%, 7% 9%, 16% 12%, 23% 18%, 31% 16%, 38% 10%, 49% 9%, 56% 13%,
-    65% 14%, 71% 19%, 79% 16%, 87% 21%, 94% 25%, 99% 34%, 94% 42%, 91% 49%,
-    88% 53%, 89% 60%, 85% 65%, 82% 73%, 79% 72%, 76% 65%, 71% 63%, 67% 69%,
-    61% 66%, 56% 71%, 50% 69%, 44% 76%, 38% 79%, 32% 77%, 27% 70%, 22% 72%,
-    18% 65%, 12% 62%, 9% 54%, 4% 47%, 5% 37%, 2% 29%
-  );
-}
-
-.us-silhouette {
-  z-index: 0;
   background: var(--wemo-blue-200);
-  box-shadow: inset 0 0 0 1px rgba(9, 121, 201, 0.18);
 }
 
-.map-grid {
-  z-index: 1;
-  opacity: 0.75;
-  background-image:
-    repeating-linear-gradient(0deg, transparent 0 38px, rgba(255, 255, 255, 0.7) 39px 40px),
-    repeating-linear-gradient(90deg, transparent 0 54px, rgba(255, 255, 255, 0.7) 55px 56px);
+#map {
+  width: 100%;
+  height: 100%;
 }
 
-.map-markers {
-  z-index: 2;
+.maplibregl-ctrl-attrib {
+  font-size: 10px;
 }
 
-.map-marker {
-  position: absolute;
-  left: var(--marker-x);
-  top: var(--marker-y);
+.maplibregl-ctrl-group {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xs);
+  box-shadow: var(--shadow-100);
+}
+
+.library-marker-anchor {
+  display: grid;
+  place-items: center;
+}
+
+.library-marker {
+  position: relative;
   display: grid;
   width: var(--marker-size);
   height: var(--marker-size);
@@ -513,25 +502,27 @@ h1 {
   box-shadow: 0 1px 5px rgba(0, 61, 104, 0.3);
   cursor: pointer;
   place-items: center;
-  transform: translate(-50%, -50%);
   transition: transform 120ms ease, box-shadow 120ms ease, background-color 120ms ease;
 }
 
-.map-marker:hover,
-.map-marker:focus-visible {
-  z-index: 4;
-  transform: translate(-50%, -50%) scale(1.28);
+.library-marker:hover,
+.library-marker:focus-visible {
+  transform: scale(1.28);
   box-shadow: 0 0 0 4px rgba(9, 121, 201, 0.18), 0 2px 7px rgba(0, 61, 104, 0.35);
 }
 
-.map-marker.is-selected {
-  z-index: 5;
-  background: var(--accent-dark);
-  box-shadow: 0 0 0 5px rgba(9, 121, 201, 0.22), 0 2px 7px rgba(0, 61, 104, 0.4);
-  transform: translate(-50%, -50%) scale(1.16);
+.library-marker:focus-visible {
+  outline: 2px solid var(--surface);
+  outline-offset: 2px;
 }
 
-.map-marker::after {
+.library-marker.is-selected {
+  background: var(--accent-dark);
+  box-shadow: 0 0 0 5px rgba(9, 121, 201, 0.22), 0 2px 7px rgba(0, 61, 104, 0.4);
+  transform: scale(1.16);
+}
+
+.library-marker::after {
   position: absolute;
   left: 50%;
   bottom: calc(100% + 8px);
@@ -553,24 +544,9 @@ h1 {
   transform: translateX(-50%);
 }
 
-.map-marker:hover::after,
-.map-marker:focus-visible::after {
+.library-marker:hover::after,
+.library-marker:focus-visible::after {
   display: block;
-}
-
-.map-help {
-  position: absolute;
-  z-index: 3;
-  left: 12px;
-  bottom: 10px;
-  margin: 0;
-  padding: 5px 8px;
-  border: 1px solid rgba(213, 220, 225, 0.85);
-  border-radius: var(--radius-xs);
-  background: rgba(255, 255, 255, 0.9);
-  color: var(--muted);
-  font-size: 10px;
-  line-height: 1.3;
 }
 
 .selection-card {
@@ -697,6 +673,7 @@ h1 {
   }
 
   .map-canvas {
+    height: auto;
     min-height: 300px;
     flex: 1;
   }
@@ -753,7 +730,8 @@ h1 {
   }
 
   .map-canvas {
-    min-height: 310px;
+    height: 310px;
+    min-height: 0;
   }
 
   .selection-card {
@@ -797,7 +775,8 @@ h1 {
   }
 
   .map-canvas {
-    min-height: 255px;
+    height: 255px;
+    min-height: 0;
   }
 
   .map-toolbar {
@@ -806,10 +785,6 @@ h1 {
 
   .map-legend {
     font-size: 10px;
-  }
-
-  .map-help {
-    display: none;
   }
 
   .selection-metrics {

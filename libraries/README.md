@@ -14,6 +14,9 @@ The canonical records remain in `data/mappable-records1.json`, with their
 contract in `data/mappable-records1.schema.json`. `HTML/shadcn/libraries-data.js`
 is a generated browser-ready snapshot of those records so the prototype works
 from `file://` without a server or runtime data request; do not edit it by hand.
+The MapLibre 5.24.0 renderer is bundled locally under `HTML/shadcn/vendor/`.
+The geographically accurate OpenFreeMap Liberty basemap requires internet
+access for its remote style and tiles and retains visible map attribution.
 
 ## Start a dataset run
 
