@@ -3,15 +3,15 @@
   "constraint_profile": "data-collection-1.instructions.md",
   "progress": {
     "candidates_total": 215,
-    "pending": 175,
-    "validated": 11,
-    "needs_verification": 12,
-    "rejected": 17
+    "pending": 0,
+    "validated": 23,
+    "needs_verification": 58,
+    "rejected": 134
   },
-  "last_action": "Merged concurrent native-web validation work through candidate 40 (2026-07-18), retaining the incoming evidence for candidates 1-30 and the local results for candidates 31-40. Removed duplicate discovery entries created by the merge.",
-  "next_action": "Run workflow validate for the next pending batch: Patronus AI, Metaview, Factory, Decagon, Sail Research (check constraints in order and fail-fast). Counts are derived from candidates.json and candidate-validation.json.",
+  "last_action": "Merge reconciliation (2026-07-21): resolved git conflicts with the parallel machine's push (origin through candidate 40) by keeping the local complete validation (215 entries, superset). Then, per operator decision, reclassified Certa and Zero from needs_verification to rejected (adopting the parallel session's calls): Certa (qualifying_job - Saratoga/South Bay HQ, only India/Remote AI role), Zero (funding_stage - unidentifiable discovery artifact). ALL 215 PROCESSED: 23 validated, 58 needs_verification, 134 rejected, 0 pending.",
+  "next_action": "Validation pass COMPLETE - 0 pending. Recommended next steps for the operator: (1) run `workflow finalize` to normalize the 23 validated companies into mappable-records1.json; (2) optionally run a targeted address-resolution pass (CA Secretary of State Statement-of-Information filings) to convert address-blocked needs_verification candidates to validated; (3) discovery-hygiene: de-duplicate candidates.json ('Relevance AI', 'Airbyte'). If the parallel discovery session appends new candidates, re-run `workflow validate` for the new pending names.",
   "quality": {
     "status": "ok",
-    "note": "Incoming batch 5 found candidate-specific evidence gaps for Patlytics, Squint, and Vectera.ai; no systemic retrieval or rubric issue is recorded. Continue validation while monitoring for a repeated pattern."
+    "note": "Full validation pass done on the 215-name pool (grew from 193 via parallel discovery). Outcome mix: 23 validated (clean Series B SF applied-AI companies with confirmed street addresses), 60 needs_verification (mostly strong Series B SF AI companies blocked only on a missing/ambiguous SF street address, plus some ambiguous funding-stage or entity artifacts), 132 rejected (dominated by funding_stage: past-Series-B/acquired, or sub-Series-B seed/A; plus non-SF locations). Highest-leverage follow-up: a bulk CA-SoS address-resolution pass on the address-blocked needs_verification set (Reducto, depthfirst, Goodfire, Imbue, Unstructured, Bedrock, Braintrust, Numeric, Assembled, TruckSmarter, Verse, Patronus, Airbyte, Sesame, David AI, Vapi, Tavus, Vori, +others) - many would convert to validated."
   }
 }
