@@ -1,0 +1,429 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-21",
+    "source": "IMLS Public Libraries Survey FY 2024 outlet CSV; qualifying central outlets sorted by SQ_FEET descending and LIBNAME ascending.",
+    "version": "1.0.0"
+  },
+  "candidates": [
+    {
+      "name": "BOSTON PUBLIC LIBRARY | BOSTON, MA | MA0035-002",
+      "discovery_signals": {
+        "source_rank": "1",
+        "reported_square_feet": "970000",
+        "system_id": "MA0035",
+        "outlet_id": "MA0035-002",
+        "city": "BOSTON",
+        "state": "MA"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "CHICAGO PUBLIC LIBRARY | CHICAGO, IL | IL0098-166",
+      "discovery_signals": {
+        "source_rank": "2",
+        "reported_square_feet": "756000",
+        "system_id": "IL0098",
+        "outlet_id": "IL0098-166",
+        "city": "CHICAGO",
+        "state": "IL"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "STEPHEN A. SCHWARZMAN BUILDING | NEW YORK, NY | NY0778-090",
+      "discovery_signals": {
+        "source_rank": "3",
+        "reported_square_feet": "660000",
+        "system_id": "NY0778",
+        "outlet_id": "NY0778-090",
+        "city": "NEW YORK",
+        "state": "NY"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "DALLAS PUBLIC LIBRARY | DALLAS, TX | TX0003-002",
+      "discovery_signals": {
+        "source_rank": "4",
+        "reported_square_feet": "646733",
+        "system_id": "TX0003",
+        "outlet_id": "TX0003-002",
+        "city": "DALLAS",
+        "state": "TX"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "CINCINNATI AND HAMILTON COUNTY, PL OF | CINCINNATI, OH | OH0049-002",
+      "discovery_signals": {
+        "source_rank": "5",
+        "reported_square_feet": "550000",
+        "system_id": "OH0049",
+        "outlet_id": "OH0049-002",
+        "city": "CINCINNATI",
+        "state": "OH"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "DENVER PUBLIC LIBRARY | DENVER, CO | CO0034-002",
+      "discovery_signals": {
+        "source_rank": "6",
+        "reported_square_feet": "540315",
+        "system_id": "CO0034",
+        "outlet_id": "CO0034-002",
+        "city": "DENVER",
+        "state": "CO"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "CENTRAL LIBRARY | LOS ANGELES, CA | CA0063-002",
+      "discovery_signals": {
+        "source_rank": "7",
+        "reported_square_feet": "538802",
+        "system_id": "CA0063",
+        "outlet_id": "CA0063-002",
+        "city": "LOS ANGELES",
+        "state": "CA"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "CLEVELAND PUBLIC LIBRARY | CLEVELAND, OH | OH0051-002",
+      "discovery_signals": {
+        "source_rank": "8",
+        "reported_square_feet": "529204",
+        "system_id": "OH0051",
+        "outlet_id": "OH0051-002",
+        "city": "CLEVELAND",
+        "state": "OH"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "SAN DIEGO CENTRAL LIBRARY | SAN DIEGO, CA | CA0113-002",
+      "discovery_signals": {
+        "source_rank": "9",
+        "reported_square_feet": "497652",
+        "system_id": "CA0113",
+        "outlet_id": "CA0113-002",
+        "city": "SAN DIEGO",
+        "state": "CA"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "DR. MARTIN LUTHER KING, JR. LIBRARY | SAN JOSE, CA | CA0115-002",
+      "discovery_signals": {
+        "source_rank": "10",
+        "reported_square_feet": "475000",
+        "system_id": "CA0115",
+        "outlet_id": "CA0115-002",
+        "city": "SAN JOSE",
+        "state": "CA"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "MILWAUKEE PUBLIC LIBRARY | MILWAUKEE, WI | WI0199-016",
+      "discovery_signals": {
+        "source_rank": "11",
+        "reported_square_feet": "457919",
+        "system_id": "WI0199",
+        "outlet_id": "WI0199-016",
+        "city": "MILWAUKEE",
+        "state": "WI"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "MARTIN LUTHER KING JR. MEMORIAL LIBRARY | WASHINGTON, DC | DC0001-002",
+      "discovery_signals": {
+        "source_rank": "12",
+        "reported_square_feet": "440000",
+        "system_id": "DC0001",
+        "outlet_id": "DC0001-002",
+        "city": "WASHINGTON",
+        "state": "DC"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "DETROIT PUBLIC LIBRARY | DETROIT, MI | MI0083-002",
+      "discovery_signals": {
+        "source_rank": "13",
+        "reported_square_feet": "420000",
+        "system_id": "MI0083",
+        "outlet_id": "MI0083-002",
+        "city": "DETROIT",
+        "state": "MI"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "MINNEAPOLIS CENTRAL LIBRARY | MINNEAPOLIS, MN | MN0041-031",
+      "discovery_signals": {
+        "source_rank": "14",
+        "reported_square_feet": "406354",
+        "system_id": "MN0041",
+        "outlet_id": "MN0041-031",
+        "city": "MINNEAPOLIS",
+        "state": "MN"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "BUFFALO & ERIE COUNTY PUBLIC LIBRARY SYSTEM | BUFFALO, NY | NY0005-002",
+      "discovery_signals": {
+        "source_rank": "15",
+        "reported_square_feet": "403000",
+        "system_id": "NY0005",
+        "outlet_id": "NY0005-002",
+        "city": "BUFFALO",
+        "state": "NY"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "SAN FRANCISCO MAIN LIBRARY | SAN FRANCISCO, CA | CA0114-002",
+      "discovery_signals": {
+        "source_rank": "16",
+        "reported_square_feet": "376000",
+        "system_id": "CA0114",
+        "outlet_id": "CA0114-002",
+        "city": "SAN FRANCISCO",
+        "state": "CA"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "ALLEN COUNTY PUBLIC LIBRARY | FORT WAYNE, IN | IN0073-016",
+      "discovery_signals": {
+        "source_rank": "17",
+        "reported_square_feet": "367000",
+        "system_id": "IN0073",
+        "outlet_id": "IN0073-016",
+        "city": "FORT WAYNE",
+        "state": "IN"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "CENTRAL LIBRARY | SEATTLE, WA | WA0064-002",
+      "discovery_signals": {
+        "source_rank": "18",
+        "reported_square_feet": "362987",
+        "system_id": "WA0064",
+        "outlet_id": "WA0064-002",
+        "city": "SEATTLE",
+        "state": "WA"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "ENOCH PRATT CENTRAL | BALTIMORE, MD | MD0003-002",
+      "discovery_signals": {
+        "source_rank": "19",
+        "reported_square_feet": "349713",
+        "system_id": "MD0003",
+        "outlet_id": "MD0003-002",
+        "city": "BALTIMORE",
+        "state": "MD"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "HOUSTON PUBLIC LIBRARY | HOUSTON, TX | TX0099-002",
+      "discovery_signals": {
+        "source_rank": "20",
+        "reported_square_feet": "333620",
+        "system_id": "TX0099",
+        "outlet_id": "TX0099-002",
+        "city": "HOUSTON",
+        "state": "TX"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "MEMPHIS PUBLIC LIBRARY AND INFORMATION CENTER | MEMPHIS, TN | TN0134-025",
+      "discovery_signals": {
+        "source_rank": "21",
+        "reported_square_feet": "330000",
+        "system_id": "TN0134",
+        "outlet_id": "TN0134-025",
+        "city": "MEMPHIS",
+        "state": "TN"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "ROCHESTER PUBLIC LIBRARY | ROCHESTER, NY | NY0521-002",
+      "discovery_signals": {
+        "source_rank": "22",
+        "reported_square_feet": "330000",
+        "system_id": "NY0521",
+        "outlet_id": "NY0521-002",
+        "city": "ROCHESTER",
+        "state": "NY"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "JACKSONVILLE PUBLIC LIBRARY - MAIN LIBRARY | JACKSONVILLE, FL | FL0003-002",
+      "discovery_signals": {
+        "source_rank": "23",
+        "reported_square_feet": "323110",
+        "system_id": "FL0003",
+        "outlet_id": "FL0003-002",
+        "city": "JACKSONVILLE",
+        "state": "FL"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "BROOKLYN PUBLIC LIBRARY | BROOKLYN, NY | NY0004-002",
+      "discovery_signals": {
+        "source_rank": "24",
+        "reported_square_feet": "300000",
+        "system_id": "NY0004",
+        "outlet_id": "NY0004-002",
+        "city": "BROOKLYN",
+        "state": "NY"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "NASHVILLE PUBLIC LIBRARY | NASHVILLE, TN | TN0135-003",
+      "discovery_signals": {
+        "source_rank": "25",
+        "reported_square_feet": "300000",
+        "system_id": "TN0135",
+        "outlet_id": "TN0135-003",
+        "city": "NASHVILLE",
+        "state": "TN"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "INDIANAPOLIS PUBLIC LIBRARY | INDIANAPOLIS, IN | IN0210-034",
+      "discovery_signals": {
+        "source_rank": "26",
+        "reported_square_feet": "299300",
+        "system_id": "IN0210",
+        "outlet_id": "IN0210-034",
+        "city": "INDIANAPOLIS",
+        "state": "IN"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "ORLANDO PUBLIC LIBRARY | ORLANDO, FL | FL0005-002",
+      "discovery_signals": {
+        "source_rank": "27",
+        "reported_square_feet": "295000",
+        "system_id": "FL0005",
+        "outlet_id": "FL0005-002",
+        "city": "ORLANDO",
+        "state": "FL"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "FREE LIBRARY OF PHILADELPHIA | PHILADELPHIA, PA | PA0385-002",
+      "discovery_signals": {
+        "source_rank": "28",
+        "reported_square_feet": "286556",
+        "system_id": "PA0385",
+        "outlet_id": "PA0385-002",
+        "city": "PHILADELPHIA",
+        "state": "PA"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "BURTON BARR CENTRAL LIBRARY | PHOENIX, AZ | AZ0035-002",
+      "discovery_signals": {
+        "source_rank": "29",
+        "reported_square_feet": "280000",
+        "system_id": "AZ0035",
+        "outlet_id": "AZ0035-002",
+        "city": "PHOENIX",
+        "state": "AZ"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "TOLEDO-LUCAS COUNTY PUBLIC LIBRARY | TOLEDO, OH | OH0215-002",
+      "discovery_signals": {
+        "source_rank": "30",
+        "reported_square_feet": "271000",
+        "system_id": "OH0215",
+        "outlet_id": "OH0215-002",
+        "city": "TOLEDO",
+        "state": "OH"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "AKRON-SUMMIT CNTY PUBLIC LIBRARY | AKRON, OH | OH0002-002",
+      "discovery_signals": {
+        "source_rank": "31",
+        "reported_square_feet": "270000",
+        "system_id": "OH0002",
+        "outlet_id": "OH0002-002",
+        "city": "AKRON",
+        "state": "OH"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "CENTRAL LIBRARY | ATLANTA, GA | GA0022-002",
+      "discovery_signals": {
+        "source_rank": "32",
+        "reported_square_feet": "265155",
+        "system_id": "GA0022",
+        "outlet_id": "GA0022-002",
+        "city": "ATLANTA",
+        "state": "GA"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "BROWARD COUNTY MAIN LIBRARY | FORT LAUDERDALE, FL | FL0012-002",
+      "discovery_signals": {
+        "source_rank": "33",
+        "reported_square_feet": "256000",
+        "system_id": "FL0012",
+        "outlet_id": "FL0012-002",
+        "city": "FORT LAUDERDALE",
+        "state": "FL"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "COLUMBUS METROPOLITAN LIBRARY | COLUMBUS, OH | OH0057-003",
+      "discovery_signals": {
+        "source_rank": "34",
+        "reported_square_feet": "255400",
+        "system_id": "OH0057",
+        "outlet_id": "OH0057-003",
+        "city": "COLUMBUS",
+        "state": "OH"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    },
+    {
+      "name": "SALT LAKE CITY PUBLIC LIBRARY MAIN LIBRARY | SALT LAKE CITY, UT | UT0048-002",
+      "discovery_signals": {
+        "source_rank": "35",
+        "reported_square_feet": "240000",
+        "system_id": "UT0048",
+        "outlet_id": "UT0048-002",
+        "city": "SALT LAKE CITY",
+        "state": "UT"
+      },
+      "notes": "Unverified discovery lead from the FY 2024 IMLS outlet table."
+    }
+  ]
+}

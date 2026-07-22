@@ -1,0 +1,14 @@
+{
+  "dataset": "mappable-records1.json",
+  "constraint_profile": "data-collection-1.instructions.md",
+  "progress": {
+    "candidates_total": 40,
+    "pending": 0,
+    "validated": 30,
+    "needs_verification": 0,
+    "rejected": 10
+  },
+  "last_action": "Finalized run 1 with 30 validated hotels ranked by published total guest-room count; rejected 10 below-cutoff controls.",
+  "next_action": "Keep the finalized data-only run unchanged unless an operator requests a new ingestion run or later authorizes UI work.",
+  "quality": { "status": "ok", "note": "The final cutoff is 1,084 rooms. Required names, addresses, and coordinates are sourced; optional nightly prices remain null because no comparable stay-date, occupancy, tax-basis, and observation-date rate sample was collected." }
+}

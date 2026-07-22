@@ -1,0 +1,11 @@
+# Dataset registry
+#
+# Each numbered dataset is a separate ingestion run. Add an entry only after
+# local finalization and schema validation; never overwrite a prior run.
+
+[mappable-records1.json]
+schema: mappable-records1.schema.json
+constraint_profile: data-collection-1.instructions.md
+status: initialized
+finalized_at: pending
+record_count: 0

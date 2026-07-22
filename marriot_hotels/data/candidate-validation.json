@@ -1,0 +1,4059 @@
+{
+  "profile": "data-collection-1.instructions.md",
+  "candidates": [
+    {
+      "candidate": "Gaylord Opryland Resort & Convention Center",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/bnago-gaylord-opryland-resort-and-convention-center/overview/",
+          "evidence": "The current official property listing identifies Gaylord Opryland Resort & Convention Center as an operating Gaylord Hotels hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/bnago-gaylord-opryland-resort-and-convention-center/overview/",
+          "evidence": "The verified property address is 2800 Opryland Drive, Nashville, TN 37214, within the 50 United States or Washington, D.C.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/bnago-gaylord-opryland-resort-and-convention-center/overview/",
+          "evidence": "Marriott International reports 2888 total guest rooms for this individual hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/bnago-gaylord-opryland-resort-and-convention-center/overview/",
+          "evidence": "2888 rooms is at or above the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Map location",
+          "result": "pass",
+          "url": "https://maps.apple.com/place?coordinate=36.21144604989278%2C-86.69445633888245&name=Gaylord+Opryland+Resort+%26+Convention+Center",
+          "evidence": "The verified address resolves to 36.211446, -86.694456.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Final schema and evidence review",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/bnago-gaylord-opryland-resort-and-convention-center/overview/",
+          "evidence": "All required record fields are present, and each captured fact is linked to a source and verification date.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "final_record": {
+        "rank": 1,
+        "title": "Gaylord Opryland Resort & Convention Center",
+        "brand": "Gaylord Hotels",
+        "location": {
+          "address": "2800 Opryland Drive, Nashville, TN 37214",
+          "city": "Nashville",
+          "state": "TN",
+          "postal_code": "37214",
+          "coordinates": {
+            "lat": 36.211446,
+            "lng": -86.694456
+          }
+        },
+        "value": "2,888 rooms",
+        "size": {
+          "total_guest_rooms": 2888,
+          "suites": 171,
+          "ranking_metric": "total_guest_rooms"
+        },
+        "nightly_price": null,
+        "building": {
+          "floors": null,
+          "year_opened": 1977,
+          "year_built": null,
+          "last_renovated": null,
+          "building_square_feet": null,
+          "meeting_space_square_feet": 700000
+        },
+        "history": [
+          "Opened with 578 rooms in 1977; the 1996 Delta Atrium expansion increased the resort to its current 2,888 rooms."
+        ],
+        "sources": [
+          {
+            "url": "https://www.marriott.com/en-us/hotels/bnago-gaylord-opryland-resort-and-convention-center/overview/",
+            "publisher": "Marriott International",
+            "supports": [
+              "name",
+              "brand",
+              "address",
+              "operating status",
+              "room count",
+              "suite count"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.gaylordhotels.com/meet/compare-properties",
+            "publisher": "Gaylord Hotels",
+            "supports": [
+              "room count",
+              "meeting space"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.gaylordhotels.com/about-us/our-legacy",
+            "publisher": "Gaylord Hotels",
+            "supports": [
+              "year opened",
+              "expansion history"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://maps.apple.com/place?coordinate=36.21144604989278%2C-86.69445633888245&name=Gaylord+Opryland+Resort+%26+Convention+Center",
+            "publisher": "Apple Maps",
+            "supports": [
+              "coordinates"
+            ],
+            "note": "Property point for the verified street address.",
+            "verified_at": "2026-07-21"
+          }
+        ],
+        "verified_at": "2026-07-21"
+      }
+    },
+    {
+      "candidate": "Orlando World Center Marriott",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/mcowc-orlando-world-center-marriott/overview/",
+          "evidence": "The current official property listing identifies Orlando World Center Marriott as an operating Marriott Hotels hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/mcowc-orlando-world-center-marriott/overview/",
+          "evidence": "The verified property address is 8701 World Center Drive, Orlando, FL 32821, within the 50 United States or Washington, D.C.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/mcowc-orlando-world-center-marriott/overview/",
+          "evidence": "Marriott International reports 2010 total guest rooms for this individual hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/mcowc-orlando-world-center-marriott/overview/",
+          "evidence": "2010 rooms is at or above the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Map location",
+          "result": "pass",
+          "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+          "evidence": "The verified address resolves to 28.360547, -81.509141.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Final schema and evidence review",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/mcowc-orlando-world-center-marriott/overview/",
+          "evidence": "All required record fields are present, and each captured fact is linked to a source and verification date.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "final_record": {
+        "rank": 2,
+        "title": "Orlando World Center Marriott",
+        "brand": "Marriott Hotels",
+        "location": {
+          "address": "8701 World Center Drive, Orlando, FL 32821",
+          "city": "Orlando",
+          "state": "FL",
+          "postal_code": "32821",
+          "coordinates": {
+            "lat": 28.360547,
+            "lng": -81.509141
+          }
+        },
+        "value": "2,010 rooms",
+        "size": {
+          "total_guest_rooms": 2010,
+          "suites": 121,
+          "ranking_metric": "total_guest_rooms"
+        },
+        "nightly_price": null,
+        "building": {
+          "floors": 28,
+          "year_opened": 1986,
+          "year_built": null,
+          "last_renovated": 2021,
+          "building_square_feet": 1300000,
+          "meeting_space_square_feet": 490500
+        },
+        "history": [
+          "A 500-room tower completed in 2002 made the property the world's largest Marriott at that time."
+        ],
+        "sources": [
+          {
+            "url": "https://www.marriott.com/en-us/hotels/mcowc-orlando-world-center-marriott/overview/",
+            "publisher": "Marriott International",
+            "supports": [
+              "name",
+              "brand",
+              "address",
+              "operating status",
+              "room count"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.hosthotels.com/Properties/Domestic/Florida/Orlando-World-Center-Marriott",
+            "publisher": "Host Hotels & Resorts",
+            "supports": [
+              "suite count",
+              "meeting space",
+              "renovation year"
+            ],
+            "note": "The owner page reports a slightly lower 2,004-room inventory; Marriott's current consumer page is used for ranking.",
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Orlando_World_Center_Marriott",
+            "publisher": "Wikipedia contributors",
+            "supports": [
+              "year opened",
+              "floors",
+              "building square footage",
+              "expansion history"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+            "publisher": "U.S. Census Bureau",
+            "supports": [
+              "coordinates"
+            ],
+            "note": "Batch geocoder exact match for the verified address.",
+            "verified_at": "2026-07-21"
+          }
+        ],
+        "verified_at": "2026-07-21"
+      }
+    },
+    {
+      "candidate": "Gaylord National Resort & Convention Center",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/wasgn-gaylord-national-resort-and-convention-center/overview/",
+          "evidence": "The current official property listing identifies Gaylord National Resort & Convention Center as an operating Gaylord Hotels hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/wasgn-gaylord-national-resort-and-convention-center/overview/",
+          "evidence": "The verified property address is 201 Waterfront Street, National Harbor, MD 20745, within the 50 United States or Washington, D.C.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.marriott.com/content/dam/marriott-digital/ge/us-canada/hws/w/wasgn/en_us/document/assets/ge-wasgn-wasgn-quickfacts-april21-32034.pdf",
+          "evidence": "Marriott International reports 1996 total guest rooms for this individual hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "pass",
+          "url": "https://www.marriott.com/content/dam/marriott-digital/ge/us-canada/hws/w/wasgn/en_us/document/assets/ge-wasgn-wasgn-quickfacts-april21-32034.pdf",
+          "evidence": "1996 rooms is at or above the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Map location",
+          "result": "pass",
+          "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+          "evidence": "The verified address resolves to 38.78334, -77.017348.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Final schema and evidence review",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/wasgn-gaylord-national-resort-and-convention-center/overview/",
+          "evidence": "All required record fields are present, and each captured fact is linked to a source and verification date.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "final_record": {
+        "rank": 3,
+        "title": "Gaylord National Resort & Convention Center",
+        "brand": "Gaylord Hotels",
+        "location": {
+          "address": "201 Waterfront Street, National Harbor, MD 20745",
+          "city": "National Harbor",
+          "state": "MD",
+          "postal_code": "20745",
+          "coordinates": {
+            "lat": 38.78334,
+            "lng": -77.017348
+          }
+        },
+        "value": "1,996 rooms",
+        "size": {
+          "total_guest_rooms": 1996,
+          "suites": 110,
+          "ranking_metric": "total_guest_rooms"
+        },
+        "nightly_price": null,
+        "building": {
+          "floors": 19,
+          "year_opened": 2008,
+          "year_built": null,
+          "last_renovated": null,
+          "building_square_feet": null,
+          "meeting_space_square_feet": 545000
+        },
+        "history": [
+          "The resort had more than 1.3 million room nights booked before its April 2008 opening."
+        ],
+        "sources": [
+          {
+            "url": "https://www.marriott.com/en-us/hotels/wasgn-gaylord-national-resort-and-convention-center/overview/",
+            "publisher": "Marriott International",
+            "supports": [
+              "name",
+              "brand",
+              "address",
+              "operating status"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.marriott.com/content/dam/marriott-digital/ge/us-canada/hws/w/wasgn/en_us/document/assets/ge-wasgn-wasgn-quickfacts-april21-32034.pdf",
+            "publisher": "Marriott International",
+            "supports": [
+              "room count",
+              "suite count",
+              "meeting space"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Gaylord_National_Resort_%26_Convention_Center",
+            "publisher": "Wikipedia contributors",
+            "supports": [
+              "year opened",
+              "floors",
+              "booking history"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+            "publisher": "U.S. Census Bureau",
+            "supports": [
+              "coordinates"
+            ],
+            "note": "Batch geocoder exact match for the verified address.",
+            "verified_at": "2026-07-21"
+          }
+        ],
+        "verified_at": "2026-07-21"
+      }
+    },
+    {
+      "candidate": "New York Marriott Marquis",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/nycmq-new-york-marriott-marquis/overview/",
+          "evidence": "The current official property listing identifies New York Marriott Marquis as an operating Marriott Hotels hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/nycmq-new-york-marriott-marquis/overview/",
+          "evidence": "The verified property address is 1535 Broadway, New York, NY 10036, within the 50 United States or Washington, D.C.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.hosthotels.com/properties/domestic/new-york/new-york-marriott-marquis",
+          "evidence": "Host Hotels & Resorts reports 1966 total guest rooms for this individual hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "pass",
+          "url": "https://www.hosthotels.com/properties/domestic/new-york/new-york-marriott-marquis",
+          "evidence": "1966 rooms is at or above the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Map location",
+          "result": "pass",
+          "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+          "evidence": "The verified address resolves to 40.75829, -73.985526.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Final schema and evidence review",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/nycmq-new-york-marriott-marquis/overview/",
+          "evidence": "All required record fields are present, and each captured fact is linked to a source and verification date.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "final_record": {
+        "rank": 4,
+        "title": "New York Marriott Marquis",
+        "brand": "Marriott Hotels",
+        "location": {
+          "address": "1535 Broadway, New York, NY 10036",
+          "city": "New York",
+          "state": "NY",
+          "postal_code": "10036",
+          "coordinates": {
+            "lat": 40.75829,
+            "lng": -73.985526
+          }
+        },
+        "value": "1,966 rooms",
+        "size": {
+          "total_guest_rooms": 1966,
+          "suites": null,
+          "ranking_metric": "total_guest_rooms"
+        },
+        "nightly_price": null,
+        "building": {
+          "floors": 51,
+          "year_opened": 1985,
+          "year_built": null,
+          "last_renovated": null,
+          "building_square_feet": null,
+          "meeting_space_square_feet": 101000
+        },
+        "history": [
+          "The John Portman-designed Times Square hotel opened on September 3, 1985 after plans dating to the early 1970s."
+        ],
+        "sources": [
+          {
+            "url": "https://www.marriott.com/en-us/hotels/nycmq-new-york-marriott-marquis/overview/",
+            "publisher": "Marriott International",
+            "supports": [
+              "name",
+              "brand",
+              "address",
+              "operating status"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.hosthotels.com/properties/domestic/new-york/new-york-marriott-marquis",
+            "publisher": "Host Hotels & Resorts",
+            "supports": [
+              "room count",
+              "meeting space"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/New_York_Marriott_Marquis",
+            "publisher": "Wikipedia contributors",
+            "supports": [
+              "year opened",
+              "floors",
+              "history"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+            "publisher": "U.S. Census Bureau",
+            "supports": [
+              "coordinates"
+            ],
+            "note": "Batch geocoder exact match for the verified address.",
+            "verified_at": "2026-07-21"
+          }
+        ],
+        "verified_at": "2026-07-21"
+      }
+    },
+    {
+      "candidate": "Sheraton Dallas Hotel",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/daldh-sheraton-dallas-hotel/overview/",
+          "evidence": "The current official property listing identifies Sheraton Dallas Hotel as an operating Sheraton hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/daldh-sheraton-dallas-hotel/overview/",
+          "evidence": "The verified property address is 400 North Olive Street, Dallas, TX 75201, within the 50 United States or Washington, D.C.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.visitdallas.com/directory/sheraton-dallas-hotel-hotel-meeting-space/",
+          "evidence": "Visit Dallas reports 1841 total guest rooms for this individual hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "pass",
+          "url": "https://www.visitdallas.com/directory/sheraton-dallas-hotel-hotel-meeting-space/",
+          "evidence": "1841 rooms is at or above the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Map location",
+          "result": "pass",
+          "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+          "evidence": "The verified address resolves to 32.784375, -96.79451.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Final schema and evidence review",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/daldh-sheraton-dallas-hotel/overview/",
+          "evidence": "All required record fields are present, and each captured fact is linked to a source and verification date.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "final_record": {
+        "rank": 5,
+        "title": "Sheraton Dallas Hotel",
+        "brand": "Sheraton",
+        "location": {
+          "address": "400 North Olive Street, Dallas, TX 75201",
+          "city": "Dallas",
+          "state": "TX",
+          "postal_code": "75201",
+          "coordinates": {
+            "lat": 32.784375,
+            "lng": -96.79451
+          }
+        },
+        "value": "1,841 rooms",
+        "size": {
+          "total_guest_rooms": 1841,
+          "suites": null,
+          "ranking_metric": "total_guest_rooms"
+        },
+        "nightly_price": null,
+        "building": {
+          "floors": 42,
+          "year_opened": 1959,
+          "year_built": null,
+          "last_renovated": null,
+          "building_square_feet": null,
+          "meeting_space_square_feet": 230000
+        },
+        "history": [
+          "The complex opened as the Southland Center and later operated as an Adam's Mark before becoming the Sheraton Dallas."
+        ],
+        "sources": [
+          {
+            "url": "https://www.marriott.com/en-us/hotels/daldh-sheraton-dallas-hotel/overview/",
+            "publisher": "Marriott International",
+            "supports": [
+              "name",
+              "brand",
+              "address",
+              "operating status",
+              "meeting space"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.visitdallas.com/directory/sheraton-dallas-hotel-hotel-meeting-space/",
+            "publisher": "Visit Dallas",
+            "supports": [
+              "room count",
+              "suite information"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Sheraton_Dallas_Hotel",
+            "publisher": "Wikipedia contributors",
+            "supports": [
+              "year opened",
+              "floors",
+              "history"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+            "publisher": "U.S. Census Bureau",
+            "supports": [
+              "coordinates"
+            ],
+            "note": "Batch geocoder exact match for the verified address.",
+            "verified_at": "2026-07-21"
+          }
+        ],
+        "verified_at": "2026-07-21"
+      }
+    },
+    {
+      "candidate": "Gaylord Texan Resort & Convention Center",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/dalgt-gaylord-texan-resort-and-convention-center/overview/",
+          "evidence": "The current official property listing identifies Gaylord Texan Resort & Convention Center as an operating Gaylord Hotels hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/dalgt-gaylord-texan-resort-and-convention-center/overview/",
+          "evidence": "The verified property address is 1501 Gaylord Trail, Grapevine, TX 76051, within the 50 United States or Washington, D.C.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.gaylordhotels.com/meet/compare-properties",
+          "evidence": "Gaylord Hotels reports 1814 total guest rooms for this individual hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "pass",
+          "url": "https://www.gaylordhotels.com/meet/compare-properties",
+          "evidence": "1814 rooms is at or above the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Map location",
+          "result": "pass",
+          "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+          "evidence": "The verified address resolves to 32.952247, -97.062654.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Final schema and evidence review",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/dalgt-gaylord-texan-resort-and-convention-center/overview/",
+          "evidence": "All required record fields are present, and each captured fact is linked to a source and verification date.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "final_record": {
+        "rank": 6,
+        "title": "Gaylord Texan Resort & Convention Center",
+        "brand": "Gaylord Hotels",
+        "location": {
+          "address": "1501 Gaylord Trail, Grapevine, TX 76051",
+          "city": "Grapevine",
+          "state": "TX",
+          "postal_code": "76051",
+          "coordinates": {
+            "lat": 32.952247,
+            "lng": -97.062654
+          }
+        },
+        "value": "1,814 rooms",
+        "size": {
+          "total_guest_rooms": 1814,
+          "suites": null,
+          "ranking_metric": "total_guest_rooms"
+        },
+        "nightly_price": null,
+        "building": {
+          "floors": 9,
+          "year_opened": 2004,
+          "year_built": null,
+          "last_renovated": null,
+          "building_square_feet": null,
+          "meeting_space_square_feet": 490132
+        },
+        "history": [
+          "The $120 million Vineyard Tower expansion added 303 rooms and 86,000 square feet of meeting space."
+        ],
+        "sources": [
+          {
+            "url": "https://www.marriott.com/en-us/hotels/dalgt-gaylord-texan-resort-and-convention-center/overview/",
+            "publisher": "Marriott International",
+            "supports": [
+              "name",
+              "brand",
+              "address",
+              "operating status"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.gaylordhotels.com/meet/compare-properties",
+            "publisher": "Gaylord Hotels",
+            "supports": [
+              "room count",
+              "meeting space"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.marriott.com/en-us/hotels/dalgt-gaylord-texan-resort-and-convention-center/events/",
+            "publisher": "Marriott International",
+            "supports": [
+              "expansion history"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Gaylord_Texan_Resort_Hotel_%26_Convention_Center",
+            "publisher": "Wikipedia contributors",
+            "supports": [
+              "year opened",
+              "floors"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+            "publisher": "U.S. Census Bureau",
+            "supports": [
+              "coordinates"
+            ],
+            "note": "Batch geocoder exact match for the verified address.",
+            "verified_at": "2026-07-21"
+          }
+        ],
+        "verified_at": "2026-07-21"
+      }
+    },
+    {
+      "candidate": "Sheraton New York Times Square Hotel",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/nycst-sheraton-new-york-times-square-hotel/overview/",
+          "evidence": "The current official property listing identifies Sheraton New York Times Square Hotel as an operating Sheraton hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/nycst-sheraton-new-york-times-square-hotel/overview/",
+          "evidence": "The verified property address is 811 7th Avenue, New York, NY 10019, within the 50 United States or Washington, D.C.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/nycst-sheraton-new-york-times-square-hotel/events/meetings-and-events/",
+          "evidence": "Marriott International reports 1780 total guest rooms for this individual hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/nycst-sheraton-new-york-times-square-hotel/events/meetings-and-events/",
+          "evidence": "1780 rooms is at or above the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Map location",
+          "result": "pass",
+          "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+          "evidence": "The verified address resolves to 40.762894, -73.981863.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Final schema and evidence review",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/nycst-sheraton-new-york-times-square-hotel/overview/",
+          "evidence": "All required record fields are present, and each captured fact is linked to a source and verification date.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "final_record": {
+        "rank": 7,
+        "title": "Sheraton New York Times Square Hotel",
+        "brand": "Sheraton",
+        "location": {
+          "address": "811 7th Avenue, New York, NY 10019",
+          "city": "New York",
+          "state": "NY",
+          "postal_code": "10019",
+          "coordinates": {
+            "lat": 40.762894,
+            "lng": -73.981863
+          }
+        },
+        "value": "1,780 rooms",
+        "size": {
+          "total_guest_rooms": 1780,
+          "suites": null,
+          "ranking_metric": "total_guest_rooms"
+        },
+        "nightly_price": null,
+        "building": {
+          "floors": 51,
+          "year_opened": 1962,
+          "year_built": null,
+          "last_renovated": null,
+          "building_square_feet": null,
+          "meeting_space_square_feet": 62000
+        },
+        "history": [
+          "The hotel opened in 1962 as the Americana of New York."
+        ],
+        "sources": [
+          {
+            "url": "https://www.marriott.com/en-us/hotels/nycst-sheraton-new-york-times-square-hotel/overview/",
+            "publisher": "Marriott International",
+            "supports": [
+              "name",
+              "brand",
+              "address",
+              "operating status"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.marriott.com/en-us/hotels/nycst-sheraton-new-york-times-square-hotel/events/meetings-and-events/",
+            "publisher": "Marriott International",
+            "supports": [
+              "room count",
+              "meeting space"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Sheraton_New_York_Times_Square_Hotel",
+            "publisher": "Wikipedia contributors",
+            "supports": [
+              "year opened",
+              "floors",
+              "history"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+            "publisher": "U.S. Census Bureau",
+            "supports": [
+              "coordinates"
+            ],
+            "note": "Batch geocoder exact match for the verified address.",
+            "verified_at": "2026-07-21"
+          }
+        ],
+        "verified_at": "2026-07-21"
+      }
+    },
+    {
+      "candidate": "Gaylord Palms Resort & Convention Center",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/mcogp-gaylord-palms-resort-and-convention-center/overview/",
+          "evidence": "The current official property listing identifies Gaylord Palms Resort & Convention Center as an operating Gaylord Hotels hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/mcogp-gaylord-palms-resort-and-convention-center/overview/",
+          "evidence": "The verified property address is 6000 West Osceola Parkway, Kissimmee, FL 34746, within the 50 United States or Washington, D.C.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.gaylordhotels.com/meet/compare-properties",
+          "evidence": "Gaylord Hotels reports 1718 total guest rooms for this individual hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "pass",
+          "url": "https://www.gaylordhotels.com/meet/compare-properties",
+          "evidence": "1718 rooms is at or above the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Map location",
+          "result": "pass",
+          "url": "https://www.openstreetmap.org/relation/5366221",
+          "evidence": "The verified address resolves to 28.342499, -81.527926.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Final schema and evidence review",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/mcogp-gaylord-palms-resort-and-convention-center/overview/",
+          "evidence": "All required record fields are present, and each captured fact is linked to a source and verification date.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "final_record": {
+        "rank": 8,
+        "title": "Gaylord Palms Resort & Convention Center",
+        "brand": "Gaylord Hotels",
+        "location": {
+          "address": "6000 West Osceola Parkway, Kissimmee, FL 34746",
+          "city": "Kissimmee",
+          "state": "FL",
+          "postal_code": "34746",
+          "coordinates": {
+            "lat": 28.342499,
+            "lng": -81.527926
+          }
+        },
+        "value": "1,718 rooms",
+        "size": {
+          "total_guest_rooms": 1718,
+          "suites": null,
+          "ranking_metric": "total_guest_rooms"
+        },
+        "nightly_price": null,
+        "building": {
+          "floors": 9,
+          "year_opened": 2002,
+          "year_built": null,
+          "last_renovated": null,
+          "building_square_feet": null,
+          "meeting_space_square_feet": 482745
+        },
+        "history": [
+          "A $158 million expansion completed in 2021 added more than 300 rooms and suites and 100,000 square feet of convention space."
+        ],
+        "sources": [
+          {
+            "url": "https://www.marriott.com/en-us/hotels/mcogp-gaylord-palms-resort-and-convention-center/overview/",
+            "publisher": "Marriott International",
+            "supports": [
+              "name",
+              "brand",
+              "address",
+              "operating status"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.gaylordhotels.com/meet/compare-properties",
+            "publisher": "Gaylord Hotels",
+            "supports": [
+              "room count",
+              "meeting space"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Gaylord_Palms_Resort_%26_Convention_Center",
+            "publisher": "Wikipedia contributors",
+            "supports": [
+              "year opened",
+              "floors",
+              "expansion history"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.openstreetmap.org/relation/5366221",
+            "publisher": "OpenStreetMap contributors",
+            "supports": [
+              "coordinates"
+            ],
+            "note": "Named hotel feature matching the verified address.",
+            "verified_at": "2026-07-21"
+          }
+        ],
+        "verified_at": "2026-07-21"
+      }
+    },
+    {
+      "candidate": "Atlanta Marriott Marquis",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/atlmq-atlanta-marriott-marquis/overview/",
+          "evidence": "The current official property listing identifies Atlanta Marriott Marquis as an operating Marriott Hotels hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/atlmq-atlanta-marriott-marquis/overview/",
+          "evidence": "The verified property address is 265 Peachtree Center Avenue, Atlanta, GA 30303, within the 50 United States or Washington, D.C.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/atlmq-atlanta-marriott-marquis/overview/",
+          "evidence": "Marriott International reports 1663 total guest rooms for this individual hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/atlmq-atlanta-marriott-marquis/overview/",
+          "evidence": "1663 rooms is at or above the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Map location",
+          "result": "pass",
+          "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+          "evidence": "The verified address resolves to 33.762175, -84.385948.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Final schema and evidence review",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/atlmq-atlanta-marriott-marquis/overview/",
+          "evidence": "All required record fields are present, and each captured fact is linked to a source and verification date.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "final_record": {
+        "rank": 9,
+        "title": "Atlanta Marriott Marquis",
+        "brand": "Marriott Hotels",
+        "location": {
+          "address": "265 Peachtree Center Avenue, Atlanta, GA 30303",
+          "city": "Atlanta",
+          "state": "GA",
+          "postal_code": "30303",
+          "coordinates": {
+            "lat": 33.762175,
+            "lng": -84.385948
+          }
+        },
+        "value": "1,663 rooms",
+        "size": {
+          "total_guest_rooms": 1663,
+          "suites": null,
+          "ranking_metric": "total_guest_rooms"
+        },
+        "nightly_price": null,
+        "building": {
+          "floors": 47,
+          "year_opened": 1985,
+          "year_built": null,
+          "last_renovated": null,
+          "building_square_feet": null,
+          "meeting_space_square_feet": 160000
+        },
+        "history": [
+          "John Portman's 47-story hotel is known for its soaring atrium and opened in 1985."
+        ],
+        "sources": [
+          {
+            "url": "https://www.marriott.com/en-us/hotels/atlmq-atlanta-marriott-marquis/overview/",
+            "publisher": "Marriott International",
+            "supports": [
+              "name",
+              "brand",
+              "address",
+              "operating status",
+              "room count",
+              "meeting space"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Atlanta_Marriott_Marquis",
+            "publisher": "Wikipedia contributors",
+            "supports": [
+              "year opened",
+              "floors",
+              "architectural history"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+            "publisher": "U.S. Census Bureau",
+            "supports": [
+              "coordinates"
+            ],
+            "note": "Batch geocoder matched the address after standardizing the directional suffix to NE.",
+            "verified_at": "2026-07-21"
+          }
+        ],
+        "verified_at": "2026-07-21"
+      }
+    },
+    {
+      "candidate": "Sheraton Waikiki Beach Resort",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/hnlws-sheraton-waikiki-beach-resort/overview/",
+          "evidence": "The current official property listing identifies Sheraton Waikiki Beach Resort as an operating Sheraton hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/hnlws-sheraton-waikiki-beach-resort/overview/",
+          "evidence": "The verified property address is 2255 Kalakaua Avenue, Honolulu, HI 96815, within the 50 United States or Washington, D.C.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/hnlws-sheraton-waikiki-beach-resort/overview/",
+          "evidence": "Marriott International reports 1636 total guest rooms for this individual hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/hnlws-sheraton-waikiki-beach-resort/overview/",
+          "evidence": "1636 rooms is at or above the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Map location",
+          "result": "pass",
+          "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+          "evidence": "The verified address resolves to 21.279012, -157.828946.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Final schema and evidence review",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/hnlws-sheraton-waikiki-beach-resort/overview/",
+          "evidence": "All required record fields are present, and each captured fact is linked to a source and verification date.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "final_record": {
+        "rank": 10,
+        "title": "Sheraton Waikiki Beach Resort",
+        "brand": "Sheraton",
+        "location": {
+          "address": "2255 Kalakaua Avenue, Honolulu, HI 96815",
+          "city": "Honolulu",
+          "state": "HI",
+          "postal_code": "96815",
+          "coordinates": {
+            "lat": 21.279012,
+            "lng": -157.828946
+          }
+        },
+        "value": "1,636 rooms",
+        "size": {
+          "total_guest_rooms": 1636,
+          "suites": 130,
+          "ranking_metric": "total_guest_rooms"
+        },
+        "nightly_price": null,
+        "building": {
+          "floors": 31,
+          "year_opened": 1971,
+          "year_built": null,
+          "last_renovated": null,
+          "building_square_feet": null,
+          "meeting_space_square_feet": null
+        },
+        "history": [
+          "A multi-year renovation renewed all 1,636 rooms and suites along with the lobby, function, and retail spaces."
+        ],
+        "sources": [
+          {
+            "url": "https://www.marriott.com/en-us/hotels/hnlws-sheraton-waikiki-beach-resort/overview/",
+            "publisher": "Marriott International",
+            "supports": [
+              "name",
+              "brand",
+              "address",
+              "operating status",
+              "room count",
+              "suite count",
+              "renovation history"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Sheraton_Waikiki_Hotel",
+            "publisher": "Wikipedia contributors",
+            "supports": [
+              "year opened",
+              "floors"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+            "publisher": "U.S. Census Bureau",
+            "supports": [
+              "coordinates"
+            ],
+            "note": "Batch geocoder exact match for the verified address.",
+            "verified_at": "2026-07-21"
+          }
+        ],
+        "verified_at": "2026-07-21"
+      }
+    },
+    {
+      "candidate": "Gaylord Pacific Resort & Convention Center",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/sange-gaylord-pacific-resort-and-convention-center/overview/",
+          "evidence": "The current official property listing identifies Gaylord Pacific Resort & Convention Center as an operating Gaylord Hotels hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/sange-gaylord-pacific-resort-and-convention-center/overview/",
+          "evidence": "The verified property address is 1000 H Street, Chula Vista, CA 91910, within the 50 United States or Washington, D.C.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.gaylordhotels.com/meet/compare-properties",
+          "evidence": "Gaylord Hotels reports 1600 total guest rooms for this individual hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "pass",
+          "url": "https://www.gaylordhotels.com/meet/compare-properties",
+          "evidence": "1600 rooms is at or above the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Map location",
+          "result": "pass",
+          "url": "https://www.openstreetmap.org/way/1303723229",
+          "evidence": "The verified address resolves to 32.62815, -117.10426.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Final schema and evidence review",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/sange-gaylord-pacific-resort-and-convention-center/overview/",
+          "evidence": "All required record fields are present, and each captured fact is linked to a source and verification date.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "final_record": {
+        "rank": 11,
+        "title": "Gaylord Pacific Resort & Convention Center",
+        "brand": "Gaylord Hotels",
+        "location": {
+          "address": "1000 H Street, Chula Vista, CA 91910",
+          "city": "Chula Vista",
+          "state": "CA",
+          "postal_code": "91910",
+          "coordinates": {
+            "lat": 32.62815,
+            "lng": -117.10426
+          }
+        },
+        "value": "1,600 rooms",
+        "size": {
+          "total_guest_rooms": 1600,
+          "suites": 89,
+          "ranking_metric": "total_guest_rooms"
+        },
+        "nightly_price": null,
+        "building": {
+          "floors": null,
+          "year_opened": 2025,
+          "year_built": null,
+          "last_renovated": null,
+          "building_square_feet": null,
+          "meeting_space_square_feet": 453957
+        },
+        "history": [
+          "Opened May 15, 2025 as Gaylord Hotels' first West Coast resort and the largest hotel in California by room count."
+        ],
+        "sources": [
+          {
+            "url": "https://www.marriott.com/en-us/hotels/sange-gaylord-pacific-resort-and-convention-center/overview/",
+            "publisher": "Marriott International",
+            "supports": [
+              "name",
+              "brand",
+              "address",
+              "operating status"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.gaylordhotels.com/meet/compare-properties",
+            "publisher": "Gaylord Hotels",
+            "supports": [
+              "room count",
+              "meeting space"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.prnewswire.com/news-releases/gaylord-hotels-expands-to-the-west-coast-with-the-opening-of-gaylord-pacific-resort--convention-center-in-chula-vista-california-302456661.html",
+            "publisher": "Marriott International via PR Newswire",
+            "supports": [
+              "opening date",
+              "suite count",
+              "history"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/1303723229",
+            "publisher": "OpenStreetMap contributors",
+            "supports": [
+              "coordinates"
+            ],
+            "note": "Named hotel building matching the verified address; used after rejecting an incorrect Census match to East H Street.",
+            "verified_at": "2026-07-21"
+          }
+        ],
+        "verified_at": "2026-07-21"
+      }
+    },
+    {
+      "candidate": "Walt Disney World Dolphin",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/mcodw-walt-disney-world-dolphin/overview/",
+          "evidence": "The current official property listing identifies Walt Disney World Dolphin as an operating Sheraton hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/mcodw-walt-disney-world-dolphin/overview/",
+          "evidence": "The verified property address is 1500 Epcot Resorts Boulevard, Lake Buena Vista, FL 32830, within the 50 United States or Washington, D.C.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://swandolphin.com/media/press-kit/presskit-redesign/",
+          "evidence": "Walt Disney World Swan and Dolphin Resort reports 1509 total guest rooms for this individual hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "pass",
+          "url": "https://swandolphin.com/media/press-kit/presskit-redesign/",
+          "evidence": "1509 rooms is at or above the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Map location",
+          "result": "pass",
+          "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+          "evidence": "The verified address resolves to 28.366135, -81.562912.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Final schema and evidence review",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/mcodw-walt-disney-world-dolphin/overview/",
+          "evidence": "All required record fields are present, and each captured fact is linked to a source and verification date.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "final_record": {
+        "rank": 12,
+        "title": "Walt Disney World Dolphin",
+        "brand": "Sheraton",
+        "location": {
+          "address": "1500 Epcot Resorts Boulevard, Lake Buena Vista, FL 32830",
+          "city": "Lake Buena Vista",
+          "state": "FL",
+          "postal_code": "32830",
+          "coordinates": {
+            "lat": 28.366135,
+            "lng": -81.562912
+          }
+        },
+        "value": "1,509 rooms",
+        "size": {
+          "total_guest_rooms": 1509,
+          "suites": null,
+          "ranking_metric": "total_guest_rooms"
+        },
+        "nightly_price": null,
+        "building": {
+          "floors": 27,
+          "year_opened": 1990,
+          "year_built": null,
+          "last_renovated": null,
+          "building_square_feet": null,
+          "meeting_space_square_feet": null
+        },
+        "history": [
+          "The Michael Graves-designed Dolphin opened in 1990 and is counted separately from the neighboring Swan and Swan Reserve hotels."
+        ],
+        "sources": [
+          {
+            "url": "https://www.marriott.com/en-us/hotels/mcodw-walt-disney-world-dolphin/overview/",
+            "publisher": "Marriott International",
+            "supports": [
+              "name",
+              "brand",
+              "address",
+              "operating status"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://swandolphin.com/media/press-kit/presskit-redesign/",
+            "publisher": "Walt Disney World Swan and Dolphin Resort",
+            "supports": [
+              "room count",
+              "separate property inventory"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Walt_Disney_World_Dolphin",
+            "publisher": "Wikipedia contributors",
+            "supports": [
+              "year opened",
+              "floors",
+              "architectural history"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+            "publisher": "U.S. Census Bureau",
+            "supports": [
+              "coordinates"
+            ],
+            "note": "Batch geocoder exact match for the verified address.",
+            "verified_at": "2026-07-21"
+          }
+        ],
+        "verified_at": "2026-07-21"
+      }
+    },
+    {
+      "candidate": "Gaylord Rockies Resort & Convention Center",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/dengr-gaylord-rockies-resort-and-convention-center/overview/",
+          "evidence": "The current official property listing identifies Gaylord Rockies Resort & Convention Center as an operating Gaylord Hotels hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/dengr-gaylord-rockies-resort-and-convention-center/overview/",
+          "evidence": "The verified property address is 6700 North Gaylord Rockies Boulevard, Aurora, CO 80019, within the 50 United States or Washington, D.C.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.gaylordhotels.com/meet/compare-properties",
+          "evidence": "Gaylord Hotels reports 1501 total guest rooms for this individual hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "pass",
+          "url": "https://www.gaylordhotels.com/meet/compare-properties",
+          "evidence": "1501 rooms is at or above the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Map location",
+          "result": "pass",
+          "url": "https://www.openstreetmap.org/way/492440869",
+          "evidence": "The verified address resolves to 39.816984, -104.751997.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Final schema and evidence review",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/dengr-gaylord-rockies-resort-and-convention-center/overview/",
+          "evidence": "All required record fields are present, and each captured fact is linked to a source and verification date.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "final_record": {
+        "rank": 13,
+        "title": "Gaylord Rockies Resort & Convention Center",
+        "brand": "Gaylord Hotels",
+        "location": {
+          "address": "6700 North Gaylord Rockies Boulevard, Aurora, CO 80019",
+          "city": "Aurora",
+          "state": "CO",
+          "postal_code": "80019",
+          "coordinates": {
+            "lat": 39.816984,
+            "lng": -104.751997
+          }
+        },
+        "value": "1,501 rooms",
+        "size": {
+          "total_guest_rooms": 1501,
+          "suites": null,
+          "ranking_metric": "total_guest_rooms"
+        },
+        "nightly_price": null,
+        "building": {
+          "floors": null,
+          "year_opened": 2018,
+          "year_built": null,
+          "last_renovated": null,
+          "building_square_feet": null,
+          "meeting_space_square_feet": 559315
+        },
+        "history": [
+          "The resort opened in December 2018 near Denver International Airport."
+        ],
+        "sources": [
+          {
+            "url": "https://www.marriott.com/en-us/hotels/dengr-gaylord-rockies-resort-and-convention-center/overview/",
+            "publisher": "Marriott International",
+            "supports": [
+              "name",
+              "brand",
+              "address",
+              "operating status"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.gaylordhotels.com/meet/compare-properties",
+            "publisher": "Gaylord Hotels",
+            "supports": [
+              "room count",
+              "meeting space"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://ir.rymanhp.com/news-releases/news-release-details/ryman-hospitality-properties-inc-celebrates-opening-gaylord",
+            "publisher": "Ryman Hospitality Properties",
+            "supports": [
+              "year opened",
+              "opening history"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.openstreetmap.org/way/492440869",
+            "publisher": "OpenStreetMap contributors",
+            "supports": [
+              "coordinates"
+            ],
+            "note": "Named hotel feature matching the verified address.",
+            "verified_at": "2026-07-21"
+          }
+        ],
+        "verified_at": "2026-07-21"
+      }
+    },
+    {
+      "candidate": "San Francisco Marriott Marquis",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/sfodt-san-francisco-marriott-marquis/overview/",
+          "evidence": "The current official property listing identifies San Francisco Marriott Marquis as an operating Marriott Hotels hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/sfodt-san-francisco-marriott-marquis/overview/",
+          "evidence": "The verified property address is 780 Mission Street, San Francisco, CA 94103, within the 50 United States or Washington, D.C.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.hosthotels.com/properties/domestic/california/san-francisco-marriott-marquis",
+          "evidence": "Host Hotels & Resorts reports 1500 total guest rooms for this individual hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "pass",
+          "url": "https://www.hosthotels.com/properties/domestic/california/san-francisco-marriott-marquis",
+          "evidence": "1500 rooms is at or above the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Map location",
+          "result": "pass",
+          "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+          "evidence": "The verified address resolves to 37.784849, -122.4039.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Final schema and evidence review",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/sfodt-san-francisco-marriott-marquis/overview/",
+          "evidence": "All required record fields are present, and each captured fact is linked to a source and verification date.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "final_record": {
+        "rank": 14,
+        "title": "San Francisco Marriott Marquis",
+        "brand": "Marriott Hotels",
+        "location": {
+          "address": "780 Mission Street, San Francisco, CA 94103",
+          "city": "San Francisco",
+          "state": "CA",
+          "postal_code": "94103",
+          "coordinates": {
+            "lat": 37.784849,
+            "lng": -122.4039
+          }
+        },
+        "value": "1,500 rooms",
+        "size": {
+          "total_guest_rooms": 1500,
+          "suites": 63,
+          "ranking_metric": "total_guest_rooms"
+        },
+        "nightly_price": null,
+        "building": {
+          "floors": 39,
+          "year_opened": 1989,
+          "year_built": null,
+          "last_renovated": null,
+          "building_square_feet": null,
+          "meeting_space_square_feet": 135000
+        },
+        "history": [
+          "The hotel opened on October 17, 1989, the day the Loma Prieta earthquake struck; one martini glass that survived in the top-floor lounge is displayed above the bar."
+        ],
+        "sources": [
+          {
+            "url": "https://www.marriott.com/en-us/hotels/sfodt-san-francisco-marriott-marquis/overview/",
+            "publisher": "Marriott International",
+            "supports": [
+              "name",
+              "brand",
+              "address",
+              "operating status"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.hosthotels.com/properties/domestic/california/san-francisco-marriott-marquis",
+            "publisher": "Host Hotels & Resorts",
+            "supports": [
+              "room count",
+              "suite count",
+              "meeting space"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.marriott.com/content/dam/marriott-digital/mc/us-canada/hws/s/sfodt/en_us/document/assets/mc-sfodt-the-view-menu-30005.pdf",
+            "publisher": "Marriott International",
+            "supports": [
+              "year opened",
+              "floors",
+              "earthquake history"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+            "publisher": "U.S. Census Bureau",
+            "supports": [
+              "coordinates"
+            ],
+            "note": "Batch geocoder exact match for the verified address.",
+            "verified_at": "2026-07-21"
+          }
+        ],
+        "verified_at": "2026-07-21"
+      }
+    },
+    {
+      "candidate": "Philadelphia Marriott Downtown",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/phldt-philadelphia-marriott-downtown/overview/",
+          "evidence": "The current official property listing identifies Philadelphia Marriott Downtown as an operating Marriott Hotels hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/phldt-philadelphia-marriott-downtown/overview/",
+          "evidence": "The verified property address is 1201 Market Street, Philadelphia, PA 19107, within the 50 United States or Washington, D.C.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.cvent.com/venues/en-US/philadelphia/hotel/philadelphia-marriott-downtown/venue-5b4401cf-2b02-4a8a-9de9-d338f8138631",
+          "evidence": "Cvent reports 1408 total guest rooms for this individual hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "pass",
+          "url": "https://www.cvent.com/venues/en-US/philadelphia/hotel/philadelphia-marriott-downtown/venue-5b4401cf-2b02-4a8a-9de9-d338f8138631",
+          "evidence": "1408 rooms is at or above the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Map location",
+          "result": "pass",
+          "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+          "evidence": "The verified address resolves to 39.951976, -75.159947.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Final schema and evidence review",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/phldt-philadelphia-marriott-downtown/overview/",
+          "evidence": "All required record fields are present, and each captured fact is linked to a source and verification date.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "final_record": {
+        "rank": 15,
+        "title": "Philadelphia Marriott Downtown",
+        "brand": "Marriott Hotels",
+        "location": {
+          "address": "1201 Market Street, Philadelphia, PA 19107",
+          "city": "Philadelphia",
+          "state": "PA",
+          "postal_code": "19107",
+          "coordinates": {
+            "lat": 39.951976,
+            "lng": -75.159947
+          }
+        },
+        "value": "1,408 rooms",
+        "size": {
+          "total_guest_rooms": 1408,
+          "suites": 76,
+          "ranking_metric": "total_guest_rooms"
+        },
+        "nightly_price": null,
+        "building": {
+          "floors": null,
+          "year_opened": null,
+          "year_built": 1995,
+          "last_renovated": 2024,
+          "building_square_feet": null,
+          "meeting_space_square_feet": 93868
+        },
+        "history": [
+          "The hotel connects by skybridge to the Pennsylvania Convention Center and incorporates former Reading Railroad office space."
+        ],
+        "sources": [
+          {
+            "url": "https://www.marriott.com/en-us/hotels/phldt-philadelphia-marriott-downtown/overview/",
+            "publisher": "Marriott International",
+            "supports": [
+              "name",
+              "brand",
+              "address",
+              "operating status"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.cvent.com/venues/en-US/philadelphia/hotel/philadelphia-marriott-downtown/venue-5b4401cf-2b02-4a8a-9de9-d338f8138631",
+            "publisher": "Cvent",
+            "supports": [
+              "room count",
+              "suite count",
+              "year built",
+              "renovation year",
+              "meeting space"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.visitphilly.com/media-center/press-releases/market-east-philadelphia-neighborhood-guide/",
+            "publisher": "Visit Philadelphia",
+            "supports": [
+              "convention-center connection",
+              "railroad-office history"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+            "publisher": "U.S. Census Bureau",
+            "supports": [
+              "coordinates"
+            ],
+            "note": "Batch geocoder exact match for the verified address.",
+            "verified_at": "2026-07-21"
+          }
+        ],
+        "verified_at": "2026-07-21"
+      }
+    },
+    {
+      "candidate": "Marriott Marquis San Diego Marina",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/sandt-marriott-marquis-san-diego-marina/overview/",
+          "evidence": "The current official property listing identifies Marriott Marquis San Diego Marina as an operating Marriott Hotels hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/sandt-marriott-marquis-san-diego-marina/overview/",
+          "evidence": "The verified property address is 333 West Harbor Drive, San Diego, CA 92101, within the 50 United States or Washington, D.C.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.sandiego.org/members/meeting-planners/marriott-marquis-san-diego-marina/7101",
+          "evidence": "San Diego Tourism Authority reports 1366 total guest rooms for this individual hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "pass",
+          "url": "https://www.sandiego.org/members/meeting-planners/marriott-marquis-san-diego-marina/7101",
+          "evidence": "1366 rooms is at or above the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Map location",
+          "result": "pass",
+          "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+          "evidence": "The verified address resolves to 32.709497, -117.165476.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Final schema and evidence review",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/sandt-marriott-marquis-san-diego-marina/overview/",
+          "evidence": "All required record fields are present, and each captured fact is linked to a source and verification date.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "final_record": {
+        "rank": 16,
+        "title": "Marriott Marquis San Diego Marina",
+        "brand": "Marriott Hotels",
+        "location": {
+          "address": "333 West Harbor Drive, San Diego, CA 92101",
+          "city": "San Diego",
+          "state": "CA",
+          "postal_code": "92101",
+          "coordinates": {
+            "lat": 32.709497,
+            "lng": -117.165476
+          }
+        },
+        "value": "1,366 rooms",
+        "size": {
+          "total_guest_rooms": 1366,
+          "suites": 55,
+          "ranking_metric": "total_guest_rooms"
+        },
+        "nightly_price": null,
+        "building": {
+          "floors": null,
+          "year_opened": 1984,
+          "year_built": null,
+          "last_renovated": null,
+          "building_square_feet": null,
+          "meeting_space_square_feet": 271186
+        },
+        "history": [
+          "The 683-room South Tower opened in 1987, roughly doubling the hotel's original inventory."
+        ],
+        "sources": [
+          {
+            "url": "https://www.marriott.com/en-us/hotels/sandt-marriott-marquis-san-diego-marina/overview/",
+            "publisher": "Marriott International",
+            "supports": [
+              "name",
+              "brand",
+              "address",
+              "operating status",
+              "meeting space"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.sandiego.org/members/meeting-planners/marriott-marquis-san-diego-marina/7101",
+            "publisher": "San Diego Tourism Authority",
+            "supports": [
+              "room count",
+              "suite count",
+              "address"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Marriott_Marquis_San_Diego_Marina",
+            "publisher": "Wikipedia contributors",
+            "supports": [
+              "year opened",
+              "expansion history"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+            "publisher": "U.S. Census Bureau",
+            "supports": [
+              "coordinates"
+            ],
+            "note": "Batch geocoder exact match for the verified address.",
+            "verified_at": "2026-07-21"
+          }
+        ],
+        "verified_at": "2026-07-21"
+      }
+    },
+    {
+      "candidate": "The Westin Bonaventure Hotel & Suites, Los Angeles",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/laxbw-the-westin-bonaventure-hotel-and-suites-los-angeles/overview/",
+          "evidence": "The current official property listing identifies The Westin Bonaventure Hotel & Suites, Los Angeles as an operating Westin hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/laxbw-the-westin-bonaventure-hotel-and-suites-los-angeles/overview/",
+          "evidence": "The verified property address is 404 South Figueroa Street, Los Angeles, CA 90071, within the 50 United States or Washington, D.C.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://bonaventurehotel.com/",
+          "evidence": "The Westin Bonaventure Hotel & Suites reports 1354 total guest rooms for this individual hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "pass",
+          "url": "https://bonaventurehotel.com/",
+          "evidence": "1354 rooms is at or above the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Map location",
+          "result": "pass",
+          "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+          "evidence": "The verified address resolves to 34.053405, -118.256003.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Final schema and evidence review",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/laxbw-the-westin-bonaventure-hotel-and-suites-los-angeles/overview/",
+          "evidence": "All required record fields are present, and each captured fact is linked to a source and verification date.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "final_record": {
+        "rank": 17,
+        "title": "The Westin Bonaventure Hotel & Suites, Los Angeles",
+        "brand": "Westin",
+        "location": {
+          "address": "404 South Figueroa Street, Los Angeles, CA 90071",
+          "city": "Los Angeles",
+          "state": "CA",
+          "postal_code": "90071",
+          "coordinates": {
+            "lat": 34.053405,
+            "lng": -118.256003
+          }
+        },
+        "value": "1,354 rooms",
+        "size": {
+          "total_guest_rooms": 1354,
+          "suites": null,
+          "ranking_metric": "total_guest_rooms"
+        },
+        "nightly_price": null,
+        "building": {
+          "floors": 35,
+          "year_opened": null,
+          "year_built": 1977,
+          "last_renovated": null,
+          "building_square_feet": null,
+          "meeting_space_square_feet": 110000
+        },
+        "history": [
+          "John Portman's glass-towered landmark occupies an entire downtown Los Angeles block and opened in 1977."
+        ],
+        "sources": [
+          {
+            "url": "https://www.marriott.com/en-us/hotels/laxbw-the-westin-bonaventure-hotel-and-suites-los-angeles/overview/",
+            "publisher": "Marriott International",
+            "supports": [
+              "name",
+              "brand",
+              "address",
+              "operating status",
+              "floors",
+              "meeting space"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://bonaventurehotel.com/",
+            "publisher": "The Westin Bonaventure Hotel & Suites",
+            "supports": [
+              "room count",
+              "meeting space"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Westin_Bonaventure_Hotel",
+            "publisher": "Wikipedia contributors",
+            "supports": [
+              "year built",
+              "architectural history"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+            "publisher": "U.S. Census Bureau",
+            "supports": [
+              "coordinates"
+            ],
+            "note": "Batch geocoder exact match for the verified address.",
+            "verified_at": "2026-07-21"
+          }
+        ],
+        "verified_at": "2026-07-21"
+      }
+    },
+    {
+      "candidate": "New Orleans Marriott",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/msyla-new-orleans-marriott/overview/",
+          "evidence": "The current official property listing identifies New Orleans Marriott as an operating Marriott Hotels hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/msyla-new-orleans-marriott/overview/",
+          "evidence": "The verified property address is 555 Canal Street, New Orleans, LA 70130, within the 50 United States or Washington, D.C.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/msyla-new-orleans-marriott/overview/",
+          "evidence": "Marriott International reports 1333 total guest rooms for this individual hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/msyla-new-orleans-marriott/overview/",
+          "evidence": "1333 rooms is at or above the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Map location",
+          "result": "pass",
+          "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+          "evidence": "The verified address resolves to 29.952444, -90.06764.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Final schema and evidence review",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/msyla-new-orleans-marriott/overview/",
+          "evidence": "All required record fields are present, and each captured fact is linked to a source and verification date.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "final_record": {
+        "rank": 18,
+        "title": "New Orleans Marriott",
+        "brand": "Marriott Hotels",
+        "location": {
+          "address": "555 Canal Street, New Orleans, LA 70130",
+          "city": "New Orleans",
+          "state": "LA",
+          "postal_code": "70130",
+          "coordinates": {
+            "lat": 29.952444,
+            "lng": -90.06764
+          }
+        },
+        "value": "1,333 rooms",
+        "size": {
+          "total_guest_rooms": 1333,
+          "suites": null,
+          "ranking_metric": "total_guest_rooms"
+        },
+        "nightly_price": null,
+        "building": {
+          "floors": 42,
+          "year_opened": 1972,
+          "year_built": null,
+          "last_renovated": null,
+          "building_square_feet": null,
+          "meeting_space_square_feet": null
+        },
+        "history": [
+          "The 42-story hotel stands on Canal Street at the edge of the French Quarter."
+        ],
+        "sources": [
+          {
+            "url": "https://www.marriott.com/en-us/hotels/msyla-new-orleans-marriott/overview/",
+            "publisher": "Marriott International",
+            "supports": [
+              "name",
+              "brand",
+              "address",
+              "operating status",
+              "room count"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/New_Orleans_Marriott",
+            "publisher": "Wikipedia contributors",
+            "supports": [
+              "year opened",
+              "floors",
+              "location history"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+            "publisher": "U.S. Census Bureau",
+            "supports": [
+              "coordinates"
+            ],
+            "note": "Batch geocoder exact match for the verified address.",
+            "verified_at": "2026-07-21"
+          }
+        ],
+        "verified_at": "2026-07-21"
+      }
+    },
+    {
+      "candidate": "Waikiki Beach Marriott Resort & Spa",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/hnlmc-waikiki-beach-marriott-resort-and-spa/overview/",
+          "evidence": "The current official property listing identifies Waikiki Beach Marriott Resort & Spa as an operating Marriott Hotels hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/hnlmc-waikiki-beach-marriott-resort-and-spa/overview/",
+          "evidence": "The verified property address is 2552 Kalakaua Avenue, Honolulu, HI 96815, within the 50 United States or Washington, D.C.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.costcotravel.com/hotels/Hawaii/Oahu/OahuWaikikiBeachMarriott",
+          "evidence": "Costco Travel reports 1310 total guest rooms for this individual hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "pass",
+          "url": "https://www.costcotravel.com/hotels/Hawaii/Oahu/OahuWaikikiBeachMarriott",
+          "evidence": "1310 rooms is at or above the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Map location",
+          "result": "pass",
+          "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+          "evidence": "The verified address resolves to 21.273056, -157.823471.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Final schema and evidence review",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/hnlmc-waikiki-beach-marriott-resort-and-spa/overview/",
+          "evidence": "All required record fields are present, and each captured fact is linked to a source and verification date.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "final_record": {
+        "rank": 19,
+        "title": "Waikiki Beach Marriott Resort & Spa",
+        "brand": "Marriott Hotels",
+        "location": {
+          "address": "2552 Kalakaua Avenue, Honolulu, HI 96815",
+          "city": "Honolulu",
+          "state": "HI",
+          "postal_code": "96815",
+          "coordinates": {
+            "lat": 21.273056,
+            "lng": -157.823471
+          }
+        },
+        "value": "1,310 rooms",
+        "size": {
+          "total_guest_rooms": 1310,
+          "suites": 135,
+          "ranking_metric": "total_guest_rooms"
+        },
+        "nightly_price": null,
+        "building": {
+          "floors": 33,
+          "year_opened": null,
+          "year_built": 1971,
+          "last_renovated": null,
+          "building_square_feet": null,
+          "meeting_space_square_feet": null
+        },
+        "history": [
+          "The two guest towers are named for Paoakalani and Kealohilani, summer cottages once used by Queen Liliʻuokalani on the property."
+        ],
+        "sources": [
+          {
+            "url": "https://www.marriott.com/en-us/hotels/hnlmc-waikiki-beach-marriott-resort-and-spa/overview/",
+            "publisher": "Marriott International",
+            "supports": [
+              "name",
+              "brand",
+              "address",
+              "operating status"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.costcotravel.com/hotels/Hawaii/Oahu/OahuWaikikiBeachMarriott",
+            "publisher": "Costco Travel",
+            "supports": [
+              "room count",
+              "address"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://greenbusiness.hawaii.gov/wp-content/uploads/2017/01/Waikiki-Marriott_2007.pdf",
+            "publisher": "State of Hawaii Green Business Program",
+            "supports": [
+              "room count",
+              "suite count",
+              "property history"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.city-data.com/articles/Waikiki-Beach-Marriott-Resort-Spa.html",
+            "publisher": "City-Data",
+            "supports": [
+              "year built",
+              "tower floors"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+            "publisher": "U.S. Census Bureau",
+            "supports": [
+              "coordinates"
+            ],
+            "note": "Batch geocoder exact match for the verified address.",
+            "verified_at": "2026-07-21"
+          }
+        ],
+        "verified_at": "2026-07-21"
+      }
+    },
+    {
+      "candidate": "Detroit Marriott at the Renaissance Center",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/dtwdt-detroit-marriott-at-the-renaissance-center/overview/",
+          "evidence": "The current official property listing identifies Detroit Marriott at the Renaissance Center as an operating Marriott Hotels hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/dtwdt-detroit-marriott-at-the-renaissance-center/overview/",
+          "evidence": "The verified property address is Renaissance Center, 400 Renaissance Drive, Detroit, MI 48243, within the 50 United States or Washington, D.C.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.hospitalitynet.org/news/4034678.html",
+          "evidence": "Marriott International via Hospitality Net reports 1298 total guest rooms for this individual hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "pass",
+          "url": "https://www.hospitalitynet.org/news/4034678.html",
+          "evidence": "1298 rooms is at or above the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Map location",
+          "result": "pass",
+          "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+          "evidence": "The verified address resolves to 42.330044, -83.03983.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Final schema and evidence review",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/dtwdt-detroit-marriott-at-the-renaissance-center/overview/",
+          "evidence": "All required record fields are present, and each captured fact is linked to a source and verification date.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "final_record": {
+        "rank": 20,
+        "title": "Detroit Marriott at the Renaissance Center",
+        "brand": "Marriott Hotels",
+        "location": {
+          "address": "Renaissance Center, 400 Renaissance Drive, Detroit, MI 48243",
+          "city": "Detroit",
+          "state": "MI",
+          "postal_code": "48243",
+          "coordinates": {
+            "lat": 42.330044,
+            "lng": -83.03983
+          }
+        },
+        "value": "1,298 rooms",
+        "size": {
+          "total_guest_rooms": 1298,
+          "suites": 52,
+          "ranking_metric": "total_guest_rooms"
+        },
+        "nightly_price": null,
+        "building": {
+          "floors": 70,
+          "year_opened": null,
+          "year_built": 1977,
+          "last_renovated": 2014,
+          "building_square_feet": null,
+          "meeting_space_square_feet": 100000
+        },
+        "history": [
+          "The cylindrical hotel tower is the centerpiece of the Renaissance Center and one of the tallest all-hotel buildings in the United States."
+        ],
+        "sources": [
+          {
+            "url": "https://www.marriott.com/en-us/hotels/dtwdt-detroit-marriott-at-the-renaissance-center/overview/",
+            "publisher": "Marriott International",
+            "supports": [
+              "name",
+              "brand",
+              "address",
+              "operating status"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.hospitalitynet.org/news/4034678.html",
+            "publisher": "Marriott International via Hospitality Net",
+            "supports": [
+              "room count",
+              "meeting space",
+              "Marriott operation"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://michiganchronicle.com/30-million-investment-in-the-motor-city-detroit-marriott-renovation/",
+            "publisher": "Michigan Chronicle",
+            "supports": [
+              "suite count",
+              "renovation year",
+              "meeting space"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://skyscraperpage.com/b3523/detroit/detroit-marriott-at-the-renaissance-center",
+            "publisher": "SkyscraperPage",
+            "supports": [
+              "year built",
+              "floors",
+              "building history"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+            "publisher": "U.S. Census Bureau",
+            "supports": [
+              "coordinates"
+            ],
+            "note": "Batch geocoder matched 400 Renaissance Center for the verified hotel address.",
+            "verified_at": "2026-07-21"
+          }
+        ],
+        "verified_at": "2026-07-21"
+      }
+    },
+    {
+      "candidate": "Sheraton Denver Downtown Hotel",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/dendh-sheraton-denver-downtown-hotel/overview/",
+          "evidence": "The current official property listing identifies Sheraton Denver Downtown Hotel as an operating Sheraton hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/dendh-sheraton-denver-downtown-hotel/overview/",
+          "evidence": "The verified property address is 1550 Court Place, Denver, CO 80202, within the 50 United States or Washington, D.C.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.cvent.com/venues/denver/hotel/sheraton-denver-downtown-hotel/venue-832233ca-dde7-4d2d-9f74-3bab5bef3b4d",
+          "evidence": "Cvent reports 1238 total guest rooms for this individual hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "pass",
+          "url": "https://www.cvent.com/venues/denver/hotel/sheraton-denver-downtown-hotel/venue-832233ca-dde7-4d2d-9f74-3bab5bef3b4d",
+          "evidence": "1238 rooms is at or above the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Map location",
+          "result": "pass",
+          "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+          "evidence": "The verified address resolves to 39.742007, -104.989246.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Final schema and evidence review",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/dendh-sheraton-denver-downtown-hotel/overview/",
+          "evidence": "All required record fields are present, and each captured fact is linked to a source and verification date.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "final_record": {
+        "rank": 21,
+        "title": "Sheraton Denver Downtown Hotel",
+        "brand": "Sheraton",
+        "location": {
+          "address": "1550 Court Place, Denver, CO 80202",
+          "city": "Denver",
+          "state": "CO",
+          "postal_code": "80202",
+          "coordinates": {
+            "lat": 39.742007,
+            "lng": -104.989246
+          }
+        },
+        "value": "1,238 rooms",
+        "size": {
+          "total_guest_rooms": 1238,
+          "suites": 138,
+          "ranking_metric": "total_guest_rooms"
+        },
+        "nightly_price": null,
+        "building": {
+          "floors": 22,
+          "year_opened": null,
+          "year_built": 1960,
+          "last_renovated": null,
+          "building_square_feet": null,
+          "meeting_space_square_feet": 140000
+        },
+        "history": [],
+        "sources": [
+          {
+            "url": "https://www.marriott.com/en-us/hotels/dendh-sheraton-denver-downtown-hotel/overview/",
+            "publisher": "Marriott International",
+            "supports": [
+              "name",
+              "brand",
+              "address",
+              "operating status"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.cvent.com/venues/denver/hotel/sheraton-denver-downtown-hotel/venue-832233ca-dde7-4d2d-9f74-3bab5bef3b4d",
+            "publisher": "Cvent",
+            "supports": [
+              "room count",
+              "suite count",
+              "meeting space"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.hotelplanner.com/Hotels/52447/Reservations-Sheraton-Denver-Downtown-Hotel-Denver-1550-Court-Place-80202",
+            "publisher": "HotelPlanner",
+            "supports": [
+              "floors",
+              "year built"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+            "publisher": "U.S. Census Bureau",
+            "supports": [
+              "coordinates"
+            ],
+            "note": "Batch geocoder exact match for the verified address.",
+            "verified_at": "2026-07-21"
+          }
+        ],
+        "verified_at": "2026-07-21"
+      }
+    },
+    {
+      "candidate": "Sheraton Grand Seattle",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/seasi-sheraton-grand-seattle/overview/",
+          "evidence": "The current official property listing identifies Sheraton Grand Seattle as an operating Sheraton hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/seasi-sheraton-grand-seattle/overview/",
+          "evidence": "The verified property address is 1400 6th Avenue, Seattle, WA 98101, within the 50 United States or Washington, D.C.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.travelweekly-asia.com/Hotels/Seattle/Sheraton-Grand-Seattle/Meetings-Events-p54013384",
+          "evidence": "Travel Weekly Asia reports 1236 total guest rooms for this individual hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "pass",
+          "url": "https://www.travelweekly-asia.com/Hotels/Seattle/Sheraton-Grand-Seattle/Meetings-Events-p54013384",
+          "evidence": "1236 rooms is at or above the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Map location",
+          "result": "pass",
+          "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+          "evidence": "The verified address resolves to 47.610226, -122.333529.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Final schema and evidence review",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/seasi-sheraton-grand-seattle/overview/",
+          "evidence": "All required record fields are present, and each captured fact is linked to a source and verification date.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "final_record": {
+        "rank": 22,
+        "title": "Sheraton Grand Seattle",
+        "brand": "Sheraton",
+        "location": {
+          "address": "1400 6th Avenue, Seattle, WA 98101",
+          "city": "Seattle",
+          "state": "WA",
+          "postal_code": "98101",
+          "coordinates": {
+            "lat": 47.610226,
+            "lng": -122.333529
+          }
+        },
+        "value": "1,236 rooms",
+        "size": {
+          "total_guest_rooms": 1236,
+          "suites": null,
+          "ranking_metric": "total_guest_rooms"
+        },
+        "nightly_price": null,
+        "building": {
+          "floors": 35,
+          "year_opened": null,
+          "year_built": 1982,
+          "last_renovated": 2011,
+          "building_square_feet": null,
+          "meeting_space_square_feet": 77093
+        },
+        "history": [],
+        "sources": [
+          {
+            "url": "https://www.marriott.com/en-us/hotels/seasi-sheraton-grand-seattle/overview/",
+            "publisher": "Marriott International",
+            "supports": [
+              "name",
+              "brand",
+              "address",
+              "operating status"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.travelweekly-asia.com/Hotels/Seattle/Sheraton-Grand-Seattle/Meetings-Events-p54013384",
+            "publisher": "Travel Weekly Asia",
+            "supports": [
+              "room count",
+              "meeting space",
+              "address"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.successfulmeetings.com/Meeting-Event-Venues/Seattle/Convention-Hotel/Sheraton-Grand-Seattle-p53117758",
+            "publisher": "Successful Meetings",
+            "supports": [
+              "year built",
+              "renovation year",
+              "floors"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+            "publisher": "U.S. Census Bureau",
+            "supports": [
+              "coordinates"
+            ],
+            "note": "Batch geocoder exact match for the verified address.",
+            "verified_at": "2026-07-21"
+          }
+        ],
+        "verified_at": "2026-07-21"
+      }
+    },
+    {
+      "candidate": "Sheraton Grand Chicago Riverwalk",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/chigs-sheraton-grand-chicago-riverwalk/overview/",
+          "evidence": "The current official property listing identifies Sheraton Grand Chicago Riverwalk as an operating Sheraton hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/chigs-sheraton-grand-chicago-riverwalk/overview/",
+          "evidence": "The verified property address is 301 East North Water Street, Chicago, IL 60611, within the 50 United States or Washington, D.C.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/chigs-sheraton-grand-chicago-riverwalk/overview/",
+          "evidence": "Marriott International reports 1218 total guest rooms for this individual hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/chigs-sheraton-grand-chicago-riverwalk/overview/",
+          "evidence": "1218 rooms is at or above the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Map location",
+          "result": "pass",
+          "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+          "evidence": "The verified address resolves to 41.889455, -87.617543.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Final schema and evidence review",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/chigs-sheraton-grand-chicago-riverwalk/overview/",
+          "evidence": "All required record fields are present, and each captured fact is linked to a source and verification date.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "final_record": {
+        "rank": 23,
+        "title": "Sheraton Grand Chicago Riverwalk",
+        "brand": "Sheraton",
+        "location": {
+          "address": "301 East North Water Street, Chicago, IL 60611",
+          "city": "Chicago",
+          "state": "IL",
+          "postal_code": "60611",
+          "coordinates": {
+            "lat": 41.889455,
+            "lng": -87.617543
+          }
+        },
+        "value": "1,218 rooms",
+        "size": {
+          "total_guest_rooms": 1218,
+          "suites": null,
+          "ranking_metric": "total_guest_rooms"
+        },
+        "nightly_price": null,
+        "building": {
+          "floors": 34,
+          "year_opened": null,
+          "year_built": 1992,
+          "last_renovated": 2023,
+          "building_square_feet": null,
+          "meeting_space_square_feet": 125000
+        },
+        "history": [
+          "A property-wide renovation completed in 2023 renewed all 1,218 rooms and suites."
+        ],
+        "sources": [
+          {
+            "url": "https://www.marriott.com/en-us/hotels/chigs-sheraton-grand-chicago-riverwalk/overview/",
+            "publisher": "Marriott International",
+            "supports": [
+              "name",
+              "brand",
+              "address",
+              "operating status",
+              "room count",
+              "meeting space",
+              "renovation year"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://chistockimages.com/building/sheraton-grand-chicago-riverwalk/",
+            "publisher": "Chicago Building Database",
+            "supports": [
+              "year built",
+              "floors"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+            "publisher": "U.S. Census Bureau",
+            "supports": [
+              "coordinates"
+            ],
+            "note": "Batch geocoder exact match for the verified address.",
+            "verified_at": "2026-07-21"
+          }
+        ],
+        "verified_at": "2026-07-21"
+      }
+    },
+    {
+      "candidate": "Marriott Marquis Chicago",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/chimq-marriott-marquis-chicago/overview/",
+          "evidence": "The current official property listing identifies Marriott Marquis Chicago as an operating Marriott Hotels hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/chimq-marriott-marquis-chicago/overview/",
+          "evidence": "The verified property address is 2121 South Prairie Avenue, Chicago, IL 60616, within the 50 United States or Washington, D.C.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/chimq-marriott-marquis-chicago/events/business-events-and-meetings-overview/",
+          "evidence": "Marriott International reports 1205 total guest rooms for this individual hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/chimq-marriott-marquis-chicago/events/business-events-and-meetings-overview/",
+          "evidence": "1205 rooms is at or above the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Map location",
+          "result": "pass",
+          "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+          "evidence": "The verified address resolves to 41.854022, -87.620609.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Final schema and evidence review",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/chimq-marriott-marquis-chicago/overview/",
+          "evidence": "All required record fields are present, and each captured fact is linked to a source and verification date.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "final_record": {
+        "rank": 24,
+        "title": "Marriott Marquis Chicago",
+        "brand": "Marriott Hotels",
+        "location": {
+          "address": "2121 South Prairie Avenue, Chicago, IL 60616",
+          "city": "Chicago",
+          "state": "IL",
+          "postal_code": "60616",
+          "coordinates": {
+            "lat": 41.854022,
+            "lng": -87.620609
+          }
+        },
+        "value": "1,205 rooms",
+        "size": {
+          "total_guest_rooms": 1205,
+          "suites": 44,
+          "ranking_metric": "total_guest_rooms"
+        },
+        "nightly_price": null,
+        "building": {
+          "floors": 40,
+          "year_opened": 2017,
+          "year_built": null,
+          "last_renovated": null,
+          "building_square_feet": null,
+          "meeting_space_square_feet": 89407
+        },
+        "history": [
+          "Opened in September 2017 with a covered skybridge directly connecting the hotel to McCormick Place."
+        ],
+        "sources": [
+          {
+            "url": "https://www.marriott.com/en-us/hotels/chimq-marriott-marquis-chicago/overview/",
+            "publisher": "Marriott International",
+            "supports": [
+              "name",
+              "brand",
+              "address",
+              "operating status"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.marriott.com/en-us/hotels/chimq-marriott-marquis-chicago/events/business-events-and-meetings-overview/",
+            "publisher": "Marriott International",
+            "supports": [
+              "room count",
+              "meeting space"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.clarkconstruction.com/news/clark-led-joint-venture-team-delivers-marriott-marquis-mccormick-square",
+            "publisher": "Clark Construction",
+            "supports": [
+              "suite count",
+              "floors",
+              "year opened",
+              "skybridge history"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+            "publisher": "U.S. Census Bureau",
+            "supports": [
+              "coordinates"
+            ],
+            "note": "Batch geocoder matched the street number; the returned ZIP was 60605 while Marriott publishes 60616.",
+            "verified_at": "2026-07-21"
+          }
+        ],
+        "verified_at": "2026-07-21"
+      }
+    },
+    {
+      "candidate": "Chicago Marriott Downtown Magnificent Mile",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/chidt-chicago-marriott-downtown-magnificent-mile/overview/",
+          "evidence": "The current official property listing identifies Chicago Marriott Downtown Magnificent Mile as an operating Marriott Hotels hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/chidt-chicago-marriott-downtown-magnificent-mile/overview/",
+          "evidence": "The verified property address is 540 North Michigan Avenue, Chicago, IL 60611, within the 50 United States or Washington, D.C.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/chidt-chicago-marriott-downtown-magnificent-mile/overview/",
+          "evidence": "Marriott International reports 1200 total guest rooms for this individual hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/chidt-chicago-marriott-downtown-magnificent-mile/overview/",
+          "evidence": "1200 rooms is at or above the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Map location",
+          "result": "pass",
+          "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+          "evidence": "The verified address resolves to 41.891927, -87.624338.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Final schema and evidence review",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/chidt-chicago-marriott-downtown-magnificent-mile/overview/",
+          "evidence": "All required record fields are present, and each captured fact is linked to a source and verification date.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "final_record": {
+        "rank": 25,
+        "title": "Chicago Marriott Downtown Magnificent Mile",
+        "brand": "Marriott Hotels",
+        "location": {
+          "address": "540 North Michigan Avenue, Chicago, IL 60611",
+          "city": "Chicago",
+          "state": "IL",
+          "postal_code": "60611",
+          "coordinates": {
+            "lat": 41.891927,
+            "lng": -87.624338
+          }
+        },
+        "value": "1,200 rooms",
+        "size": {
+          "total_guest_rooms": 1200,
+          "suites": null,
+          "ranking_metric": "total_guest_rooms"
+        },
+        "nightly_price": null,
+        "building": {
+          "floors": null,
+          "year_opened": 1978,
+          "year_built": null,
+          "last_renovated": null,
+          "building_square_feet": null,
+          "meeting_space_square_feet": 64647
+        },
+        "history": [],
+        "sources": [
+          {
+            "url": "https://www.marriott.com/en-us/hotels/chidt-chicago-marriott-downtown-magnificent-mile/overview/",
+            "publisher": "Marriott International",
+            "supports": [
+              "name",
+              "brand",
+              "address",
+              "operating status",
+              "room count",
+              "meeting space",
+              "year opened"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+            "publisher": "U.S. Census Bureau",
+            "supports": [
+              "coordinates"
+            ],
+            "note": "Batch geocoder exact match for the verified address.",
+            "verified_at": "2026-07-21"
+          }
+        ],
+        "verified_at": "2026-07-21"
+      }
+    },
+    {
+      "candidate": "The Westin St. Francis San Francisco on Union Square",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/sfouw-the-westin-st-francis-san-francisco-on-union-square/overview/",
+          "evidence": "The current official property listing identifies The Westin St. Francis San Francisco on Union Square as an operating Westin hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/sfouw-the-westin-st-francis-san-francisco-on-union-square/overview/",
+          "evidence": "The verified property address is 335 Powell Street, San Francisco, CA 94102, within the 50 United States or Washington, D.C.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://caselaw.findlaw.com/court/ca-court-of-appeal/114893126.html",
+          "evidence": "California Court of Appeal via FindLaw reports 1195 total guest rooms for this individual hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "pass",
+          "url": "https://caselaw.findlaw.com/court/ca-court-of-appeal/114893126.html",
+          "evidence": "1195 rooms is at or above the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Map location",
+          "result": "pass",
+          "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+          "evidence": "The verified address resolves to 37.787407, -122.408309.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Final schema and evidence review",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/sfouw-the-westin-st-francis-san-francisco-on-union-square/overview/",
+          "evidence": "All required record fields are present, and each captured fact is linked to a source and verification date.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "final_record": {
+        "rank": 26,
+        "title": "The Westin St. Francis San Francisco on Union Square",
+        "brand": "Westin",
+        "location": {
+          "address": "335 Powell Street, San Francisco, CA 94102",
+          "city": "San Francisco",
+          "state": "CA",
+          "postal_code": "94102",
+          "coordinates": {
+            "lat": 37.787407,
+            "lng": -122.408309
+          }
+        },
+        "value": "1,195 rooms",
+        "size": {
+          "total_guest_rooms": 1195,
+          "suites": 59,
+          "ranking_metric": "total_guest_rooms"
+        },
+        "nightly_price": null,
+        "building": {
+          "floors": 32,
+          "year_opened": 1904,
+          "year_built": 1904,
+          "last_renovated": null,
+          "building_square_feet": null,
+          "meeting_space_square_feet": 56000
+        },
+        "history": [
+          "The landmark building opened in 1904; the hotel hosted delegations attending the 1945 conference that created the United Nations."
+        ],
+        "sources": [
+          {
+            "url": "https://www.marriott.com/en-us/hotels/sfouw-the-westin-st-francis-san-francisco-on-union-square/overview/",
+            "publisher": "Marriott International",
+            "supports": [
+              "name",
+              "brand",
+              "address",
+              "operating status",
+              "meeting space"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://caselaw.findlaw.com/court/ca-court-of-appeal/114893126.html",
+            "publisher": "California Court of Appeal via FindLaw",
+            "supports": [
+              "room count",
+              "year built",
+              "tower floors"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Westin_St._Francis",
+            "publisher": "Wikipedia contributors",
+            "supports": [
+              "suite count",
+              "year opened",
+              "United Nations history"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+            "publisher": "U.S. Census Bureau",
+            "supports": [
+              "coordinates"
+            ],
+            "note": "Batch geocoder exact match for the verified address.",
+            "verified_at": "2026-07-21"
+          }
+        ],
+        "verified_at": "2026-07-21"
+      }
+    },
+    {
+      "candidate": "Marriott Marquis Washington, DC",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/wasco-marriott-marquis-washington-dc/overview/",
+          "evidence": "The current official property listing identifies Marriott Marquis Washington, DC as an operating Marriott Hotels hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/wasco-marriott-marquis-washington-dc/overview/",
+          "evidence": "The verified property address is 901 Massachusetts Avenue NW, Washington, DC 20001, within the 50 United States or Washington, D.C.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://washington.org/find-dc-listings/marriott-marquis-washington-dc",
+          "evidence": "Destination DC reports 1175 total guest rooms for this individual hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "pass",
+          "url": "https://washington.org/find-dc-listings/marriott-marquis-washington-dc",
+          "evidence": "1175 rooms is at or above the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Map location",
+          "result": "pass",
+          "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+          "evidence": "The verified address resolves to 38.902991, -77.024011.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Final schema and evidence review",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/wasco-marriott-marquis-washington-dc/overview/",
+          "evidence": "All required record fields are present, and each captured fact is linked to a source and verification date.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "final_record": {
+        "rank": 27,
+        "title": "Marriott Marquis Washington, DC",
+        "brand": "Marriott Hotels",
+        "location": {
+          "address": "901 Massachusetts Avenue NW, Washington, DC 20001",
+          "city": "Washington",
+          "state": "DC",
+          "postal_code": "20001",
+          "coordinates": {
+            "lat": 38.902991,
+            "lng": -77.024011
+          }
+        },
+        "value": "1,175 rooms",
+        "size": {
+          "total_guest_rooms": 1175,
+          "suites": 46,
+          "ranking_metric": "total_guest_rooms"
+        },
+        "nightly_price": null,
+        "building": {
+          "floors": 15,
+          "year_opened": 2014,
+          "year_built": null,
+          "last_renovated": null,
+          "building_square_feet": null,
+          "meeting_space_square_feet": 105000
+        },
+        "history": [
+          "The hotel incorporates the restored 1916 facade of the former American Federation of Labor headquarters."
+        ],
+        "sources": [
+          {
+            "url": "https://www.marriott.com/en-us/hotels/wasco-marriott-marquis-washington-dc/overview/",
+            "publisher": "Marriott International",
+            "supports": [
+              "name",
+              "brand",
+              "address",
+              "operating status",
+              "meeting space"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://washington.org/find-dc-listings/marriott-marquis-washington-dc",
+            "publisher": "Destination DC",
+            "supports": [
+              "room count",
+              "meeting space"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Washington_Marriott_Marquis",
+            "publisher": "Wikipedia contributors",
+            "supports": [
+              "suite count",
+              "year opened",
+              "floors",
+              "facade history"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+            "publisher": "U.S. Census Bureau",
+            "supports": [
+              "coordinates"
+            ],
+            "note": "Batch geocoder exact match for the verified address.",
+            "verified_at": "2026-07-21"
+          }
+        ],
+        "verified_at": "2026-07-21"
+      }
+    },
+    {
+      "candidate": "Boston Marriott Copley Place",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/bosco-boston-marriott-copley-place/overview/",
+          "evidence": "The current official property listing identifies Boston Marriott Copley Place as an operating Marriott Hotels hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/bosco-boston-marriott-copley-place/overview/",
+          "evidence": "The verified property address is 110 Huntington Avenue, Boston, MA 02116, within the 50 United States or Washington, D.C.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.bizjournals.com/boston/news/2022/05/05/mass-teachers-union-cancels-marriott-copley-event.html",
+          "evidence": "Boston Business Journal reports 1147 total guest rooms for this individual hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "pass",
+          "url": "https://www.bizjournals.com/boston/news/2022/05/05/mass-teachers-union-cancels-marriott-copley-event.html",
+          "evidence": "1147 rooms is at or above the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Map location",
+          "result": "pass",
+          "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+          "evidence": "The verified address resolves to 42.346941, -71.079474.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Final schema and evidence review",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/bosco-boston-marriott-copley-place/overview/",
+          "evidence": "All required record fields are present, and each captured fact is linked to a source and verification date.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "final_record": {
+        "rank": 28,
+        "title": "Boston Marriott Copley Place",
+        "brand": "Marriott Hotels",
+        "location": {
+          "address": "110 Huntington Avenue, Boston, MA 02116",
+          "city": "Boston",
+          "state": "MA",
+          "postal_code": "02116",
+          "coordinates": {
+            "lat": 42.346941,
+            "lng": -71.079474
+          }
+        },
+        "value": "1,147 rooms",
+        "size": {
+          "total_guest_rooms": 1147,
+          "suites": 47,
+          "ranking_metric": "total_guest_rooms"
+        },
+        "nightly_price": null,
+        "building": {
+          "floors": 38,
+          "year_opened": 1984,
+          "year_built": null,
+          "last_renovated": null,
+          "building_square_feet": null,
+          "meeting_space_square_feet": 70000
+        },
+        "history": [],
+        "sources": [
+          {
+            "url": "https://www.marriott.com/en-us/hotels/bosco-boston-marriott-copley-place/overview/",
+            "publisher": "Marriott International",
+            "supports": [
+              "name",
+              "brand",
+              "address",
+              "operating status",
+              "meeting space"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.bizjournals.com/boston/news/2022/05/05/mass-teachers-union-cancels-marriott-copley-event.html",
+            "publisher": "Boston Business Journal",
+            "supports": [
+              "room count"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.onthebeach.co.uk/hotels/usa/massachusetts/boston/marriott-copley-place",
+            "publisher": "On the Beach",
+            "supports": [
+              "suite count",
+              "floors"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.travelweekly.com/Travel-News/Hotel-News/Host-Marriott-buys-Boston-Marriott-Copley-Place",
+            "publisher": "Travel Weekly",
+            "supports": [
+              "year opened"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+            "publisher": "U.S. Census Bureau",
+            "supports": [
+              "coordinates"
+            ],
+            "note": "Batch geocoder exact match for the verified address.",
+            "verified_at": "2026-07-21"
+          }
+        ],
+        "verified_at": "2026-07-21"
+      }
+    },
+    {
+      "candidate": "Sheraton New Orleans Hotel",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/msyis-sheraton-new-orleans-hotel/overview/",
+          "evidence": "The current official property listing identifies Sheraton New Orleans Hotel as an operating Sheraton hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/msyis-sheraton-new-orleans-hotel/overview/",
+          "evidence": "The verified property address is 500 Canal Street, New Orleans, LA 70130, within the 50 United States or Washington, D.C.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.neworleans.com/articles/post/sheraton-new-orleans-hotel/",
+          "evidence": "New Orleans & Company reports 1110 total guest rooms for this individual hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "pass",
+          "url": "https://www.neworleans.com/articles/post/sheraton-new-orleans-hotel/",
+          "evidence": "1110 rooms is at or above the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Map location",
+          "result": "pass",
+          "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+          "evidence": "The verified address resolves to 29.951723, -90.067227.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Final schema and evidence review",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/msyis-sheraton-new-orleans-hotel/overview/",
+          "evidence": "All required record fields are present, and each captured fact is linked to a source and verification date.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "final_record": {
+        "rank": 29,
+        "title": "Sheraton New Orleans Hotel",
+        "brand": "Sheraton",
+        "location": {
+          "address": "500 Canal Street, New Orleans, LA 70130",
+          "city": "New Orleans",
+          "state": "LA",
+          "postal_code": "70130",
+          "coordinates": {
+            "lat": 29.951723,
+            "lng": -90.067227
+          }
+        },
+        "value": "1,110 rooms",
+        "size": {
+          "total_guest_rooms": 1110,
+          "suites": null,
+          "ranking_metric": "total_guest_rooms"
+        },
+        "nightly_price": null,
+        "building": {
+          "floors": 49,
+          "year_opened": 1982,
+          "year_built": null,
+          "last_renovated": null,
+          "building_square_feet": null,
+          "meeting_space_square_feet": 105996
+        },
+        "history": [
+          "The hotel and New Orleans Marriott stand less than 100 steps apart and market a combined single-contract convention option."
+        ],
+        "sources": [
+          {
+            "url": "https://www.marriott.com/en-us/hotels/msyis-sheraton-new-orleans-hotel/overview/",
+            "publisher": "Marriott International",
+            "supports": [
+              "name",
+              "brand",
+              "address",
+              "operating status",
+              "combined-hotel history"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.neworleans.com/articles/post/sheraton-new-orleans-hotel/",
+            "publisher": "New Orleans & Company",
+            "supports": [
+              "room count",
+              "floors",
+              "address"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.marriott.com/en-us/hotels/msyis-sheraton-new-orleans-hotel/events/",
+            "publisher": "Marriott International",
+            "supports": [
+              "meeting space"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Sheraton_New_Orleans",
+            "publisher": "Wikipedia contributors",
+            "supports": [
+              "year opened"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+            "publisher": "U.S. Census Bureau",
+            "supports": [
+              "coordinates"
+            ],
+            "note": "Batch geocoder exact match for the verified address.",
+            "verified_at": "2026-07-21"
+          }
+        ],
+        "verified_at": "2026-07-21"
+      }
+    },
+    {
+      "candidate": "Sheraton Princess Kaiulani Waikiki Beach",
+      "status": "validated",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/hnlks-sheraton-princess-kaiulani-waikiki-beach/overview/",
+          "evidence": "The current official property listing identifies Sheraton Princess Kaiulani Waikiki Beach as an operating Sheraton hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/hnlks-sheraton-princess-kaiulani-waikiki-beach/overview/",
+          "evidence": "The verified property address is 120 Kaiulani Avenue, Honolulu, HI 96815, within the 50 United States or Washington, D.C.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.princesskaiulani.jp/rooms",
+          "evidence": "Sheraton Princess Kaiulani reports 1084 total guest rooms for this individual hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "pass",
+          "url": "https://www.princesskaiulani.jp/rooms",
+          "evidence": "1084 rooms is at or above the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Map location",
+          "result": "pass",
+          "url": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress",
+          "evidence": "The verified address resolves to 21.277190, -157.825285.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Final schema and evidence review",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/hnlks-sheraton-princess-kaiulani-waikiki-beach/overview/",
+          "evidence": "All required record fields are present, and each captured fact is linked to a source and verification date.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "final_record": {
+        "rank": 30,
+        "title": "Sheraton Princess Kaiulani Waikiki Beach",
+        "brand": "Sheraton",
+        "location": {
+          "address": "120 Kaiulani Avenue, Honolulu, HI 96815",
+          "city": "Honolulu",
+          "state": "HI",
+          "postal_code": "96815",
+          "coordinates": {
+            "lat": 21.277190,
+            "lng": -157.825285
+          }
+        },
+        "value": "1,084 rooms",
+        "size": {
+          "total_guest_rooms": 1084,
+          "suites": null,
+          "ranking_metric": "total_guest_rooms"
+        },
+        "nightly_price": null,
+        "building": {
+          "floors": null,
+          "year_opened": null,
+          "year_built": null,
+          "last_renovated": 2024,
+          "building_square_feet": null,
+          "meeting_space_square_feet": null
+        },
+        "history": [
+          "The hotel stands on ʻĀinahau, the former Waikiki estate of Princess Kaʻiulani; its 664-room ʻĀinahau Tower completed a room renovation in spring 2024."
+        ],
+        "sources": [
+          {
+            "url": "https://www.marriott.com/en-us/hotels/hnlks-sheraton-princess-kaiulani-waikiki-beach/overview/",
+            "publisher": "Marriott International",
+            "supports": [
+              "name",
+              "brand",
+              "address",
+              "operating status"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.princesskaiulani.jp/rooms",
+            "publisher": "Sheraton Princess Kaiulani",
+            "supports": [
+              "room count",
+              "2024 renovation"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://www.princesskaiulani.jp/features",
+            "publisher": "Sheraton Princess Kaiulani",
+            "supports": [
+              "site history"
+            ],
+            "verified_at": "2026-07-21"
+          },
+          {
+            "url": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress",
+            "publisher": "U.S. Census Bureau",
+            "supports": [
+              "coordinates"
+            ],
+            "note": "Exact address match for 120 Kaiulani Avenue.",
+            "verified_at": "2026-07-21"
+          }
+        ],
+        "verified_at": "2026-07-21"
+      }
+    },
+    {
+      "candidate": "The Westin Peachtree Plaza, Atlanta",
+      "status": "rejected",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.businesswire.com/news/home/20260528102534/en/Portman-Hospitality-Fund-I-LP-Announces-Acquisition-of-the-Westin-Peachtree-Plaza",
+          "evidence": "The discovery source identifies the property as an operating Marriott portfolio hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.businesswire.com/news/home/20260528102534/en/Portman-Hospitality-Fund-I-LP-Announces-Acquisition-of-the-Westin-Peachtree-Plaza",
+          "evidence": "The discovery source locates the property in a U.S. state.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.businesswire.com/news/home/20260528102534/en/Portman-Hospitality-Fund-I-LP-Announces-Acquisition-of-the-Westin-Peachtree-Plaza",
+          "evidence": "The published property-level inventory is 1073 rooms.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "fail",
+          "url": "https://www.businesswire.com/news/home/20260528102534/en/Portman-Hospitality-Fund-I-LP-Announces-Acquisition-of-the-Westin-Peachtree-Plaza",
+          "evidence": "1073 rooms is below the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "failed_constraint": "Ranking cutoff",
+      "notes": "Near-cutoff control; displaced by the current Sheraton Princess Kaiulani inventory."
+    },
+    {
+      "candidate": "Sheraton San Diego Resort",
+      "status": "rejected",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/sansi-sheraton-san-diego-resort/overview/",
+          "evidence": "The discovery source identifies the property as an operating Marriott portfolio hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/sansi-sheraton-san-diego-resort/overview/",
+          "evidence": "The discovery source locates the property in a U.S. state.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/sansi-sheraton-san-diego-resort/overview/",
+          "evidence": "The published property-level inventory is 1053 rooms.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "fail",
+          "url": "https://www.marriott.com/en-us/hotels/sansi-sheraton-san-diego-resort/overview/",
+          "evidence": "1053 rooms is below the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "failed_constraint": "Ranking cutoff",
+      "notes": "Near-cutoff control."
+    },
+    {
+      "candidate": "Anaheim Marriott",
+      "status": "rejected",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/laxah-anaheim-marriott/overview/",
+          "evidence": "The discovery source identifies the property as an operating Marriott portfolio hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/laxah-anaheim-marriott/overview/",
+          "evidence": "The discovery source locates the property in a U.S. state.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/laxah-anaheim-marriott/overview/",
+          "evidence": "The published property-level inventory is 1030 rooms.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "fail",
+          "url": "https://www.marriott.com/en-us/hotels/laxah-anaheim-marriott/overview/",
+          "evidence": "1030 rooms is below the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "failed_constraint": "Ranking cutoff",
+      "notes": "Near-cutoff control."
+    },
+    {
+      "candidate": "JW Marriott Austin",
+      "status": "rejected",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/ausjw-jw-marriott-austin/overview/",
+          "evidence": "The discovery source identifies the property as an operating Marriott portfolio hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/ausjw-jw-marriott-austin/overview/",
+          "evidence": "The discovery source locates the property in a U.S. state.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/ausjw-jw-marriott-austin/overview/",
+          "evidence": "The published property-level inventory is 1012 rooms.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "fail",
+          "url": "https://www.marriott.com/en-us/hotels/ausjw-jw-marriott-austin/overview/",
+          "evidence": "1012 rooms is below the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "failed_constraint": "Ranking cutoff",
+      "notes": "Near-cutoff control."
+    },
+    {
+      "candidate": "JW Marriott Orlando, Grande Lakes",
+      "status": "rejected",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/mcojw-jw-marriott-orlando-grande-lakes/overview/",
+          "evidence": "The discovery source identifies the property as an operating Marriott portfolio hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/mcojw-jw-marriott-orlando-grande-lakes/overview/",
+          "evidence": "The discovery source locates the property in a U.S. state.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/mcojw-jw-marriott-orlando-grande-lakes/overview/",
+          "evidence": "The published property-level inventory is 1010 rooms.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "fail",
+          "url": "https://www.marriott.com/en-us/hotels/mcojw-jw-marriott-orlando-grande-lakes/overview/",
+          "evidence": "1010 rooms is below the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "failed_constraint": "Ranking cutoff",
+      "notes": "Near-cutoff control."
+    },
+    {
+      "candidate": "JW Marriott Indianapolis",
+      "status": "rejected",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/indjw-jw-marriott-indianapolis/overview/",
+          "evidence": "The discovery source identifies the property as an operating Marriott portfolio hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/indjw-jw-marriott-indianapolis/overview/",
+          "evidence": "The discovery source locates the property in a U.S. state.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/indjw-jw-marriott-indianapolis/overview/",
+          "evidence": "The published property-level inventory is 1005 rooms.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "fail",
+          "url": "https://www.marriott.com/en-us/hotels/indjw-jw-marriott-indianapolis/overview/",
+          "evidence": "1005 rooms is below the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "failed_constraint": "Ranking cutoff",
+      "notes": "Near-cutoff control."
+    },
+    {
+      "candidate": "Los Angeles Airport Marriott",
+      "status": "rejected",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/laxap-los-angeles-airport-marriott/overview/",
+          "evidence": "The discovery source identifies the property as an operating Marriott portfolio hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/laxap-los-angeles-airport-marriott/overview/",
+          "evidence": "The discovery source locates the property in a U.S. state.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/laxap-los-angeles-airport-marriott/overview/",
+          "evidence": "The published property-level inventory is 1004 rooms.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "fail",
+          "url": "https://www.marriott.com/en-us/hotels/laxap-los-angeles-airport-marriott/overview/",
+          "evidence": "1004 rooms is below the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "failed_constraint": "Ranking cutoff",
+      "notes": "Near-cutoff control."
+    },
+    {
+      "candidate": "Sheraton Phoenix Downtown",
+      "status": "rejected",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/phxgp-sheraton-phoenix-downtown/overview/",
+          "evidence": "The discovery source identifies the property as an operating Marriott portfolio hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/phxgp-sheraton-phoenix-downtown/overview/",
+          "evidence": "The discovery source locates the property in a U.S. state.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/phxgp-sheraton-phoenix-downtown/overview/",
+          "evidence": "The published property-level inventory is 1003 rooms.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "fail",
+          "url": "https://www.marriott.com/en-us/hotels/phxgp-sheraton-phoenix-downtown/overview/",
+          "evidence": "1003 rooms is below the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "failed_constraint": "Ranking cutoff",
+      "notes": "Near-cutoff control."
+    },
+    {
+      "candidate": "JW Marriott San Antonio Hill Country Resort & Spa",
+      "status": "rejected",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/satjw-jw-marriott-san-antonio-hill-country-resort-and-spa/overview/",
+          "evidence": "The discovery source identifies the property as an operating Marriott portfolio hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/satjw-jw-marriott-san-antonio-hill-country-resort-and-spa/overview/",
+          "evidence": "The discovery source locates the property in a U.S. state.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/satjw-jw-marriott-san-antonio-hill-country-resort-and-spa/overview/",
+          "evidence": "The published property-level inventory is 1002 rooms.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "fail",
+          "url": "https://www.marriott.com/en-us/hotels/satjw-jw-marriott-san-antonio-hill-country-resort-and-spa/overview/",
+          "evidence": "1002 rooms is below the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "failed_constraint": "Ranking cutoff",
+      "notes": "Near-cutoff control."
+    },
+    {
+      "candidate": "Marriott Marquis Houston",
+      "status": "rejected",
+      "checks": [
+        {
+          "constraint": "Marriott portfolio and operating status",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/houmq-marriott-marquis-houston/overview/",
+          "evidence": "The discovery source identifies the property as an operating Marriott portfolio hotel.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "U.S. boundary",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/houmq-marriott-marquis-houston/overview/",
+          "evidence": "The discovery source locates the property in a U.S. state.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Comparable size",
+          "result": "pass",
+          "url": "https://www.marriott.com/en-us/hotels/houmq-marriott-marquis-houston/overview/",
+          "evidence": "The published property-level inventory is 1000 rooms.",
+          "verified_at": "2026-07-21"
+        },
+        {
+          "constraint": "Ranking cutoff",
+          "result": "fail",
+          "url": "https://www.marriott.com/en-us/hotels/houmq-marriott-marquis-houston/overview/",
+          "evidence": "1000 rooms is below the final 1,084-room cutoff.",
+          "verified_at": "2026-07-21"
+        }
+      ],
+      "failed_constraint": "Ranking cutoff",
+      "notes": "Near-cutoff control."
+    }
+  ]
+}

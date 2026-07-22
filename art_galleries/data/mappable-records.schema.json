@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mappable-records.schema.json",
+  "title": "Mappable Records",
+  "description": "A collection of mappable records keyed by monotonically increasing numeric string IDs. IDs start at 1 and must never be reused after deletion; use the newest unused number for inserted records. This historical rule is enforced by agent workflow, not JSON Schema validation.",
+  "type": "object",
+  "propertyNames": {
+    "pattern": "^[1-9][0-9]*$"
+  },
+  "additionalProperties": {
+    "type": "object",
+    "required": [
+      "title",
+      "location",
+      "value"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string"
+      },
+      "location": {
+        "type": "object",
+        "required": [
+          "address",
+          "coordinates"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "address": {
+            "type": "string"
+          },
+          "coordinates": {
+            "type": "object",
+            "required": [
+              "lat",
+              "lng"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "lat": {
+                "type": "string"
+              },
+              "lng": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "value": {
+        "type": "string"
+      }
+    }
+  }
+}

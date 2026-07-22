@@ -1,0 +1,189 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mappable-records1.schema.json",
+  "title": "Renowned United States Art Museums and Galleries",
+  "description": "Thirty map-ready U.S. art institutions ranked using the method in data-collection-1.instructions.md.",
+  "type": "array",
+  "minItems": 30,
+  "maxItems": 30,
+  "items": {
+    "type": "object",
+    "required": [
+      "id", "rank", "title", "value", "institution_type", "website", "ranking",
+      "location", "nearby_hotel", "admission", "collection", "building",
+      "institution_founded_year", "metrics", "financial_value", "sources", "verified_at"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+      "rank": { "type": "integer", "minimum": 1, "maximum": 30 },
+      "title": { "type": "string", "minLength": 1 },
+      "value": { "type": "string", "minLength": 1 },
+      "institution_type": { "type": "string", "minLength": 1 },
+      "website": { "type": "string", "format": "uri" },
+      "ranking": {
+        "type": "object",
+        "required": ["selection_tier", "source_name", "source_url", "source_rank", "metric", "metric_value", "metric_year"],
+        "additionalProperties": false,
+        "properties": {
+          "selection_tier": { "enum": ["attendance_survey", "supplemental_critics_ranking"] },
+          "source_name": { "type": "string", "minLength": 1 },
+          "source_url": { "type": "string", "format": "uri" },
+          "source_rank": { "type": "integer", "minimum": 1 },
+          "metric": { "enum": ["annual_visitors", "critics_rank"] },
+          "metric_value": { "type": "number", "minimum": 0 },
+          "metric_year": { "type": "integer", "minimum": 1900, "maximum": 2100 }
+        },
+        "allOf": [
+          {
+            "if": { "properties": { "selection_tier": { "const": "attendance_survey" } } },
+            "then": { "properties": { "metric": { "const": "annual_visitors" }, "metric_value": { "type": "integer" }, "metric_year": { "const": 2025 } } }
+          },
+          {
+            "if": { "properties": { "selection_tier": { "const": "supplemental_critics_ranking" } } },
+            "then": { "properties": { "metric": { "const": "critics_rank" }, "metric_value": { "type": "integer" }, "metric_year": { "const": 2024 } } }
+          }
+        ]
+      },
+      "location": {
+        "type": "object",
+        "required": ["address", "city", "state", "postal_code", "coordinates", "geocode_provider", "geocode_crs", "geocode_source_url", "geocoded_at"],
+        "additionalProperties": false,
+        "properties": {
+          "address": { "type": "string", "minLength": 1 },
+          "city": { "type": "string", "minLength": 1 },
+          "state": { "enum": ["AL","AK","AZ","AR","CA","CO","CT","DE","FL","GA","HI","ID","IL","IN","IA","KS","KY","LA","ME","MD","MA","MI","MN","MS","MO","MT","NE","NV","NH","NJ","NM","NY","NC","ND","OH","OK","OR","PA","RI","SC","SD","TN","TX","UT","VT","VA","WA","WV","WI","WY","DC"] },
+          "postal_code": { "type": "string", "pattern": "^\\d{5}(?:-\\d{4})?$" },
+          "coordinates": {
+            "type": "object",
+            "required": ["lat", "lng"],
+            "additionalProperties": false,
+            "properties": {
+              "lat": { "type": "number", "minimum": -90, "maximum": 90 },
+              "lng": { "type": "number", "minimum": -180, "maximum": 180 }
+            }
+          },
+          "geocode_provider": { "type": "string", "minLength": 1 },
+          "geocode_crs": { "const": "WGS84 (EPSG:4326)" },
+          "geocode_source_url": { "type": "string", "format": "uri" },
+          "geocoded_at": { "type": "string", "format": "date" }
+        }
+      },
+      "nearby_hotel": {
+        "type": "object",
+        "required": ["name", "address", "coordinates", "distance_miles", "source_url", "verified_at"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string", "minLength": 1 },
+          "address": { "type": ["string", "null"] },
+          "coordinates": {
+            "type": "object",
+            "required": ["lat", "lng"],
+            "additionalProperties": false,
+            "properties": {
+              "lat": { "type": "number", "minimum": -90, "maximum": 90 },
+              "lng": { "type": "number", "minimum": -180, "maximum": 180 }
+            }
+          },
+          "distance_miles": { "type": "number", "minimum": 0, "maximum": 6 },
+          "source_url": { "type": "string", "format": "uri" },
+          "verified_at": { "type": "string", "format": "date" }
+        }
+      },
+      "admission": {
+        "type": "object",
+        "required": ["adult_general_usd", "pricing_note", "as_of", "source_url"],
+        "additionalProperties": false,
+        "properties": {
+          "adult_general_usd": { "type": ["number", "null"], "minimum": 0 },
+          "pricing_note": { "type": "string", "minLength": 1 },
+          "as_of": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+          "source_url": { "type": "string", "format": "uri" }
+        }
+      },
+      "collection": {
+        "type": "object",
+        "required": ["summary", "object_count", "notable_artists", "notable_works"],
+        "additionalProperties": false,
+        "properties": {
+          "summary": { "type": "string", "minLength": 1 },
+          "object_count": { "type": ["integer", "null"], "minimum": 0 },
+          "notable_artists": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+          "notable_works": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["title", "artist"],
+              "additionalProperties": false,
+              "properties": {
+                "title": { "type": "string", "minLength": 1 },
+                "artist": { "type": "string", "minLength": 1 },
+                "year": { "type": ["string", "null"] }
+              }
+            }
+          }
+        },
+        "anyOf": [
+          { "properties": { "notable_artists": { "minItems": 1 } } },
+          { "properties": { "notable_works": { "minItems": 1 } } }
+        ]
+      },
+      "institution_founded_year": { "type": ["integer", "null"], "minimum": 1600, "maximum": 2100 },
+      "building": {
+        "type": "object",
+        "required": ["year_built", "architects", "square_feet", "scope_note", "history"],
+        "additionalProperties": false,
+        "properties": {
+          "year_built": { "type": ["integer", "null"], "minimum": 1600, "maximum": 2100 },
+          "architects": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+          "square_feet": { "type": ["integer", "null"], "minimum": 0 },
+          "scope_note": { "type": "string", "minLength": 1 },
+          "history": { "type": "string", "minLength": 1 }
+        }
+      },
+      "metrics": {
+        "type": "object",
+        "required": ["annual_visitors", "attendance_year"],
+        "additionalProperties": false,
+        "properties": {
+          "annual_visitors": { "type": ["integer", "null"], "minimum": 0 },
+          "attendance_year": { "type": ["integer", "null"], "minimum": 1900, "maximum": 2100 }
+        }
+      },
+      "financial_value": {
+        "oneOf": [
+          { "type": "null" },
+          {
+            "type": "object",
+            "required": ["kind", "amount_usd", "year", "basis", "source_url"],
+            "additionalProperties": false,
+            "properties": {
+              "kind": { "enum": ["endowment", "net_assets", "trust_assets", "published_collection_value"] },
+              "amount_usd": { "type": "number", "minimum": 0 },
+              "year": { "type": "integer", "minimum": 1900, "maximum": 2100 },
+              "basis": { "type": "string", "minLength": 1 },
+              "source_url": { "type": "string", "format": "uri" }
+            }
+          }
+        ]
+      },
+      "sources": {
+        "type": "array",
+        "minItems": 3,
+        "uniqueItems": true,
+        "items": {
+          "type": "object",
+          "required": ["url", "supports", "verified_at"],
+          "additionalProperties": false,
+          "properties": {
+            "url": { "type": "string", "format": "uri" },
+            "supports": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+            "note": { "type": "string" },
+            "verified_at": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
+          }
+        }
+      },
+      "verified_at": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
+    }
+  }
+}

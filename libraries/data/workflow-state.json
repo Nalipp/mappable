@@ -1,0 +1,17 @@
+{
+  "dataset": "mappable-records1.json",
+  "constraint_profile": "data-collection-1.instructions.md",
+  "progress": {
+    "candidates_total": 35,
+    "pending": 5,
+    "validated": 30,
+    "needs_verification": 0,
+    "rejected": 0
+  },
+  "last_action": "Finalized 30 validated records into mappable-records1.json and completed local integrity checks.",
+  "next_action": "Dataset run complete; preserve run 1 and create a new numbered profile for future revisions.",
+  "quality": {
+    "status": "ok",
+    "note": "Final output has 30 sequential, descending building-area ranks. Building facts and system facts are explicitly scoped; missing annual-circulation totals are omitted and noted."
+  }
+}

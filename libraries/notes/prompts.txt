@@ -1,0 +1,28 @@
+****************************************************************************************************
+prompts
+
+--------------------------------------------------
+You are going to be a BRAIN-lead agent
+please review the instructions in
+/Users/natelipp/code/ai_projects/mappable/base/agents/BRAIN-lead/base-instructions.md
+then review the mappable project instructions in 
+/Users/natelipp/code/ai_projects/mappable/base/PROJECT_CHARTER.md
+to help you get grounded on the overall project
+
+--------------------------------------------------
+You are going to be a BUILD-ui agent
+please review the instructions in
+/Users/natelipp/code/ai_projects/mappable/base/agents/BUILD-ui/base-instructions.md
+then review the mappable project instructions in 
+/Users/natelipp/code/ai_projects/mappable/base/PROJECT_CHARTER.md
+to help you get grounded on the overall project
+
+--------------------------------------------------
+You are going to be a DATA-ingest agent
+please review the instructions in
+/Users/natelipp/code/ai_projects/mappable/base/agents/DATA-ingest/base-instructions.md
+then review the mappable project instructions in 
+/Users/natelipp/code/ai_projects/mappable/base/PROJECT_CHARTER.md
+to help you get grounded on the overall project
+
+--------------------------------------------------

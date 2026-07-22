@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "workflow-state.schema.json",
+  "title": "Workflow State",
+  "type": "object",
+  "required": ["dataset", "constraint_profile", "progress", "last_action", "next_action", "quality"],
+  "additionalProperties": false,
+  "properties": {
+    "dataset": { "type": "string", "pattern": "^mappable-records[1-9][0-9]*\\.json$" },
+    "constraint_profile": { "type": "string" },
+    "progress": {
+      "type": "object",
+      "required": ["candidates_total", "pending", "validated", "needs_verification", "rejected"],
+      "additionalProperties": false,
+      "properties": {
+        "candidates_total": { "type": "integer", "minimum": 0 },
+        "pending": { "type": "integer", "minimum": 0 },
+        "validated": { "type": "integer", "minimum": 0 },
+        "needs_verification": { "type": "integer", "minimum": 0 },
+        "rejected": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "last_action": { "type": "string" },
+    "next_action": { "type": "string" },
+    "quality": {
+      "type": "object",
+      "required": ["status", "note"],
+      "additionalProperties": false,
+      "properties": {
+        "status": { "enum": ["ok", "operator_review_required"] },
+        "note": { "type": "string" }
+      }
+    }
+  }
+}

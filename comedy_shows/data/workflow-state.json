@@ -1,0 +1,14 @@
+{
+  "dataset": "mappable-records1.json",
+  "constraint_profile": "data-collection-1.instructions.md",
+  "progress": {
+    "candidates_total": 0,
+    "pending": 0,
+    "validated": 0,
+    "needs_verification": 0,
+    "rejected": 0
+  },
+  "last_action": "Starter initialized; define the active dataset profile before discovery.",
+  "next_action": "Create data-collection-1.instructions.md from data-collection-template.instructions.md.",
+  "quality": { "status": "operator_review_required", "note": "No dataset profile is active yet." }
+}
