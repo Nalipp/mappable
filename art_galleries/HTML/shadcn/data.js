@@ -1,0 +1,3719 @@
+/* Generated from ../../data/mappable-records1.json for file:// compatibility. */
+window.ART_GALLERIES = [
+  {
+    "id": "met-fifth-avenue",
+    "rank": 1,
+    "title": "The Metropolitan Museum of Art—The Met Fifth Avenue",
+    "value": "5,984,091 visitors in 2025 (Art Newspaper global rank 5)",
+    "institution_type": "encyclopedic art museum",
+    "website": "https://www.metmuseum.org/",
+    "ranking": {
+      "selection_tier": "attendance_survey",
+      "source_name": "The Art Newspaper Top 150 Museums 2025",
+      "source_url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+      "source_rank": 5,
+      "metric": "annual_visitors",
+      "metric_value": 5984091,
+      "metric_year": 2025
+    },
+    "location": {
+      "address": "1000 Fifth Avenue",
+      "city": "New York",
+      "state": "NY",
+      "postal_code": "10028",
+      "coordinates": {
+        "lat": 40.779444,
+        "lng": -73.963333
+      },
+      "geocode_provider": "Wikidata",
+      "geocode_crs": "WGS84 (EPSG:4326)",
+      "geocode_source_url": "https://www.wikidata.org/wiki/Q160236",
+      "geocoded_at": "2026-07-21"
+    },
+    "nearby_hotel": {
+      "name": "The Mark",
+      "address": "25 East 77th Street, New York, NY 10075",
+      "coordinates": {
+        "lat": 40.7753172,
+        "lng": -73.9632598
+      },
+      "distance_miles": 0.285,
+      "source_url": "https://www.openstreetmap.org/node/5356822882",
+      "verified_at": "2026-07-21"
+    },
+    "admission": {
+      "adult_general_usd": 30,
+      "pricing_note": "Adults $30; eligible local residents and regional students may pay what they wish; same-day entry covers both Met locations.",
+      "as_of": "2026-07-21",
+      "source_url": "https://www.metmuseum.org/plan-your-visit"
+    },
+    "collection": {
+      "summary": "More than 1.5 million objects spanning 5,000 years and cultures worldwide.",
+      "object_count": 1500000,
+      "notable_artists": [
+        "Emanuel Leutze",
+        "Vincent van Gogh",
+        "Rembrandt van Rijn"
+      ],
+      "notable_works": [
+        {
+          "title": "Washington Crossing the Delaware",
+          "artist": "Emanuel Leutze",
+          "year": "1851"
+        }
+      ]
+    },
+    "institution_founded_year": 1870,
+    "building": {
+      "year_built": 1880,
+      "architects": [
+        "Calvert Vaux",
+        "Jacob Wrey Mould",
+        "Richard Morris Hunt"
+      ],
+      "square_feet": 2000000,
+      "scope_note": "Approximate present-day area of the Fifth Avenue complex.",
+      "history": "The Vaux–Mould building opened in 1880; Hunt's Fifth Avenue facade and Great Hall followed in 1902, with later wings surrounding the original structure."
+    },
+    "metrics": {
+      "annual_visitors": 5984091,
+      "attendance_year": 2025
+    },
+    "financial_value": {
+      "kind": "net_assets",
+      "amount_usd": 5767474000,
+      "year": 2025,
+      "basis": "Institution-wide audited net assets; the art collection is excluded from the balance sheet.",
+      "source_url": "https://cdn.sanity.io/files/cctd4ker/production/8c8f7e0f1b355b04369b03753ecc265d246400a4.pdf"
+    },
+    "sources": [
+      {
+        "url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+        "supports": [
+          "ranking",
+          "metrics"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.metmuseum.org/plan-your-visit",
+        "supports": [
+          "location.address",
+          "admission"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.metmuseum.org/about-the-met",
+        "supports": [
+          "collection.summary",
+          "collection.object_count"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.metmuseum.org/about-the-met/history",
+        "supports": [
+          "institution_founded_year",
+          "building"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.metmuseum.org/art/collection/search/11417",
+        "supports": [
+          "collection.notable_artists",
+          "collection.notable_works"
+        ],
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
+  },
+  {
+    "id": "national-gallery-of-art",
+    "rank": 2,
+    "title": "National Gallery of Art",
+    "value": "2,847,587 visitors in 2025 (Art Newspaper global rank 18)",
+    "institution_type": "national art museum",
+    "website": "https://www.nga.gov/",
+    "ranking": {
+      "selection_tier": "attendance_survey",
+      "source_name": "The Art Newspaper Top 150 Museums 2025",
+      "source_url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+      "source_rank": 18,
+      "metric": "annual_visitors",
+      "metric_value": 2847587,
+      "metric_year": 2025
+    },
+    "location": {
+      "address": "Constitution Avenue NW between 3rd and 9th Streets",
+      "city": "Washington",
+      "state": "DC",
+      "postal_code": "20565",
+      "coordinates": {
+        "lat": 38.891389,
+        "lng": -77.02
+      },
+      "geocode_provider": "Wikidata",
+      "geocode_crs": "WGS84 (EPSG:4326)",
+      "geocode_source_url": "https://www.wikidata.org/wiki/Q214867",
+      "geocoded_at": "2026-07-21"
+    },
+    "nearby_hotel": {
+      "name": "Holiday Inn Washington Capitol",
+      "address": "550 C Street Southwest, Washington, DC 20024",
+      "coordinates": {
+        "lat": 38.8855527,
+        "lng": -77.0193752
+      },
+      "distance_miles": 0.405,
+      "source_url": "https://www.openstreetmap.org/way/48037566",
+      "verified_at": "2026-07-21"
+    },
+    "admission": {
+      "adult_general_usd": 0,
+      "pricing_note": "Admission is always free; no passes or tickets are required.",
+      "as_of": "2026-07-21",
+      "source_url": "https://www.nga.gov/visit/what-to-expect"
+    },
+    "collection": {
+      "summary": "More than 160,000 works tracing Western art from the Middle Ages to the present.",
+      "object_count": 160000,
+      "notable_artists": [
+        "Leonardo da Vinci",
+        "Rembrandt van Rijn",
+        "Johannes Vermeer"
+      ],
+      "notable_works": [
+        {
+          "title": "Ginevra de' Benci",
+          "artist": "Leonardo da Vinci",
+          "year": "c. 1474–1478"
+        }
+      ]
+    },
+    "institution_founded_year": 1937,
+    "building": {
+      "year_built": 1941,
+      "architects": [
+        "John Russell Pope",
+        "I. M. Pei"
+      ],
+      "square_feet": null,
+      "scope_note": "Year refers to the West Building; the campus also includes I. M. Pei's 1978 East Building and a sculpture garden.",
+      "history": "Congress established the Gallery in 1937; the neoclassical West Building opened in 1941 and the modernist East Building in 1978."
+    },
+    "metrics": {
+      "annual_visitors": 2847587,
+      "attendance_year": 2025
+    },
+    "financial_value": {
+      "kind": "endowment",
+      "amount_usd": 926658000,
+      "year": 2025,
+      "basis": "Donor-restricted and board-designated private funds; federal appropriations fund core operations.",
+      "source_url": "https://www.nga.gov/sites/default/files/2025-12/fy2025_performance_and_accountability_report_national_gallery_of_art_508_compliant.pdf"
+    },
+    "sources": [
+      {
+        "url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+        "supports": [
+          "ranking",
+          "metrics"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.nga.gov/visit/what-to-expect",
+        "supports": [
+          "location.address",
+          "admission"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.nga.gov/about-us",
+        "supports": [
+          "collection.summary",
+          "collection.object_count"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.nga.gov/national-gallery-history",
+        "supports": [
+          "institution_founded_year",
+          "building"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.nga.gov/node/856441",
+        "supports": [
+          "collection.notable_artists",
+          "collection.notable_works"
+        ],
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
+  },
+  {
+    "id": "museum-of-modern-art",
+    "rank": 3,
+    "title": "Museum of Modern Art (MoMA)",
+    "value": "2,763,720 visitors in 2025 (Art Newspaper global rank 19)",
+    "institution_type": "modern and contemporary art museum",
+    "website": "https://www.moma.org/",
+    "ranking": {
+      "selection_tier": "attendance_survey",
+      "source_name": "The Art Newspaper Top 150 Museums 2025",
+      "source_url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+      "source_rank": 19,
+      "metric": "annual_visitors",
+      "metric_value": 2763720,
+      "metric_year": 2025
+    },
+    "location": {
+      "address": "11 West 53rd Street",
+      "city": "New York",
+      "state": "NY",
+      "postal_code": "10019",
+      "coordinates": {
+        "lat": 40.761667,
+        "lng": -73.9775
+      },
+      "geocode_provider": "Wikidata",
+      "geocode_crs": "WGS84 (EPSG:4326)",
+      "geocode_source_url": "https://www.wikidata.org/wiki/Q188740",
+      "geocoded_at": "2026-07-21"
+    },
+    "nearby_hotel": {
+      "name": "Baccarat Hotel New York",
+      "address": "28 West 53rd Street, New York, NY 10019",
+      "coordinates": {
+        "lat": 40.7608075,
+        "lng": -73.9773637
+      },
+      "distance_miles": 0.06,
+      "source_url": "https://www.openstreetmap.org/way/162755457",
+      "verified_at": "2026-07-21"
+    },
+    "admission": {
+      "adult_general_usd": 30,
+      "pricing_note": "Adult admission is $30 and includes galleries and special exhibitions.",
+      "as_of": "2026-07-21",
+      "source_url": "https://visit.moma.org/select"
+    },
+    "collection": {
+      "summary": "Almost 200,000 works of modern and contemporary art, architecture, design, photography, film, and media.",
+      "object_count": 200000,
+      "notable_artists": [
+        "Vincent van Gogh",
+        "Henri Matisse",
+        "Andy Warhol"
+      ],
+      "notable_works": [
+        {
+          "title": "The Starry Night",
+          "artist": "Vincent van Gogh",
+          "year": "1889"
+        }
+      ]
+    },
+    "institution_founded_year": 1929,
+    "building": {
+      "year_built": 1939,
+      "architects": [
+        "Philip L. Goodwin",
+        "Edward Durell Stone",
+        "Yoshio Taniguchi",
+        "Diller Scofidio + Renfro",
+        "Gensler"
+      ],
+      "square_feet": 708000,
+      "scope_note": "Area applies to the post-2019 53rd Street complex.",
+      "history": "The original International Style building opened in 1939; major expansions by Taniguchi and Diller Scofidio + Renfro with Gensler opened in 2004 and 2019."
+    },
+    "metrics": {
+      "annual_visitors": 2763720,
+      "attendance_year": 2025
+    },
+    "financial_value": {
+      "kind": "endowment",
+      "amount_usd": 1001230000,
+      "year": 2025,
+      "basis": "Audited endowment net assets at June 30, 2025.",
+      "source_url": "https://production-gcp.moma.org/docs/about/MoMAFY_25.pdf"
+    },
+    "sources": [
+      {
+        "url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+        "supports": [
+          "ranking",
+          "metrics"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://visit.moma.org/select",
+        "supports": [
+          "admission"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.moma.org/collection/about/",
+        "supports": [
+          "collection.summary",
+          "collection.object_count",
+          "collection.notable_artists",
+          "collection.notable_works"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://press.moma.org/wp-content/uploads/2019/10/2_MoMA_BuildingInformation_October2019_AH-FINAL.pdf",
+        "supports": [
+          "building"
+        ],
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
+  },
+  {
+    "id": "art-institute-of-chicago",
+    "rank": 4,
+    "title": "Art Institute of Chicago",
+    "value": "1,503,406 visitors in 2025 (Art Newspaper global rank 49)",
+    "institution_type": "encyclopedic art museum",
+    "website": "https://www.artic.edu/",
+    "ranking": {
+      "selection_tier": "attendance_survey",
+      "source_name": "The Art Newspaper Top 150 Museums 2025",
+      "source_url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+      "source_rank": 49,
+      "metric": "annual_visitors",
+      "metric_value": 1503406,
+      "metric_year": 2025
+    },
+    "location": {
+      "address": "111 South Michigan Avenue",
+      "city": "Chicago",
+      "state": "IL",
+      "postal_code": "60603",
+      "coordinates": {
+        "lat": 41.879444,
+        "lng": -87.623889
+      },
+      "geocode_provider": "Wikidata",
+      "geocode_crs": "WGS84 (EPSG:4326)",
+      "geocode_source_url": "https://www.wikidata.org/wiki/Q239303",
+      "geocoded_at": "2026-07-21"
+    },
+    "nearby_hotel": {
+      "name": "University Club of Chicago",
+      "address": "76 East Monroe Street, Chicago, IL 60603",
+      "coordinates": {
+        "lat": 41.8810047,
+        "lng": -87.6249694
+      },
+      "distance_miles": 0.121,
+      "source_url": "https://www.openstreetmap.org/way/126982632",
+      "verified_at": "2026-07-21"
+    },
+    "admission": {
+      "adult_general_usd": 32,
+      "pricing_note": "Standard adult admission is $32; lower rates apply to Chicago and Illinois residents.",
+      "as_of": "2026-07-21",
+      "source_url": "https://www.artic.edu/visit"
+    },
+    "collection": {
+      "summary": "Nearly 300,000 works spanning global art from antiquity through contemporary practice.",
+      "object_count": 300000,
+      "notable_artists": [
+        "Edward Hopper",
+        "Grant Wood",
+        "Georges Seurat"
+      ],
+      "notable_works": [
+        {
+          "title": "Nighthawks",
+          "artist": "Edward Hopper",
+          "year": "1942"
+        }
+      ]
+    },
+    "institution_founded_year": 1879,
+    "building": {
+      "year_built": 1893,
+      "architects": [
+        "Shepley, Rutan & Coolidge",
+        "Renzo Piano"
+      ],
+      "square_feet": 1000000,
+      "scope_note": "Approximate area of the full multi-wing complex after the 2009 Modern Wing.",
+      "history": "The Michigan Avenue building was constructed for the 1893 World's Columbian Exposition; Renzo Piano's Modern Wing opened in 2009."
+    },
+    "metrics": {
+      "annual_visitors": 1503406,
+      "attendance_year": 2025
+    },
+    "financial_value": {
+      "kind": "endowment",
+      "amount_usd": 1670233000,
+      "year": 2025,
+      "basis": "Institution-wide endowment net assets for the combined museum and school organization.",
+      "source_url": "https://www.artic.edu/files/018fc32e-3277-4b5d-934b-38bbf6053d84/2025TheArtInstituteofChicago1AICPAFS.pdf"
+    },
+    "sources": [
+      {
+        "url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+        "supports": [
+          "ranking",
+          "metrics"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.artic.edu/visit",
+        "supports": [
+          "location.address",
+          "admission"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.artic.edu/collection-information",
+        "supports": [
+          "collection.summary",
+          "collection.object_count"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.artic.edu/artworks/111628/nighthawks",
+        "supports": [
+          "collection.notable_artists",
+          "collection.notable_works"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.artic.edu/print-publications/77/the-modern-wing-renzo-piano-and-the-art-institute-of-chicago",
+        "supports": [
+          "building"
+        ],
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
+  },
+  {
+    "id": "getty-center",
+    "rank": 5,
+    "title": "J. Paul Getty Museum—Getty Center",
+    "value": "1,323,616 visitors in 2025 (Art Newspaper global rank 58)",
+    "institution_type": "European art and photography museum campus",
+    "website": "https://www.getty.edu/visit/center/",
+    "ranking": {
+      "selection_tier": "attendance_survey",
+      "source_name": "The Art Newspaper Top 150 Museums 2025",
+      "source_url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+      "source_rank": 58,
+      "metric": "annual_visitors",
+      "metric_value": 1323616,
+      "metric_year": 2025
+    },
+    "location": {
+      "address": "1200 Getty Center Drive",
+      "city": "Los Angeles",
+      "state": "CA",
+      "postal_code": "90049",
+      "coordinates": {
+        "lat": 34.0775,
+        "lng": -118.475
+      },
+      "geocode_provider": "Wikidata",
+      "geocode_crs": "WGS84 (EPSG:4326)",
+      "geocode_source_url": "https://www.wikidata.org/wiki/Q29247",
+      "geocoded_at": "2026-07-21"
+    },
+    "nearby_hotel": {
+      "name": "Hotel Angeleno",
+      "address": null,
+      "coordinates": {
+        "lat": 34.0737523,
+        "lng": -118.4682017
+      },
+      "distance_miles": 0.467,
+      "source_url": "https://www.openstreetmap.org/way/184955587",
+      "verified_at": "2026-07-21"
+    },
+    "admission": {
+      "adult_general_usd": 0,
+      "pricing_note": "Admission is free with a timed-entry reservation; parking is charged separately.",
+      "as_of": "2026-07-21",
+      "source_url": "https://www.getty.edu/visit/center/"
+    },
+    "collection": {
+      "summary": "European paintings, drawings, manuscripts, photographs, sculpture, and decorative arts, chiefly from the medieval period through the early 20th century.",
+      "object_count": null,
+      "notable_artists": [
+        "Vincent van Gogh",
+        "Claude Monet",
+        "Rembrandt van Rijn"
+      ],
+      "notable_works": [
+        {
+          "title": "Irises",
+          "artist": "Vincent van Gogh",
+          "year": "1889"
+        }
+      ]
+    },
+    "institution_founded_year": 1953,
+    "building": {
+      "year_built": 1997,
+      "architects": [
+        "Richard Meier & Partners"
+      ],
+      "square_feet": 1500000,
+      "scope_note": "Area covers the entire 12-building Getty Center complex, not only museum galleries.",
+      "history": "The hilltop campus opened in 1997 after more than a decade of planning and construction and houses several Getty Trust programs."
+    },
+    "metrics": {
+      "annual_visitors": 1323616,
+      "attendance_year": 2025
+    },
+    "financial_value": {
+      "kind": "endowment",
+      "amount_usd": 8600000000,
+      "year": 2023,
+      "basis": "Getty Trust-wide calendar-year endowment; not allocated to the Getty Center campus.",
+      "source_url": "https://www.getty.edu/about/leadership-governance/financials/"
+    },
+    "sources": [
+      {
+        "url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+        "supports": [
+          "ranking",
+          "metrics"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.getty.edu/visit/center/",
+        "supports": [
+          "location.address",
+          "admission"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.getty.edu/museum/paintings/",
+        "supports": [
+          "collection.summary",
+          "collection.notable_artists"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.getty.edu/news/irises-at-the-getty/",
+        "supports": [
+          "collection.notable_works"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.getty.edu/about/history/",
+        "supports": [
+          "institution_founded_year",
+          "building"
+        ],
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
+  },
+  {
+    "id": "huntington-art-museum",
+    "rank": 6,
+    "title": "The Huntington Library, Art Museum, and Botanical Gardens",
+    "value": "1,094,325 visitors in 2025 (Art Newspaper global rank 70)",
+    "institution_type": "collection-based art, library, and garden institution",
+    "website": "https://www.huntington.org/",
+    "ranking": {
+      "selection_tier": "attendance_survey",
+      "source_name": "The Art Newspaper Top 150 Museums 2025",
+      "source_url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+      "source_rank": 70,
+      "metric": "annual_visitors",
+      "metric_value": 1094325,
+      "metric_year": 2025
+    },
+    "location": {
+      "address": "1151 Oxford Road",
+      "city": "San Marino",
+      "state": "CA",
+      "postal_code": "91108",
+      "coordinates": {
+        "lat": 34.129167,
+        "lng": -118.1125
+      },
+      "geocode_provider": "Wikidata",
+      "geocode_crs": "WGS84 (EPSG:4326)",
+      "geocode_source_url": "https://www.wikidata.org/wiki/Q1400558",
+      "geocoded_at": "2026-07-21"
+    },
+    "nearby_hotel": {
+      "name": "Ramada Pasadena",
+      "address": "2156 East Colorado Boulevard, Pasadena, CA 91107",
+      "coordinates": {
+        "lat": 34.1456744,
+        "lng": -118.1058397
+      },
+      "distance_miles": 1.202,
+      "source_url": "https://www.openstreetmap.org/way/466829048",
+      "verified_at": "2026-07-21"
+    },
+    "admission": {
+      "adult_general_usd": 29,
+      "pricing_note": "Adult weekday admission is $29; Friday–Sunday, holidays, and peak periods are $34.",
+      "as_of": "2026-07-21",
+      "source_url": "https://www.huntington.org/plan-your-visit"
+    },
+    "collection": {
+      "summary": "Tens of thousands of works with strengths in British and European art, complemented by American and Asian collections.",
+      "object_count": null,
+      "notable_artists": [
+        "Thomas Gainsborough",
+        "Thomas Lawrence",
+        "Kehinde Wiley"
+      ],
+      "notable_works": [
+        {
+          "title": "The Blue Boy",
+          "artist": "Thomas Gainsborough",
+          "year": "c. 1770"
+        }
+      ]
+    },
+    "institution_founded_year": 1919,
+    "building": {
+      "year_built": 1911,
+      "architects": [
+        "Myron Hunt",
+        "Elmer Grey"
+      ],
+      "square_feet": 55000,
+      "scope_note": "Area applies to the historic Huntington Art Gallery, not all art spaces across the estate.",
+      "history": "Built as the Huntingtons' Beaux-Arts residence in 1911, the house opened as an art gallery in 1928 and was restored in 2008."
+    },
+    "metrics": {
+      "annual_visitors": 1094325,
+      "attendance_year": 2025
+    },
+    "financial_value": {
+      "kind": "endowment",
+      "amount_usd": 774151831,
+      "year": 2024,
+      "basis": "Organization-wide endowment and beneficial interests covering the library, art museum, and gardens.",
+      "source_url": "https://www.huntington.org/sites/default/files/2025-05/FY2024%20Financial%20Statements.pdf"
+    },
+    "sources": [
+      {
+        "url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+        "supports": [
+          "ranking",
+          "metrics"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.huntington.org/plan-your-visit",
+        "supports": [
+          "location.address",
+          "admission"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.huntington.org/art-museum",
+        "supports": [
+          "collection.summary",
+          "collection.notable_artists"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.huntington.org/art-museum/british-and-european-art/blue-boy",
+        "supports": [
+          "collection.notable_works"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.huntington.org/art-museum/huntington-art-gallery",
+        "supports": [
+          "building"
+        ],
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
+  },
+  {
+    "id": "museum-of-fine-arts-boston",
+    "rank": 7,
+    "title": "Museum of Fine Arts, Boston",
+    "value": "1,055,981 visitors in 2025 (Art Newspaper global rank 72)",
+    "institution_type": "encyclopedic art museum",
+    "website": "https://www.mfa.org/",
+    "ranking": {
+      "selection_tier": "attendance_survey",
+      "source_name": "The Art Newspaper Top 150 Museums 2025",
+      "source_url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+      "source_rank": 72,
+      "metric": "annual_visitors",
+      "metric_value": 1055981,
+      "metric_year": 2025
+    },
+    "location": {
+      "address": "465 Huntington Avenue",
+      "city": "Boston",
+      "state": "MA",
+      "postal_code": "02115",
+      "coordinates": {
+        "lat": 42.339444,
+        "lng": -71.094167
+      },
+      "geocode_provider": "Wikidata",
+      "geocode_crs": "WGS84 (EPSG:4326)",
+      "geocode_source_url": "https://www.wikidata.org/wiki/Q49133",
+      "geocoded_at": "2026-07-21"
+    },
+    "nearby_hotel": {
+      "name": "The Verb Hotel",
+      "address": "1271 Boylston Street, Boston, MA 02215",
+      "coordinates": {
+        "lat": 42.3453419,
+        "lng": -71.0969246
+      },
+      "distance_miles": 0.431,
+      "source_url": "https://www.openstreetmap.org/way/29716183",
+      "verified_at": "2026-07-21"
+    },
+    "admission": {
+      "adult_general_usd": 30,
+      "pricing_note": "Adult general admission is $30.",
+      "as_of": "2026-07-21",
+      "source_url": "https://www.mfa.org/visit"
+    },
+    "collection": {
+      "summary": "More than 500,000 works from ancient cultures through contemporary art, with major Asian, American, European, and ancient holdings.",
+      "object_count": 500000,
+      "notable_artists": [
+        "John Singer Sargent",
+        "Claude Monet",
+        "Katsushika Hokusai"
+      ],
+      "notable_works": [
+        {
+          "title": "The Daughters of Edward Darley Boit",
+          "artist": "John Singer Sargent",
+          "year": "1882"
+        }
+      ]
+    },
+    "institution_founded_year": 1870,
+    "building": {
+      "year_built": 1909,
+      "architects": [
+        "Guy Lowell",
+        "I. M. Pei",
+        "Foster + Partners"
+      ],
+      "square_feet": 616937,
+      "scope_note": "Area covers the full complex after the 2010 expansion.",
+      "history": "The museum moved to Guy Lowell's Huntington Avenue building in 1909; later additions include work by I. M. Pei and Foster + Partners."
+    },
+    "metrics": {
+      "annual_visitors": 1055981,
+      "attendance_year": 2025
+    },
+    "financial_value": {
+      "kind": "endowment",
+      "amount_usd": 888670000,
+      "year": 2025,
+      "basis": "Audited endowment net assets including managed endowment, pledges, and perpetual trusts.",
+      "source_url": "https://d1nn9x4fgzyvn4.cloudfront.net/2026-02/mfa-fy25_financial-statements.pdf"
+    },
+    "sources": [
+      {
+        "url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+        "supports": [
+          "ranking",
+          "metrics"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.mfa.org/visit",
+        "supports": [
+          "location.address",
+          "admission"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://d1nn9x4fgzyvn4.cloudfront.net/2026-02/mfa-fy25_financial-statements.pdf",
+        "supports": [
+          "collection.summary",
+          "collection.object_count",
+          "financial_value"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://collections.mfa.org/objects/31782",
+        "supports": [
+          "collection.notable_artists",
+          "collection.notable_works"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.mfa.org/about/architectural-history",
+        "supports": [
+          "building"
+        ],
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
+  },
+  {
+    "id": "smithsonian-american-art-museum",
+    "rank": 8,
+    "title": "Smithsonian American Art Museum",
+    "value": "937,716 visitors in 2025 (Art Newspaper shared global rank 80)",
+    "institution_type": "American art museum",
+    "website": "https://americanart.si.edu/",
+    "ranking": {
+      "selection_tier": "attendance_survey",
+      "source_name": "The Art Newspaper Top 150 Museums 2025",
+      "source_url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+      "source_rank": 80,
+      "metric": "annual_visitors",
+      "metric_value": 937716,
+      "metric_year": 2025
+    },
+    "location": {
+      "address": "8th and G Streets NW",
+      "city": "Washington",
+      "state": "DC",
+      "postal_code": "20004",
+      "coordinates": {
+        "lat": 38.897861,
+        "lng": -77.022942
+      },
+      "geocode_provider": "Wikidata",
+      "geocode_crs": "WGS84 (EPSG:4326)",
+      "geocode_source_url": "https://www.wikidata.org/wiki/Q1192305",
+      "geocoded_at": "2026-07-21"
+    },
+    "nearby_hotel": {
+      "name": "Hotel Monaco",
+      "address": "700 F Street Northwest, Washington, DC",
+      "coordinates": {
+        "lat": 38.8969924,
+        "lng": -77.0224383
+      },
+      "distance_miles": 0.066,
+      "source_url": "https://www.openstreetmap.org/node/754896090",
+      "verified_at": "2026-07-21"
+    },
+    "admission": {
+      "adult_general_usd": 0,
+      "pricing_note": "Admission is always free and no tickets are required.",
+      "as_of": "2026-07-21",
+      "source_url": "https://americanart.si.edu/visit/saam"
+    },
+    "collection": {
+      "summary": "Approximately 43,000 works by more than 7,000 artists in the official 2017 fact sheet, surveying art made in the United States.",
+      "object_count": 43000,
+      "notable_artists": [
+        "Georgia O'Keeffe",
+        "Edward Hopper",
+        "Nam June Paik"
+      ],
+      "notable_works": [
+        {
+          "title": "Electronic Superhighway: Continental U.S., Alaska, Hawaii",
+          "artist": "Nam June Paik",
+          "year": "1995"
+        }
+      ]
+    },
+    "institution_founded_year": 1829,
+    "building": {
+      "year_built": 1868,
+      "architects": [
+        "Robert Mills",
+        "Ithiel Town",
+        "Alexander Jackson Davis",
+        "Thomas U. Walter"
+      ],
+      "square_feet": null,
+      "scope_note": "The Old Patent Office Building is shared with the National Portrait Gallery.",
+      "history": "Constructed in phases from 1836 to 1868, the historic Patent Office reopened for SAAM and the National Portrait Gallery in 1968."
+    },
+    "metrics": {
+      "annual_visitors": 937716,
+      "attendance_year": 2025
+    },
+    "financial_value": null,
+    "sources": [
+      {
+        "url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+        "supports": [
+          "ranking",
+          "metrics"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://americanart.si.edu/visit/saam",
+        "supports": [
+          "location.address",
+          "admission"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://americanart.si.edu/press/fact-sheets/saam",
+        "supports": [
+          "collection.summary",
+          "collection.object_count"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://americanart.si.edu/artwork/electronic-superhighway-continental-us-alaska-hawaii-71478",
+        "supports": [
+          "collection.notable_artists",
+          "collection.notable_works"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://americanart.si.edu/about/history/saam-architecture",
+        "supports": [
+          "building"
+        ],
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
+  },
+  {
+    "id": "national-portrait-gallery",
+    "rank": 9,
+    "title": "National Portrait Gallery",
+    "value": "937,716 visitors in 2025 (Art Newspaper shared global rank 80)",
+    "institution_type": "portrait art museum",
+    "website": "https://npg.si.edu/",
+    "ranking": {
+      "selection_tier": "attendance_survey",
+      "source_name": "The Art Newspaper Top 150 Museums 2025",
+      "source_url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+      "source_rank": 80,
+      "metric": "annual_visitors",
+      "metric_value": 937716,
+      "metric_year": 2025
+    },
+    "location": {
+      "address": "8th and G Streets NW",
+      "city": "Washington",
+      "state": "DC",
+      "postal_code": "20001",
+      "coordinates": {
+        "lat": 38.897778,
+        "lng": -77.023056
+      },
+      "geocode_provider": "Wikidata",
+      "geocode_crs": "WGS84 (EPSG:4326)",
+      "geocode_source_url": "https://www.wikidata.org/wiki/Q1967614",
+      "geocoded_at": "2026-07-21"
+    },
+    "nearby_hotel": {
+      "name": "Hotel Monaco",
+      "address": "700 F Street Northwest, Washington, DC",
+      "coordinates": {
+        "lat": 38.8969924,
+        "lng": -77.0224383
+      },
+      "distance_miles": 0.066,
+      "source_url": "https://www.openstreetmap.org/node/754896090",
+      "verified_at": "2026-07-21"
+    },
+    "admission": {
+      "adult_general_usd": 0,
+      "pricing_note": "General admission is free.",
+      "as_of": "2026-07-21",
+      "source_url": "https://npg.si.edu/visit/getting-here"
+    },
+    "collection": {
+      "summary": "Approximately 26,215 portraits and related objects in the FY2022 fact sheet, including the only complete U.S. presidential portrait collection outside the White House.",
+      "object_count": 26215,
+      "notable_artists": [
+        "Gilbert Stuart",
+        "Kehinde Wiley",
+        "Amy Sherald"
+      ],
+      "notable_works": [
+        {
+          "title": "George Washington (Lansdowne Portrait)",
+          "artist": "Gilbert Stuart",
+          "year": "1796"
+        }
+      ]
+    },
+    "institution_founded_year": 1962,
+    "building": {
+      "year_built": 1868,
+      "architects": [
+        "Robert Mills",
+        "Ithiel Town",
+        "Alexander Jackson Davis",
+        "Thomas U. Walter"
+      ],
+      "square_feet": null,
+      "scope_note": "The Old Patent Office Building is shared with the Smithsonian American Art Museum.",
+      "history": "The National Portrait Gallery opened in the restored Old Patent Office Building in 1968."
+    },
+    "metrics": {
+      "annual_visitors": 937716,
+      "attendance_year": 2025
+    },
+    "financial_value": null,
+    "sources": [
+      {
+        "url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+        "supports": [
+          "ranking",
+          "metrics"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://npg.si.edu/visit/getting-here",
+        "supports": [
+          "location.address",
+          "admission"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://npg.si.edu/about-us/press-release/fact-sheet-national-portrait-gallery-0",
+        "supports": [
+          "collection.summary",
+          "collection.object_count"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://npg.si.edu/object/npg_NPG.2001.13",
+        "supports": [
+          "collection.notable_artists",
+          "collection.notable_works"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://npg.si.edu/about-us/history",
+        "supports": [
+          "institution_founded_year",
+          "building"
+        ],
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
+  },
+  {
+    "id": "whitney-museum",
+    "rank": 10,
+    "title": "Whitney Museum of American Art",
+    "value": "885,360 visitors in 2025 (Art Newspaper global rank 86)",
+    "institution_type": "American modern and contemporary art museum",
+    "website": "https://whitney.org/",
+    "ranking": {
+      "selection_tier": "attendance_survey",
+      "source_name": "The Art Newspaper Top 150 Museums 2025",
+      "source_url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+      "source_rank": 86,
+      "metric": "annual_visitors",
+      "metric_value": 885360,
+      "metric_year": 2025
+    },
+    "location": {
+      "address": "99 Gansevoort Street",
+      "city": "New York",
+      "state": "NY",
+      "postal_code": "10014",
+      "coordinates": {
+        "lat": 40.7396,
+        "lng": -74.0089
+      },
+      "geocode_provider": "Wikidata",
+      "geocode_crs": "WGS84 (EPSG:4326)",
+      "geocode_source_url": "https://www.wikidata.org/wiki/Q639791",
+      "geocoded_at": "2026-07-21"
+    },
+    "nearby_hotel": {
+      "name": "The Jane",
+      "address": "113 Jane Street, New York, NY 10014",
+      "coordinates": {
+        "lat": 40.7383044,
+        "lng": -74.0093302
+      },
+      "distance_miles": 0.092,
+      "source_url": "https://www.openstreetmap.org/relation/3365139",
+      "verified_at": "2026-07-21"
+    },
+    "admission": {
+      "adult_general_usd": 30,
+      "pricing_note": "Adults $30; visitors 25 and under are free, with additional free periods.",
+      "as_of": "2026-07-21",
+      "source_url": "https://whitney.org/Visit"
+    },
+    "collection": {
+      "summary": "More than 27,000 works by over 4,100 American artists, focused on 20th- and 21st-century art.",
+      "object_count": 27000,
+      "notable_artists": [
+        "Edward Hopper",
+        "Georgia O'Keeffe",
+        "Jasper Johns"
+      ],
+      "notable_works": [
+        {
+          "title": "Early Sunday Morning",
+          "artist": "Edward Hopper",
+          "year": "1930"
+        }
+      ]
+    },
+    "institution_founded_year": 1930,
+    "building": {
+      "year_built": 2015,
+      "architects": [
+        "Renzo Piano Building Workshop",
+        "Cooper Robertson"
+      ],
+      "square_feet": 220000,
+      "scope_note": "Area is the current Meatpacking District building.",
+      "history": "The Renzo Piano-designed building opened in 2015 with indoor and outdoor exhibition spaces beside the High Line."
+    },
+    "metrics": {
+      "annual_visitors": 885360,
+      "attendance_year": 2025
+    },
+    "financial_value": {
+      "kind": "endowment",
+      "amount_usd": 555462000,
+      "year": 2025,
+      "basis": "Board-designated and donor-restricted endowment funds at June 30, 2025.",
+      "source_url": "https://whitneymedia.org/assets/generic_file/4908/2025_Whitney_Museum_of_American_Art_FS.pdf"
+    },
+    "sources": [
+      {
+        "url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+        "supports": [
+          "ranking",
+          "metrics"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://whitney.org/Visit",
+        "supports": [
+          "location.address",
+          "admission"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://whitney.org/Collection/Works",
+        "supports": [
+          "collection.summary",
+          "collection.object_count"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://whitney.org/collection/works/46345",
+        "supports": [
+          "collection.notable_artists",
+          "collection.notable_works"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://whitney.org/about/our-building",
+        "supports": [
+          "building"
+        ],
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
+  },
+  {
+    "id": "frederik-meijer-gardens",
+    "rank": 11,
+    "title": "Frederik Meijer Gardens & Sculpture Park",
+    "value": "881,625 visitors in 2025 (Art Newspaper global rank 87)",
+    "institution_type": "Botanical garden and sculpture museum",
+    "website": "https://www.meijergardens.org/",
+    "ranking": {
+      "selection_tier": "attendance_survey",
+      "source_name": "The Art Newspaper Top 150 Museums 2025",
+      "source_url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+      "source_rank": 87,
+      "metric": "annual_visitors",
+      "metric_value": 881625,
+      "metric_year": 2025
+    },
+    "location": {
+      "address": "1000 East Beltline Avenue NE",
+      "city": "Grand Rapids",
+      "state": "MI",
+      "postal_code": "49525",
+      "coordinates": {
+        "lat": 42.98139,
+        "lng": -85.5875
+      },
+      "geocode_provider": "Wikidata",
+      "geocode_crs": "WGS84 (EPSG:4326)",
+      "geocode_source_url": "https://www.wikidata.org/wiki/Q2483537",
+      "geocoded_at": "2026-07-21"
+    },
+    "nearby_hotel": {
+      "name": "Country Inn & Suites",
+      "address": "3251 Deposit Drive NE, Grand Rapids, MI 49546",
+      "coordinates": {
+        "lat": 42.97056,
+        "lng": -85.5884066
+      },
+      "distance_miles": 0.75,
+      "source_url": "https://www.openstreetmap.org/way/545631697",
+      "verified_at": "2026-07-21"
+    },
+    "admission": {
+      "adult_general_usd": 25,
+      "pricing_note": "Standard adult daytime admission was $25 at verification; special events may be priced separately.",
+      "as_of": "2026-07-21",
+      "source_url": "https://www.meijergardens.org/chihuly-at-meijer-gardens/"
+    },
+    "collection": {
+      "summary": "A sculpture collection of nearly 300 works integrated with indoor galleries and a 158-acre botanical campus.",
+      "object_count": 300,
+      "notable_artists": [
+        "Auguste Rodin",
+        "Henry Moore",
+        "Louise Bourgeois",
+        "Richard Serra"
+      ],
+      "notable_works": [
+        {
+          "title": "Amalgam (Origin)",
+          "artist": "Nick Cave",
+          "year": null
+        }
+      ]
+    },
+    "institution_founded_year": 1995,
+    "building": {
+      "year_built": 1995,
+      "architects": [],
+      "square_feet": null,
+      "scope_note": "The institution reports a 158-acre campus; a reliable total indoor square-foot figure was not located.",
+      "history": "Frederik Meijer Gardens & Sculpture Park opened in 1995 and combines horticulture with a permanent sculpture program."
+    },
+    "metrics": {
+      "annual_visitors": 881625,
+      "attendance_year": 2025
+    },
+    "financial_value": {
+      "kind": "net_assets",
+      "amount_usd": 416694300,
+      "year": 2025,
+      "basis": "Organization-wide net assets reported in the 2025 annual report.",
+      "source_url": "https://www.meijergardens.org/wp-content/uploads/2026/04/Final-2025-Annual-Report.pdf"
+    },
+    "sources": [
+      {
+        "url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+        "supports": [
+          "ranking",
+          "metrics"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.meijergardens.org/chihuly-at-meijer-gardens/",
+        "supports": [
+          "location.address",
+          "admission"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.meijergardens.org/about/",
+        "supports": [
+          "collection.summary",
+          "institution_founded_year",
+          "building"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.meijergardens.org/nickcave/",
+        "supports": [
+          "collection.notable_works",
+          "collection.notable_artists"
+        ],
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
+  },
+  {
+    "id": "de-young-museum",
+    "rank": 12,
+    "title": "de Young Museum",
+    "value": "840,573 visitors in 2025 (Art Newspaper global rank 92)",
+    "institution_type": "Fine arts museum",
+    "website": "https://www.famsf.org/visit/de-young",
+    "ranking": {
+      "selection_tier": "attendance_survey",
+      "source_name": "The Art Newspaper Top 150 Museums 2025",
+      "source_url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+      "source_rank": 92,
+      "metric": "annual_visitors",
+      "metric_value": 840573,
+      "metric_year": 2025
+    },
+    "location": {
+      "address": "50 Hagiwara Tea Garden Drive",
+      "city": "San Francisco",
+      "state": "CA",
+      "postal_code": "94118",
+      "coordinates": {
+        "lat": 37.771469,
+        "lng": -122.468676
+      },
+      "geocode_provider": "Wikidata",
+      "geocode_crs": "WGS84 (EPSG:4326)",
+      "geocode_source_url": "https://www.wikidata.org/wiki/Q1470276",
+      "geocoded_at": "2026-07-21"
+    },
+    "nearby_hotel": {
+      "name": "Stanyan Park Hotel",
+      "address": "750 Stanyan Street, San Francisco, CA 94117",
+      "coordinates": {
+        "lat": 37.7680984,
+        "lng": -122.4530133
+      },
+      "distance_miles": 0.887,
+      "source_url": "https://www.openstreetmap.org/relation/5381749",
+      "verified_at": "2026-07-21"
+    },
+    "admission": {
+      "adult_general_usd": 20,
+      "pricing_note": "Adult general admission is $20; special exhibitions may carry an additional charge.",
+      "as_of": "2026-07-21",
+      "source_url": "https://www.famsf.org/visit/de-young"
+    },
+    "collection": {
+      "summary": "American art, international textiles and costume, and art from Africa, Oceania, and the Indigenous Americas.",
+      "object_count": null,
+      "notable_artists": [
+        "Milton Avery",
+        "Diego Rivera",
+        "José Clemente Orozco",
+        "Ruth Asawa"
+      ],
+      "notable_works": [
+        {
+          "title": "Black Sea",
+          "artist": "Milton Avery",
+          "year": "1945"
+        }
+      ]
+    },
+    "institution_founded_year": 1895,
+    "building": {
+      "year_built": 2005,
+      "architects": [
+        "Herzog & de Meuron",
+        "Fong & Chan Architects"
+      ],
+      "square_feet": 293000,
+      "scope_note": "Area is for the current Golden Gate Park museum building.",
+      "history": "The current copper-clad museum opened in 2005, replacing the earlier de Young building on the same site."
+    },
+    "metrics": {
+      "annual_visitors": 840573,
+      "attendance_year": 2025
+    },
+    "financial_value": null,
+    "sources": [
+      {
+        "url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+        "supports": [
+          "ranking",
+          "metrics"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.famsf.org/visit/de-young",
+        "supports": [
+          "location.address",
+          "admission",
+          "collection.summary"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://lens.famsf.org/objects/black-sea",
+        "supports": [
+          "collection.notable_artists",
+          "collection.notable_works"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.herzogdemeuron.com/projects/173-de-young-museum/",
+        "supports": [
+          "building"
+        ],
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
+  },
+  {
+    "id": "museum-fine-arts-houston",
+    "rank": 13,
+    "title": "Museum of Fine Arts, Houston",
+    "value": "835,925 visitors in 2025 (Art Newspaper global rank 93)",
+    "institution_type": "Encyclopedic art museum",
+    "website": "https://www.mfah.org/",
+    "ranking": {
+      "selection_tier": "attendance_survey",
+      "source_name": "The Art Newspaper Top 150 Museums 2025",
+      "source_url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+      "source_rank": 93,
+      "metric": "annual_visitors",
+      "metric_value": 835925,
+      "metric_year": 2025
+    },
+    "location": {
+      "address": "1001 Bissonnet Street",
+      "city": "Houston",
+      "state": "TX",
+      "postal_code": "77005",
+      "coordinates": {
+        "lat": 29.725605,
+        "lng": -95.390539
+      },
+      "geocode_provider": "Wikidata",
+      "geocode_crs": "WGS84 (EPSG:4326)",
+      "geocode_source_url": "https://www.wikidata.org/wiki/Q1565911",
+      "geocoded_at": "2026-07-21"
+    },
+    "nearby_hotel": {
+      "name": "Hotel ZaZa Houston",
+      "address": "5701 Main Street, Houston, TX 77004",
+      "coordinates": {
+        "lat": 29.724249,
+        "lng": -95.3900936
+      },
+      "distance_miles": 0.097,
+      "source_url": "https://www.openstreetmap.org/way/45776254",
+      "verified_at": "2026-07-21"
+    },
+    "admission": {
+      "adult_general_usd": 24,
+      "pricing_note": "Adult general admission is $24; admission is free on Thursdays and some exhibitions are separately ticketed.",
+      "as_of": "2026-07-21",
+      "source_url": "https://www.mfah.org/visit/admission-information"
+    },
+    "collection": {
+      "summary": "Approximately 80,000 works spanning about 6,000 years and cultures from six continents.",
+      "object_count": 80000,
+      "notable_artists": [
+        "Vincent van Gogh",
+        "Gustave Caillebotte",
+        "Claude Monet",
+        "Jackson Pollock"
+      ],
+      "notable_works": [
+        {
+          "title": "The Orange Trees",
+          "artist": "Gustave Caillebotte",
+          "year": "1878"
+        }
+      ]
+    },
+    "institution_founded_year": 1900,
+    "building": {
+      "year_built": 2020,
+      "architects": [
+        "Steven Holl Architects"
+      ],
+      "square_feet": 165000,
+      "scope_note": "Year and area describe the Nancy and Rich Kinder Building, one component of the multi-building MFAH campus.",
+      "history": "The Kinder Building opened in 2020 as the center of the museum's modern and contemporary collection."
+    },
+    "metrics": {
+      "annual_visitors": 835925,
+      "attendance_year": 2025
+    },
+    "financial_value": {
+      "kind": "net_assets",
+      "amount_usd": 2211952000,
+      "year": 2025,
+      "basis": "Museum-wide net assets, including Bayou Bend, Rienzi, and the Glassell School, at June 30, 2025.",
+      "source_url": "https://static.mfah.com/documents/mfah-fy-2025-financial-statements.10145437076804506392.pdf"
+    },
+    "sources": [
+      {
+        "url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+        "supports": [
+          "ranking",
+          "metrics"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.mfah.org/visit/",
+        "supports": [
+          "location.address",
+          "collection.summary"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.mfah.org/visit/admission-information",
+        "supports": [
+          "admission"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://emuseum.mfah.org/objects/43483/visit",
+        "supports": [
+          "collection.notable_artists",
+          "collection.notable_works"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.mfah.org/about/nancy-and-rich-kinder-building",
+        "supports": [
+          "building"
+        ],
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
+  },
+  {
+    "id": "crystal-bridges",
+    "rank": 14,
+    "title": "Crystal Bridges Museum of American Art",
+    "value": "802,382 visitors in 2025 (Art Newspaper global rank 98)",
+    "institution_type": "American art museum",
+    "website": "https://crystalbridges.org/",
+    "ranking": {
+      "selection_tier": "attendance_survey",
+      "source_name": "The Art Newspaper Top 150 Museums 2025",
+      "source_url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+      "source_rank": 98,
+      "metric": "annual_visitors",
+      "metric_value": 802382,
+      "metric_year": 2025
+    },
+    "location": {
+      "address": "600 Museum Way",
+      "city": "Bentonville",
+      "state": "AR",
+      "postal_code": "72712",
+      "coordinates": {
+        "lat": 36.381854,
+        "lng": -94.202653
+      },
+      "geocode_provider": "Wikidata",
+      "geocode_crs": "WGS84 (EPSG:4326)",
+      "geocode_source_url": "https://www.wikidata.org/wiki/Q1142334",
+      "geocoded_at": "2026-07-21"
+    },
+    "nearby_hotel": {
+      "name": "21c Museum Hotel Bentonville",
+      "address": "200 NE A Street, Bentonville, AR 72712",
+      "coordinates": {
+        "lat": 36.3739532,
+        "lng": -94.2076331
+      },
+      "distance_miles": 0.612,
+      "source_url": "https://www.openstreetmap.org/way/577262582",
+      "verified_at": "2026-07-21"
+    },
+    "admission": {
+      "adult_general_usd": 0,
+      "pricing_note": "General admission is free; some temporary exhibitions and events require paid tickets.",
+      "as_of": "2026-07-21",
+      "source_url": "https://crystalbridges.org/"
+    },
+    "collection": {
+      "summary": "More than 4,100 works surveying five centuries of American art.",
+      "object_count": 4100,
+      "notable_artists": [
+        "Norman Rockwell",
+        "Asher B. Durand",
+        "Yayoi Kusama",
+        "Maya Lin"
+      ],
+      "notable_works": [
+        {
+          "title": "Rosie the Riveter",
+          "artist": "Norman Rockwell",
+          "year": "1943"
+        }
+      ]
+    },
+    "institution_founded_year": 2011,
+    "building": {
+      "year_built": 2011,
+      "architects": [
+        "Moshe Safdie"
+      ],
+      "square_feet": null,
+      "scope_note": "The original complex opened in 2011; a 114,000-square-foot expansion opened in June 2026, but no reliable whole-campus area was located.",
+      "history": "Moshe Safdie designed the museum's bridge-like pavilions around two spring-fed ponds in the Ozarks."
+    },
+    "metrics": {
+      "annual_visitors": 802382,
+      "attendance_year": 2025
+    },
+    "financial_value": null,
+    "sources": [
+      {
+        "url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+        "supports": [
+          "ranking",
+          "metrics"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://crystalbridges.org/",
+        "supports": [
+          "location.address",
+          "admission",
+          "institution_founded_year"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://crystalbridges.org/news/crystal-bridges-to-open-highly-anticipated-expansion-june-6-and-7",
+        "supports": [
+          "collection.object_count",
+          "building"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://crystalbridges.org/art-exhibitions?n=t",
+        "supports": [
+          "collection.summary",
+          "collection.notable_artists",
+          "collection.notable_works"
+        ],
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
+  },
+  {
+    "id": "lacma",
+    "rank": 15,
+    "title": "Los Angeles County Museum of Art",
+    "value": "801,587 visitors in 2025 (Art Newspaper global rank 99)",
+    "institution_type": "Encyclopedic art museum",
+    "website": "https://www.lacma.org/",
+    "ranking": {
+      "selection_tier": "attendance_survey",
+      "source_name": "The Art Newspaper Top 150 Museums 2025",
+      "source_url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+      "source_rank": 99,
+      "metric": "annual_visitors",
+      "metric_value": 801587,
+      "metric_year": 2025
+    },
+    "location": {
+      "address": "5905 Wilshire Boulevard",
+      "city": "Los Angeles",
+      "state": "CA",
+      "postal_code": "90036",
+      "coordinates": {
+        "lat": 34.063333,
+        "lng": -118.359167
+      },
+      "geocode_provider": "Wikidata",
+      "geocode_crs": "WGS84 (EPSG:4326)",
+      "geocode_source_url": "https://www.wikidata.org/wiki/Q1641836",
+      "geocoded_at": "2026-07-21"
+    },
+    "nearby_hotel": {
+      "name": "Wilshire Crest Hotel",
+      "address": null,
+      "coordinates": {
+        "lat": 34.0647306,
+        "lng": -118.3653541
+      },
+      "distance_miles": 0.367,
+      "source_url": "https://www.openstreetmap.org/way/428628493",
+      "verified_at": "2026-07-21"
+    },
+    "admission": {
+      "adult_general_usd": 30,
+      "pricing_note": "Adult general admission for non-Los Angeles County residents is $30; county residents pay $25.",
+      "as_of": "2026-07-21",
+      "source_url": "https://www.lacma.org/tickets"
+    },
+    "collection": {
+      "summary": "More than 155,000 works spanning art history and cultures from antiquity to the present.",
+      "object_count": 155000,
+      "notable_artists": [
+        "Chris Burden",
+        "Georges de La Tour",
+        "Henri Matisse",
+        "Alexander Calder"
+      ],
+      "notable_works": [
+        {
+          "title": "Urban Light",
+          "artist": "Chris Burden",
+          "year": "2008"
+        }
+      ]
+    },
+    "institution_founded_year": 1961,
+    "building": {
+      "year_built": 2026,
+      "architects": [
+        "Peter Zumthor"
+      ],
+      "square_feet": null,
+      "scope_note": "The David Geffen Galleries opened in 2026 with 110,000 square feet of exhibition space; that partial figure is not used as whole-campus area.",
+      "history": "LACMA became an independent museum in 1961; its Peter Zumthor-designed David Geffen Galleries opened April 19, 2026."
+    },
+    "metrics": {
+      "annual_visitors": 801587,
+      "attendance_year": 2025
+    },
+    "financial_value": {
+      "kind": "net_assets",
+      "amount_usd": 1054750638,
+      "year": 2025,
+      "basis": "Museum net assets at June 30, 2025; collection objects are not capitalized in the statements.",
+      "source_url": "https://www-images.lacma.org/s3fs-public/2025-10/FS-LACMA-063025-Final-Signed.pdf"
+    },
+    "sources": [
+      {
+        "url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+        "supports": [
+          "ranking",
+          "metrics"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.lacma.org/tickets",
+        "supports": [
+          "location.address",
+          "admission"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.lacma.org/about",
+        "supports": [
+          "collection.summary",
+          "collection.object_count",
+          "institution_founded_year"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://collections.lacma.org/object/138700",
+        "supports": [
+          "collection.notable_artists",
+          "collection.notable_works"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.lacma.org/press/lacmas-new-david-geffen-galleries-designed-peter-zumthor-open-april-19",
+        "supports": [
+          "building"
+        ],
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
+  },
+  {
+    "id": "cleveland-museum-art",
+    "rank": 16,
+    "title": "Cleveland Museum of Art",
+    "value": "800,822 visitors in 2025 (Art Newspaper global rank 100)",
+    "institution_type": "Encyclopedic art museum",
+    "website": "https://www.clevelandart.org/",
+    "ranking": {
+      "selection_tier": "attendance_survey",
+      "source_name": "The Art Newspaper Top 150 Museums 2025",
+      "source_url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+      "source_rank": 100,
+      "metric": "annual_visitors",
+      "metric_value": 800822,
+      "metric_year": 2025
+    },
+    "location": {
+      "address": "11150 East Boulevard",
+      "city": "Cleveland",
+      "state": "OH",
+      "postal_code": "44106",
+      "coordinates": {
+        "lat": 41.508889,
+        "lng": -81.611667
+      },
+      "geocode_provider": "Wikidata",
+      "geocode_crs": "WGS84 (EPSG:4326)",
+      "geocode_source_url": "https://www.wikidata.org/wiki/Q657415",
+      "geocoded_at": "2026-07-21"
+    },
+    "nearby_hotel": {
+      "name": "The Glidden House",
+      "address": null,
+      "coordinates": {
+        "lat": 41.5110782,
+        "lng": -81.6077331
+      },
+      "distance_miles": 0.254,
+      "source_url": "https://www.openstreetmap.org/way/109733156",
+      "verified_at": "2026-07-21"
+    },
+    "admission": {
+      "adult_general_usd": 0,
+      "pricing_note": "General admission to the permanent collection is free; some special exhibitions require tickets.",
+      "as_of": "2026-07-21",
+      "source_url": "https://www.clevelandart.org/plan-your-visit"
+    },
+    "collection": {
+      "summary": "Approximately 66,500 works spanning 6,000 years of art from around the world.",
+      "object_count": 66500,
+      "notable_artists": [
+        "Pablo Picasso",
+        "J. M. W. Turner",
+        "Claude Monet",
+        "Auguste Rodin"
+      ],
+      "notable_works": [
+        {
+          "title": "La Vie",
+          "artist": "Pablo Picasso",
+          "year": "1903"
+        }
+      ]
+    },
+    "institution_founded_year": 1916,
+    "building": {
+      "year_built": 1916,
+      "architects": [
+        "Hubbell & Benes",
+        "Marcel Breuer",
+        "Rafael Viñoly Architects"
+      ],
+      "square_feet": 592000,
+      "scope_note": "Area is the completed museum complex after the Rafael Viñoly expansion and renovation.",
+      "history": "The original neoclassical building opened in 1916; later Marcel Breuer and Rafael Viñoly additions culminated in the completed campus in 2013."
+    },
+    "metrics": {
+      "annual_visitors": 800822,
+      "attendance_year": 2025
+    },
+    "financial_value": {
+      "kind": "net_assets",
+      "amount_usd": 1318960818,
+      "year": 2025,
+      "basis": "Net assets reported in the museum's FY2025 IRS filing.",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/340714336"
+    },
+    "sources": [
+      {
+        "url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+        "supports": [
+          "ranking",
+          "metrics"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.clevelandart.org/plan-your-visit",
+        "supports": [
+          "location.address",
+          "admission"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.clevelandart.org/about/press/cleveland-museum-art-celebrates-110-years",
+        "supports": [
+          "collection.summary",
+          "collection.object_count",
+          "institution_founded_year"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.clevelandart.org/about-museum/museum-history",
+        "supports": [
+          "collection.notable_works",
+          "building"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.clevelandart.org/about/press/cleveland-museum-art-concludes-capital-campaign",
+        "supports": [
+          "building.square_feet"
+        ],
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
+  },
+  {
+    "id": "solomon-r-guggenheim-museum",
+    "rank": 17,
+    "title": "Solomon R. Guggenheim Museum",
+    "value": "774,057 visitors in 2025 (Art Newspaper global rank 105)",
+    "institution_type": "Modern and contemporary art museum",
+    "website": "https://www.guggenheim.org/",
+    "ranking": {
+      "selection_tier": "attendance_survey",
+      "source_name": "The Art Newspaper Top 150 Museums 2025",
+      "source_url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+      "source_rank": 105,
+      "metric": "annual_visitors",
+      "metric_value": 774057,
+      "metric_year": 2025
+    },
+    "location": {
+      "address": "1071 Fifth Avenue",
+      "city": "New York",
+      "state": "NY",
+      "postal_code": "10128",
+      "coordinates": {
+        "lat": 40.783056,
+        "lng": -73.958889
+      },
+      "geocode_provider": "Wikidata",
+      "geocode_crs": "WGS84 (EPSG:4326)",
+      "geocode_source_url": "https://www.wikidata.org/wiki/Q201469",
+      "geocoded_at": "2026-07-21"
+    },
+    "nearby_hotel": {
+      "name": "The Franklin",
+      "address": "164 East 87th Street, New York, NY 10128",
+      "coordinates": {
+        "lat": 40.7795881,
+        "lng": -73.9539993
+      },
+      "distance_miles": 0.351,
+      "source_url": "https://www.openstreetmap.org/node/7868765654",
+      "verified_at": "2026-07-21"
+    },
+    "admission": {
+      "adult_general_usd": 30,
+      "pricing_note": "Standard adult admission is $30; discounted and pay-what-you-wish periods are available.",
+      "as_of": "2026-07-21",
+      "source_url": "https://www.guggenheim.org/plan-your-visit/"
+    },
+    "collection": {
+      "summary": "Approximately 8,000 modern and contemporary works held across the Solomon R. Guggenheim Foundation's collection.",
+      "object_count": 8000,
+      "notable_artists": [
+        "Vasily Kandinsky",
+        "Pablo Picasso",
+        "Franz Marc",
+        "Paul Klee"
+      ],
+      "notable_works": [
+        {
+          "title": "Painting with White Border",
+          "artist": "Vasily Kandinsky",
+          "year": "1913"
+        }
+      ]
+    },
+    "institution_founded_year": 1937,
+    "building": {
+      "year_built": 1959,
+      "architects": [
+        "Frank Lloyd Wright"
+      ],
+      "square_feet": null,
+      "scope_note": "No reliable current whole-building area was located in the cited official architecture material.",
+      "history": "Frank Lloyd Wright's spiraling museum building opened in 1959 and is part of a UNESCO World Heritage serial property."
+    },
+    "metrics": {
+      "annual_visitors": 774057,
+      "attendance_year": 2025
+    },
+    "financial_value": null,
+    "sources": [
+      {
+        "url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+        "supports": [
+          "ranking",
+          "metrics"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.guggenheim.org/plan-your-visit/",
+        "supports": [
+          "location.address",
+          "admission"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.guggenheim.org/collection-online/about-the-collection",
+        "supports": [
+          "collection.summary",
+          "collection.object_count",
+          "collection.notable_artists"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.guggenheim.org/about-us/history",
+        "supports": [
+          "institution_founded_year",
+          "collection.notable_works"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.guggenheim.org/about-us/architecture/frank-lloyd-wright-and-the-guggenheim",
+        "supports": [
+          "building"
+        ],
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
+  },
+  {
+    "id": "the-broad",
+    "rank": 18,
+    "title": "The Broad",
+    "value": "771,000 visitors in 2025 (Art Newspaper global rank 106)",
+    "institution_type": "Contemporary art museum",
+    "website": "https://www.thebroad.org/",
+    "ranking": {
+      "selection_tier": "attendance_survey",
+      "source_name": "The Art Newspaper Top 150 Museums 2025",
+      "source_url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+      "source_rank": 106,
+      "metric": "annual_visitors",
+      "metric_value": 771000,
+      "metric_year": 2025
+    },
+    "location": {
+      "address": "221 South Grand Avenue",
+      "city": "Los Angeles",
+      "state": "CA",
+      "postal_code": "90012",
+      "coordinates": {
+        "lat": 34.0544,
+        "lng": -118.251
+      },
+      "geocode_provider": "Wikidata",
+      "geocode_crs": "WGS84 (EPSG:4326)",
+      "geocode_source_url": "https://www.wikidata.org/wiki/Q17060100",
+      "geocoded_at": "2026-07-21"
+    },
+    "nearby_hotel": {
+      "name": "Omni Los Angeles Hotel",
+      "address": "251 South Olive Street, Los Angeles, CA 90012",
+      "coordinates": {
+        "lat": 34.0525759,
+        "lng": -118.2504345
+      },
+      "distance_miles": 0.13,
+      "source_url": "https://www.openstreetmap.org/way/427532195",
+      "verified_at": "2026-07-21"
+    },
+    "admission": {
+      "adult_general_usd": 0,
+      "pricing_note": "General admission to the permanent collection is free; some exhibitions and events are ticketed.",
+      "as_of": "2026-07-21",
+      "source_url": "https://www.thebroad.org/about"
+    },
+    "collection": {
+      "summary": "More than 2,000 postwar and contemporary works by nearly 200 artists.",
+      "object_count": 2000,
+      "notable_artists": [
+        "Yayoi Kusama",
+        "Jeff Koons",
+        "Andy Warhol",
+        "Jean-Michel Basquiat"
+      ],
+      "notable_works": [
+        {
+          "title": "Infinity Mirrored Room—The Souls of Millions of Light Years Away",
+          "artist": "Yayoi Kusama",
+          "year": "2013"
+        }
+      ]
+    },
+    "institution_founded_year": 2015,
+    "building": {
+      "year_built": 2015,
+      "architects": [
+        "Diller Scofidio + Renfro",
+        "Gensler"
+      ],
+      "square_feet": 120000,
+      "scope_note": "Area is for the downtown Los Angeles museum building.",
+      "history": "The veil-and-vault building opened in 2015 across from Walt Disney Concert Hall."
+    },
+    "metrics": {
+      "annual_visitors": 771000,
+      "attendance_year": 2025
+    },
+    "financial_value": null,
+    "sources": [
+      {
+        "url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+        "supports": [
+          "ranking",
+          "metrics"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.thebroad.org/about",
+        "supports": [
+          "location.address",
+          "admission",
+          "institution_founded_year"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.thebroad.org/about/collection",
+        "supports": [
+          "collection.summary",
+          "collection.object_count",
+          "collection.notable_artists"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.thebroad.org/visit/mirror-rooms",
+        "supports": [
+          "collection.notable_works"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.thebroad.org/sites/default/files/pressroom/the_broad_architectural_fact_sheet_1.pdf",
+        "supports": [
+          "building"
+        ],
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
+  },
+  {
+    "id": "philadelphia-museum-art",
+    "rank": 19,
+    "title": "Philadelphia Museum of Art",
+    "value": "639,880 visitors in 2025 (Art Newspaper global rank 127)",
+    "institution_type": "Encyclopedic art museum",
+    "website": "https://www.philamuseum.org/",
+    "ranking": {
+      "selection_tier": "attendance_survey",
+      "source_name": "The Art Newspaper Top 150 Museums 2025",
+      "source_url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+      "source_rank": 127,
+      "metric": "annual_visitors",
+      "metric_value": 639880,
+      "metric_year": 2025
+    },
+    "location": {
+      "address": "2600 Benjamin Franklin Parkway",
+      "city": "Philadelphia",
+      "state": "PA",
+      "postal_code": "19130",
+      "coordinates": {
+        "lat": 39.965833,
+        "lng": -75.181389
+      },
+      "geocode_provider": "Wikidata",
+      "geocode_crs": "WGS84 (EPSG:4326)",
+      "geocode_source_url": "https://www.wikidata.org/wiki/Q510324",
+      "geocoded_at": "2026-07-21"
+    },
+    "nearby_hotel": {
+      "name": "The Logan Philadelphia",
+      "address": "1 Logan Square, Philadelphia, PA 19103",
+      "coordinates": {
+        "lat": 39.9566875,
+        "lng": -75.1701253
+      },
+      "distance_miles": 0.869,
+      "source_url": "https://www.openstreetmap.org/way/252221805",
+      "verified_at": "2026-07-21"
+    },
+    "admission": {
+      "adult_general_usd": 30,
+      "pricing_note": "Adult general admission is $30 and is valid for two consecutive days at museum locations.",
+      "as_of": "2026-07-21",
+      "source_url": "https://www.philamuseum.org/main-building"
+    },
+    "collection": {
+      "summary": "More than 240,000 objects spanning artistic achievement across cultures and centuries.",
+      "object_count": 240000,
+      "notable_artists": [
+        "Vincent van Gogh",
+        "Pablo Picasso",
+        "Marcel Duchamp",
+        "Thomas Eakins"
+      ],
+      "notable_works": [
+        {
+          "title": "Sunflowers",
+          "artist": "Vincent van Gogh",
+          "year": "1889"
+        }
+      ]
+    },
+    "institution_founded_year": 1876,
+    "building": {
+      "year_built": 1928,
+      "architects": [
+        "Horace Trumbauer",
+        "Zantzinger, Borie and Medary",
+        "Julian Abele"
+      ],
+      "square_feet": null,
+      "scope_note": "No single reliable current whole-building area was located in the cited official sources.",
+      "history": "The landmark main building opened in 1928; a Frank Gehry-led interior renovation and expansion opened new public spaces in 2021."
+    },
+    "metrics": {
+      "annual_visitors": 639880,
+      "attendance_year": 2025
+    },
+    "financial_value": {
+      "kind": "net_assets",
+      "amount_usd": 1105855982,
+      "year": 2025,
+      "basis": "Museum net assets reported for fiscal 2025.",
+      "source_url": "https://cdn.sanity.io/files/r7hgx2l2/production/bcb8af2cd48b4aabe7f062fc8b40e20bb30738d1.pdf"
+    },
+    "sources": [
+      {
+        "url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+        "supports": [
+          "ranking",
+          "metrics"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.philamuseum.org/main-building",
+        "supports": [
+          "location.address",
+          "admission",
+          "building"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://press.philamuseum.org/faqs",
+        "supports": [
+          "collection.summary",
+          "collection.object_count",
+          "institution_founded_year"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.philamuseum.org/objects/59202",
+        "supports": [
+          "collection.notable_artists",
+          "collection.notable_works"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://press.philamuseum.org/philadelphia-museum-of-art-opens-new-galleries-and-public-spaces-in-major-renovation-and-interior-expansion-of-its-landmark-main-building/",
+        "supports": [
+          "building.history"
+        ],
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
+  },
+  {
+    "id": "virginia-museum-fine-arts",
+    "rank": 20,
+    "title": "Virginia Museum of Fine Arts",
+    "value": "624,501 visitors in 2025 (Art Newspaper global rank 130)",
+    "institution_type": "State-supported encyclopedic art museum",
+    "website": "https://vmfa.museum/",
+    "ranking": {
+      "selection_tier": "attendance_survey",
+      "source_name": "The Art Newspaper Top 150 Museums 2025",
+      "source_url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+      "source_rank": 130,
+      "metric": "annual_visitors",
+      "metric_value": 624501,
+      "metric_year": 2025
+    },
+    "location": {
+      "address": "200 North Arthur Ashe Boulevard",
+      "city": "Richmond",
+      "state": "VA",
+      "postal_code": "23220",
+      "coordinates": {
+        "lat": 37.556422,
+        "lng": -77.474706
+      },
+      "geocode_provider": "Wikidata",
+      "geocode_crs": "WGS84 (EPSG:4326)",
+      "geocode_source_url": "https://www.wikidata.org/wiki/Q4013975",
+      "geocoded_at": "2026-07-21"
+    },
+    "nearby_hotel": {
+      "name": "Courtyard Richmond Scott's Addition",
+      "address": "3800 West Broad Street, Richmond, VA 23230",
+      "coordinates": {
+        "lat": 37.5706414,
+        "lng": -77.479323
+      },
+      "distance_miles": 1.014,
+      "source_url": "https://www.openstreetmap.org/way/1078391663",
+      "verified_at": "2026-07-21"
+    },
+    "admission": {
+      "adult_general_usd": 0,
+      "pricing_note": "General admission to the permanent collection is free; special exhibitions may require tickets.",
+      "as_of": "2026-07-21",
+      "source_url": "https://vmfa.museum/visit/"
+    },
+    "collection": {
+      "summary": "More than 50,000 works spanning world art, including the largest public collection of Fabergé outside Russia.",
+      "object_count": 50000,
+      "notable_artists": [
+        "Peter Carl Fabergé",
+        "Claude Monet",
+        "Edward Hopper",
+        "Alexander Calder"
+      ],
+      "notable_works": [
+        {
+          "title": "Imperial Easter Egg with Revolving Miniatures",
+          "artist": "House of Fabergé",
+          "year": "1896"
+        }
+      ]
+    },
+    "institution_founded_year": 1936,
+    "building": {
+      "year_built": 1936,
+      "architects": [
+        "Peebles & Ferguson",
+        "Rick Mather Architects",
+        "SMBW"
+      ],
+      "square_feet": null,
+      "scope_note": "The 2010 McGlothlin Wing added 165,000 square feet; no reliable current whole-campus total was located.",
+      "history": "VMFA opened in 1936 as a state-supported art museum and expanded substantially with the 2010 Rick Mather-designed wing."
+    },
+    "metrics": {
+      "annual_visitors": 624501,
+      "attendance_year": 2025
+    },
+    "financial_value": {
+      "kind": "net_assets",
+      "amount_usd": 292913230,
+      "year": 2025,
+      "basis": "Net assets of the Virginia Museum of Fine Arts Foundation, not the Commonwealth-operated museum itself.",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/510205333"
+    },
+    "sources": [
+      {
+        "url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+        "supports": [
+          "ranking",
+          "metrics"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://vmfa.museum/visit/",
+        "supports": [
+          "location.address",
+          "admission"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://vmfa.museum/pressroom/wp-content/uploads/sites/3/2025/01/AlisaChilesPressRelease.pdf",
+        "supports": [
+          "collection.summary",
+          "collection.object_count"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://vmfa.museum/piction/7898216-15425209/",
+        "supports": [
+          "collection.notable_artists",
+          "collection.notable_works"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://vmfa.museum/wp-content/uploads/sites/13/2013/10/ar08.pdf",
+        "supports": [
+          "institution_founded_year",
+          "building"
+        ],
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
+  },
+  {
+    "id": "sfmoma",
+    "rank": 21,
+    "title": "San Francisco Museum of Modern Art",
+    "value": "617,000 visitors in 2025 (Art Newspaper global rank 132)",
+    "institution_type": "Modern and contemporary art museum",
+    "website": "https://www.sfmoma.org/",
+    "ranking": {
+      "selection_tier": "attendance_survey",
+      "source_name": "The Art Newspaper Top 150 Museums 2025",
+      "source_url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+      "source_rank": 132,
+      "metric": "annual_visitors",
+      "metric_value": 617000,
+      "metric_year": 2025
+    },
+    "location": {
+      "address": "151 Third Street",
+      "city": "San Francisco",
+      "state": "CA",
+      "postal_code": "94103",
+      "coordinates": {
+        "lat": 37.785718,
+        "lng": -122.401051
+      },
+      "geocode_provider": "Wikidata",
+      "geocode_crs": "WGS84 (EPSG:4326)",
+      "geocode_source_url": "https://www.wikidata.org/wiki/Q913672",
+      "geocoded_at": "2026-07-21"
+    },
+    "nearby_hotel": {
+      "name": "The St. Regis San Francisco",
+      "address": "125 Third Street, San Francisco, CA 94103",
+      "coordinates": {
+        "lat": 37.7860572,
+        "lng": -122.401381
+      },
+      "distance_miles": 0.03,
+      "source_url": "https://www.openstreetmap.org/node/3455075367",
+      "verified_at": "2026-07-21"
+    },
+    "admission": {
+      "adult_general_usd": 30,
+      "pricing_note": "Adult general admission is $30; some exhibitions and programs may be separately ticketed.",
+      "as_of": "2026-07-21",
+      "source_url": "https://www.sfmoma.org/visit/"
+    },
+    "collection": {
+      "summary": "Modern and contemporary painting, sculpture, photography, architecture and design, and media arts.",
+      "object_count": null,
+      "notable_artists": [
+        "Henri Matisse",
+        "Frida Kahlo",
+        "Jackson Pollock",
+        "Mark Rothko"
+      ],
+      "notable_works": [
+        {
+          "title": "Woman with a Hat",
+          "artist": "Henri Matisse",
+          "year": "1905"
+        }
+      ]
+    },
+    "institution_founded_year": 1935,
+    "building": {
+      "year_built": 1995,
+      "architects": [
+        "Mario Botta",
+        "Snøhetta"
+      ],
+      "square_feet": 460000,
+      "scope_note": "Approximate total after the 2016 Snøhetta expansion, derived from official descriptions of the existing and added areas.",
+      "history": "Mario Botta's downtown building opened in 1995; a major Snøhetta expansion opened in 2016."
+    },
+    "metrics": {
+      "annual_visitors": 617000,
+      "attendance_year": 2025
+    },
+    "financial_value": null,
+    "sources": [
+      {
+        "url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+        "supports": [
+          "ranking",
+          "metrics"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.sfmoma.org/visit/",
+        "supports": [
+          "location.address",
+          "admission"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.sfmoma.org/about/",
+        "supports": [
+          "collection.summary",
+          "institution_founded_year"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.sfmoma.org/about/our-expansion-2016/architecture/",
+        "supports": [
+          "building"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.sfmoma.org/press/release/expanded-and-transformed-sfmoma/",
+        "supports": [
+          "building.square_feet",
+          "collection.notable_artists",
+          "collection.notable_works"
+        ],
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
+  },
+  {
+    "id": "minneapolis-institute-art",
+    "rank": 22,
+    "title": "Minneapolis Institute of Art",
+    "value": "614,365 visitors in 2025 (Art Newspaper global rank 133)",
+    "institution_type": "Encyclopedic art museum",
+    "website": "https://new.artsmia.org/",
+    "ranking": {
+      "selection_tier": "attendance_survey",
+      "source_name": "The Art Newspaper Top 150 Museums 2025",
+      "source_url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+      "source_rank": 133,
+      "metric": "annual_visitors",
+      "metric_value": 614365,
+      "metric_year": 2025
+    },
+    "location": {
+      "address": "2400 Third Avenue South",
+      "city": "Minneapolis",
+      "state": "MN",
+      "postal_code": "55404",
+      "coordinates": {
+        "lat": 44.958611,
+        "lng": -93.274167
+      },
+      "geocode_provider": "Wikidata",
+      "geocode_crs": "WGS84 (EPSG:4326)",
+      "geocode_source_url": "https://www.wikidata.org/wiki/Q1700481",
+      "geocoded_at": "2026-07-21"
+    },
+    "nearby_hotel": {
+      "name": "Sheraton Minneapolis Downtown Convention Center",
+      "address": "1313 Nicollet Mall, Minneapolis, MN 55403",
+      "coordinates": {
+        "lat": 44.970436,
+        "lng": -93.2770838
+      },
+      "distance_miles": 0.829,
+      "source_url": "https://www.openstreetmap.org/way/1394814185",
+      "verified_at": "2026-07-21"
+    },
+    "admission": {
+      "adult_general_usd": 0,
+      "pricing_note": "General admission is free; special exhibitions may require tickets.",
+      "as_of": "2026-07-21",
+      "source_url": "https://new.artsmia.org/visit"
+    },
+    "collection": {
+      "summary": "More than 100,000 objects covering 5,000 years and cultures from six continents.",
+      "object_count": 100000,
+      "notable_artists": [
+        "Rembrandt van Rijn",
+        "Vincent van Gogh",
+        "Claude Monet",
+        "Polykleitos"
+      ],
+      "notable_works": [
+        {
+          "title": "Doryphoros",
+          "artist": "Unknown Roman sculptor after Polykleitos",
+          "year": "c. 120–50 BCE"
+        }
+      ]
+    },
+    "institution_founded_year": 1883,
+    "building": {
+      "year_built": 1915,
+      "architects": [
+        "McKim, Mead & White",
+        "Kenzo Tange",
+        "Michael Graves"
+      ],
+      "square_feet": null,
+      "scope_note": "The 1915 main building has 1974 and 2006 additions; no reliable current whole-building area was located.",
+      "history": "The McKim, Mead & White building opened in 1915 and was enlarged by Kenzo Tange in 1974 and Michael Graves in 2006."
+    },
+    "metrics": {
+      "annual_visitors": 614365,
+      "attendance_year": 2025
+    },
+    "financial_value": null,
+    "sources": [
+      {
+        "url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+        "supports": [
+          "ranking",
+          "metrics"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://new.artsmia.org/visit",
+        "supports": [
+          "location.address",
+          "admission"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://new.artsmia.org/about/mission-and-history",
+        "supports": [
+          "collection.summary",
+          "collection.object_count",
+          "institution_founded_year",
+          "building"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://new.artsmia.org/programs/teachers-and-students/teaching-the-arts/art-in-context/math-in-art",
+        "supports": [
+          "collection.notable_artists",
+          "collection.notable_works"
+        ],
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
+  },
+  {
+    "id": "frick-collection",
+    "rank": 23,
+    "title": "The Frick Collection",
+    "value": "552,045 visitors in 2025 (Art Newspaper global rank 148)",
+    "institution_type": "Old Master and European decorative arts museum",
+    "website": "https://www.frick.org/",
+    "ranking": {
+      "selection_tier": "attendance_survey",
+      "source_name": "The Art Newspaper Top 150 Museums 2025",
+      "source_url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+      "source_rank": 148,
+      "metric": "annual_visitors",
+      "metric_value": 552045,
+      "metric_year": 2025
+    },
+    "location": {
+      "address": "1 East 70th Street",
+      "city": "New York",
+      "state": "NY",
+      "postal_code": "10021",
+      "coordinates": {
+        "lat": 40.771111,
+        "lng": -73.967222
+      },
+      "geocode_provider": "Wikidata",
+      "geocode_crs": "WGS84 (EPSG:4326)",
+      "geocode_source_url": "https://www.wikidata.org/wiki/Q682827",
+      "geocoded_at": "2026-07-21"
+    },
+    "nearby_hotel": {
+      "name": "The Surrey",
+      "address": "20 East 76th Street, New York, NY 10021",
+      "coordinates": {
+        "lat": 40.7743191,
+        "lng": -73.9640256
+      },
+      "distance_miles": 0.278,
+      "source_url": "https://www.openstreetmap.org/way/266899058",
+      "verified_at": "2026-07-21"
+    },
+    "admission": {
+      "adult_general_usd": 30,
+      "pricing_note": "Adult admission is $30; pay-what-you-wish hours are offered on Wednesdays.",
+      "as_of": "2026-07-21",
+      "source_url": "https://www.frick.org/tickets"
+    },
+    "collection": {
+      "summary": "European paintings, sculpture, and decorative arts from the Renaissance through the late 19th century, displayed in Henry Clay Frick's former residence.",
+      "object_count": null,
+      "notable_artists": [
+        "Giovanni Bellini",
+        "Jean-Honoré Fragonard",
+        "Hans Holbein the Younger",
+        "Johannes Vermeer"
+      ],
+      "notable_works": [
+        {
+          "title": "St. Francis in the Desert",
+          "artist": "Giovanni Bellini",
+          "year": "c. 1475–1480"
+        }
+      ]
+    },
+    "institution_founded_year": 1935,
+    "building": {
+      "year_built": 1914,
+      "architects": [
+        "Carrère and Hastings",
+        "John Russell Pope",
+        "Selldorf Architects",
+        "Beyer Blinder Belle"
+      ],
+      "square_feet": 196000,
+      "scope_note": "Area is for the renovated Frick campus after the 2021–2025 project.",
+      "history": "Henry Clay Frick's 1914 mansion became a museum in 1935; a major Selldorf-led renovation reopened in 2025."
+    },
+    "metrics": {
+      "annual_visitors": 552045,
+      "attendance_year": 2025
+    },
+    "financial_value": null,
+    "sources": [
+      {
+        "url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+        "supports": [
+          "ranking",
+          "metrics"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.frick.org/tickets",
+        "supports": [
+          "location.address",
+          "admission"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.frick.org/about",
+        "supports": [
+          "collection.summary",
+          "institution_founded_year"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.frick.org/exhibitions/past/2011/bellini",
+        "supports": [
+          "collection.notable_artists",
+          "collection.notable_works"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.frick.org/sites/default/files/pdf/press/2025/Fact_Sheet_Building_Project.pdf",
+        "supports": [
+          "building"
+        ],
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
+  },
+  {
+    "id": "legion-of-honor",
+    "rank": 24,
+    "title": "Legion of Honor",
+    "value": "406,265 visitors in 2025 (separately reported campus of Art Newspaper global rank 92)",
+    "institution_type": "European and ancient art museum",
+    "website": "https://www.famsf.org/visit/legion-of-honor",
+    "ranking": {
+      "selection_tier": "attendance_survey",
+      "source_name": "The Art Newspaper Top 150 Museums 2025",
+      "source_url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+      "source_rank": 92,
+      "metric": "annual_visitors",
+      "metric_value": 406265,
+      "metric_year": 2025
+    },
+    "location": {
+      "address": "100 34th Avenue",
+      "city": "San Francisco",
+      "state": "CA",
+      "postal_code": "94121",
+      "coordinates": {
+        "lat": 37.784466,
+        "lng": -122.500842
+      },
+      "geocode_provider": "Wikidata",
+      "geocode_crs": "WGS84 (EPSG:4326)",
+      "geocode_source_url": "https://www.wikidata.org/wiki/Q2468251",
+      "geocoded_at": "2026-07-21"
+    },
+    "nearby_hotel": {
+      "name": "Inn at the Presidio",
+      "address": "42 Moraga Avenue, San Francisco, CA 94129",
+      "coordinates": {
+        "lat": 37.7970441,
+        "lng": -122.4578517
+      },
+      "distance_miles": 2.503,
+      "source_url": "https://www.openstreetmap.org/way/288340256",
+      "verified_at": "2026-07-21"
+    },
+    "admission": {
+      "adult_general_usd": 20,
+      "pricing_note": "Adult general admission is $20; special exhibitions may carry an additional charge.",
+      "as_of": "2026-07-21",
+      "source_url": "https://www.famsf.org/visit/legion-of-honor"
+    },
+    "collection": {
+      "summary": "European paintings, sculpture, decorative arts, ancient art, and works on paper within the Fine Arts Museums of San Francisco.",
+      "object_count": null,
+      "notable_artists": [
+        "Auguste Rodin",
+        "Claude Monet",
+        "Canaletto",
+        "Georges Seurat"
+      ],
+      "notable_works": [
+        {
+          "title": "The Thinker",
+          "artist": "Auguste Rodin",
+          "year": "1888"
+        }
+      ]
+    },
+    "institution_founded_year": 1924,
+    "building": {
+      "year_built": 1924,
+      "architects": [
+        "George Applegarth"
+      ],
+      "square_feet": null,
+      "scope_note": "No reliable current whole-building area was located.",
+      "history": "The Beaux-Arts museum opened in 1924 as a memorial to California soldiers and was modeled on Paris's Palais de la Légion d'Honneur."
+    },
+    "metrics": {
+      "annual_visitors": 406265,
+      "attendance_year": 2025
+    },
+    "financial_value": null,
+    "sources": [
+      {
+        "url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+        "supports": [
+          "ranking",
+          "metrics"
+        ],
+        "note": "Attendance is reported separately beneath the Fine Arts Museums of San Francisco survey row.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.famsf.org/visit/legion-of-honor",
+        "supports": [
+          "location.address",
+          "admission",
+          "collection.summary"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://shop.famsf.org/collections/legion-of-honor-permanent-collection",
+        "supports": [
+          "collection.notable_artists",
+          "collection.notable_works",
+          "building"
+        ],
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
+  },
+  {
+    "id": "met-cloisters",
+    "rank": 25,
+    "title": "The Met Cloisters",
+    "value": "281,807 visitors in 2025 (separately reported campus of Art Newspaper global rank 5)",
+    "institution_type": "Medieval art museum",
+    "website": "https://www.metmuseum.org/plan-your-visit/met-cloisters",
+    "ranking": {
+      "selection_tier": "attendance_survey",
+      "source_name": "The Art Newspaper Top 150 Museums 2025",
+      "source_url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+      "source_rank": 5,
+      "metric": "annual_visitors",
+      "metric_value": 281807,
+      "metric_year": 2025
+    },
+    "location": {
+      "address": "99 Margaret Corbin Drive",
+      "city": "New York",
+      "state": "NY",
+      "postal_code": "10040",
+      "coordinates": {
+        "lat": 40.864863,
+        "lng": -73.931727
+      },
+      "geocode_provider": "Wikidata",
+      "geocode_crs": "WGS84 (EPSG:4326)",
+      "geocode_source_url": "https://www.wikidata.org/wiki/Q1138030",
+      "geocoded_at": "2026-07-21"
+    },
+    "nearby_hotel": {
+      "name": "Hotel Moca NYC",
+      "address": "505 West 181st Street, New York, NY 10033",
+      "coordinates": {
+        "lat": 40.8485678,
+        "lng": -73.9312826
+      },
+      "distance_miles": 1.126,
+      "source_url": "https://www.openstreetmap.org/way/275085314",
+      "verified_at": "2026-07-21"
+    },
+    "admission": {
+      "adult_general_usd": 30,
+      "pricing_note": "Adult general admission is $30 and includes the Met's locations; New York State residents and eligible local students may pay what they wish.",
+      "as_of": "2026-07-21",
+      "source_url": "https://www.metmuseum.org/plan-your-visit/met-cloisters"
+    },
+    "collection": {
+      "summary": "Approximately 2,000 works of medieval European art, with particular strengths from the 12th through the 15th centuries.",
+      "object_count": 2000,
+      "notable_artists": [
+        "Robert Campin",
+        "Hans Memling",
+        "Jean Pucelle"
+      ],
+      "notable_works": [
+        {
+          "title": "The Unicorn Rests in a Garden",
+          "artist": "South Netherlandish workshop",
+          "year": "1495–1505"
+        }
+      ]
+    },
+    "institution_founded_year": 1938,
+    "building": {
+      "year_built": 1938,
+      "architects": [
+        "Charles Collens"
+      ],
+      "square_feet": null,
+      "scope_note": "No reliable current whole-building area was located.",
+      "history": "The branch opened in 1938 in a purpose-built complex incorporating architectural elements from medieval European cloisters."
+    },
+    "metrics": {
+      "annual_visitors": 281807,
+      "attendance_year": 2025
+    },
+    "financial_value": null,
+    "sources": [
+      {
+        "url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+        "supports": [
+          "ranking",
+          "metrics"
+        ],
+        "note": "Attendance is reported separately beneath The Metropolitan Museum of Art survey row.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.metmuseum.org/plan-your-visit/met-cloisters",
+        "supports": [
+          "location.address",
+          "admission",
+          "collection.summary"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.metmuseum.org/about-the-met/history",
+        "supports": [
+          "institution_founded_year",
+          "building"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.metmuseum.org/exhibitions/listings/2013/search-for-the-unicorn",
+        "supports": [
+          "collection.notable_artists",
+          "collection.notable_works"
+        ],
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
+  },
+  {
+    "id": "getty-villa",
+    "rank": 26,
+    "title": "Getty Villa Museum",
+    "value": "188,952 visitors in 2025 (separately reported campus of Art Newspaper global rank 58)",
+    "institution_type": "Ancient Greek, Roman, and Etruscan art museum",
+    "website": "https://www.getty.edu/visit/villa/",
+    "ranking": {
+      "selection_tier": "attendance_survey",
+      "source_name": "The Art Newspaper Top 150 Museums 2025",
+      "source_url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+      "source_rank": 58,
+      "metric": "annual_visitors",
+      "metric_value": 188952,
+      "metric_year": 2025
+    },
+    "location": {
+      "address": "17985 Pacific Coast Highway",
+      "city": "Pacific Palisades",
+      "state": "CA",
+      "postal_code": "90272",
+      "coordinates": {
+        "lat": 34.045,
+        "lng": -118.565
+      },
+      "geocode_provider": "Wikidata",
+      "geocode_crs": "WGS84 (EPSG:4326)",
+      "geocode_source_url": "https://www.wikidata.org/wiki/Q180401",
+      "geocoded_at": "2026-07-21"
+    },
+    "nearby_hotel": {
+      "name": "Brentwood Inn",
+      "address": "12200 West Sunset Boulevard, Los Angeles, CA 90049",
+      "coordinates": {
+        "lat": 34.0581928,
+        "lng": -118.4781766
+      },
+      "distance_miles": 5.053,
+      "source_url": "https://www.openstreetmap.org/way/422494620",
+      "verified_at": "2026-07-21"
+    },
+    "admission": {
+      "adult_general_usd": 0,
+      "pricing_note": "Admission is free, but a timed-entry reservation is required; parking fees apply.",
+      "as_of": "2026-07-21",
+      "source_url": "https://www.getty.edu/visit/villa/"
+    },
+    "collection": {
+      "summary": "Ancient Greek, Roman, and Etruscan art displayed in a re-created Roman country house setting.",
+      "object_count": null,
+      "notable_artists": [
+        "Euphronios",
+        "Brygos Painter"
+      ],
+      "notable_works": [
+        {
+          "title": "Victorious Youth",
+          "artist": "Unknown Greek sculptor",
+          "year": "300–100 BCE"
+        }
+      ]
+    },
+    "institution_founded_year": 1954,
+    "building": {
+      "year_built": 1974,
+      "architects": [
+        "Langdon & Wilson",
+        "Norman Neuerburg",
+        "Machado Silvetti"
+      ],
+      "square_feet": null,
+      "scope_note": "The original Villa opened in 1974 and reopened after renovation in 2006; no reliable whole-building area was located.",
+      "history": "Modeled after the Villa dei Papiri at Herculaneum, the museum opened in 1974 and was renovated and re-landscaped for its 2006 reopening."
+    },
+    "metrics": {
+      "annual_visitors": 188952,
+      "attendance_year": 2025
+    },
+    "financial_value": null,
+    "sources": [
+      {
+        "url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+        "supports": [
+          "ranking",
+          "metrics"
+        ],
+        "note": "Attendance is reported separately beneath the J. Paul Getty Museum survey row.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.getty.edu/visit/villa/",
+        "supports": [
+          "location.address",
+          "admission"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.getty.edu/museum/antiquities/",
+        "supports": [
+          "collection.summary",
+          "collection.notable_artists",
+          "collection.notable_works"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.getty.edu/visit/villa/top-things-to-do/architecture/",
+        "supports": [
+          "building"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.getty.edu/research/collections/static/pdf/IA10019.pdf",
+        "supports": [
+          "institution_founded_year",
+          "building.history"
+        ],
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
+  },
+  {
+    "id": "renwick-gallery",
+    "rank": 27,
+    "title": "Renwick Gallery",
+    "value": "177,073 visitors in 2025 (separately reported campus of Art Newspaper global rank 80)",
+    "institution_type": "American craft and decorative arts museum",
+    "website": "https://americanart.si.edu/visit/renwick",
+    "ranking": {
+      "selection_tier": "attendance_survey",
+      "source_name": "The Art Newspaper Top 150 Museums 2025",
+      "source_url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+      "source_rank": 80,
+      "metric": "annual_visitors",
+      "metric_value": 177073,
+      "metric_year": 2025
+    },
+    "location": {
+      "address": "Pennsylvania Avenue at 17th Street NW",
+      "city": "Washington",
+      "state": "DC",
+      "postal_code": "20006",
+      "coordinates": {
+        "lat": 38.89914,
+        "lng": -77.039032
+      },
+      "geocode_provider": "Wikidata",
+      "geocode_crs": "WGS84 (EPSG:4326)",
+      "geocode_source_url": "https://www.wikidata.org/wiki/Q876537",
+      "geocoded_at": "2026-07-21"
+    },
+    "nearby_hotel": {
+      "name": "AKA White House",
+      "address": "1710 H Street NW, Washington, DC 20006",
+      "coordinates": {
+        "lat": 38.899927,
+        "lng": -77.0403545
+      },
+      "distance_miles": 0.09,
+      "source_url": "https://www.openstreetmap.org/way/66420126",
+      "verified_at": "2026-07-21"
+    },
+    "admission": {
+      "adult_general_usd": 0,
+      "pricing_note": "Admission is free; timed passes may be used for unusually popular exhibitions.",
+      "as_of": "2026-07-21",
+      "source_url": "https://americanart.si.edu/visit/renwick"
+    },
+    "collection": {
+      "summary": "Nearly 2,000 works of contemporary craft and decorative art in wood, fiber, metal, glass, and ceramic media.",
+      "object_count": 2000,
+      "notable_artists": [
+        "Dale Chihuly",
+        "Sam Maloof",
+        "Albert Paley",
+        "Wendell Castle"
+      ],
+      "notable_works": [
+        {
+          "title": "Ghost Clock",
+          "artist": "Wendell Castle",
+          "year": "1985"
+        }
+      ]
+    },
+    "institution_founded_year": 1972,
+    "building": {
+      "year_built": 1874,
+      "architects": [
+        "James Renwick Jr."
+      ],
+      "square_feet": null,
+      "scope_note": "No reliable current whole-building area was located.",
+      "history": "Completed in 1874 as Washington's first purpose-built art museum, the building became the Smithsonian American Art Museum's craft branch in 1972 and was renovated from 2013 to 2015."
+    },
+    "metrics": {
+      "annual_visitors": 177073,
+      "attendance_year": 2025
+    },
+    "financial_value": null,
+    "sources": [
+      {
+        "url": "https://www.ccb.pt/wp-content/uploads/2026/04/TOP150ArtNewspaper1.pdf",
+        "supports": [
+          "ranking",
+          "metrics"
+        ],
+        "note": "Attendance is reported separately beneath the Smithsonian American Art Museum survey row.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://americanart.si.edu/visit/renwick",
+        "supports": [
+          "location.address",
+          "admission"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://americanart.si.edu/about/history/renwick-architecture",
+        "supports": [
+          "collection.summary",
+          "collection.object_count",
+          "institution_founded_year",
+          "building"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://americanart.si.edu/artwork/ghost-clock-31977",
+        "supports": [
+          "collection.notable_artists",
+          "collection.notable_works"
+        ],
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
+  },
+  {
+    "id": "detroit-institute-arts",
+    "rank": 28,
+    "title": "Detroit Institute of Arts",
+    "value": "Washington Post critics' rank 9 in 2024",
+    "institution_type": "Encyclopedic art museum",
+    "website": "https://dia.org/",
+    "ranking": {
+      "selection_tier": "supplemental_critics_ranking",
+      "source_name": "The Washington Post 20 Best Art Museums in America",
+      "source_url": "https://www.washingtonpost.com/entertainment/art/2024/10/24/20-best-art-museums-in-america/",
+      "source_rank": 9,
+      "metric": "critics_rank",
+      "metric_value": 9,
+      "metric_year": 2024
+    },
+    "location": {
+      "address": "5200 Woodward Avenue",
+      "city": "Detroit",
+      "state": "MI",
+      "postal_code": "48202",
+      "coordinates": {
+        "lat": 42.359444,
+        "lng": -83.064722
+      },
+      "geocode_provider": "Wikidata",
+      "geocode_crs": "WGS84 (EPSG:4326)",
+      "geocode_source_url": "https://www.wikidata.org/wiki/Q1201549",
+      "geocoded_at": "2026-07-21"
+    },
+    "nearby_hotel": {
+      "name": "The Inn on Ferry Street",
+      "address": "84 East Ferry Street, Detroit, MI 48202",
+      "coordinates": {
+        "lat": 42.3613725,
+        "lng": -83.0654804
+      },
+      "distance_miles": 0.139,
+      "source_url": "https://www.openstreetmap.org/way/852562166",
+      "verified_at": "2026-07-21"
+    },
+    "admission": {
+      "adult_general_usd": 20,
+      "pricing_note": "Adult general admission is $20 for nonresidents; residents of Wayne, Oakland, and Macomb counties receive free general admission.",
+      "as_of": "2026-07-21",
+      "source_url": "https://dia.org/tickets"
+    },
+    "collection": {
+      "summary": "More than 65,000 works spanning cultures and eras, with strengths in American, European, African, Asian, and Indigenous art.",
+      "object_count": 65000,
+      "notable_artists": [
+        "Diego Rivera",
+        "Vincent van Gogh",
+        "Auguste Rodin",
+        "Pieter Bruegel the Elder"
+      ],
+      "notable_works": [
+        {
+          "title": "Detroit Industry Murals",
+          "artist": "Diego Rivera",
+          "year": "1932–1933"
+        }
+      ]
+    },
+    "institution_founded_year": 1885,
+    "building": {
+      "year_built": 1927,
+      "architects": [
+        "Paul Philippe Cret",
+        "Gunnar Birkerts"
+      ],
+      "square_feet": 658000,
+      "scope_note": "Area is for the museum complex after its wings and 2007 renovation.",
+      "history": "The Beaux-Arts building opened in 1927; later Gunnar Birkerts wings and a 2007 renovation expanded and reorganized the museum."
+    },
+    "metrics": {
+      "annual_visitors": null,
+      "attendance_year": null
+    },
+    "financial_value": null,
+    "sources": [
+      {
+        "url": "https://www.washingtonpost.com/entertainment/art/2024/10/24/20-best-art-museums-in-america/",
+        "supports": [
+          "ranking"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://dia.org/tickets",
+        "supports": [
+          "location.address",
+          "admission"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://dia.org/collection",
+        "supports": [
+          "collection.summary",
+          "collection.notable_artists",
+          "collection.notable_works"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://dia.org/sites/default/files/2024-09/Detroit%20Institute%20of%20Arts%20Fact%20Sheet%20%281%29.pdf",
+        "supports": [
+          "collection.object_count",
+          "building.square_feet"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://dia.org/about",
+        "supports": [
+          "institution_founded_year",
+          "building"
+        ],
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
+  },
+  {
+    "id": "saint-louis-art-museum",
+    "rank": 29,
+    "title": "Saint Louis Art Museum",
+    "value": "Washington Post critics' rank 12 in 2024",
+    "institution_type": "Encyclopedic art museum",
+    "website": "https://www.slam.org/",
+    "ranking": {
+      "selection_tier": "supplemental_critics_ranking",
+      "source_name": "The Washington Post 20 Best Art Museums in America",
+      "source_url": "https://www.washingtonpost.com/entertainment/art/2024/10/24/20-best-art-museums-in-america/",
+      "source_rank": 12,
+      "metric": "critics_rank",
+      "metric_value": 12,
+      "metric_year": 2024
+    },
+    "location": {
+      "address": "One Fine Arts Drive",
+      "city": "St. Louis",
+      "state": "MO",
+      "postal_code": "63110",
+      "coordinates": {
+        "lat": 38.639306,
+        "lng": -90.294491
+      },
+      "geocode_provider": "Wikidata",
+      "geocode_crs": "WGS84 (EPSG:4326)",
+      "geocode_source_url": "https://www.wikidata.org/wiki/Q1760539",
+      "geocoded_at": "2026-07-21"
+    },
+    "nearby_hotel": {
+      "name": "The Cheshire",
+      "address": "6300 Clayton Road, Richmond Heights, MO 63117",
+      "coordinates": {
+        "lat": 38.6332195,
+        "lng": -90.3069392
+      },
+      "distance_miles": 0.793,
+      "source_url": "https://www.openstreetmap.org/way/374955859",
+      "verified_at": "2026-07-21"
+    },
+    "admission": {
+      "adult_general_usd": 0,
+      "pricing_note": "General admission is free; some special exhibitions require tickets.",
+      "as_of": "2026-07-21",
+      "source_url": "https://www.slam.org/hours-location-parking/"
+    },
+    "collection": {
+      "summary": "More than 38,000 objects spanning 5,000 years and cultures from six continents.",
+      "object_count": 38000,
+      "notable_artists": [
+        "El Anatsui",
+        "Mary Cassatt",
+        "Vincent van Gogh",
+        "Max Beckmann"
+      ],
+      "notable_works": [
+        {
+          "title": "Fading Cloth",
+          "artist": "El Anatsui",
+          "year": "2005"
+        }
+      ]
+    },
+    "institution_founded_year": 1879,
+    "building": {
+      "year_built": 1904,
+      "architects": [
+        "Cass Gilbert",
+        "David Chipperfield Architects"
+      ],
+      "square_feet": null,
+      "scope_note": "The 1904 main building received a major East Building addition in 2013; no reliable current whole-building area was located.",
+      "history": "The Cass Gilbert building was created for the 1904 World's Fair and became the museum's permanent home; David Chipperfield's East Building opened in 2013."
+    },
+    "metrics": {
+      "annual_visitors": null,
+      "attendance_year": null
+    },
+    "financial_value": null,
+    "sources": [
+      {
+        "url": "https://www.washingtonpost.com/entertainment/art/2024/10/24/20-best-art-museums-in-america/",
+        "supports": [
+          "ranking"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.slam.org/hours-location-parking/",
+        "supports": [
+          "location.address",
+          "admission"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.slam.org/explore-the-collection/collection-highlights/",
+        "supports": [
+          "collection.summary",
+          "collection.notable_artists",
+          "collection.notable_works"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.slam.org/blog/impact-of-1904-worlds-fair-lives-on-in-museum-collection/",
+        "supports": [
+          "collection.object_count",
+          "building"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.slam.org/blog/top-10-st-louis-connections-in-the-collection/",
+        "supports": [
+          "institution_founded_year",
+          "building.history"
+        ],
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
+  },
+  {
+    "id": "baltimore-museum-art",
+    "rank": 30,
+    "title": "Baltimore Museum of Art",
+    "value": "Washington Post critics' rank 16 in 2024",
+    "institution_type": "Encyclopedic art museum",
+    "website": "https://artbma.org/",
+    "ranking": {
+      "selection_tier": "supplemental_critics_ranking",
+      "source_name": "The Washington Post 20 Best Art Museums in America",
+      "source_url": "https://www.washingtonpost.com/entertainment/art/2024/10/24/20-best-art-museums-in-america/",
+      "source_rank": 16,
+      "metric": "critics_rank",
+      "metric_value": 16,
+      "metric_year": 2024
+    },
+    "location": {
+      "address": "10 Art Museum Drive",
+      "city": "Baltimore",
+      "state": "MD",
+      "postal_code": "21218",
+      "coordinates": {
+        "lat": 39.325996,
+        "lng": -76.619503
+      },
+      "geocode_provider": "Wikidata",
+      "geocode_crs": "WGS84 (EPSG:4326)",
+      "geocode_source_url": "https://www.wikidata.org/wiki/Q377579",
+      "geocoded_at": "2026-07-21"
+    },
+    "nearby_hotel": {
+      "name": "Inn at the Colonnade Baltimore",
+      "address": "4 West University Parkway, Baltimore, MD 21218-2306",
+      "coordinates": {
+        "lat": 39.3340113,
+        "lng": -76.6196719
+      },
+      "distance_miles": 0.554,
+      "source_url": "https://www.openstreetmap.org/node/9117086441",
+      "verified_at": "2026-07-21"
+    },
+    "admission": {
+      "adult_general_usd": 0,
+      "pricing_note": "General admission is free; advance reservations may be requested for some visits or programs.",
+      "as_of": "2026-07-21",
+      "source_url": "https://artbma.org/plan-your-visit/"
+    },
+    "collection": {
+      "summary": "More than 95,000 objects, including the world's largest public collection of works by Henri Matisse.",
+      "object_count": 95000,
+      "notable_artists": [
+        "Henri Matisse",
+        "Paul Cézanne",
+        "Georgia O'Keeffe",
+        "Andy Warhol"
+      ],
+      "notable_works": [
+        {
+          "title": "Large Reclining Nude",
+          "artist": "Henri Matisse",
+          "year": "1935"
+        }
+      ]
+    },
+    "institution_founded_year": 1914,
+    "building": {
+      "year_built": 1929,
+      "architects": [
+        "John Russell Pope"
+      ],
+      "square_feet": 210000,
+      "scope_note": "Area is for the museum building described in the institution's official fact material.",
+      "history": "Founded in 1914, the museum moved into its John Russell Pope-designed neoclassical building in 1929."
+    },
+    "metrics": {
+      "annual_visitors": null,
+      "attendance_year": null
+    },
+    "financial_value": null,
+    "sources": [
+      {
+        "url": "https://www.washingtonpost.com/entertainment/art/2024/10/24/20-best-art-museums-in-america/",
+        "supports": [
+          "ranking"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://artbma.org/plan-your-visit/",
+        "supports": [
+          "location.address",
+          "admission"
+        ],
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://artbma.org/press-release/the-bma-and-the-rose-art-museum-at-brandeis-university-announce-collaboration-on-u-s-pavilion-presentation-of-mark-bradford-at-2017-venice-biennale/",
+        "supports": [
+          "collection.summary",
+          "collection.object_count",
+          "collection.notable_artists",
+          "collection.notable_works",
+          "institution_founded_year",
+          "building"
+        ],
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
+  }
+];

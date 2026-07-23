@@ -8,12 +8,15 @@ dataset without adding a database, server, build step, or runtime dependency.
 
 Open `HTML/shadcn/index.html` directly in a browser. The prototype plots the 30
 largest U.S. central public-library buildings by reported FY 2024 floor area
-and synchronizes map markers with the searchable ranked list.
+and synchronizes map markers with the sortable ranked list and full record
+detail views.
 
 The canonical records remain in `data/mappable-records1.json`, with their
 contract in `data/mappable-records1.schema.json`. `HTML/shadcn/libraries-data.js`
 is a generated browser-ready snapshot of those records so the prototype works
 from `file://` without a server or runtime data request; do not edit it by hand.
+Regenerate it with `node scripts/build-browser-data.mjs` after changing the
+canonical records.
 The MapLibre 5.24.0 renderer is bundled locally under `HTML/shadcn/vendor/`.
 The geographically accurate OpenFreeMap Liberty basemap requires internet
 access for its remote style and tiles and retains visible map attribution.
