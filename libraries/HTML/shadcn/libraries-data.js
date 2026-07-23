@@ -18,23 +18,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "BOSTON PUBLIC LIBRARY",
-    "square_feet": 970000,
-    "public_service_hours": 6760,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MA0035-002",
+      "system_id": "MA0035",
+      "system_name": "BOSTON PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 970000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 970000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 6760,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 25
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 650706,
       "registered_users": 628526,
       "print_materials": 6721731,
       "total_physical_items": 6796847,
       "annual_visits": 1368865,
+      "physical_circulation": 2241712,
       "visits_reporting_method": "CT",
-      "physical_circulation": 2241712
-    }
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 2,
@@ -54,23 +111,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "CHICAGO PUBLIC LIBRARY",
-    "square_feet": 756000,
-    "public_service_hours": 3764,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IL0098-166",
+      "system_id": "IL0098",
+      "system_name": "CHICAGO PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 756000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 756000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3764,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2023",
+        "end": "12/31/2023"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 80
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 2746388,
       "registered_users": 663208,
       "print_materials": 4901210,
       "total_physical_items": 5371383,
       "annual_visits": 4871365,
+      "physical_circulation": 10607235,
       "visits_reporting_method": "CT",
-      "physical_circulation": 10607235
-    }
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 3,
@@ -90,24 +204,78 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "MANUAL"
       }
     },
-    "system_name": "NEW YORK PUBLIC LIBRARY, THE BRANCH LIBRARIES",
-    "square_feet": 660000,
-    "public_service_hours": 2912,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "NY0778-090",
+      "system_id": "NY0778",
+      "system_name": "NEW YORK PUBLIC LIBRARY, THE BRANCH LIBRARIES",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 660000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 660000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2912,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 84
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 3662652,
       "registered_users": 2241355,
       "print_materials": 25319115,
       "total_physical_items": 27377787,
       "annual_visits": 12325494,
-      "visits_reporting_method": "CT",
       "annual_circulation": 17118102,
-      "physical_circulation": 10069015
-    }
+      "physical_circulation": 10069015,
+      "visits_reporting_method": "CT"
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 4,
@@ -127,24 +295,78 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "DALLAS PUBLIC LIBRARY",
-    "square_feet": 646733,
-    "public_service_hours": 2491,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "TX0003-002",
+      "system_id": "TX0003",
+      "system_name": "DALLAS PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 646733,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 646733,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2491,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "10/01/2023",
+        "end": "09/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 29
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 1302868,
       "registered_users": 688257,
       "print_materials": 1652469,
       "total_physical_items": 1911762,
       "annual_visits": 466700,
-      "visits_reporting_method": "ES",
       "annual_circulation": 5744762,
-      "physical_circulation": 3918978
-    }
+      "physical_circulation": 3918978,
+      "visits_reporting_method": "ES"
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 5,
@@ -164,24 +386,78 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "CINCINNATI AND HAMILTON COUNTY PUBLIC LIBRARY",
-    "square_feet": 550000,
-    "public_service_hours": 2808,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "OH0049-002",
+      "system_id": "OH0049",
+      "system_name": "CINCINNATI AND HAMILTON COUNTY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 550000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 550000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2808,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 40
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 830639,
       "registered_users": 396190,
       "print_materials": 3880302,
       "total_physical_items": 4406377,
       "annual_visits": 4091256,
-      "visits_reporting_method": "ES",
       "annual_circulation": 20126186,
-      "physical_circulation": 12740499
-    }
+      "physical_circulation": 12740499,
+      "visits_reporting_method": "ES"
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 6,
@@ -205,20 +481,74 @@ window.MAPPABLE_LIBRARIES = [
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "DENVER PUBLIC LIBRARY",
-    "square_feet": 540315,
-    "public_service_hours": 1150,
-    "weeks_open": 46,
+    "library": {
+      "outlet_id": "CO0034-002",
+      "system_id": "CO0034",
+      "system_name": "DENVER PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 540315,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 540315,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 1150,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 46,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 26
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 715636,
       "registered_users": 376489,
       "print_materials": 2654033,
       "total_physical_items": 3193738,
       "annual_visits": 2553746,
-      "visits_reporting_method": "CT",
       "annual_circulation": 8695807,
-      "physical_circulation": 4191877
-    }
+      "physical_circulation": 4191877,
+      "visits_reporting_method": "CT"
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 7,
@@ -238,24 +568,78 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "T",
-        "score": 100.0,
+        "score": 100,
         "match_type": "MANUAL"
       }
     },
-    "system_name": "LOS ANGELES PUBLIC LIBRARY",
-    "square_feet": 538802,
-    "public_service_hours": 2978,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CA0063-002",
+      "system_id": "CA0063",
+      "system_name": "LOS ANGELES PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 538802,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 538802,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2978,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 72
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 3814318,
       "registered_users": 3205992,
       "print_materials": 5780333,
       "total_physical_items": 6281049,
       "annual_visits": 5747048,
-      "visits_reporting_method": "CT",
       "annual_circulation": 25569226,
-      "physical_circulation": 7657537
-    }
+      "physical_circulation": 7657537,
+      "visits_reporting_method": "CT"
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 8,
@@ -275,24 +659,78 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "CLEVELAND PUBLIC LIBRARY",
-    "square_feet": 529204,
-    "public_service_hours": 2496,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "OH0051-002",
+      "system_id": "OH0051",
+      "system_name": "CLEVELAND PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 529204,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 529204,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2496,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 27
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 374557,
       "registered_users": 302029,
       "print_materials": 3127982,
       "total_physical_items": 3503341,
       "annual_visits": 1498276,
-      "visits_reporting_method": "ES",
       "annual_circulation": 5838365,
-      "physical_circulation": 2795337
-    }
+      "physical_circulation": 2795337,
+      "visits_reporting_method": "ES"
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 9,
@@ -312,24 +750,78 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "SAN DIEGO PUBLIC LIBRARY",
-    "square_feet": 497652,
-    "public_service_hours": 2611,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CA0113-002",
+      "system_id": "CA0113",
+      "system_name": "SAN DIEGO PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 497652,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 497652,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2611,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 35
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 1385379,
       "registered_users": 312067,
       "print_materials": 2004579,
       "total_physical_items": 2271452,
       "annual_visits": 5058242,
-      "visits_reporting_method": "CT",
       "annual_circulation": 6160448,
-      "physical_circulation": 5367698
-    }
+      "physical_circulation": 5367698,
+      "visits_reporting_method": "CT"
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 10,
@@ -349,24 +841,78 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "SAN JOSE PUBLIC LIBRARY",
-    "square_feet": 475000,
-    "public_service_hours": 3610,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CA0115-002",
+      "system_id": "CA0115",
+      "system_name": "SAN JOSE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 475000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 475000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3610,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 24
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 969491,
       "registered_users": 762169,
       "print_materials": 1660974,
       "total_physical_items": 1950861,
       "annual_visits": 3679282,
-      "visits_reporting_method": "CT",
       "annual_circulation": 7917002,
-      "physical_circulation": 5758753
-    }
+      "physical_circulation": 5758753,
+      "visits_reporting_method": "CT"
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 11,
@@ -386,24 +932,78 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "MILWAUKEE PUBLIC LIBRARY",
-    "square_feet": 457919,
-    "public_service_hours": 2912,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "WI0199-016",
+      "system_id": "WI0199",
+      "system_name": "MILWAUKEE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 457919,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 457919,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2912,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 12
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 577895,
       "registered_users": 188612,
       "print_materials": 1959090,
       "total_physical_items": 2369877,
       "annual_visits": 1157773,
-      "visits_reporting_method": "CT",
       "annual_circulation": 1602290,
-      "physical_circulation": 1075242
-    }
+      "physical_circulation": 1075242,
+      "visits_reporting_method": "CT"
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 12,
@@ -423,24 +1023,78 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "DISTRICT OF COLUMBIA PUBLIC LIBRARY",
-    "square_feet": 440000,
-    "public_service_hours": 3344,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "DC0001-002",
+      "system_id": "DC0001",
+      "system_name": "DISTRICT OF COLUMBIA PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 440000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 440000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3344,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "10/01/2023",
+        "end": "09/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 26
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 702250,
       "registered_users": 432625,
       "print_materials": 1095180,
       "total_physical_items": 1202941,
       "annual_visits": 3374454,
-      "visits_reporting_method": "CT",
       "annual_circulation": 6636827,
-      "physical_circulation": 3836880
-    }
+      "physical_circulation": 3836880,
+      "visits_reporting_method": "CT"
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 13,
@@ -460,24 +1114,78 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "DETROIT PUBLIC LIBRARY",
-    "square_feet": 420000,
-    "public_service_hours": 2440,
-    "weeks_open": 48,
+    "library": {
+      "outlet_id": "MI0083-002",
+      "system_id": "MI0083",
+      "system_name": "DETROIT PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 420000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 420000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2440,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 48,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 21
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 639111,
       "registered_users": 138683,
       "print_materials": 2449507,
       "total_physical_items": 2618905,
       "annual_visits": 343443,
-      "visits_reporting_method": "CT",
       "annual_circulation": 316635,
-      "physical_circulation": 169675
-    }
+      "physical_circulation": 169675,
+      "visits_reporting_method": "CT"
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 14,
@@ -497,24 +1205,78 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "HENNEPIN COUNTY LIBRARY",
-    "square_feet": 406354,
-    "public_service_hours": 3281,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MN0041-031",
+      "system_id": "MN0041",
+      "system_name": "HENNEPIN COUNTY LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 406354,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 406354,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3281,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 40
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 1297847,
       "registered_users": 646260,
       "print_materials": 3822555,
       "total_physical_items": 4084595,
       "annual_visits": 4791011,
-      "visits_reporting_method": "CT",
       "annual_circulation": 17800315,
-      "physical_circulation": 11495799
-    }
+      "physical_circulation": 11495799,
+      "visits_reporting_method": "CT"
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 15,
@@ -534,24 +1296,78 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "BUFFALO AND ERIE COUNTY PUBLIC LIBRARY",
-    "square_feet": 403000,
-    "public_service_hours": 3153,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "NY0005-002",
+      "system_id": "NY0005",
+      "system_name": "BUFFALO AND ERIE COUNTY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 403000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 403000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3153,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 8
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 954236,
       "registered_users": 116018,
       "print_materials": 1930526,
       "total_physical_items": 2128598,
       "annual_visits": 695381,
-      "visits_reporting_method": "CT",
       "annual_circulation": 3219528,
-      "physical_circulation": 1009077
-    }
+      "physical_circulation": 1009077,
+      "visits_reporting_method": "CT"
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 16,
@@ -571,24 +1387,78 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "SAN FRANCISCO PUBLIC LIBRARY",
-    "square_feet": 376000,
-    "public_service_hours": 3018,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CA0114-002",
+      "system_id": "CA0114",
+      "system_name": "SAN FRANCISCO PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 376000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 376000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3018,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 27
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 843071,
       "registered_users": 455211,
       "print_materials": 2208142,
       "total_physical_items": 2433568,
       "annual_visits": 3976556,
-      "visits_reporting_method": "CT",
       "annual_circulation": 14036159,
-      "physical_circulation": 7533779
-    }
+      "physical_circulation": 7533779,
+      "visits_reporting_method": "CT"
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 17,
@@ -608,24 +1478,78 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "ALLEN COUNTY PUBLIC LIBRARY",
-    "square_feet": 367000,
-    "public_service_hours": 3692,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IN0073-016",
+      "system_id": "IN0073",
+      "system_name": "ALLEN COUNTY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 367000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 367000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3692,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 13
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 385410,
       "registered_users": 199223,
       "print_materials": 2420702,
       "total_physical_items": 2608025,
       "annual_visits": 1711380,
-      "visits_reporting_method": "CT",
       "annual_circulation": 4634166,
-      "physical_circulation": 3226051
-    }
+      "physical_circulation": 3226051,
+      "visits_reporting_method": "CT"
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 18,
@@ -645,24 +1569,78 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "SEATTLE PUBLIC LIBRARY",
-    "square_feet": 362987,
-    "public_service_hours": 3136,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "WA0064-002",
+      "system_id": "WA0064",
+      "system_name": "SEATTLE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 362987,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 362987,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3136,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 26
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 797700,
       "registered_users": 401126,
       "print_materials": 1545133,
       "total_physical_items": 1819972,
       "annual_visits": 2937411,
-      "visits_reporting_method": "CT",
       "annual_circulation": 12869536,
-      "physical_circulation": 4464020
-    }
+      "physical_circulation": 4464020,
+      "visits_reporting_method": "CT"
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 19,
@@ -682,24 +1660,78 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "ENOCH PRATT FREE LIBRARY",
-    "square_feet": 349713,
-    "public_service_hours": 2672,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MD0003-002",
+      "system_id": "MD0003",
+      "system_name": "ENOCH PRATT FREE LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 349713,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 349713,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2672,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 21
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 576498,
       "registered_users": 233646,
       "print_materials": 2031082,
       "total_physical_items": 2177549,
       "annual_visits": 1192264,
-      "visits_reporting_method": "CT",
       "annual_circulation": 2417203,
-      "physical_circulation": 1258760
-    }
+      "physical_circulation": 1258760,
+      "visits_reporting_method": "CT"
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 20,
@@ -719,24 +1751,78 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "HOUSTON PUBLIC LIBRARY",
-    "square_feet": 333620,
-    "public_service_hours": 2301,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "TX0099-002",
+      "system_id": "TX0099",
+      "system_name": "HOUSTON PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 333620,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 333620,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2301,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 37
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 2314157,
       "registered_users": 1985591,
       "print_materials": 2194332,
       "total_physical_items": 2407847,
       "annual_visits": 2124114,
-      "visits_reporting_method": "CT",
       "annual_circulation": 6485839,
-      "physical_circulation": 3273923
-    }
+      "physical_circulation": 3273923,
+      "visits_reporting_method": "CT"
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 21,
@@ -756,24 +1842,78 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "MEMPHIS PUBLIC LIBRARY AND INFORMATION CENTER",
-    "square_feet": 330000,
-    "public_service_hours": 3060,
-    "weeks_open": 51,
+    "library": {
+      "outlet_id": "TN0134-025",
+      "system_id": "TN0134",
+      "system_name": "MEMPHIS PUBLIC LIBRARY AND INFORMATION CENTER",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 330000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 330000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3060,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 51,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 18
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 791686,
       "registered_users": 295299,
       "print_materials": 1279859,
       "total_physical_items": 1597988,
       "annual_visits": 906949,
-      "visits_reporting_method": "CT",
       "annual_circulation": 1212437,
-      "physical_circulation": 635938
-    }
+      "physical_circulation": 635938,
+      "visits_reporting_method": "CT"
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 22,
@@ -793,24 +1933,78 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "ROCHESTER PUBLIC LIBRARY",
-    "square_feet": 330000,
-    "public_service_hours": 2661,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "NY0521-002",
+      "system_id": "NY0521",
+      "system_name": "ROCHESTER PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 330000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 330000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2661,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 10
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 211328,
       "registered_users": 96229,
       "print_materials": 723309,
       "total_physical_items": 874840,
       "annual_visits": 843064,
-      "visits_reporting_method": "CT",
       "annual_circulation": 1105014,
-      "physical_circulation": 764115
-    }
+      "physical_circulation": 764115,
+      "visits_reporting_method": "CT"
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 23,
@@ -830,23 +2024,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "JACKSONVILLE PUBLIC LIBRARY",
-    "square_feet": 323110,
-    "public_service_hours": 2673,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "FL0003-002",
+      "system_id": "FL0003",
+      "system_name": "JACKSONVILLE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 323110,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 323110,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2673,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "10/01/2023",
+        "end": "09/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 20
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 1062145,
       "registered_users": 354374,
       "print_materials": 1585412,
       "total_physical_items": 1759804,
       "annual_visits": 2218418,
+      "physical_circulation": 3831524,
       "visits_reporting_method": "CT",
-      "physical_circulation": 3831524
-    }
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 24,
@@ -866,24 +2117,78 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "BROOKLYN PUBLIC LIBRARY",
-    "square_feet": 300000,
-    "public_service_hours": 3303,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "NY0004-002",
+      "system_id": "NY0004",
+      "system_name": "BROOKLYN PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 300000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 300000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3303,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 53
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 2736074,
       "registered_users": 658711,
       "print_materials": 2508144,
       "total_physical_items": 2689532,
       "annual_visits": 5989987,
-      "visits_reporting_method": "CT",
       "annual_circulation": 9378193,
-      "physical_circulation": 5603039
-    }
+      "physical_circulation": 5603039,
+      "visits_reporting_method": "CT"
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 25,
@@ -903,24 +2208,78 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "NASHVILLE PUBLIC LIBRARY",
-    "square_feet": 300000,
-    "public_service_hours": 2749,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "TN0135-003",
+      "system_id": "TN0135",
+      "system_name": "NASHVILLE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 300000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 300000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2749,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 20
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 712334,
       "registered_users": 305583,
       "print_materials": 1113960,
       "total_physical_items": 1310804,
       "annual_visits": 2760197,
-      "visits_reporting_method": "CT",
       "annual_circulation": 8422756,
-      "physical_circulation": 3301895
-    }
+      "physical_circulation": 3301895,
+      "visits_reporting_method": "CT"
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 26,
@@ -944,20 +2303,74 @@ window.MAPPABLE_LIBRARIES = [
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "INDIANAPOLIS PUBLIC LIBRARY",
-    "square_feet": 299300,
-    "public_service_hours": 2808,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IN0210-034",
+      "system_id": "IN0210",
+      "system_name": "INDIANAPOLIS PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 299300,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 299300,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2808,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 24
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 963251,
       "registered_users": 289752,
       "print_materials": 1547121,
       "total_physical_items": 1830706,
       "annual_visits": 2380569,
-      "visits_reporting_method": "CT",
       "annual_circulation": 8737603,
-      "physical_circulation": 5519056
-    }
+      "physical_circulation": 5519056,
+      "visits_reporting_method": "CT"
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 27,
@@ -977,23 +2390,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "ORANGE COUNTY LIBRARY DISTRICT",
-    "square_feet": 295000,
-    "public_service_hours": 2793,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "FL0005-002",
+      "system_id": "FL0005",
+      "system_name": "ORANGE COUNTY LIBRARY DISTRICT",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 295000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 295000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2793,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "10/01/2023",
+        "end": "09/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 14
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 1457330,
       "registered_users": 356440,
       "print_materials": 1025603,
       "total_physical_items": 1260973,
       "annual_visits": 2224870,
+      "physical_circulation": 4039134,
       "visits_reporting_method": "CT",
-      "physical_circulation": 4039134
-    }
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 28,
@@ -1013,24 +2483,78 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "FREE LIBRARY OF PHILADELPHIA",
-    "square_feet": 286556,
-    "public_service_hours": 2567,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "PA0385-002",
+      "system_id": "PA0385",
+      "system_name": "FREE LIBRARY OF PHILADELPHIA",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 286556,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 286556,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2567,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 53
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 1603797,
       "registered_users": 589660,
       "print_materials": 2479559,
       "total_physical_items": 2861472,
       "annual_visits": 1636872,
-      "visits_reporting_method": "CT",
       "annual_circulation": 5834698,
-      "physical_circulation": 1991155
-    }
+      "physical_circulation": 1991155,
+      "visits_reporting_method": "CT"
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 29,
@@ -1050,24 +2574,78 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "PHOENIX PUBLIC LIBRARY",
-    "square_feet": 280000,
-    "public_service_hours": 3016,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "AZ0035-002",
+      "system_id": "AZ0035",
+      "system_name": "PHOENIX PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 280000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 280000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3016,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 16
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "IG23",
+        "print_materials": "R_24",
+        "total_physical_items": "IT24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 1697696,
       "registered_users": 1284892,
       "print_materials": 873843,
       "total_physical_items": 1141672,
       "annual_visits": 2124498,
-      "visits_reporting_method": "CT",
       "annual_circulation": 10083835,
-      "physical_circulation": 4857704
-    }
+      "physical_circulation": 4857704,
+      "visits_reporting_method": "CT"
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 30,
@@ -1091,20 +2669,74 @@ window.MAPPABLE_LIBRARIES = [
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "TOLEDO-LUCAS COUNTY PUBLIC LIBRARY",
-    "square_feet": 271000,
-    "public_service_hours": 3276,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "OH0215-002",
+      "system_id": "OH0215",
+      "system_name": "TOLEDO-LUCAS COUNTY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 271000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 271000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3276,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 19
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 428505,
       "registered_users": 261087,
       "print_materials": 1190282,
       "total_physical_items": 1476165,
       "annual_visits": 2028520,
-      "visits_reporting_method": "ES",
       "annual_circulation": 4940529,
-      "physical_circulation": 3105392
-    }
+      "physical_circulation": 3105392,
+      "visits_reporting_method": "ES"
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 31,
@@ -1124,15 +2756,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "AKRON-SUMMIT CNTY PUBLIC LIBRARY",
-    "square_feet": 270000,
-    "public_service_hours": 3068,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "OH0002-002",
+      "system_id": "OH0002",
+      "system_name": "AKRON-SUMMIT CNTY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 270000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 270000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3068,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 18
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 381648,
       "registered_users": 281482,
       "print_materials": 961092,
@@ -1141,7 +2812,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 4593370,
       "physical_circulation": 3359807
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 32,
@@ -1161,15 +2847,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "MANUAL"
       }
     },
-    "system_name": "FULTON COUNTY LIBRARY SYSTEM",
-    "square_feet": 265155,
-    "public_service_hours": 2521,
-    "weeks_open": 48,
+    "library": {
+      "outlet_id": "GA0022-002",
+      "system_id": "GA0022",
+      "system_name": "FULTON COUNTY LIBRARY SYSTEM",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 265155,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 265155,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2521,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 48,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 33
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 1094693,
       "registered_users": 961785,
       "print_materials": 1083823,
@@ -1178,7 +2903,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 4321642,
       "physical_circulation": 2294295
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 33,
@@ -1198,23 +2938,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "BROWARD COUNTY LIBRARIES DIVISION",
-    "square_feet": 256000,
-    "public_service_hours": 2404,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "FL0012-002",
+      "system_id": "FL0012",
+      "system_name": "BROWARD COUNTY LIBRARIES DIVISION",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 256000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 256000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2404,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "10/01/2023",
+        "end": "09/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 36
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 1776271,
       "registered_users": 1621210,
       "print_materials": 1341841,
       "total_physical_items": 1769479,
       "annual_visits": 5375329,
       "visits_reporting_method": "CT",
-      "physical_circulation": 2997110
-    }
+      "physical_circulation": 2997110,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 34,
@@ -1234,15 +3031,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "COLUMBUS METROPOLITAN LIBRARY",
-    "square_feet": 255400,
-    "public_service_hours": 3640,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "OH0057-003",
+      "system_id": "OH0057",
+      "system_name": "COLUMBUS METROPOLITAN LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 255400,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 255400,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3640,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 22
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 971930,
       "registered_users": 658580,
       "print_materials": 1636558,
@@ -1251,7 +3087,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 13794599,
       "physical_circulation": 9487502
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 35,
@@ -1271,15 +3122,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "SALT LAKE CITY PUBLIC LIBRARY SYSTEM",
-    "square_feet": 240000,
-    "public_service_hours": 3094,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "UT0048-002",
+      "system_id": "UT0048",
+      "system_name": "SALT LAKE CITY PUBLIC LIBRARY SYSTEM",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 240000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 240000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3094,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 7
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 209593,
       "registered_users": 132914,
       "print_materials": 343146,
@@ -1288,7 +3178,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 2883708,
       "physical_circulation": 1750648
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 36,
@@ -1308,15 +3213,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "SAN ANTONIO PUBLIC LIBRARY",
-    "square_feet": 238000,
-    "public_service_hours": 2368,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "TX0263-002",
+      "system_id": "TX0263",
+      "system_name": "SAN ANTONIO PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 238000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 238000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2368,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "10/01/2023",
+        "end": "09/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 28
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 1868052,
       "registered_users": 603193,
       "print_materials": 1233392,
@@ -1325,7 +3269,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 9518446,
       "physical_circulation": 5007827
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 37,
@@ -1345,23 +3304,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "MIAMI-DADE PUBLIC LIBRARY SYSTEM",
-    "square_feet": 236560,
-    "public_service_hours": 2499,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "FL0025-002",
+      "system_id": "FL0025",
+      "system_name": "MIAMI-DADE PUBLIC LIBRARY SYSTEM",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 236560,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 236560,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2499,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "10/01/2023",
+        "end": "09/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 49
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 2406299,
       "registered_users": 1619192,
       "print_materials": 1518039,
       "total_physical_items": 1719558,
       "annual_visits": 3663708,
       "visits_reporting_method": "CT",
-      "physical_circulation": 2979718
-    }
+      "physical_circulation": 2979718,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 38,
@@ -1381,15 +3397,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "BIRMINGHAM PUBLIC LIBRARY",
-    "square_feet": 229800,
-    "public_service_hours": 2691,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "AL0108-004",
+      "system_id": "AL0108",
+      "system_name": "BIRMINGHAM PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 229800,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 229800,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2691,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "10/01/2023",
+        "end": "09/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 17
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 196910,
       "registered_users": 76252,
       "print_materials": 691758,
@@ -1398,7 +3453,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 624394,
       "physical_circulation": 358514
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 39,
@@ -1418,15 +3488,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "DAYTON METRO LIBRARY",
-    "square_feet": 227425,
-    "public_service_hours": 3146,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "OH0063-002",
+      "system_id": "OH0063",
+      "system_name": "DAYTON METRO LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 227425,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 227425,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3146,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 20
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 452238,
       "registered_users": 379934,
       "print_materials": 761010,
@@ -1435,7 +3544,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 4831439,
       "physical_circulation": 2944688
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 40,
@@ -1455,15 +3579,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "QUEENS BOROUGH PUBLIC LIBRARY",
-    "square_feet": 227146,
-    "public_service_hours": 2846,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "NY0562-002",
+      "system_id": "NY0562",
+      "system_name": "QUEENS BOROUGH PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 227146,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 227146,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2846,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 61
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 2405464,
       "registered_users": 1597936,
       "print_materials": 3482625,
@@ -1472,14 +3635,29 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 8596513,
       "physical_circulation": 6344365
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 41,
     "title": "AUSTIN PUBLIC LIBRARY",
     "value": "200,000 sq ft",
     "location": {
-      "address": "710 W C\u00c9SAR CH\u00c1VEZ ST",
+      "address": "710 W CÉSAR CHÁVEZ ST",
       "city": "AUSTIN",
       "state": "TX",
       "postal_code": "78701-3821",
@@ -1492,15 +3670,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "AUSTIN PUBLIC LIBRARY",
-    "square_feet": 200000,
-    "public_service_hours": 3153,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "TX0111-002",
+      "system_id": "TX0111",
+      "system_name": "AUSTIN PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 200000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 200000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3153,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "10/01/2023",
+        "end": "09/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 21
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 979882,
       "registered_users": 337113,
       "print_materials": 918779,
@@ -1509,7 +3726,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 7750206,
       "physical_circulation": 3893002
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 42,
@@ -1529,15 +3761,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "RICHLAND COUNTY PUBLIC LIBRARY",
-    "square_feet": 193112,
-    "public_service_hours": 3276,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "SC0035-002",
+      "system_id": "SC0035",
+      "system_name": "RICHLAND COUNTY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 193112,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 193112,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3276,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 12
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 416147,
       "registered_users": 200943,
       "print_materials": 575502,
@@ -1546,7 +3817,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 3542547,
       "physical_circulation": 2256201
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 43,
@@ -1566,15 +3852,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "CITY OF ST. LOUIS MUNICIPAL LIBRARY DISTRICT",
-    "square_feet": 190870,
-    "public_service_hours": 3328,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MO0030-021",
+      "system_id": "MO0030",
+      "system_name": "CITY OF ST. LOUIS MUNICIPAL LIBRARY DISTRICT",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 190870,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 190870,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3328,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "10/01/2023",
+        "end": "09/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 15
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 301578,
       "registered_users": 194779,
       "print_materials": 2268236,
@@ -1583,7 +3908,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 2606097,
       "physical_circulation": 1510232
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 44,
@@ -1603,15 +3943,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "LOS ANGELES COUNTY LAW LIBRARY",
-    "square_feet": 181792,
-    "public_service_hours": 2470,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CA0230-001",
+      "system_id": "CA0230",
+      "system_name": "LOS ANGELES COUNTY LAW LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 181792,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 181792,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2470,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 2
+      },
+      "data_flags": {
+        "legal_service_area_population": "L_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": -9,
       "registered_users": 26902,
       "print_materials": 1020160,
@@ -1620,7 +3999,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 14398,
       "physical_circulation": 10020
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 45,
@@ -1640,15 +4034,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "TEMPE PUBLIC LIBRARY",
-    "square_feet": 180000,
-    "public_service_hours": 3094,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "AZ0038-002",
+      "system_id": "AZ0038",
+      "system_name": "TEMPE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 180000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 180000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3094,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 193336,
       "registered_users": 73305,
       "print_materials": 141031,
@@ -1657,7 +4090,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 940397,
       "physical_circulation": 531774
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 46,
@@ -1677,15 +4125,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "TOPEKA AND SHAWNEE COUNTY PUBLIC LIBRARY",
-    "square_feet": 178600,
-    "public_service_hours": 4056,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "KS0132-002",
+      "system_id": "KS0132",
+      "system_name": "TOPEKA AND SHAWNEE COUNTY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 178600,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 178600,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 4056,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 173973,
       "registered_users": 135740,
       "print_materials": 189714,
@@ -1694,7 +4181,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1780496,
       "physical_circulation": 1078444
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 47,
@@ -1714,15 +4216,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "KANSAS CITY PUBLIC LIBRARY",
-    "square_feet": 175000,
-    "public_service_hours": 3016,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MO0014-002",
+      "system_id": "MO0014",
+      "system_name": "KANSAS CITY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 175000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 175000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3016,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 9
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 232498,
       "registered_users": 263880,
       "print_materials": 616768,
@@ -1731,7 +4272,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 2408264,
       "physical_circulation": 907582
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 48,
@@ -1751,15 +4307,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "FAYETTEVILLE PUBLIC LIBRARY",
-    "square_feet": 170500,
-    "public_service_hours": 3112,
-    "weeks_open": 50,
+    "library": {
+      "outlet_id": "AR0066-001",
+      "system_id": "AR0066",
+      "system_name": "FAYETTEVILLE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 170500,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 170500,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3112,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 50,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 93949,
       "registered_users": 90084,
       "print_materials": 243354,
@@ -1768,7 +4363,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1143405,
       "physical_circulation": 837445
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 49,
@@ -1788,15 +4398,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "LOUISVILLE FREE PUBLIC LIBRARY",
-    "square_feet": 167031,
-    "public_service_hours": 3536,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "KY0053-002",
+      "system_id": "KY0053",
+      "system_name": "LOUISVILLE FREE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 167031,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 167031,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3536,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 16
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 772144,
       "registered_users": 206028,
       "print_materials": 1097075,
@@ -1805,7 +4454,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 3825616,
       "physical_circulation": 2219760
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 50,
@@ -1825,15 +4489,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "MANUAL"
       }
     },
-    "system_name": "SCHAUMBURG TOWNSHIP DISTRICT LIBRARY",
-    "square_feet": 166501,
-    "public_service_hours": 3605,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IL0479-002",
+      "system_id": "IL0479",
+      "system_name": "SCHAUMBURG TOWNSHIP DISTRICT LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 166501,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 166501,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3605,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 2
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 130345,
       "registered_users": 64731,
       "print_materials": 286220,
@@ -1842,7 +4545,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 1956249,
       "physical_circulation": 1680635
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 51,
@@ -1862,15 +4580,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "SACRAMENTO PUBLIC LIBRARY",
-    "square_feet": 160000,
-    "public_service_hours": 2039,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CA0105-002",
+      "system_id": "CA0105",
+      "system_name": "SACRAMENTO PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 160000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 160000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2039,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 27
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 1490915,
       "registered_users": 858125,
       "print_materials": 1213619,
@@ -1879,7 +4636,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 8654365,
       "physical_circulation": 4229550
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 52,
@@ -1899,15 +4671,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "FRISCO PUBLIC LIBRARY",
-    "square_feet": 158068,
-    "public_service_hours": 3710,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "TX0538-003",
+      "system_id": "TX0538",
+      "system_name": "FRISCO PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 158068,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 158068,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3710,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "10/01/2023",
+        "end": "09/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 1
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 225007,
       "registered_users": 152297,
       "print_materials": 232881,
@@ -1916,7 +4727,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 3428055,
       "physical_circulation": 2932835
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 53,
@@ -1936,15 +4762,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "CENTRAL ARKANSAS LIBRARY SYSTEM",
-    "square_feet": 156948,
-    "public_service_hours": 2682,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "AR0001-009",
+      "system_id": "AR0001",
+      "system_name": "CENTRAL ARKANSAS LIBRARY SYSTEM",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 156948,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 156948,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2682,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 13
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 344553,
       "registered_users": 204587,
       "print_materials": 630910,
@@ -1953,7 +4818,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 2399607,
       "physical_circulation": 1193158
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 54,
@@ -1973,15 +4853,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "PORTLAND PUBLIC LIBRARY",
-    "square_feet": 154115,
-    "public_service_hours": 5732,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "ME0174-002",
+      "system_id": "ME0174",
+      "system_name": "PORTLAND PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 154115,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 154115,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 5732,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 3
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 69104,
       "registered_users": 34961,
       "print_materials": 304392,
@@ -1990,7 +4909,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 521529,
       "physical_circulation": 381035
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 55,
@@ -2010,23 +4944,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "GAIL BORDEN PUBLIC LIBRARY DISTRICT",
-    "square_feet": 153872,
-    "public_service_hours": 3692,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IL0197-003",
+      "system_id": "IL0197",
+      "system_name": "GAIL BORDEN PUBLIC LIBRARY DISTRICT",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 153872,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 153872,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3692,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 2
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 149907,
       "registered_users": 77109,
       "print_materials": 264891,
       "total_physical_items": 326439,
       "annual_visits": 638558,
       "visits_reporting_method": "CT",
-      "physical_circulation": 848971
-    }
+      "physical_circulation": 848971,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 56,
@@ -2046,23 +5037,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "WORCESTER PUBLIC LIBRARY",
-    "square_feet": 153000,
-    "public_service_hours": 6760,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MA0344-011",
+      "system_id": "MA0344",
+      "system_name": "WORCESTER PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 153000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 153000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 6760,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 6
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 205319,
       "registered_users": 94951,
       "print_materials": 531806,
       "total_physical_items": 569494,
       "annual_visits": 441799,
       "visits_reporting_method": "CT",
-      "physical_circulation": 647557
-    }
+      "physical_circulation": 647557,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 57,
@@ -2082,15 +5130,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "GRAND RAPIDS PUBLIC LIBRARY",
-    "square_feet": 153000,
-    "public_service_hours": 3580,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MI0131-002",
+      "system_id": "MI0131",
+      "system_name": "GRAND RAPIDS PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 153000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 153000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3580,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 7
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 198917,
       "registered_users": 52547,
       "print_materials": 710375,
@@ -2099,7 +5186,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1389275,
       "physical_circulation": 771163
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 58,
@@ -2119,15 +5221,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "CARNEGIE LIBRARY OF PITTSBURGH",
-    "square_feet": 148845,
-    "public_service_hours": 3218,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "PA0042-002",
+      "system_id": "PA0042",
+      "system_name": "CARNEGIE LIBRARY OF PITTSBURGH",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 148845,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 148845,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3218,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 18
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 392273,
       "registered_users": 213505,
       "print_materials": 1220125,
@@ -2136,7 +5277,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 3772697,
       "physical_circulation": 2442765
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 59,
@@ -2156,15 +5312,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "EVANSVILLE-VANDERBURGH PUBLIC LIBRARY",
-    "square_feet": 147500,
-    "public_service_hours": 3380,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IN0020-009",
+      "system_id": "IN0020",
+      "system_name": "EVANSVILLE-VANDERBURGH PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 147500,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 147500,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3380,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 7
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 180136,
       "registered_users": 79994,
       "print_materials": 457260,
@@ -2173,7 +5368,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1449516,
       "physical_circulation": 892793
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 60,
@@ -2193,15 +5403,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "NEW ORLEANS PUBLIC LIBRARY",
-    "square_feet": 146902,
-    "public_service_hours": 2346,
-    "weeks_open": 51,
+    "library": {
+      "outlet_id": "LA0058-002",
+      "system_id": "LA0058",
+      "system_name": "NEW ORLEANS PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 146902,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 146902,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2346,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 51,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 14
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 362701,
       "registered_users": 120249,
       "print_materials": 472695,
@@ -2210,7 +5459,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 2232588,
       "physical_circulation": 1046928
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 61,
@@ -2230,15 +5494,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "ANCHORAGE PUBLIC LIBRARY",
-    "square_feet": 146171,
-    "public_service_hours": 1921,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "AK0002-011",
+      "system_id": "AK0002",
+      "system_name": "ANCHORAGE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 146171,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 146171,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 1921,
+      "public_service_hours_flag": "IP23",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2023",
+        "end": "12/31/2023"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 4
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 289653,
       "registered_users": 118646,
       "print_materials": 306122,
@@ -2247,7 +5550,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1779928,
       "physical_circulation": 865641
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 62,
@@ -2267,15 +5585,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "ST JOSEPH COUNTY PUBLIC LIBRARY",
-    "square_feet": 138480,
-    "public_service_hours": 3328,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IN0068-011",
+      "system_id": "IN0068",
+      "system_name": "ST JOSEPH COUNTY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 138480,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 138480,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3328,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 9
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 170799,
       "registered_users": 72558,
       "print_materials": 501022,
@@ -2284,7 +5641,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 2065676,
       "physical_circulation": 1342086
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 63,
@@ -2304,15 +5676,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "JEFFERSON PARISH LIBRARY",
-    "square_feet": 135777,
-    "public_service_hours": 3519,
-    "weeks_open": 51,
+    "library": {
+      "outlet_id": "LA0057-002",
+      "system_id": "LA0057",
+      "system_name": "JEFFERSON PARISH LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 135777,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 135777,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3519,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 51,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 15
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 427253,
       "registered_users": 62600,
       "print_materials": 571131,
@@ -2321,7 +5732,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 1520644,
       "physical_circulation": 775193
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 64,
@@ -2341,15 +5767,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "MONROE COUNTY PUBLIC LIBRARY",
-    "square_feet": 135000,
-    "public_service_hours": 3500,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IN0180-002",
+      "system_id": "IN0180",
+      "system_name": "MONROE COUNTY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 135000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 135000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3500,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 2
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 139718,
       "registered_users": 55446,
       "print_materials": 353261,
@@ -2358,7 +5823,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 2004871,
       "physical_circulation": 1336947
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 65,
@@ -2378,15 +5858,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "MANUAL"
       }
     },
-    "system_name": "TULSA CITY-COUNTY LIBRARY SYSTEM",
-    "square_feet": 133362,
-    "public_service_hours": 3588,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "OK0093-031",
+      "system_id": "OK0093",
+      "system_name": "TULSA CITY-COUNTY LIBRARY SYSTEM",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 133362,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 133362,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3588,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 23
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 682868,
       "registered_users": 364332,
       "print_materials": 882262,
@@ -2395,7 +5914,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 7386131,
       "physical_circulation": 5558630
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 66,
@@ -2415,23 +5949,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "SKOKIE PUBLIC LIBRARY",
-    "square_feet": 133190,
-    "public_service_hours": 3900,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IL0495-002",
+      "system_id": "IL0495",
+      "system_name": "SKOKIE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 133190,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 133190,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3900,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "05/01/2023",
+        "end": "04/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 67824,
       "registered_users": 44681,
       "print_materials": 277356,
       "total_physical_items": 348226,
       "annual_visits": 568874,
       "visits_reporting_method": "CT",
-      "physical_circulation": 1446067
-    }
+      "physical_circulation": 1446067,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 67,
@@ -2451,15 +6042,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "ARLINGTON HEIGHTS MEMORIAL LIBRARY",
-    "square_feet": 132000,
-    "public_service_hours": 4013,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IL0018-002",
+      "system_id": "IL0018",
+      "system_name": "ARLINGTON HEIGHTS MEMORIAL LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 132000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 132000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 4013,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2023",
+        "end": "12/31/2023"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 2
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 77676,
       "registered_users": 62765,
       "print_materials": 189381,
@@ -2468,7 +6098,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1349033,
       "physical_circulation": 1349033
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 68,
@@ -2488,15 +6133,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "CARMEL CLAY PUBLIC LIBRARY",
-    "square_feet": 131749,
-    "public_service_hours": 3380,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IN0195-002",
+      "system_id": "IN0195",
+      "system_name": "CARMEL CLAY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 131749,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 131749,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3380,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 1
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 99093,
       "registered_users": 65403,
       "print_materials": 241112,
@@ -2505,7 +6189,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 2151585,
       "physical_circulation": 1544423
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 69,
@@ -2525,15 +6224,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "STARK COUNTY DISTRICT LIBRARY",
-    "square_feet": 131243,
-    "public_service_hours": 3028,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "OH0039-002",
+      "system_id": "OH0039",
+      "system_name": "STARK COUNTY DISTRICT LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 131243,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 131243,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3028,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 9
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 241356,
       "registered_users": 91279,
       "print_materials": 404256,
@@ -2542,7 +6280,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 2412449,
       "physical_circulation": 1633364
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 70,
@@ -2562,15 +6315,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "ANDERSON PUBLIC LIBRARY",
-    "square_feet": 129564,
-    "public_service_hours": 3380,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IN0158-002",
+      "system_id": "IN0158",
+      "system_name": "ANDERSON PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 129564,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 129564,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3380,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 1
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 69817,
       "registered_users": 32815,
       "print_materials": 194199,
@@ -2579,7 +6371,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 514049,
       "physical_circulation": 323396
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 71,
@@ -2599,15 +6406,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "EAST BATON ROUGE PARISH LIBRARY",
-    "square_feet": 129000,
-    "public_service_hours": 3796,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "LA0055-002",
+      "system_id": "LA0055",
+      "system_name": "EAST BATON ROUGE PARISH LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 129000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 129000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3796,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 13
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 453022,
       "registered_users": 310879,
       "print_materials": 1239657,
@@ -2616,7 +6462,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 2797888,
       "physical_circulation": 1432110
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 72,
@@ -2636,15 +6497,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "KERN COUNTY LIBRARY",
-    "square_feet": 128165,
-    "public_service_hours": 1826,
-    "weeks_open": 51,
+    "library": {
+      "outlet_id": "CA0051-002",
+      "system_id": "CA0051",
+      "system_name": "KERN COUNTY LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 128165,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 128165,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 1826,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 51,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 21
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 888074,
       "registered_users": 82211,
       "print_materials": 654655,
@@ -2653,7 +6553,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 981941,
       "physical_circulation": 752815
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 73,
@@ -2673,23 +6588,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "MULTNOMAH COUNTY LIBRARY",
-    "square_feet": 125000,
-    "public_service_hours": 1029,
-    "weeks_open": 19,
+    "library": {
+      "outlet_id": "OR0063-002",
+      "system_id": "OR0063",
+      "system_name": "MULTNOMAH COUNTY LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 125000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 125000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 1029,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 19,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 18
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 802464,
       "registered_users": 350602,
       "print_materials": 1505495,
       "total_physical_items": 1664157,
       "annual_visits": 1756048,
       "visits_reporting_method": "CT",
-      "physical_circulation": 9914424
-    }
+      "physical_circulation": 9914424,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 74,
@@ -2709,23 +6681,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "WHEATON PUBLIC LIBRARY",
-    "square_feet": 124518,
-    "public_service_hours": 3534,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IL0578-002",
+      "system_id": "IL0578",
+      "system_name": "WHEATON PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 124518,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 124518,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3534,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2023",
+        "end": "12/31/2023"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 53970,
       "registered_users": 29712,
       "print_materials": 194794,
       "total_physical_items": 239743,
       "annual_visits": 384284,
       "visits_reporting_method": "CT",
-      "physical_circulation": 926687
-    }
+      "physical_circulation": 926687,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 75,
@@ -2745,15 +6774,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "SOUTHFIELD PUBLIC LIBRARY",
-    "square_feet": 124000,
-    "public_service_hours": 2944,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MI0316-002",
+      "system_id": "MI0316",
+      "system_name": "SOUTHFIELD PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 124000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 124000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2944,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 80706,
       "registered_users": 20293,
       "print_materials": 189802,
@@ -2762,7 +6830,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 378750,
       "physical_circulation": 283834
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 76,
@@ -2786,11 +6869,50 @@ window.MAPPABLE_LIBRARIES = [
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "HUNTSVILLE - MADISON COUNTY PUBLIC LIBRARY",
-    "square_feet": 123000,
-    "public_service_hours": 3142,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "AL0166-025",
+      "system_id": "AL0166",
+      "system_name": "HUNTSVILLE - MADISON COUNTY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 123000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 123000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3142,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "10/01/2023",
+        "end": "09/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 9
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 403565,
       "registered_users": 138266,
       "print_materials": 325749,
@@ -2799,7 +6921,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 2987465,
       "physical_circulation": 2539541
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 77,
@@ -2819,15 +6956,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "MANUAL"
       }
     },
-    "system_name": "MCALLEN PUBLIC LIBRARY",
-    "square_feet": 123000,
-    "public_service_hours": 3752,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "TX0549-002",
+      "system_id": "TX0549",
+      "system_name": "MCALLEN PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 123000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 123000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3752,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "10/01/2023",
+        "end": "09/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 2
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 219148,
       "registered_users": 135193,
       "print_materials": 302874,
@@ -2836,7 +7012,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 450097,
       "physical_circulation": 389479
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 78,
@@ -2856,23 +7047,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "CHAMPAIGN PUBLIC LIBRARY",
-    "square_feet": 122600,
-    "public_service_hours": 3663,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IL0091-002",
+      "system_id": "IL0091",
+      "system_name": "CHAMPAIGN PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 122600,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 122600,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3663,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 1
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 88302,
       "registered_users": 34046,
       "print_materials": 246207,
       "total_physical_items": 301982,
       "annual_visits": 679910,
       "visits_reporting_method": "CT",
-      "physical_circulation": 1247091
-    }
+      "physical_circulation": 1247091,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 79,
@@ -2892,15 +7140,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "NEW HAVEN FREE PUBLIC LIBRARY",
-    "square_feet": 122195,
-    "public_service_hours": 2808,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CT0103-002",
+      "system_id": "CT0103",
+      "system_name": "NEW HAVEN FREE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 122195,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 122195,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2808,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 4
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 135319,
       "registered_users": 25839,
       "print_materials": 289338,
@@ -2909,7 +7196,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 209155,
       "physical_circulation": 152742
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 80,
@@ -2929,15 +7231,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "MADISON PUBLIC LIBRARY",
-    "square_feet": 120000,
-    "public_service_hours": 3532,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "WI0176-009",
+      "system_id": "WI0176",
+      "system_name": "MADISON PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 120000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 120000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3532,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 8
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 304881,
       "registered_users": 153032,
       "print_materials": 596641,
@@ -2946,7 +7287,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 3141149,
       "physical_circulation": 2170905
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 81,
@@ -2966,15 +7322,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "GREENVILLE COUNTY LIBRARY SYSTEM",
-    "square_feet": 119215,
-    "public_service_hours": 3525,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "SC0021-002",
+      "system_id": "SC0021",
+      "system_name": "GREENVILLE COUNTY LIBRARY SYSTEM",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 119215,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 119215,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3525,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 11
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 525534,
       "registered_users": 191483,
       "print_materials": 710966,
@@ -2983,7 +7378,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 4009326,
       "physical_circulation": 2923344
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 82,
@@ -3003,15 +7413,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "ALBUQUERQUE/BERNALILLO COUNTY LIBRARY SYSTEM",
-    "square_feet": 119050,
-    "public_service_hours": 2383,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "NM0002-002",
+      "system_id": "NM0002",
+      "system_name": "ALBUQUERQUE/BERNALILLO COUNTY LIBRARY SYSTEM",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 119050,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 119050,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2383,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 18
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 676444,
       "registered_users": 321868,
       "print_materials": 740767,
@@ -3020,7 +7469,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 4375391,
       "physical_circulation": 2017221
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 83,
@@ -3040,15 +7504,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "SPOKANE PUBLIC LIBRARY",
-    "square_feet": 116885,
-    "public_service_hours": 430,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "WA0067-002",
+      "system_id": "WA0067",
+      "system_name": "SPOKANE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 116885,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 116885,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 430,
+      "public_service_hours_flag": "IP20",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 5
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 233000,
       "registered_users": 136219,
       "print_materials": 216486,
@@ -3057,7 +7560,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1327153,
       "physical_circulation": 607176
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 84,
@@ -3077,15 +7595,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "PROVIDENCE PUBLIC LIBRARY",
-    "square_feet": 116000,
-    "public_service_hours": 2600,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "RI0036-002",
+      "system_id": "RI0036",
+      "system_name": "PROVIDENCE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 116000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 116000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2600,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 59190,
       "registered_users": 14624,
       "print_materials": 299442,
@@ -3094,7 +7651,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 152437,
       "physical_circulation": 101073
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 85,
@@ -3118,11 +7690,50 @@ window.MAPPABLE_LIBRARIES = [
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "ONONDAGA COUNTY PUBLIC LIBRARY",
-    "square_feet": 115458,
-    "public_service_hours": 2785,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "NY0476-002",
+      "system_id": "NY0476",
+      "system_name": "ONONDAGA COUNTY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 115458,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 115458,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2785,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 10
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 476516,
       "registered_users": 73731,
       "print_materials": 363811,
@@ -3131,7 +7742,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1210951,
       "physical_circulation": 324445
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 86,
@@ -3151,15 +7777,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "GREAT RIVER REGIONAL LIBRARY",
-    "square_feet": 115104,
-    "public_service_hours": 2944,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MN0032-024",
+      "system_id": "MN0032",
+      "system_name": "GREAT RIVER REGIONAL LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 115104,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 115104,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2944,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 31
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 515855,
       "registered_users": 101699,
       "print_materials": 668276,
@@ -3168,7 +7833,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 2815194,
       "physical_circulation": 2337131
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 87,
@@ -3188,15 +7868,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "HUNTINGTON BEACH PUBLIC LIBRARY",
-    "square_feet": 115000,
-    "public_service_hours": 3250,
-    "weeks_open": 50,
+    "library": {
+      "outlet_id": "CA0046-002",
+      "system_id": "CA0046",
+      "system_name": "HUNTINGTON BEACH PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 115000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 115000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3250,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 50,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 4
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 192503,
       "registered_users": 79937,
       "print_materials": 230852,
@@ -3205,7 +7924,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1014937,
       "physical_circulation": 877073
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 88,
@@ -3225,15 +7959,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "RICHMOND PUBLIC LIBRARY",
-    "square_feet": 112620,
-    "public_service_hours": 3380,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "VA0068-002",
+      "system_id": "VA0068",
+      "system_name": "RICHMOND PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 112620,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 112620,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3380,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 8
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "IG20",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 226623,
       "registered_users": 98629,
       "print_materials": 344807,
@@ -3242,7 +8015,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 988491,
       "physical_circulation": 602332
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 89,
@@ -3262,23 +8050,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "EVANSTON PUBLIC LIBRARY",
-    "square_feet": 112000,
-    "public_service_hours": 3224,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IL0172-002",
+      "system_id": "IL0172",
+      "system_name": "EVANSTON PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 112000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 112000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3224,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2023",
+        "end": "12/31/2023"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 1
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 78110,
       "registered_users": 25217,
       "print_materials": 320915,
       "total_physical_items": 370862,
       "annual_visits": 413153,
       "visits_reporting_method": "CT",
-      "physical_circulation": 699038
-    }
+      "physical_circulation": 699038,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 90,
@@ -3298,23 +8143,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "FOUNTAINDALE PUBLIC LIBRARY DISTRICT",
-    "square_feet": 111000,
-    "public_service_hours": 3744,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IL0189-005",
+      "system_id": "IL0189",
+      "system_name": "FOUNTAINDALE PUBLIC LIBRARY DISTRICT",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 111000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 111000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3744,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 67049,
       "registered_users": 33404,
       "print_materials": 160738,
       "total_physical_items": 216600,
       "annual_visits": 276118,
       "visits_reporting_method": "CT",
-      "physical_circulation": 620821
-    }
+      "physical_circulation": 620821,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 91,
@@ -3334,15 +8236,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "LEXINGTON PUBLIC LIBRARY",
-    "square_feet": 110400,
-    "public_service_hours": 3016,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "KY0031-002",
+      "system_id": "KY0031",
+      "system_name": "LEXINGTON PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 110400,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 110400,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3016,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 6
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 320154,
       "registered_users": 151153,
       "print_materials": 397077,
@@ -3351,7 +8292,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 4562632,
       "physical_circulation": 3427922
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 92,
@@ -3371,15 +8327,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "LAKE COUNTY PUBLIC LIBRARY",
-    "square_feet": 110178,
-    "public_service_hours": 3224,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IN0030-014",
+      "system_id": "IN0030",
+      "system_name": "LAKE COUNTY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 110178,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 110178,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3224,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 8
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 251041,
       "registered_users": 89038,
       "print_materials": 674978,
@@ -3388,7 +8383,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 2239974,
       "physical_circulation": 1537944
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 93,
@@ -3408,23 +8418,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "PEORIA PUBLIC LIBRARY",
-    "square_feet": 110127,
-    "public_service_hours": 2709,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IL0423-017",
+      "system_id": "IL0423",
+      "system_name": "PEORIA PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 110127,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 110127,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2709,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2023",
+        "end": "12/31/2023"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 4
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 113150,
       "registered_users": 17743,
       "print_materials": 321108,
       "total_physical_items": 374961,
       "annual_visits": 293451,
       "visits_reporting_method": "CT",
-      "physical_circulation": 536949
-    }
+      "physical_circulation": 536949,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 94,
@@ -3444,15 +8511,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "PUEBLO CITY-COUNTY LIBRARY DISTRICT",
-    "square_feet": 110000,
-    "public_service_hours": 3640,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CO0099-002",
+      "system_id": "CO0099",
+      "system_name": "PUEBLO CITY-COUNTY LIBRARY DISTRICT",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 110000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 110000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3640,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 7
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 169427,
       "registered_users": 122220,
       "print_materials": 220230,
@@ -3461,7 +8567,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1398764,
       "physical_circulation": 853285
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 95,
@@ -3485,11 +8606,50 @@ window.MAPPABLE_LIBRARIES = [
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "FERGUSON LIBRARY",
-    "square_feet": 110000,
-    "public_service_hours": 2960,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CT0151-002",
+      "system_id": "CT0151",
+      "system_name": "FERGUSON LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 110000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 110000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2960,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 4
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 136226,
       "registered_users": 61639,
       "print_materials": 249308,
@@ -3498,7 +8658,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 612471,
       "physical_circulation": 462054
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 96,
@@ -3518,23 +8693,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "DES MOINES PUBLIC LIBRARY",
-    "square_feet": 110000,
-    "public_service_hours": 3216,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IA0027-002",
+      "system_id": "IA0027",
+      "system_name": "DES MOINES PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 110000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 110000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3216,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 5
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 221659,
       "registered_users": 86593,
       "print_materials": 361772,
       "total_physical_items": 416210,
       "annual_visits": 887821,
       "visits_reporting_method": "CT",
-      "physical_circulation": 848407
-    }
+      "physical_circulation": 848407,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 97,
@@ -3554,15 +8786,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "ANN ARBOR DISTRICT LIBRARY",
-    "square_feet": 110000,
-    "public_service_hours": 3568,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MI0012-002",
+      "system_id": "MI0012",
+      "system_name": "ANN ARBOR DISTRICT LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 110000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 110000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3568,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 4
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 177696,
       "registered_users": 58648,
       "print_materials": 333972,
@@ -3571,7 +8842,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 6764354,
       "physical_circulation": 4681468
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 98,
@@ -3591,23 +8877,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "DECATUR PUBLIC LIBRARY",
-    "square_feet": 108505,
-    "public_service_hours": 3090,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IL0132-002",
+      "system_id": "IL0132",
+      "system_name": "DECATUR PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 108505,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 108505,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3090,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2023",
+        "end": "12/31/2023"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 70522,
       "registered_users": 14907,
       "print_materials": 168878,
       "total_physical_items": 192307,
       "annual_visits": 159146,
       "visits_reporting_method": "CT",
-      "physical_circulation": 218631
-    }
+      "physical_circulation": 218631,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 99,
@@ -3627,15 +8970,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "CHATTANOOGA PUBLIC LIBRARY",
-    "square_feet": 108500,
-    "public_service_hours": 2600,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "TN0132-002",
+      "system_id": "TN0132",
+      "system_name": "CHATTANOOGA PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 108500,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 108500,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2600,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 4
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 187030,
       "registered_users": 81980,
       "print_materials": 176170,
@@ -3644,7 +9026,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 1112508,
       "physical_circulation": 735165
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 100,
@@ -3668,11 +9065,50 @@ window.MAPPABLE_LIBRARIES = [
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "MISSOULA PUBLIC LIBRARY",
-    "square_feet": 108000,
-    "public_service_hours": 3692,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MT0051-002",
+      "system_id": "MT0051",
+      "system_name": "MISSOULA PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 108000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 108000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3692,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 6
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 117922,
       "registered_users": 51083,
       "print_materials": 168059,
@@ -3681,7 +9117,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 776206,
       "physical_circulation": 483258
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 101,
@@ -3705,11 +9156,50 @@ window.MAPPABLE_LIBRARIES = [
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "NEWARK PUBLIC LIBRARY",
-    "square_feet": 106085,
-    "public_service_hours": 3004,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "NJ0122-002",
+      "system_id": "NJ0122",
+      "system_name": "NEWARK PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 106085,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 106085,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3004,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 7
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 311549,
       "registered_users": 131313,
       "print_materials": 845601,
@@ -3718,7 +9208,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 114999,
       "physical_circulation": 66089
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 102,
@@ -3738,15 +9243,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "MESA PUBLIC LIBRARY",
-    "square_feet": 106000,
-    "public_service_hours": 3022,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "AZ0034-006",
+      "system_id": "AZ0034",
+      "system_name": "MESA PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 106000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 106000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3022,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 3
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 524892,
       "registered_users": 105999,
       "print_materials": 400710,
@@ -3755,7 +9299,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 2551545,
       "physical_circulation": 1595214
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 103,
@@ -3775,23 +9334,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "POPLAR CREEK PUBLIC LIBRARY DISTRICT",
-    "square_feet": 105204,
-    "public_service_hours": 3197,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IL0437-002",
+      "system_id": "IL0437",
+      "system_name": "POPLAR CREEK PUBLIC LIBRARY DISTRICT",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 105204,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 105204,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3197,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 1
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 65645,
       "registered_users": 27121,
       "print_materials": 157123,
       "total_physical_items": 180476,
       "annual_visits": 135611,
       "visits_reporting_method": "CT",
-      "physical_circulation": 222179
-    }
+      "physical_circulation": 222179,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 104,
@@ -3811,15 +9427,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "WICHITA PUBLIC LIBRARY",
-    "square_feet": 105200,
-    "public_service_hours": 2972,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "KS0226-002",
+      "system_id": "KS0226",
+      "system_name": "WICHITA PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 105200,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 105200,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2972,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 6
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 396119,
       "registered_users": 285484,
       "print_materials": 445122,
@@ -3828,7 +9483,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 1711516,
       "physical_circulation": 1032046
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 105,
@@ -3848,15 +9518,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "HAWAII STATE PUBLIC LIBRARY SYSTEM",
-    "square_feet": 105000,
-    "public_service_hours": 2132,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "HI0001-002",
+      "system_id": "HI0001",
+      "system_name": "HAWAII STATE PUBLIC LIBRARY SYSTEM",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 105000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 105000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2132,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 50
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 1446146,
       "registered_users": 1016000,
       "print_materials": 2530918,
@@ -3865,7 +9574,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 5229093,
       "physical_circulation": 3512685
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 106,
@@ -3885,15 +9609,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "GRACE A. DOW MEMORIAL LIBRARY",
-    "square_feet": 105000,
-    "public_service_hours": 2912,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MI0129-002",
+      "system_id": "MI0129",
+      "system_name": "GRACE A. DOW MEMORIAL LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 105000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 105000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2912,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 76758,
       "registered_users": 32271,
       "print_materials": 155632,
@@ -3902,7 +9665,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 526712,
       "physical_circulation": 357128
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 107,
@@ -3922,15 +9700,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "SPARTANBURG COUNTY PUBLIC LIBRARY SYSTEM",
-    "square_feet": 105000,
-    "public_service_hours": 4747,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "SC0036-002",
+      "system_id": "SC0036",
+      "system_name": "SPARTANBURG COUNTY PUBLIC LIBRARY SYSTEM",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 105000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 105000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 4747,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 9
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 327997,
       "registered_users": 192052,
       "print_materials": 471224,
@@ -3939,7 +9756,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 2224877,
       "physical_circulation": 1488466
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 108,
@@ -3959,15 +9791,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "STREETADDRESS"
       }
     },
-    "system_name": "SANTA MONICA PUBLIC LIBRARY",
-    "square_feet": 104000,
-    "public_service_hours": 1495,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CA0130-002",
+      "system_id": "CA0130",
+      "system_name": "SANTA MONICA PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 104000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 104000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 1495,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 4
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 92912,
       "registered_users": 49375,
       "print_materials": 300319,
@@ -3976,7 +9847,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 904732,
       "physical_circulation": 682920
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 109,
@@ -3996,15 +9882,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "GREENWICH LIBRARY",
-    "square_feet": 104000,
-    "public_service_hours": 3299,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CT0063-002",
+      "system_id": "CT0063",
+      "system_name": "GREENWICH LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 104000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 104000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3299,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 2
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 63574,
       "registered_users": 23317,
       "print_materials": 246576,
@@ -4013,7 +9938,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 962331,
       "physical_circulation": 576078
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 110,
@@ -4033,23 +9973,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "OAK PARK PUBLIC LIBRARY",
-    "square_feet": 104000,
-    "public_service_hours": 3516,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IL0392-002",
+      "system_id": "IL0392",
+      "system_name": "OAK PARK PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 104000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 104000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3516,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2023",
+        "end": "12/31/2023"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 2
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 54583,
       "registered_users": 48117,
       "print_materials": 195041,
       "total_physical_items": 244116,
       "annual_visits": 371003,
       "visits_reporting_method": "CT",
-      "physical_circulation": 1042246
-    }
+      "physical_circulation": 1042246,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 111,
@@ -4069,23 +10066,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "CAMBRIDGE PUBLIC LIBRARY",
-    "square_feet": 104000,
-    "public_service_hours": 6760,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MA0049-002",
+      "system_id": "MA0049",
+      "system_name": "CAMBRIDGE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 104000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 104000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 6760,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 6
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 118488,
       "registered_users": 84192,
       "print_materials": 323691,
       "total_physical_items": 374156,
       "annual_visits": 963891,
       "visits_reporting_method": "ES",
-      "physical_circulation": 1344532
-    }
+      "physical_circulation": 1344532,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 112,
@@ -4105,15 +10159,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "SCOTTSDALE PUBLIC LIBRARY",
-    "square_feet": 103000,
-    "public_service_hours": 2712,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "AZ0036-002",
+      "system_id": "AZ0036",
+      "system_name": "SCOTTSDALE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 103000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 103000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2712,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 3
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 249935,
       "registered_users": 88022,
       "print_materials": 324244,
@@ -4122,7 +10215,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 2179999,
       "physical_circulation": 1435580
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 113,
@@ -4142,15 +10250,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "FORSYTH COUNTY PUBLIC LIBRARY",
-    "square_feet": 103000,
-    "public_service_hours": 3120,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "NC0032-002",
+      "system_id": "NC0032",
+      "system_name": "FORSYTH COUNTY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 103000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 103000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3120,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 9
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 392839,
       "registered_users": 348442,
       "print_materials": 552991,
@@ -4159,7 +10306,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1625031,
       "physical_circulation": 984150
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 114,
@@ -4179,15 +10341,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "LARAMIE COUNTY LIBRARY SYSTEM",
-    "square_feet": 103000,
-    "public_service_hours": 3328,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "WY0004-005",
+      "system_id": "WY0004",
+      "system_name": "LARAMIE COUNTY LIBRARY SYSTEM",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 103000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 103000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3328,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 2
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 100984,
       "registered_users": 68968,
       "print_materials": 219675,
@@ -4196,7 +10397,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 678529,
       "physical_circulation": 451264
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 115,
@@ -4216,15 +10432,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "CHATTAHOOCHEE VALLEY LIBRARIES",
-    "square_feet": 102964,
-    "public_service_hours": 3017,
-    "weeks_open": 50,
+    "library": {
+      "outlet_id": "GA0036-002",
+      "system_id": "GA0036",
+      "system_name": "CHATTAHOOCHEE VALLEY LIBRARIES",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 102964,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 102964,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3017,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 50,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 6
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 223782,
       "registered_users": 62803,
       "print_materials": 187899,
@@ -4233,7 +10488,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 995652,
       "physical_circulation": 741664
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 116,
@@ -4253,15 +10523,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "MANUAL"
       }
     },
-    "system_name": "BLOOMFIELD TOWNSHIP PUBLIC LIBRARY",
-    "square_feet": 102505,
-    "public_service_hours": 3448,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MI0037-002",
+      "system_id": "MI0037",
+      "system_name": "BLOOMFIELD TOWNSHIP PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 102505,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 102505,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3448,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "04/01/2023",
+        "end": "03/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 44253,
       "registered_users": 21372,
       "print_materials": 195319,
@@ -4270,7 +10579,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 819627,
       "physical_circulation": 639514
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 117,
@@ -4290,15 +10614,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "WESTERVILLE PUBLIC LIBRARY",
-    "square_feet": 102500,
-    "public_service_hours": 3612,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "OH0237-002",
+      "system_id": "OH0237",
+      "system_name": "WESTERVILLE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 102500,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 102500,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3612,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 100042,
       "registered_users": 89353,
       "print_materials": 171855,
@@ -4307,7 +10670,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 1500068,
       "physical_circulation": 1071946
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 118,
@@ -4327,15 +10705,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "HAMILTON EAST PUBLIC LIBRARY",
-    "square_feet": 102160,
-    "public_service_hours": 3536,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IN0197-002",
+      "system_id": "IN0197",
+      "system_name": "HAMILTON EAST PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 102160,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 102160,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3536,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 1
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 180617,
       "registered_users": 87907,
       "print_materials": 259533,
@@ -4344,7 +10761,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 2294067,
       "physical_circulation": 1661683
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 119,
@@ -4364,15 +10796,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "BERKELEY PUBLIC LIBRARY",
-    "square_feet": 102000,
-    "public_service_hours": 2343,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CA0011-002",
+      "system_id": "CA0011",
+      "system_name": "BERKELEY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 102000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 102000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2343,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 4
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 125327,
       "registered_users": 157190,
       "print_materials": 440414,
@@ -4381,7 +10852,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 2391628,
       "physical_circulation": 1429524
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 120,
@@ -4401,15 +10887,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "DANIEL BOONE REGIONAL LIBRARY",
-    "square_feet": 102000,
-    "public_service_hours": 3535,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MO0034-004",
+      "system_id": "MO0034",
+      "system_name": "DANIEL BOONE REGIONAL LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 102000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 102000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3535,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2023",
+        "end": "12/31/2023"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 3
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 223840,
       "registered_users": 90941,
       "print_materials": 347547,
@@ -4418,7 +10943,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 2791695,
       "physical_circulation": 1692053
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 121,
@@ -4438,23 +10978,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "MOUNT PROSPECT PUBLIC LIBRARY",
-    "square_feet": 101290,
-    "public_service_hours": 3645,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IL0360-002",
+      "system_id": "IL0360",
+      "system_name": "MOUNT PROSPECT PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 101290,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 101290,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3645,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2023",
+        "end": "12/31/2023"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 1
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 56852,
       "registered_users": 28972,
       "print_materials": 318399,
       "total_physical_items": 387339,
       "annual_visits": 320832,
       "visits_reporting_method": "CT",
-      "physical_circulation": 888935
-    }
+      "physical_circulation": 888935,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 122,
@@ -4474,15 +11071,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "CHARLESTON COUNTY PUBLIC LIBRARY SYSTEM",
-    "square_feet": 101000,
-    "public_service_hours": 3276,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "SC0009-012",
+      "system_id": "SC0009",
+      "system_name": "CHARLESTON COUNTY PUBLIC LIBRARY SYSTEM",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 101000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 101000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3276,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 17
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 408235,
       "registered_users": 202580,
       "print_materials": 708258,
@@ -4491,7 +11127,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 3339072,
       "physical_circulation": 1676422
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 123,
@@ -4511,15 +11162,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "EL PASO PUBLIC LIBRARY",
-    "square_feet": 101000,
-    "public_service_hours": 2720,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "TX0030-002",
+      "system_id": "TX0030",
+      "system_name": "EL PASO PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 101000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 101000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2720,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "09/01/2023",
+        "end": "08/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 14
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 678958,
       "registered_users": 205522,
       "print_materials": 704713,
@@ -4528,7 +11218,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1359899,
       "physical_circulation": 1016380
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 124,
@@ -4548,23 +11253,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "PIMA COUNTY PUBLIC LIBRARY",
-    "square_feet": 100000,
-    "public_service_hours": 2184,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "AZ0064-021",
+      "system_id": "AZ0064",
+      "system_name": "PIMA COUNTY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 100000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 100000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2184,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 26
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "IT24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 1086634,
       "registered_users": 296271,
       "print_materials": 870168,
       "total_physical_items": 1002167,
       "annual_visits": 2547413,
       "visits_reporting_method": "CT",
-      "physical_circulation": 1707450
-    }
+      "physical_circulation": 1707450,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 125,
@@ -4584,15 +11346,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "MANUAL"
       }
     },
-    "system_name": "OMAHA PUBLIC LIBRARY",
-    "square_feet": 100000,
-    "public_service_hours": 0,
-    "weeks_open": 0,
+    "library": {
+      "outlet_id": "NE0162-016",
+      "system_id": "NE0162",
+      "system_name": "OMAHA PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 100000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 100000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 0,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 0,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 13
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 571013,
       "registered_users": 245012,
       "print_materials": 586501,
@@ -4601,7 +11402,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 4071786,
       "physical_circulation": 2838076
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 126,
@@ -4621,15 +11437,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "OCEAN COUNTY LIBRARY",
-    "square_feet": 100000,
-    "public_service_hours": 3536,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "NJ0252-002",
+      "system_id": "NJ0252",
+      "system_name": "OCEAN COUNTY LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 100000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 100000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3536,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 20
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 636202,
       "registered_users": 199653,
       "print_materials": 929792,
@@ -4638,7 +11493,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 4105933,
       "physical_circulation": 3215291
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 127,
@@ -4658,15 +11528,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "PROVO CITY LIBRARY",
-    "square_feet": 99000,
-    "public_service_hours": 3432,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "UT0062-002",
+      "system_id": "UT0062",
+      "system_name": "PROVO CITY LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 99000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 99000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3432,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 113343,
       "registered_users": 71373,
       "print_materials": 190799,
@@ -4675,7 +11584,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 1703497,
       "physical_circulation": 1089523
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 128,
@@ -4695,15 +11619,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "GREENSBORO PUBLIC LIBRARY",
-    "square_feet": 98500,
-    "public_service_hours": 4160,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "NC0035-012",
+      "system_id": "NC0035",
+      "system_name": "GREENSBORO PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 98500,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 98500,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 4160,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 7
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 435509,
       "registered_users": 198427,
       "print_materials": 264665,
@@ -4712,7 +11675,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1815090,
       "physical_circulation": 1101087
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 129,
@@ -4732,15 +11710,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "KALAMAZOO PUBLIC LIBRARY",
-    "square_feet": 98000,
-    "public_service_hours": 3328,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MI0180-002",
+      "system_id": "MI0180",
+      "system_name": "KALAMAZOO PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 98000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 98000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3328,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 4
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 127924,
       "registered_users": 17570,
       "print_materials": 407421,
@@ -4749,7 +11766,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1674771,
       "physical_circulation": 1165754
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 130,
@@ -4773,11 +11805,50 @@ window.MAPPABLE_LIBRARIES = [
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "MONMOUTH COUNTY LIBRARY",
-    "square_feet": 97403,
-    "public_service_hours": 3448,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "NJ0195-002",
+      "system_id": "NJ0195",
+      "system_name": "MONMOUTH COUNTY LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 97403,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 97403,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3448,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 12
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 425110,
       "registered_users": 105663,
       "print_materials": 1591969,
@@ -4786,7 +11857,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 2299421,
       "physical_circulation": 1470624
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 131,
@@ -4806,23 +11892,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "AURORA PUBLIC LIBRARY DISTRICT",
-    "square_feet": 97000,
-    "public_service_hours": 3445,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IL0029-007",
+      "system_id": "IL0029",
+      "system_name": "AURORA PUBLIC LIBRARY DISTRICT",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 97000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 97000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3445,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 2
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 180542,
       "registered_users": 98777,
       "print_materials": 324814,
       "total_physical_items": 398068,
       "annual_visits": 577525,
       "visits_reporting_method": "CT",
-      "physical_circulation": 921047
-    }
+      "physical_circulation": 921047,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 132,
@@ -4842,23 +11985,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "BREVARD COUNTY LIBRARY SYSTEM",
-    "square_feet": 96000,
-    "public_service_hours": 2950,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "FL0011-006",
+      "system_id": "FL0011",
+      "system_name": "BREVARD COUNTY LIBRARY SYSTEM",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 96000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 96000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2950,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "10/01/2023",
+        "end": "09/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 16
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 653548,
       "registered_users": 257967,
       "print_materials": 827053,
       "total_physical_items": 990658,
       "annual_visits": 1588701,
       "visits_reporting_method": "CT",
-      "physical_circulation": 3308621
-    }
+      "physical_circulation": 3308621,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 133,
@@ -4878,23 +12078,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "PALATINE PUBLIC LIBRARY DISTRICT",
-    "square_feet": 96000,
-    "public_service_hours": 3511,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IL0408-002",
+      "system_id": "IL0408",
+      "system_name": "PALATINE PUBLIC LIBRARY DISTRICT",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 96000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 96000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3511,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 2
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 89395,
       "registered_users": 37713,
       "print_materials": 163570,
       "total_physical_items": 200833,
       "annual_visits": 359864,
       "visits_reporting_method": "CT",
-      "physical_circulation": 1013222
-    }
+      "physical_circulation": 1013222,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 134,
@@ -4914,15 +12171,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "LAUREL COMMUNITY LEARNING CENTER",
-    "square_feet": 96000,
-    "public_service_hours": 3172,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "NE9006-001",
+      "system_id": "NE9006",
+      "system_name": "LAUREL COMMUNITY LEARNING CENTER",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 96000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 96000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3172,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "10/01/2023",
+        "end": "09/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 948,
       "registered_users": 1102,
       "print_materials": 18450,
@@ -4931,7 +12227,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 6166,
       "physical_circulation": 4457
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 135,
@@ -4951,23 +12262,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "SALEM PUBLIC LIBRARY",
-    "square_feet": 96000,
-    "public_service_hours": 2288,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "OR0069-002",
+      "system_id": "OR0069",
+      "system_name": "SALEM PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 96000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 96000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2288,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 1
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 182726,
       "registered_users": 62056,
       "print_materials": 252374,
       "total_physical_items": 276338,
       "annual_visits": 361529,
       "visits_reporting_method": "CT",
-      "physical_circulation": 1298511
-    }
+      "physical_circulation": 1298511,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 136,
@@ -4987,15 +12355,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "ANDERSON COUNTY LIBRARY",
-    "square_feet": 96000,
-    "public_service_hours": 1964,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "SC0004-002",
+      "system_id": "SC0004",
+      "system_name": "ANDERSON COUNTY LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 96000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 96000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 1964,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 8
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 203718,
       "registered_users": 114499,
       "print_materials": 309387,
@@ -5004,7 +12411,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 776678,
       "physical_circulation": 471956
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 137,
@@ -5024,15 +12446,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "TACOMA PUBLIC LIBRARY",
-    "square_feet": 95727,
-    "public_service_hours": 0,
-    "weeks_open": 0,
+    "library": {
+      "outlet_id": "WA0068-002",
+      "system_id": "WA0068",
+      "system_name": "TACOMA PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 95727,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 95727,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 0,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 0,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 7
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 225100,
       "registered_users": 183992,
       "print_materials": 337575,
@@ -5041,7 +12502,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1774005,
       "physical_circulation": 1166391
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 138,
@@ -5061,15 +12537,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "AUGUSTA-RICHMOND COUNTY PUBLIC LIBRARY SYSTEM",
-    "square_feet": 95000,
-    "public_service_hours": 3012,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "GA0039-002",
+      "system_id": "GA0039",
+      "system_name": "AUGUSTA-RICHMOND COUNTY PUBLIC LIBRARY SYSTEM",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 95000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 95000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3012,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 5
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 206731,
       "registered_users": 93606,
       "print_materials": 251814,
@@ -5078,7 +12593,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 282337,
       "physical_circulation": 219316
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 139,
@@ -5102,11 +12632,50 @@ window.MAPPABLE_LIBRARIES = [
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "DURHAM COUNTY LIBRARY",
-    "square_feet": 95000,
-    "public_service_hours": 3068,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "NC0030-001",
+      "system_id": "NC0030",
+      "system_name": "DURHAM COUNTY LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 95000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 95000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3068,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 6
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 334350,
       "registered_users": 251072,
       "print_materials": 596260,
@@ -5115,7 +12684,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 3270572,
       "physical_circulation": 2240712
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 140,
@@ -5135,15 +12719,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "VIRGINIA BEACH PUBLIC LIBRARY",
-    "square_feet": 95000,
-    "public_service_hours": 3120,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "VA0082-002",
+      "system_id": "VA0082",
+      "system_name": "VIRGINIA BEACH PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 95000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 95000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3120,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 9
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 458028,
       "registered_users": 80109,
       "print_materials": 452959,
@@ -5152,7 +12775,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 2365846,
       "physical_circulation": 1466727
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 141,
@@ -5172,15 +12810,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "LONG BEACH PUBLIC LIBRARY",
-    "square_feet": 94650,
-    "public_service_hours": 1976,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CA0061-002",
+      "system_id": "CA0061",
+      "system_name": "LONG BEACH PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 94650,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 94650,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 1976,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 11
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 458813,
       "registered_users": 312192,
       "print_materials": 643807,
@@ -5189,7 +12866,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1090298,
       "physical_circulation": 753599
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 142,
@@ -5209,15 +12901,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "OSHKOSH PUBLIC LIBRARY",
-    "square_feet": 94500,
-    "public_service_hours": 3254,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "WI0239-004",
+      "system_id": "WI0239",
+      "system_name": "OSHKOSH PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 94500,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 94500,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3254,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 82004,
       "registered_users": 25308,
       "print_materials": 204842,
@@ -5226,7 +12957,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 632866,
       "physical_circulation": 474629
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 143,
@@ -5246,23 +12992,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "CEDAR RAPIDS PUBLIC LIBRARY",
-    "square_feet": 94000,
-    "public_service_hours": 3328,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IA0373-002",
+      "system_id": "IA0373",
+      "system_name": "CEDAR RAPIDS PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 94000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 94000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3328,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 1
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 145309,
       "registered_users": 55736,
       "print_materials": 154855,
       "total_physical_items": 184869,
       "annual_visits": 442863,
       "visits_reporting_method": "CT",
-      "physical_circulation": 450724
-    }
+      "physical_circulation": 450724,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 144,
@@ -5282,23 +13085,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "LINCOLN LIBRARY",
-    "square_feet": 94000,
-    "public_service_hours": 2660,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IL0504-002",
+      "system_id": "IL0504",
+      "system_name": "LINCOLN LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 94000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 94000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2660,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "03/01/2023",
+        "end": "02/29/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 114394,
       "registered_users": 33594,
       "print_materials": 196682,
       "total_physical_items": 226846,
       "annual_visits": 174099,
       "visits_reporting_method": "CT",
-      "physical_circulation": 348713
-    }
+      "physical_circulation": 348713,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 145,
@@ -5318,15 +13178,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "APPLETON PUBLIC LIBRARY",
-    "square_feet": 93900,
-    "public_service_hours": 3038,
-    "weeks_open": 46,
+    "library": {
+      "outlet_id": "WI0010-002",
+      "system_id": "WI0010",
+      "system_name": "APPLETON PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 93900,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 93900,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3038,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 46,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 101324,
       "registered_users": 52393,
       "print_materials": 150569,
@@ -5335,7 +13234,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 768142,
       "physical_circulation": 512615
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 146,
@@ -5355,15 +13269,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "SAN MATEO PUBLIC LIBRARY",
-    "square_feet": 93806,
-    "public_service_hours": 3120,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CA0121-002",
+      "system_id": "CA0121",
+      "system_name": "SAN MATEO PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 93806,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 93806,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3120,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 2
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 107057,
       "registered_users": 81266,
       "print_materials": 231525,
@@ -5372,7 +13325,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1053125,
       "physical_circulation": 770533
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 147,
@@ -5392,23 +13360,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "EUGENE PUBLIC LIBRARY",
-    "square_feet": 93041,
-    "public_service_hours": 3246,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "OR0005-002",
+      "system_id": "OR0005",
+      "system_name": "EUGENE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 93041,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 93041,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3246,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 2
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 177339,
       "registered_users": 121081,
       "print_materials": 350747,
       "total_physical_items": 435899,
       "annual_visits": 834640,
       "visits_reporting_method": "CT",
-      "physical_circulation": 2263467
-    }
+      "physical_circulation": 2263467,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 148,
@@ -5428,23 +13453,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "ORLAND PARK PUBLIC LIBRARY",
-    "square_feet": 93000,
-    "public_service_hours": 3744,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IL0405-002",
+      "system_id": "IL0405",
+      "system_name": "ORLAND PARK PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 93000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 93000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3744,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2023",
+        "end": "12/31/2023"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 58703,
       "registered_users": 21316,
       "print_materials": 194910,
       "total_physical_items": 240947,
       "annual_visits": 214019,
       "visits_reporting_method": "CT",
-      "physical_circulation": 390359
-    }
+      "physical_circulation": 390359,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 149,
@@ -5464,15 +13546,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "LAKEWOOD PUBLIC LIBRARY",
-    "square_feet": 93000,
-    "public_service_hours": 3744,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "OH0115-002",
+      "system_id": "OH0115",
+      "system_name": "LAKEWOOD PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 93000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 93000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3744,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 1
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 50852,
       "registered_users": 54992,
       "print_materials": 301438,
@@ -5481,7 +13602,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 1179923,
       "physical_circulation": 985333
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 150,
@@ -5501,15 +13637,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "BOULDER PUBLIC LIBRARY DISTRICT",
-    "square_feet": 92164,
-    "public_service_hours": 3120,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CO0012-002",
+      "system_id": "CO0012",
+      "system_name": "BOULDER PUBLIC LIBRARY DISTRICT",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 92164,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 92164,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3120,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 4
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 133697,
       "registered_users": 136080,
       "print_materials": 200646,
@@ -5518,7 +13693,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1606870,
       "physical_circulation": 1029155
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 151,
@@ -5538,15 +13728,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "GLENDALE LIBRARY, ARTS & CULTURE",
-    "square_feet": 92000,
-    "public_service_hours": 3422,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CA0042-002",
+      "system_id": "CA0042",
+      "system_name": "GLENDALE LIBRARY, ARTS & CULTURE",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 92000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 92000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3422,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 7
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 191586,
       "registered_users": 95703,
       "print_materials": 350734,
@@ -5555,7 +13784,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 886877,
       "physical_circulation": 698272
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 152,
@@ -5575,23 +13819,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "NEWTON FREE LIBRARY",
-    "square_feet": 91921,
-    "public_service_hours": 3377,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MA0204-002",
+      "system_id": "MA0204",
+      "system_name": "NEWTON FREE LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 91921,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 91921,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3377,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 87381,
       "registered_users": 42911,
       "print_materials": 317355,
       "total_physical_items": 384105,
       "annual_visits": 446601,
       "visits_reporting_method": "CT",
-      "physical_circulation": 1230976
-    }
+      "physical_circulation": 1230976,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 153,
@@ -5611,15 +13912,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "PALOS VERDES LIBRARY DISTRICT",
-    "square_feet": 91000,
-    "public_service_hours": 2686,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CA0092-002",
+      "system_id": "CA0092",
+      "system_name": "PALOS VERDES LIBRARY DISTRICT",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 91000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 91000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2686,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 2
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 66110,
       "registered_users": 71332,
       "print_materials": 157476,
@@ -5628,7 +13968,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1023680,
       "physical_circulation": 867227
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 154,
@@ -5648,15 +14003,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "PIKES PEAK LIBRARY DISTRICT",
-    "square_feet": 90819,
-    "public_service_hours": 2322,
-    "weeks_open": 43,
+    "library": {
+      "outlet_id": "CO0096-009",
+      "system_id": "CO0096",
+      "system_name": "PIKES PEAK LIBRARY DISTRICT",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 90819,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 90819,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2322,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 43,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 14
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 678684,
       "registered_users": 305812,
       "print_materials": 519815,
@@ -5665,7 +14059,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 7178558,
       "physical_circulation": 3622006
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 155,
@@ -5689,11 +14098,50 @@ window.MAPPABLE_LIBRARIES = [
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "SAINT PAUL PUBLIC LIBRARY",
-    "square_feet": 90353,
-    "public_service_hours": 2128,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MN0044-003",
+      "system_id": "MN0044",
+      "system_name": "SAINT PAUL PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 90353,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 90353,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2128,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 12
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 310997,
       "registered_users": 367090,
       "print_materials": 482679,
@@ -5702,7 +14150,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 2866265,
       "physical_circulation": 1823102
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 156,
@@ -5722,15 +14185,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "YOUNGSTOWN AND MAHONING COUNTY, PL OF",
-    "square_feet": 90085,
-    "public_service_hours": 3172,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "OH0248-002",
+      "system_id": "OH0248",
+      "system_name": "YOUNGSTOWN AND MAHONING COUNTY, PL OF",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 90085,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 90085,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3172,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 13
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 226005,
       "registered_users": 84554,
       "print_materials": 369644,
@@ -5739,7 +14241,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 1467271,
       "physical_circulation": 1048540
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 157,
@@ -5759,23 +14276,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "ELMHURST PUBLIC LIBRARY",
-    "square_feet": 90000,
-    "public_service_hours": 3652,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IL0166-002",
+      "system_id": "IL0166",
+      "system_name": "ELMHURST PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 90000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 90000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3652,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2023",
+        "end": "12/31/2023"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 45786,
       "registered_users": 24911,
       "print_materials": 178684,
       "total_physical_items": 213488,
       "annual_visits": 460603,
       "visits_reporting_method": "CT",
-      "physical_circulation": 872941
-    }
+      "physical_circulation": 872941,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 158,
@@ -5799,11 +14373,50 @@ window.MAPPABLE_LIBRARIES = [
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "GLORIA COLES FLINT PUBLIC LIBRARY",
-    "square_feet": 90000,
-    "public_service_hours": 1980,
-    "weeks_open": 44,
+    "library": {
+      "outlet_id": "MI0111-002",
+      "system_id": "MI0111",
+      "system_name": "GLORIA COLES FLINT PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 90000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 90000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 1980,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 44,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 81252,
       "registered_users": 17689,
       "print_materials": 145617,
@@ -5812,7 +14425,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 173529,
       "physical_circulation": 117690
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 159,
@@ -5832,15 +14460,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "BROWN COUNTY LIBRARY",
-    "square_feet": 90000,
-    "public_service_hours": 3068,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "WI0121-010",
+      "system_id": "WI0121",
+      "system_name": "BROWN COUNTY LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 90000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 90000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3068,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 8
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 273297,
       "registered_users": 78136,
       "print_materials": 344698,
@@ -5849,7 +14516,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1769697,
       "physical_circulation": 1285644
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 160,
@@ -5869,15 +14551,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "ARLINGTON DEPT. OF LIBRARIES",
-    "square_feet": 89000,
-    "public_service_hours": 3172,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "VA0005-002",
+      "system_id": "VA0005",
+      "system_name": "ARLINGTON DEPT. OF LIBRARIES",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 89000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 89000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3172,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 8
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 237107,
       "registered_users": 87741,
       "print_materials": 404883,
@@ -5886,7 +14607,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 4328424,
       "physical_circulation": 2177214
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 161,
@@ -5906,15 +14642,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "CERRITOS PUBLIC LIBRARY",
-    "square_feet": 88000,
-    "public_service_hours": 2608,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CA0022-002",
+      "system_id": "CA0022",
+      "system_name": "CERRITOS PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 88000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 88000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2608,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 47806,
       "registered_users": 19490,
       "print_materials": 222820,
@@ -5923,7 +14698,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 219259,
       "physical_circulation": 205504
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 162,
@@ -5943,23 +14733,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "LEROY COLLINS LEON COUNTY PUBLIC LIBRARY SYST",
-    "square_feet": 88000,
-    "public_service_hours": 3154,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "FL0044-002",
+      "system_id": "FL0044",
+      "system_name": "LEROY COLLINS LEON COUNTY PUBLIC LIBRARY SYST",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 88000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 88000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3154,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "10/01/2023",
+        "end": "09/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 6
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 300806,
       "registered_users": 139759,
       "print_materials": 257157,
       "total_physical_items": 306324,
       "annual_visits": 593290,
       "visits_reporting_method": "CT",
-      "physical_circulation": 908315
-    }
+      "physical_circulation": 908315,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 163,
@@ -5979,15 +14826,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "MEAD PUBLIC LIBRARY",
-    "square_feet": 88000,
-    "public_service_hours": 3120,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "WI0292-002",
+      "system_id": "WI0292",
+      "system_name": "MEAD PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 88000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 88000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3120,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 63644,
       "registered_users": 33903,
       "print_materials": 196968,
@@ -5996,7 +14882,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 517962,
       "physical_circulation": 379643
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 164,
@@ -6016,23 +14917,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "NORTHBROOK PUBLIC LIBRARY",
-    "square_feet": 87223,
-    "public_service_hours": 3459,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IL0388-002",
+      "system_id": "IL0388",
+      "system_name": "NORTHBROOK PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 87223,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 87223,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3459,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "05/01/2023",
+        "end": "04/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 35222,
       "registered_users": 20329,
       "print_materials": 180451,
       "total_physical_items": 228855,
       "annual_visits": 294090,
       "visits_reporting_method": "CT",
-      "physical_circulation": 755696
-    }
+      "physical_circulation": 755696,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 165,
@@ -6052,15 +15010,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "JERSEY CITY FREE PUBLIC LIBRARY",
-    "square_feet": 87118,
-    "public_service_hours": 3120,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "NJ0149-002",
+      "system_id": "NJ0149",
+      "system_name": "JERSEY CITY FREE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 87118,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 87118,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3120,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 10
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 292449,
       "registered_users": 170517,
       "print_materials": 391946,
@@ -6069,7 +15066,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 549618,
       "physical_circulation": 372313
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 166,
@@ -6093,19 +15105,76 @@ window.MAPPABLE_LIBRARIES = [
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "OAK LAWN PUBLIC LIBRARY",
-    "square_feet": 86108,
-    "public_service_hours": 3401,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IL0391-002",
+      "system_id": "IL0391",
+      "system_name": "OAK LAWN PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 86108,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 86108,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3401,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2023",
+        "end": "12/31/2023"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 58362,
       "registered_users": 28347,
       "print_materials": 143739,
       "total_physical_items": 184133,
       "annual_visits": 202863,
       "visits_reporting_method": "CT",
-      "physical_circulation": 348601
-    }
+      "physical_circulation": 348601,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 167,
@@ -6125,15 +15194,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "DEARBORN PUBLIC LIBRARY",
-    "square_feet": 85643,
-    "public_service_hours": 3008,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MI0078-002",
+      "system_id": "MI0078",
+      "system_name": "DEARBORN PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 85643,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 85643,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3008,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 2
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 109976,
       "registered_users": 19379,
       "print_materials": 143397,
@@ -6142,7 +15250,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 368714,
       "physical_circulation": 230384
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 168,
@@ -6162,15 +15285,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "JOHNSON COUNTY LIBRARY",
-    "square_feet": 85620,
-    "public_service_hours": 3380,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "KS0134-002",
+      "system_id": "KS0134",
+      "system_name": "JOHNSON COUNTY LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 85620,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 85620,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3380,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 13
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 474776,
       "registered_users": 223721,
       "print_materials": 837291,
@@ -6179,7 +15341,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 6902546,
       "physical_circulation": 5188182
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 169,
@@ -6199,15 +15376,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "ROCHESTER PUBLIC LIBRARY",
-    "square_feet": 85470,
-    "public_service_hours": 3187,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MN0090-004",
+      "system_id": "MN0090",
+      "system_name": "ROCHESTER PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 85470,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 85470,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3187,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 156036,
       "registered_users": 55269,
       "print_materials": 312028,
@@ -6216,7 +15432,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1804359,
       "physical_circulation": 1141250
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 170,
@@ -6236,15 +15467,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "HOOVER PUBLIC LIBRARY",
-    "square_feet": 85000,
-    "public_service_hours": 3345,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "AL0098-002",
+      "system_id": "AL0098",
+      "system_name": "HOOVER PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 85000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 85000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3345,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "10/01/2023",
+        "end": "09/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 92435,
       "registered_users": 39010,
       "print_materials": 178597,
@@ -6253,7 +15523,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1381220,
       "physical_circulation": 938833
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 171,
@@ -6273,23 +15558,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "MANDEL PUBLIC LIBRARY OF WEST PALM BEACH",
-    "square_feet": 85000,
-    "public_service_hours": 3265,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "FL0254-001",
+      "system_id": "FL0254",
+      "system_name": "MANDEL PUBLIC LIBRARY OF WEST PALM BEACH",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 85000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 85000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3265,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "10/01/2023",
+        "end": "09/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 125319,
       "registered_users": 80359,
       "print_materials": 140872,
       "total_physical_items": 169957,
       "annual_visits": 241409,
       "visits_reporting_method": "CT",
-      "physical_circulation": 309451
-    }
+      "physical_circulation": 309451,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 172,
@@ -6309,23 +15651,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "GLENVIEW PUBLIC LIBRARY",
-    "square_feet": 85000,
-    "public_service_hours": 3744,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IL0212-002",
+      "system_id": "IL0212",
+      "system_name": "GLENVIEW PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 85000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 85000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3744,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2023",
+        "end": "12/31/2023"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 48705,
       "registered_users": 21144,
       "print_materials": 205104,
       "total_physical_items": 245213,
       "annual_visits": 310995,
       "visits_reporting_method": "CT",
-      "physical_circulation": 849870
-    }
+      "physical_circulation": 849870,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 173,
@@ -6345,15 +15744,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "TOM GREEN COUNTY LIBRARY SYSTEM",
-    "square_feet": 85000,
-    "public_service_hours": 2702,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "TX0262-002",
+      "system_id": "TX0262",
+      "system_name": "TOM GREEN COUNTY LIBRARY SYSTEM",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 85000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 85000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2702,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "10/01/2023",
+        "end": "09/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 2
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 119057,
       "registered_users": 53669,
       "print_materials": 198441,
@@ -6362,7 +15800,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 515045,
       "physical_circulation": 412339
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 174,
@@ -6382,15 +15835,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "WASHINGTON COUNTY FREE LIBRARY",
-    "square_feet": 84758,
-    "public_service_hours": 3380,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MD0022-010",
+      "system_id": "MD0022",
+      "system_name": "WASHINGTON COUNTY FREE LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 84758,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 84758,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3380,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 7
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 154937,
       "registered_users": 70375,
       "print_materials": 310820,
@@ -6399,7 +15891,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 708237,
       "physical_circulation": 503927
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 175,
@@ -6419,15 +15926,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "LA CROSSE PUBLIC LIBRARY",
-    "square_feet": 84610,
-    "public_service_hours": 2912,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "WI0159-004",
+      "system_id": "WI0159",
+      "system_name": "LA CROSSE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 84610,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 84610,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2912,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 1
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 52115,
       "registered_users": 31726,
       "print_materials": 88555,
@@ -6436,7 +15982,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 582084,
       "physical_circulation": 457450
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 176,
@@ -6456,15 +16017,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "MANUAL"
       }
     },
-    "system_name": "CLINTON-MACOMB PUBLIC LIBRARY",
-    "square_feet": 84000,
-    "public_service_hours": 3744,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MI0397-002",
+      "system_id": "MI0397",
+      "system_name": "CLINTON-MACOMB PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 84000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 84000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3744,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "12/01/2022",
+        "end": "11/30/2023"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 2
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 184879,
       "registered_users": 157867,
       "print_materials": 301445,
@@ -6473,7 +16073,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1448297,
       "physical_circulation": 1273790
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 177,
@@ -6493,15 +16108,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "ATHENS REGIONAL LIBRARY SYSTEM",
-    "square_feet": 83823,
-    "public_service_hours": 3488,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "GA0011-002",
+      "system_id": "GA0011",
+      "system_name": "ATHENS REGIONAL LIBRARY SYSTEM",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 83823,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 83823,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3488,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 10
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 250788,
       "registered_users": 114225,
       "print_materials": 343516,
@@ -6510,7 +16164,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 983857,
       "physical_circulation": 713591
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 178,
@@ -6530,15 +16199,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "HIGH POINT PUBLIC LIBRARY",
-    "square_feet": 83440,
-    "public_service_hours": 3274,
-    "weeks_open": 50,
+    "library": {
+      "outlet_id": "NC0080-002",
+      "system_id": "NC0080",
+      "system_name": "HIGH POINT PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 83440,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 83440,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3274,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 50,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 117206,
       "registered_users": 169442,
       "print_materials": 214269,
@@ -6547,7 +16255,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 785672,
       "physical_circulation": 574186
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 179,
@@ -6567,23 +16290,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "JACKSON COUNTY LIBRARY SERVICES",
-    "square_feet": 83191,
-    "public_service_hours": 2711,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "OR0041-002",
+      "system_id": "OR0041",
+      "system_name": "JACKSON COUNTY LIBRARY SERVICES",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 83191,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 83191,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2711,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 14
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 222762,
       "registered_users": 105824,
       "print_materials": 301818,
       "total_physical_items": 376920,
       "annual_visits": 722602,
       "visits_reporting_method": "CT",
-      "physical_circulation": 1262182
-    }
+      "physical_circulation": 1262182,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 180,
@@ -6603,15 +16383,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "SPRINGFIELD-GREENE COUNTY LIBRARY DISTRICT",
-    "square_feet": 83000,
-    "public_service_hours": 3917,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MO0020-012",
+      "system_id": "MO0020",
+      "system_name": "SPRINGFIELD-GREENE COUNTY LIBRARY DISTRICT",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 83000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 83000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3917,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 9
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 298915,
       "registered_users": 101061,
       "print_materials": 306981,
@@ -6620,7 +16439,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 2705321,
       "physical_circulation": 2022220
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 181,
@@ -6640,23 +16474,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "FLORENCE COUNTY LIBRARY SYSTEM",
-    "square_feet": 83000,
-    "public_service_hours": 2730,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "SC0019-008",
+      "system_id": "SC0019",
+      "system_name": "FLORENCE COUNTY LIBRARY SYSTEM",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 83000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 83000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2730,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 5
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 137059,
       "registered_users": 70713,
       "print_materials": 268043,
       "total_physical_items": 288500,
       "annual_visits": 203424,
       "visits_reporting_method": "CT",
-      "physical_circulation": 164529
-    }
+      "physical_circulation": 164529,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 182,
@@ -6676,15 +16567,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "OREM PUBLIC LIBRARY",
-    "square_feet": 83000,
-    "public_service_hours": 3427,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "UT0059-002",
+      "system_id": "UT0059",
+      "system_name": "OREM PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 83000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 83000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3427,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 95519,
       "registered_users": 46603,
       "print_materials": 196920,
@@ -6693,7 +16623,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 1453106,
       "physical_circulation": 969431
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 183,
@@ -6713,15 +16658,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "FRESNO COUNTY PUBLIC LIBRARY",
-    "square_feet": 82716,
-    "public_service_hours": 2853,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CA0040-002",
+      "system_id": "CA0040",
+      "system_name": "FRESNO COUNTY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 82716,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 82716,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2853,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 34
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 993976,
       "registered_users": 167355,
       "print_materials": 665473,
@@ -6730,7 +16714,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 3096452,
       "physical_circulation": 1844134
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 184,
@@ -6750,15 +16749,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "MARATHON COUNTY PUBLIC LIBRARY",
-    "square_feet": 82700,
-    "public_service_hours": 3120,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "WI0341-013",
+      "system_id": "WI0341",
+      "system_name": "MARATHON COUNTY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 82700,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 82700,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3120,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 8
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 135308,
       "registered_users": 65389,
       "print_materials": 299822,
@@ -6767,7 +16805,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 866898,
       "physical_circulation": 655606
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 185,
@@ -6787,23 +16840,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "MARION PUBLIC LIBRARY",
-    "square_feet": 82527,
-    "public_service_hours": 2860,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IN0142-002",
+      "system_id": "IN0142",
+      "system_name": "MARION PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 82527,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 82527,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2860,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 28101,
       "registered_users": 14079,
       "print_materials": 109464,
       "total_physical_items": 127892,
       "annual_visits": 139562,
       "visits_reporting_method": "CT",
-      "physical_circulation": 149552
-    }
+      "physical_circulation": 149552,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 186,
@@ -6823,23 +16933,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "DES PLAINES PUBLIC LIBRARY",
-    "square_feet": 82500,
-    "public_service_hours": 3744,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IL0138-002",
+      "system_id": "IL0138",
+      "system_name": "DES PLAINES PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 82500,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 82500,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3744,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2023",
+        "end": "12/31/2023"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 60675,
       "registered_users": 19492,
       "print_materials": 216289,
       "total_physical_items": 286163,
       "annual_visits": 308978,
       "visits_reporting_method": "CT",
-      "physical_circulation": 669850
-    }
+      "physical_circulation": 669850,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 187,
@@ -6859,15 +17026,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "OAKLAND PUBLIC LIBRARY",
-    "square_feet": 82000,
-    "public_service_hours": 3011,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CA0081-002",
+      "system_id": "CA0081",
+      "system_name": "OAKLAND PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 82000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 82000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3011,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 17
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 449189,
       "registered_users": 184466,
       "print_materials": 885911,
@@ -6876,7 +17082,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 3162196,
       "physical_circulation": 2134532
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 188,
@@ -6900,11 +17121,50 @@ window.MAPPABLE_LIBRARIES = [
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "HUTCHINSON PUBLIC LIBRARY",
-    "square_feet": 82000,
-    "public_service_hours": 2912,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "KS0225-002",
+      "system_id": "KS0225",
+      "system_name": "HUTCHINSON PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 82000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 82000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2912,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 39662,
       "registered_users": 33065,
       "print_materials": 260704,
@@ -6913,7 +17173,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 340714,
       "physical_circulation": 262733
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 189,
@@ -6933,15 +17208,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "WHITE PLAINS PUBLIC LIBRARY",
-    "square_feet": 82000,
-    "public_service_hours": 3120,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "NY0760-002",
+      "system_id": "NY0760",
+      "system_name": "WHITE PLAINS PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 82000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 82000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3120,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 59559,
       "registered_users": 19830,
       "print_materials": 188869,
@@ -6950,7 +17264,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 499163,
       "physical_circulation": 233623
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 190,
@@ -6970,15 +17299,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "MISHAWAKA-PENN-HARRIS PUBLIC LIBRARY",
-    "square_feet": 81337,
-    "public_service_hours": 2912,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IN0069-003",
+      "system_id": "IN0069",
+      "system_name": "MISHAWAKA-PENN-HARRIS PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 81337,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 81337,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2912,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 2
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 93095,
       "registered_users": 26550,
       "print_materials": 176602,
@@ -6987,7 +17355,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 949981,
       "physical_circulation": 587108
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 191,
@@ -7007,23 +17390,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "IOWA CITY PUBLIC LIBRARY",
-    "square_feet": 81276,
-    "public_service_hours": 3373,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IA0052-002",
+      "system_id": "IA0052",
+      "system_name": "IOWA CITY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 81276,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 81276,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3373,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 89912,
       "registered_users": 41171,
       "print_materials": 164553,
       "total_physical_items": 199931,
       "annual_visits": 543468,
       "visits_reporting_method": "CT",
-      "physical_circulation": 863766
-    }
+      "physical_circulation": 863766,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 192,
@@ -7043,15 +17483,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "SANTA CLARA CITY LIBRARY",
-    "square_feet": 80000,
-    "public_service_hours": 1429,
-    "weeks_open": 51,
+    "library": {
+      "outlet_id": "CA0125-002",
+      "system_id": "CA0125",
+      "system_name": "SANTA CLARA CITY LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 80000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 80000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 1429,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 51,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 2
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 132048,
       "registered_users": 56422,
       "print_materials": 407523,
@@ -7060,7 +17539,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1849758,
       "physical_circulation": 1594219
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 193,
@@ -7080,15 +17574,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "SHREVE MEMORIAL LIBRARY",
-    "square_feet": 80000,
-    "public_service_hours": 0,
-    "weeks_open": 0,
+    "library": {
+      "outlet_id": "LA0054-002",
+      "system_id": "LA0054",
+      "system_name": "SHREVE MEMORIAL LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 80000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 80000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 0,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 0,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 20
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 224893,
       "registered_users": 189089,
       "print_materials": 615837,
@@ -7097,7 +17630,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 941219,
       "physical_circulation": 582614
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 194,
@@ -7117,15 +17665,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "CUMBERLAND COUNTY PUBLIC LIBRARY",
-    "square_feet": 80000,
-    "public_service_hours": 3172,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "NC0026-002",
+      "system_id": "NC0026",
+      "system_name": "CUMBERLAND COUNTY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 80000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 80000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3172,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 7
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 337970,
       "registered_users": 73934,
       "print_materials": 398912,
@@ -7134,7 +17721,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1266101,
       "physical_circulation": 1008856
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 195,
@@ -7154,15 +17756,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "NEW HANOVER COUNTY PUBLIC LIBRARY",
-    "square_feet": 80000,
-    "public_service_hours": 2808,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "NC0047-001",
+      "system_id": "NC0047",
+      "system_name": "NEW HANOVER COUNTY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 80000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 80000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2808,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 3
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 239514,
       "registered_users": 113718,
       "print_materials": 279518,
@@ -7171,7 +17812,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1377896,
       "physical_circulation": 955749
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 196,
@@ -7191,15 +17847,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "ARLINGTON PUBLIC LIBRARY SYSTEM",
-    "square_feet": 80000,
-    "public_service_hours": 3640,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "TX0068-002",
+      "system_id": "TX0068",
+      "system_name": "ARLINGTON PUBLIC LIBRARY SYSTEM",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 80000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 80000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3640,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "10/01/2023",
+        "end": "09/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 6
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 398431,
       "registered_users": 135433,
       "print_materials": 375982,
@@ -7208,7 +17903,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1651326,
       "physical_circulation": 1200379
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 197,
@@ -7228,15 +17938,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "METROPOLITAN LIBRARY SYSTEM",
-    "square_feet": 79500,
-    "public_service_hours": 3640,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "OK0074-002",
+      "system_id": "OK0074",
+      "system_name": "METROPOLITAN LIBRARY SYSTEM",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 79500,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 79500,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3640,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 18
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "E_24"
+      },
       "legal_service_area_population": 808866,
       "registered_users": 420711,
       "print_materials": 811789,
@@ -7245,7 +17994,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 9288474,
       "physical_circulation": 5219195
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 198,
@@ -7265,15 +18029,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "WEST LAFAYETTE PUBLIC LIBRARY",
-    "square_feet": 79470,
-    "public_service_hours": 3128,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IN0114-002",
+      "system_id": "IN0114",
+      "system_name": "WEST LAFAYETTE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 79470,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 79470,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3128,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 44595,
       "registered_users": 11319,
       "print_materials": 99757,
@@ -7282,7 +18085,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 332793,
       "physical_circulation": 220254
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 199,
@@ -7302,15 +18120,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "BOISE PUBLIC",
-    "square_feet": 79381,
-    "public_service_hours": 2814,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "ID0005-002",
+      "system_id": "ID0005",
+      "system_name": "BOISE PUBLIC",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 79381,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 79381,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2814,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "10/01/2023",
+        "end": "09/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 4
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 243657,
       "registered_users": 112839,
       "print_materials": 316963,
@@ -7319,7 +18176,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 2624953,
       "physical_circulation": 1654153
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 200,
@@ -7339,23 +18211,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "AMES PUBLIC LIBRARY",
-    "square_feet": 78992,
-    "public_service_hours": 3543,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IA0041-002",
+      "system_id": "IA0041",
+      "system_name": "AMES PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 78992,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 78992,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3543,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 73008,
       "registered_users": 49203,
       "print_materials": 172724,
       "total_physical_items": 217703,
       "annual_visits": 332355,
       "visits_reporting_method": "CT",
-      "physical_circulation": 736717
-    }
+      "physical_circulation": 736717,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 201,
@@ -7375,15 +18304,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "VIGO COUNTY PUBLIC LIBRARY",
-    "square_feet": 78570,
-    "public_service_hours": 3640,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IN0189-002",
+      "system_id": "IN0189",
+      "system_name": "VIGO COUNTY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 78570,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 78570,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3640,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 2
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 106153,
       "registered_users": 35667,
       "print_materials": 118746,
@@ -7392,7 +18360,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 482969,
       "physical_circulation": 273988
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 202,
@@ -7412,15 +18395,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "THOUSAND OAKS LIBRARY",
-    "square_feet": 78464,
-    "public_service_hours": 2996,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CA0169-002",
+      "system_id": "CA0169",
+      "system_name": "THOUSAND OAKS LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 78464,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 78464,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2996,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 1
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 122643,
       "registered_users": 53234,
       "print_materials": 310812,
@@ -7429,7 +18451,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 969208,
       "physical_circulation": 776695
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 203,
@@ -7449,15 +18486,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "HAMMOND PUBLIC LIBRARY",
-    "square_feet": 78000,
-    "public_service_hours": 3328,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IN0029-008",
+      "system_id": "IN0029",
+      "system_name": "HAMMOND PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 78000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 78000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3328,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 77879,
       "registered_users": 29148,
       "print_materials": 147874,
@@ -7466,7 +18542,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 148487,
       "physical_circulation": 101756
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 204,
@@ -7486,23 +18577,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "THOMAS CRANE PUBLIC LIBRARY",
-    "square_feet": 78000,
-    "public_service_hours": 6760,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MA0240-002",
+      "system_id": "MA0240",
+      "system_name": "THOMAS CRANE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 78000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 78000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 6760,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 3
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 101727,
       "registered_users": 30771,
       "print_materials": 191606,
       "total_physical_items": 223308,
       "annual_visits": 387339,
       "visits_reporting_method": "CT",
-      "physical_circulation": 620934
-    }
+      "physical_circulation": 620934,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 205,
@@ -7522,15 +18670,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "LUBBOCK PUBLIC LIBRARY",
-    "square_feet": 78000,
-    "public_service_hours": 3404,
-    "weeks_open": 50,
+    "library": {
+      "outlet_id": "TX0155-002",
+      "system_id": "TX0155",
+      "system_name": "LUBBOCK PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 78000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 78000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3404,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 50,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "10/01/2023",
+        "end": "09/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 3
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 299167,
       "registered_users": 76998,
       "print_materials": 282020,
@@ -7539,7 +18726,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 845043,
       "physical_circulation": 557921
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 206,
@@ -7559,15 +18761,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "LEWISVILLE PUBLIC LIBRARY",
-    "square_feet": 77800,
-    "public_service_hours": 2999,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "TX0146-002",
+      "system_id": "TX0146",
+      "system_name": "LEWISVILLE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 77800,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 77800,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2999,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "10/01/2023",
+        "end": "09/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 183301,
       "registered_users": 44499,
       "print_materials": 157701,
@@ -7576,7 +18817,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 745477,
       "physical_circulation": 561262
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 207,
@@ -7596,15 +18852,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "GARY PUBLIC LIBRARY",
-    "square_feet": 77668,
-    "public_service_hours": 3120,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IN0028-003",
+      "system_id": "IN0028",
+      "system_name": "GARY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 77668,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 77668,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3120,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 2
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 64914,
       "registered_users": 39857,
       "print_materials": 732808,
@@ -7613,7 +18908,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 139489,
       "physical_circulation": 83635
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 208,
@@ -7633,23 +18943,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "PICKENS COUNTY LIBRARY SYSTEM",
-    "square_feet": 77600,
-    "public_service_hours": 3476,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "SC0034-002",
+      "system_id": "SC0034",
+      "system_name": "PICKENS COUNTY LIBRARY SYSTEM",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 77600,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 77600,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3476,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 3
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 131404,
       "registered_users": 112487,
       "print_materials": 225531,
       "total_physical_items": 252383,
       "annual_visits": 317774,
       "visits_reporting_method": "CT",
-      "physical_circulation": 335032
-    }
+      "physical_circulation": 335032,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 209,
@@ -7669,15 +19036,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "INGLEWOOD PUBLIC LIBRARY",
-    "square_feet": 77300,
-    "public_service_hours": 2652,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CA0049-002",
+      "system_id": "CA0049",
+      "system_name": "INGLEWOOD PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 77300,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 77300,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2652,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 1
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 106065,
       "registered_users": 109197,
       "print_materials": 136776,
@@ -7686,7 +19092,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 77821,
       "physical_circulation": 43985
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 210,
@@ -7706,15 +19127,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "PORTER PUBLIC LIBRARY",
-    "square_feet": 77005,
-    "public_service_hours": 3551,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "OH0238-002",
+      "system_id": "OH0238",
+      "system_name": "PORTER PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 77005,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 77005,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3551,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 34228,
       "registered_users": 28668,
       "print_materials": 113034,
@@ -7723,7 +19183,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 872099,
       "physical_circulation": 683963
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 211,
@@ -7743,15 +19218,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "MIDDLE COUNTRY PUBLIC LIBRARY",
-    "square_feet": 77000,
-    "public_service_hours": 3452,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "NY0654-002",
+      "system_id": "NY0654",
+      "system_name": "MIDDLE COUNTRY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 77000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 77000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3452,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 1
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 61579,
       "registered_users": 58924,
       "print_materials": 281764,
@@ -7760,7 +19274,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 670348,
       "physical_circulation": 526014
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 212,
@@ -7780,23 +19309,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "HILLSBORO PUBLIC LIBRARY",
-    "square_feet": 77000,
-    "public_service_hours": 3152,
-    "weeks_open": 51,
+    "library": {
+      "outlet_id": "OR0019-008",
+      "system_id": "OR0019",
+      "system_name": "HILLSBORO PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 77000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 77000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3152,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 51,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 1
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 157379,
       "registered_users": 88126,
       "print_materials": 233136,
       "total_physical_items": 287033,
       "annual_visits": 628810,
       "visits_reporting_method": "CT",
-      "physical_circulation": 1803897
-    }
+      "physical_circulation": 1803897,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 213,
@@ -7816,15 +19402,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "MANUAL"
       }
     },
-    "system_name": "FORT BEND COUNTY LIBRARIES",
-    "square_feet": 77000,
-    "public_service_hours": 2693,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "TX0247-002",
+      "system_id": "TX0247",
+      "system_name": "FORT BEND COUNTY LIBRARIES",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 77000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 77000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2693,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "10/01/2023",
+        "end": "09/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 12
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 873816,
       "registered_users": 330641,
       "print_materials": 839360,
@@ -7833,7 +19458,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 3574718,
       "physical_circulation": 3111149
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 214,
@@ -7853,15 +19493,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "MANHATTAN PUBLIC LIBRARY",
-    "square_feet": 76828,
-    "public_service_hours": 3796,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "KS0091-002",
+      "system_id": "KS0091",
+      "system_name": "MANHATTAN PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 76828,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 76828,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3796,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 53682,
       "registered_users": 29962,
       "print_materials": 108221,
@@ -7870,7 +19549,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 676417,
       "physical_circulation": 464338
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 215,
@@ -7890,15 +19584,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "ROCHESTER HILLS PUBLIC LIBRARY",
-    "square_feet": 76600,
-    "public_service_hours": 3607,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MI0293-002",
+      "system_id": "MI0293",
+      "system_name": "ROCHESTER HILLS PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 76600,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 76600,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3607,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2023",
+        "end": "12/31/2023"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 109402,
       "registered_users": 79838,
       "print_materials": 267035,
@@ -7907,7 +19640,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1438841,
       "physical_circulation": 1177513
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 216,
@@ -7927,15 +19675,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "MONTGOMERY COUNTY - NORRISTOWN PUBLIC LIBRARY",
-    "square_feet": 76423,
-    "public_service_hours": 3132,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "PA0336-002",
+      "system_id": "PA0336",
+      "system_name": "MONTGOMERY COUNTY - NORRISTOWN PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 76423,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 76423,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3132,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 4
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 336716,
       "registered_users": 95647,
       "print_materials": 410942,
@@ -7944,7 +19731,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 757031,
       "physical_circulation": 531631
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 217,
@@ -7968,11 +19770,50 @@ window.MAPPABLE_LIBRARIES = [
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "MEDINA COUNTY DISTRICT LIBRARY",
-    "square_feet": 76000,
-    "public_service_hours": 3016,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "OH0141-002",
+      "system_id": "OH0141",
+      "system_name": "MEDINA COUNTY DISTRICT LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 76000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 76000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3016,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 5
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 153551,
       "registered_users": 89534,
       "print_materials": 289971,
@@ -7981,7 +19822,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 2898154,
       "physical_circulation": 1875091
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 218,
@@ -8001,15 +19857,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "RICHARDSON PUBLIC LIBRARY",
-    "square_feet": 75861,
-    "public_service_hours": 3215,
-    "weeks_open": 49,
+    "library": {
+      "outlet_id": "TX0245-002",
+      "system_id": "TX0245",
+      "system_name": "RICHARDSON PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 75861,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 75861,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3215,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 49,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "10/01/2023",
+        "end": "09/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 117435,
       "registered_users": 44414,
       "print_materials": 176757,
@@ -8018,7 +19913,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 834104,
       "physical_circulation": 702557
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 219,
@@ -8038,15 +19948,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "BRIDGEPORT PUBLIC LIBRARY",
-    "square_feet": 75320,
-    "public_service_hours": 2392,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CT0016-009",
+      "system_id": "CT0016",
+      "system_name": "BRIDGEPORT PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 75320,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 75320,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2392,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 4
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 148028,
       "registered_users": 19337,
       "print_materials": 599742,
@@ -8055,7 +20004,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 186892,
       "physical_circulation": 146590
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 220,
@@ -8075,15 +20039,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "FAIRBANKS NORTH STAR BOROUGH PUBLIC LIBRARIES",
-    "square_feet": 75000,
-    "public_service_hours": 1550,
-    "weeks_open": 42,
+    "library": {
+      "outlet_id": "AK0023-004",
+      "system_id": "AK0023",
+      "system_name": "FAIRBANKS NORTH STAR BOROUGH PUBLIC LIBRARIES",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 75000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 75000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 1550,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 42,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 1
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 95972,
       "registered_users": 33932,
       "print_materials": 273772,
@@ -8092,7 +20095,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 398523,
       "physical_circulation": 235101
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 221,
@@ -8112,15 +20130,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "SAN LEANDRO PUBLIC LIBRARY",
-    "square_feet": 75000,
-    "public_service_hours": 2883,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CA0117-002",
+      "system_id": "CA0117",
+      "system_name": "SAN LEANDRO PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 75000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 75000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2883,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 3
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 87098,
       "registered_users": 25006,
       "print_materials": 296934,
@@ -8129,7 +20186,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 439566,
       "physical_circulation": 379490
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 222,
@@ -8149,15 +20221,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "SARA HIGHTOWER REGIONAL LIBRARY SYSTEM",
-    "square_feet": 75000,
-    "public_service_hours": 2924,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "GA0021-006",
+      "system_id": "GA0021",
+      "system_name": "SARA HIGHTOWER REGIONAL LIBRARY SYSTEM",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 75000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 75000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2924,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 5
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 170341,
       "registered_users": 57401,
       "print_materials": 244206,
@@ -8166,7 +20277,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 417513,
       "physical_circulation": 329187
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 223,
@@ -8186,23 +20312,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "WAUKEGAN PUBLIC LIBRARY",
-    "square_feet": 75000,
-    "public_service_hours": 2808,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IL0564-002",
+      "system_id": "IL0564",
+      "system_name": "WAUKEGAN PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 75000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 75000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2808,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "05/01/2023",
+        "end": "04/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 1
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 89321,
       "registered_users": 12094,
       "print_materials": 116309,
       "total_physical_items": 144622,
       "annual_visits": 143082,
       "visits_reporting_method": "CT",
-      "physical_circulation": 134424
-    }
+      "physical_circulation": 134424,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 224,
@@ -8222,15 +20405,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "BOONE COUNTY PUBLIC LIBRARY DISTRICT",
-    "square_feet": 75000,
-    "public_service_hours": 3588,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "KY0008-002",
+      "system_id": "KY0008",
+      "system_name": "BOONE COUNTY PUBLIC LIBRARY DISTRICT",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 75000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 75000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3588,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 5
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 140496,
       "registered_users": 128857,
       "print_materials": 272047,
@@ -8239,7 +20461,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1405506,
       "physical_circulation": 878851
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 225,
@@ -8259,15 +20496,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "CAPITAL AREA DISTRICT LIBRARY",
-    "square_feet": 75000,
-    "public_service_hours": 3276,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MI0424-002",
+      "system_id": "MI0424",
+      "system_name": "CAPITAL AREA DISTRICT LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 75000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 75000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3276,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2023",
+        "end": "12/31/2023"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 12
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 244451,
       "registered_users": 92454,
       "print_materials": 385604,
@@ -8276,7 +20552,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 2391871,
       "physical_circulation": 1652156
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 226,
@@ -8296,15 +20587,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "DULUTH PUBLIC LIBRARY",
-    "square_feet": 75000,
-    "public_service_hours": 2295,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MN0013-006",
+      "system_id": "MN0013",
+      "system_name": "DULUTH PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 75000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 75000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2295,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 2
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 86788,
       "registered_users": 52894,
       "print_materials": 298593,
@@ -8313,7 +20643,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 751174,
       "physical_circulation": 625106
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 227,
@@ -8333,15 +20678,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "KENT FREE LIBRARY",
-    "square_feet": 75000,
-    "public_service_hours": 3588,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "OH0110-002",
+      "system_id": "OH0110",
+      "system_name": "KENT FREE LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 75000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 75000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3588,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 33725,
       "registered_users": 37619,
       "print_materials": 125963,
@@ -8350,7 +20734,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 554391,
       "physical_circulation": 367125
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 228,
@@ -8370,15 +20769,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "ROSENBERG LIBRARY",
-    "square_feet": 75000,
-    "public_service_hours": 3060,
-    "weeks_open": 51,
+    "library": {
+      "outlet_id": "TX0056-002",
+      "system_id": "TX0056",
+      "system_name": "ROSENBERG LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 75000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 75000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3060,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 51,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "10/01/2023",
+        "end": "09/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 60897,
       "registered_users": 26428,
       "print_materials": 86558,
@@ -8387,7 +20825,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 278617,
       "physical_circulation": 137682
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 229,
@@ -8407,23 +20860,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "JOLIET PUBLIC LIBRARY",
-    "square_feet": 74000,
-    "public_service_hours": 3356,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IL0261-005",
+      "system_id": "IL0261",
+      "system_name": "JOLIET PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 74000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 74000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3356,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2023",
+        "end": "12/31/2023"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 1
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 150362,
       "registered_users": 24823,
       "print_materials": 199642,
       "total_physical_items": 238906,
       "annual_visits": 267223,
       "visits_reporting_method": "CT",
-      "physical_circulation": 523627
-    }
+      "physical_circulation": 523627,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 230,
@@ -8443,15 +20953,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "MANUAL"
       }
     },
-    "system_name": "CLARKSVILLE MONTGOMERY COUNTY PUBLIC LIBRARY",
-    "square_feet": 74000,
-    "public_service_hours": 3432,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "TN0115-002",
+      "system_id": "TN0115",
+      "system_name": "CLARKSVILLE MONTGOMERY COUNTY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 74000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 74000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3432,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 239872,
       "registered_users": 92803,
       "print_materials": 180815,
@@ -8460,7 +21009,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 672208,
       "physical_circulation": 450091
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 231,
@@ -8480,15 +21044,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "YUMA COUNTY LIBRARY DISTRICT",
-    "square_feet": 73161,
-    "public_service_hours": 3328,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "AZ0082-007",
+      "system_id": "AZ0082",
+      "system_name": "YUMA COUNTY LIBRARY DISTRICT",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 73161,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 73161,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3328,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 7
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 217978,
       "registered_users": 60918,
       "print_materials": 323950,
@@ -8497,7 +21100,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 432029,
       "physical_circulation": 236388
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 232,
@@ -8517,15 +21135,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "NEW CASTLE-HENRY COUNTY PUBLIC LIBRARY",
-    "square_feet": 73000,
-    "public_service_hours": 3519,
-    "weeks_open": 51,
+    "library": {
+      "outlet_id": "IN0150-002",
+      "system_id": "IN0150",
+      "system_name": "NEW CASTLE-HENRY COUNTY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 73000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 73000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3519,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 51,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 39925,
       "registered_users": 9603,
       "print_materials": 137583,
@@ -8534,7 +21191,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 215763,
       "physical_circulation": 153355
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 233,
@@ -8558,11 +21230,50 @@ window.MAPPABLE_LIBRARIES = [
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "RAMSEY COUNTY LIBRARY",
-    "square_feet": 73000,
-    "public_service_hours": 2968,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MN0043-005",
+      "system_id": "MN0043",
+      "system_name": "RAMSEY COUNTY LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 73000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 73000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2968,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 6
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 240198,
       "registered_users": 152145,
       "print_materials": 440931,
@@ -8571,7 +21282,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 3104550,
       "physical_circulation": 2090689
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 234,
@@ -8591,15 +21317,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "BEVERLY HILLS PUBLIC LIBRARY",
-    "square_feet": 72500,
-    "public_service_hours": 3500,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CA0012-002",
+      "system_id": "CA0012",
+      "system_name": "BEVERLY HILLS PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 72500,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 72500,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3500,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 1
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 31806,
       "registered_users": 21298,
       "print_materials": 156119,
@@ -8608,7 +21373,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 287611,
       "physical_circulation": 239843
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 235,
@@ -8628,15 +21408,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "WARREN-TRUMBULL COUNTY PUBLIC LIBRARY",
-    "square_feet": 72500,
-    "public_service_hours": 3120,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "OH0226-002",
+      "system_id": "OH0226",
+      "system_name": "WARREN-TRUMBULL COUNTY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 72500,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 72500,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3120,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 5
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 142591,
       "registered_users": 53592,
       "print_materials": 302473,
@@ -8645,7 +21464,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 665653,
       "physical_circulation": 561301
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 236,
@@ -8665,15 +21499,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "TEMPLE PUBLIC LIBRARY",
-    "square_feet": 72460,
-    "public_service_hours": 3107,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "TX0302-002",
+      "system_id": "TX0302",
+      "system_name": "TEMPLE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 72460,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 72460,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3107,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "10/01/2023",
+        "end": "09/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 93095,
       "registered_users": 20739,
       "print_materials": 127393,
@@ -8682,7 +21555,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 414808,
       "physical_circulation": 395012
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 237,
@@ -8702,15 +21590,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "TORRANCE PUBLIC LIBRARY",
-    "square_feet": 72400,
-    "public_service_hours": 2352,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CA0146-002",
+      "system_id": "CA0146",
+      "system_name": "TORRANCE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 72400,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 72400,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2352,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 5
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 142910,
       "registered_users": 29348,
       "print_materials": 358737,
@@ -8719,7 +21646,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 823678,
       "physical_circulation": 747025
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 238,
@@ -8739,15 +21681,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "ERIE COUNTY PUBLIC LIBRARY",
-    "square_feet": 72319,
-    "public_service_hours": 3220,
-    "weeks_open": 51,
+    "library": {
+      "outlet_id": "PA0423-002",
+      "system_id": "PA0423",
+      "system_name": "ERIE COUNTY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 72319,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 72319,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3220,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 51,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 4
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 237610,
       "registered_users": 36995,
       "print_materials": 346414,
@@ -8756,7 +21737,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1156043,
       "physical_circulation": 987047
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 239,
@@ -8776,15 +21772,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "HERRICK DISTRICT LIBRARY",
-    "square_feet": 72291,
-    "public_service_hours": 3430,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MI0150-002",
+      "system_id": "MI0150",
+      "system_name": "HERRICK DISTRICT LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 72291,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 72291,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3430,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 1
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 109385,
       "registered_users": 51549,
       "print_materials": 173011,
@@ -8793,7 +21828,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1409597,
       "physical_circulation": 865467
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 240,
@@ -8813,15 +21863,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "OXNARD PUBLIC LIBRARY",
-    "square_feet": 72000,
-    "public_service_hours": 2808,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CA0087-002",
+      "system_id": "CA0087",
+      "system_name": "OXNARD PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 72000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 72000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2808,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 2
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 197536,
       "registered_users": 99144,
       "print_materials": 297619,
@@ -8830,7 +21919,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 198916,
       "physical_circulation": 180231
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 241,
@@ -8850,15 +21954,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "WESTMINSTER PUBLIC LIBRARY",
-    "square_feet": 72000,
-    "public_service_hours": 2964,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CO0130-005",
+      "system_id": "CO0130",
+      "system_name": "WESTMINSTER PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 72000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 72000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2964,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 1
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 115739,
       "registered_users": 43601,
       "print_materials": 130508,
@@ -8867,7 +22010,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 609178,
       "physical_circulation": 354292
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 242,
@@ -8887,23 +22045,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "ELA AREA PUBLIC LIBRARY DISTRICT",
-    "square_feet": 72000,
-    "public_service_hours": 3539,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IL0158-002",
+      "system_id": "IL0158",
+      "system_name": "ELA AREA PUBLIC LIBRARY DISTRICT",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 72000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 72000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3539,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 36366,
       "registered_users": 13496,
       "print_materials": 150659,
       "total_physical_items": 186164,
       "annual_visits": 204851,
       "visits_reporting_method": "CT",
-      "physical_circulation": 633039
-    }
+      "physical_circulation": 633039,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 243,
@@ -8923,15 +22138,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "FARMINGTON COMMUNITY LIBRARY",
-    "square_feet": 72000,
-    "public_service_hours": 3398,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MI0105-002",
+      "system_id": "MI0105",
+      "system_name": "FARMINGTON COMMUNITY LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 72000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 72000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3398,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 1
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 95583,
       "registered_users": 31604,
       "print_materials": 222990,
@@ -8940,7 +22194,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1031069,
       "physical_circulation": 793061
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 244,
@@ -8960,15 +22229,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "CHERRY HILL FREE PUBLIC LIBRARY",
-    "square_feet": 72000,
-    "public_service_hours": 2852,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "NJ0087-002",
+      "system_id": "NJ0087",
+      "system_name": "CHERRY HILL FREE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 72000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 72000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2852,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 74553,
       "registered_users": 23300,
       "print_materials": 125307,
@@ -8977,7 +22285,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 338736,
       "physical_circulation": 273299
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 245,
@@ -8997,15 +22320,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "BROOME COUNTY PUBLIC LIBRARY",
-    "square_feet": 72000,
-    "public_service_hours": 3120,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "NY0164-002",
+      "system_id": "NY0164",
+      "system_name": "BROOME COUNTY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 72000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 72000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3120,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 198683,
       "registered_users": 33047,
       "print_materials": 157910,
@@ -9014,7 +22376,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 212474,
       "physical_circulation": 161523
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 246,
@@ -9034,15 +22411,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "WAUKESHA PUBLIC LIBRARY",
-    "square_feet": 71566,
-    "public_service_hours": 3428,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "WI0337-002",
+      "system_id": "WI0337",
+      "system_name": "WAUKESHA PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 71566,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 71566,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3428,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 88995,
       "registered_users": 35511,
       "print_materials": 232101,
@@ -9051,7 +22467,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1013618,
       "physical_circulation": 829356
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 247,
@@ -9071,15 +22502,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "NEWPORT BEACH PUBLIC LIBRARY",
-    "square_feet": 71000,
-    "public_service_hours": 3538,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CA0080-002",
+      "system_id": "CA0080",
+      "system_name": "NEWPORT BEACH PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 71000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 71000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3538,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 3
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 82419,
       "registered_users": 135851,
       "print_materials": 204421,
@@ -9088,7 +22558,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1265179,
       "physical_circulation": 1002070
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 248,
@@ -9108,15 +22593,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "KNOX COUNTY PUBLIC LIBRARY SYSTEM",
-    "square_feet": 70600,
-    "public_service_hours": 3239,
-    "weeks_open": 51,
+    "library": {
+      "outlet_id": "TN0133-002",
+      "system_id": "TN0133",
+      "system_name": "KNOX COUNTY PUBLIC LIBRARY SYSTEM",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 70600,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 70600,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3239,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 51,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 18
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 500669,
       "registered_users": 182573,
       "print_materials": 1051919,
@@ -9125,7 +22649,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 3206383,
       "physical_circulation": 2174505
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 249,
@@ -9145,15 +22684,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "YONKERS PUBLIC LIBRARY",
-    "square_feet": 70410,
-    "public_service_hours": 3019,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "NY0761-007",
+      "system_id": "NY0761",
+      "system_name": "YONKERS PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 70410,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 70410,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3019,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 2
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 211569,
       "registered_users": 67494,
       "print_materials": 234220,
@@ -9162,7 +22740,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 629275,
       "physical_circulation": 400178
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 250,
@@ -9182,23 +22775,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "WILMETTE PUBLIC LIBRARY DISTRICT",
-    "square_feet": 70166,
-    "public_service_hours": 3692,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IL0584-002",
+      "system_id": "IL0584",
+      "system_name": "WILMETTE PUBLIC LIBRARY DISTRICT",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 70166,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 70166,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3692,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 28180,
       "registered_users": 16200,
       "print_materials": 180887,
       "total_physical_items": 222552,
       "annual_visits": 242730,
       "visits_reporting_method": "CT",
-      "physical_circulation": 664193
-    }
+      "physical_circulation": 664193,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 251,
@@ -9218,15 +22868,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "STOCKTON-SAN JOAQUIN COUNTY PUBLIC LIBRARY",
-    "square_feet": 70000,
-    "public_service_hours": 2468,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CA0142-002",
+      "system_id": "CA0142",
+      "system_name": "STOCKTON-SAN JOAQUIN COUNTY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 70000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 70000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2468,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 15
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 724916,
       "registered_users": 160963,
       "print_materials": 356527,
@@ -9235,7 +22924,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1234610,
       "physical_circulation": 957618
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 252,
@@ -9255,23 +22959,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "FREMONT PUBLIC LIBRARY DISTRICT",
-    "square_feet": 70000,
-    "public_service_hours": 3474,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IL0196-002",
+      "system_id": "IL0196",
+      "system_name": "FREMONT PUBLIC LIBRARY DISTRICT",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 70000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 70000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3474,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 38792,
       "registered_users": 12494,
       "print_materials": 91264,
       "total_physical_items": 116640,
       "annual_visits": 178029,
       "visits_reporting_method": "CT",
-      "physical_circulation": 480225
-    }
+      "physical_circulation": 480225,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 253,
@@ -9291,15 +23052,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "TERREBONNE PARISH LIBRARY",
-    "square_feet": 70000,
-    "public_service_hours": 3848,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "LA0048-002",
+      "system_id": "LA0048",
+      "system_name": "TERREBONNE PARISH LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 70000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 70000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3848,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 7
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 103864,
       "registered_users": 91716,
       "print_materials": 233989,
@@ -9308,7 +23108,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 266230,
       "physical_circulation": 184167
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 254,
@@ -9328,15 +23143,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "BISMARCK VETERANS MEMORIAL PUBLIC LIBRARY",
-    "square_feet": 70000,
-    "public_service_hours": 3692,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "ND0007-004",
+      "system_id": "ND0007",
+      "system_name": "BISMARCK VETERANS MEMORIAL PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 70000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 70000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3692,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 98458,
       "registered_users": 47419,
       "print_materials": 170955,
@@ -9345,7 +23199,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 608267,
       "physical_circulation": 420161
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 255,
@@ -9365,15 +23234,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "KEENE PUBLIC LIBRARY",
-    "square_feet": 70000,
-    "public_service_hours": 2610,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "NH0016-002",
+      "system_id": "NH0016",
+      "system_name": "KEENE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 70000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 70000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2610,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 22535,
       "registered_users": 13905,
       "print_materials": 103499,
@@ -9382,7 +23290,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 203873,
       "physical_circulation": 134655
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 256,
@@ -9402,15 +23325,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "STREETADDRESS"
       }
     },
-    "system_name": "MORRIS COUNTY LIBRARY",
-    "square_feet": 70000,
-    "public_service_hours": 3328,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "NJ0221-002",
+      "system_id": "NJ0221",
+      "system_name": "MORRIS COUNTY LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 70000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 70000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3328,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 509285,
       "registered_users": 3827,
       "print_materials": 269725,
@@ -9419,7 +23381,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 288020,
       "physical_circulation": 258848
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 257,
@@ -9439,15 +23416,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "LICKING COUNTY LIBRARY",
-    "square_feet": 70000,
-    "public_service_hours": 2496,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "OH0163-002",
+      "system_id": "OH0163",
+      "system_name": "LICKING COUNTY LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 70000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 70000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2496,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 5
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 118136,
       "registered_users": 36672,
       "print_materials": 213505,
@@ -9456,7 +23472,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 943592,
       "physical_circulation": 697679
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 258,
@@ -9476,15 +23507,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "L.E. PHILLIPS MEMORIAL PUBLIC LIBRARY",
-    "square_feet": 70000,
-    "public_service_hours": 3224,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "WI0090-002",
+      "system_id": "WI0090",
+      "system_name": "L.E. PHILLIPS MEMORIAL PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 70000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 70000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3224,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 91323,
       "registered_users": 30437,
       "print_materials": 102981,
@@ -9493,7 +23563,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 839251,
       "physical_circulation": 646284
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 259,
@@ -9513,23 +23598,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "SPRINGFIELD CITY LIBRARY",
-    "square_feet": 69622,
-    "public_service_hours": 6760,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MA0278-002",
+      "system_id": "MA0278",
+      "system_name": "SPRINGFIELD CITY LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 69622,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 69622,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 6760,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 8
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 154064,
       "registered_users": 56386,
       "print_materials": 402329,
       "total_physical_items": 496576,
       "annual_visits": 367342,
       "visits_reporting_method": "CT",
-      "physical_circulation": 261583
-    }
+      "physical_circulation": 261583,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 260,
@@ -9553,11 +23695,50 @@ window.MAPPABLE_LIBRARIES = [
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "COBB COUNTY PUBLIC LIBRARY SYSTEM",
-    "square_feet": 68000,
-    "public_service_hours": 2855,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "GA0013-002",
+      "system_id": "GA0013",
+      "system_name": "COBB COUNTY PUBLIC LIBRARY SYSTEM",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 68000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 68000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2855,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 14
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 783536,
       "registered_users": 418304,
       "print_materials": 1085901,
@@ -9566,7 +23747,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 2926578,
       "physical_circulation": 1801357
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 261,
@@ -9586,23 +23782,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "MOLINE PUBLIC LIBRARY",
-    "square_feet": 68000,
-    "public_service_hours": 3146,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IL0345-002",
+      "system_id": "IL0345",
+      "system_name": "MOLINE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 68000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 68000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3146,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2023",
+        "end": "12/31/2023"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 42985,
       "registered_users": 9891,
       "print_materials": 162481,
       "total_physical_items": 182763,
       "annual_visits": 180982,
       "visits_reporting_method": "CT",
-      "physical_circulation": 224187
-    }
+      "physical_circulation": 224187,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 262,
@@ -9622,15 +23875,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "GREAT FALLS PUBLIC LIBRARY",
-    "square_feet": 68000,
-    "public_service_hours": 2774,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MT0033-002",
+      "system_id": "MT0033",
+      "system_name": "GREAT FALLS PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 68000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 68000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2774,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 81475,
       "registered_users": 17988,
       "print_materials": 106737,
@@ -9639,7 +23931,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 273385,
       "physical_circulation": 189234
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 263,
@@ -9659,15 +23966,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "CHESAPEAKE PUBLIC LIBRARY",
-    "square_feet": 67838,
-    "public_service_hours": 3120,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "VA0017-002",
+      "system_id": "VA0017",
+      "system_name": "CHESAPEAKE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 67838,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 67838,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3120,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 6
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 250256,
       "registered_users": 119509,
       "print_materials": 267246,
@@ -9676,7 +24022,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1361908,
       "physical_circulation": 943824
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 264,
@@ -9696,23 +24057,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "DOWNERS GROVE PUBLIC LIBRARY",
-    "square_feet": 67738,
-    "public_service_hours": 3650,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IL0145-002",
+      "system_id": "IL0145",
+      "system_name": "DOWNERS GROVE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 67738,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 67738,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3650,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2023",
+        "end": "12/31/2023"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 50247,
       "registered_users": 31608,
       "print_materials": 198133,
       "total_physical_items": 242840,
       "annual_visits": 420948,
       "visits_reporting_method": "CT",
-      "physical_circulation": 905268
-    }
+      "physical_circulation": 905268,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 265,
@@ -9732,15 +24150,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "ANAHEIM PUBLIC LIBRARY",
-    "square_feet": 67500,
-    "public_service_hours": 2240,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CA0007-002",
+      "system_id": "CA0007",
+      "system_name": "ANAHEIM PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 67500,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 67500,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2240,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 7
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 340160,
       "registered_users": 317524,
       "print_materials": 506856,
@@ -9749,7 +24206,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1067329,
       "physical_circulation": 816659
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 266,
@@ -9769,23 +24241,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "COUNCIL BLUFFS PUBLIC LIBRARY",
-    "square_feet": 67500,
-    "public_service_hours": 3453,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IA0453-002",
+      "system_id": "IA0453",
+      "system_name": "COUNCIL BLUFFS PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 67500,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 67500,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3453,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 79080,
       "registered_users": 52687,
       "print_materials": 111481,
       "total_physical_items": 147030,
       "annual_visits": 174609,
       "visits_reporting_method": "CT",
-      "physical_circulation": 218664
-    }
+      "physical_circulation": 218664,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 267,
@@ -9805,23 +24334,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "CONCORD FREE PUBLIC LIBRARY",
-    "square_feet": 67400,
-    "public_service_hours": 5193,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MA0067-002",
+      "system_id": "MA0067",
+      "system_name": "CONCORD FREE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 67400,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 67400,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 5193,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 1
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 17954,
       "registered_users": 16625,
       "print_materials": 210438,
       "total_physical_items": 231375,
       "annual_visits": 349529,
       "visits_reporting_method": "ES",
-      "physical_circulation": 337017
-    }
+      "physical_circulation": 337017,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 268,
@@ -9841,23 +24427,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "BROOKLINE PUBLIC LIBRARY",
-    "square_feet": 67300,
-    "public_service_hours": 6760,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MA0046-002",
+      "system_id": "MA0046",
+      "system_name": "BROOKLINE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 67300,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 67300,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 6760,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 2
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 62535,
       "registered_users": 41968,
       "print_materials": 228244,
       "total_physical_items": 275361,
       "annual_visits": 546039,
       "visits_reporting_method": "CT",
-      "physical_circulation": 813846
-    }
+      "physical_circulation": 813846,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 269,
@@ -9877,23 +24520,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "FORT SMITH PUBLIC LIBRARY",
-    "square_feet": 67000,
-    "public_service_hours": 3120,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "AR0011-002",
+      "system_id": "AR0011",
+      "system_name": "FORT SMITH PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 67000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 67000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3120,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 3
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 89142,
       "registered_users": 114029,
       "print_materials": 238941,
       "total_physical_items": 258253,
       "annual_visits": 213978,
       "visits_reporting_method": "CT",
-      "physical_circulation": 237157
-    }
+      "physical_circulation": 237157,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 270,
@@ -9913,15 +24613,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "WALLINGFORD PUBLIC LIBRARY",
-    "square_feet": 67000,
-    "public_service_hours": 3392,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CT0164-002",
+      "system_id": "CT0164",
+      "system_name": "WALLINGFORD PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 67000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 67000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3392,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 43725,
       "registered_users": 15784,
       "print_materials": 153961,
@@ -9930,7 +24669,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 431496,
       "physical_circulation": 362885
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 271,
@@ -9950,23 +24704,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "LAKE VILLA PUBLIC LIBRARY DISTRICT",
-    "square_feet": 67000,
-    "public_service_hours": 3444,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IL0278-002",
+      "system_id": "IL0278",
+      "system_name": "LAKE VILLA PUBLIC LIBRARY DISTRICT",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 67000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 67000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3444,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 39809,
       "registered_users": 14066,
       "print_materials": 100874,
       "total_physical_items": 128836,
       "annual_visits": 171321,
       "visits_reporting_method": "CT",
-      "physical_circulation": 544277
-    }
+      "physical_circulation": 544277,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 272,
@@ -9986,15 +24797,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "BRENTWOOD PUBLIC LIBRARY",
-    "square_feet": 67000,
-    "public_service_hours": 3556,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "NY0648-002",
+      "system_id": "NY0648",
+      "system_name": "BRENTWOOD PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 67000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 67000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3556,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 90116,
       "registered_users": 42924,
       "print_materials": 135867,
@@ -10003,7 +24853,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 142618,
       "physical_circulation": 75311
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 273,
@@ -10023,15 +24888,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "ALBANY PUBLIC LIBRARY",
-    "square_feet": 67000,
-    "public_service_hours": 2492,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "NY0697-002",
+      "system_id": "NY0697",
+      "system_name": "ALBANY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 67000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 67000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2492,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 6
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 99224,
       "registered_users": 88020,
       "print_materials": 313657,
@@ -10040,7 +24944,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 525958,
       "physical_circulation": 363172
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 274,
@@ -10060,23 +24979,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "BEAVERTON CITY LIBRARY",
-    "square_feet": 67000,
-    "public_service_hours": 2800,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "OR0080-002",
+      "system_id": "OR0080",
+      "system_name": "BEAVERTON CITY LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 67000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 67000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2800,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 1
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 148075,
       "registered_users": 101772,
       "print_materials": 251364,
       "total_physical_items": 304177,
       "annual_visits": 513736,
       "visits_reporting_method": "CT",
-      "physical_circulation": 1938895
-    }
+      "physical_circulation": 1938895,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 275,
@@ -10096,15 +25072,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "WEST BEND COMMUNITY MEMORIAL LIBRARY",
-    "square_feet": 67000,
-    "public_service_hours": 3172,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "WI0345-002",
+      "system_id": "WI0345",
+      "system_name": "WEST BEND COMMUNITY MEMORIAL LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 67000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 67000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3172,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 57267,
       "registered_users": 23473,
       "print_materials": 120956,
@@ -10113,7 +25128,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 500955,
       "physical_circulation": 401554
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 276,
@@ -10133,15 +25163,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "LIVE OAK PUBLIC LIBRARIES",
-    "square_feet": 66300,
-    "public_service_hours": 1604,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "GA0008-002",
+      "system_id": "GA0008",
+      "system_name": "LIVE OAK PUBLIC LIBRARIES",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 66300,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 66300,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 1604,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 15
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 450821,
       "registered_users": 150758,
       "print_materials": 416778,
@@ -10150,7 +25219,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1017607,
       "physical_circulation": 776644
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 277,
@@ -10170,15 +25254,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "T",
-        "score": 100.0,
+        "score": 100,
         "match_type": "MANUAL"
       }
     },
-    "system_name": "CABELL COUNTY PUBLIC LIBRARY",
-    "square_feet": 66150,
-    "public_service_hours": 2886,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "WV0004-002",
+      "system_id": "WV0004",
+      "system_name": "CABELL COUNTY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 66150,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 66150,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2886,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 7
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 94350,
       "registered_users": 144326,
       "print_materials": 389387,
@@ -10187,7 +25310,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 933347,
       "physical_circulation": 761436
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 278,
@@ -10207,23 +25345,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "MORSE INSTITUTE LIBRARY",
-    "square_feet": 66000,
-    "public_service_hours": 3342,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MA0196-002",
+      "system_id": "MA0196",
+      "system_name": "MORSE INSTITUTE LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 66000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 66000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3342,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 29705,
       "registered_users": 17516,
       "print_materials": 130774,
       "total_physical_items": 153548,
       "annual_visits": 150000,
       "visits_reporting_method": "ES",
-      "physical_circulation": 372975
-    }
+      "physical_circulation": 372975,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 279,
@@ -10243,15 +25438,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "FREDERICK COUNTY PUBLIC LIBRARIES",
-    "square_feet": 66000,
-    "public_service_hours": 3058,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MD0011-012",
+      "system_id": "MD0011",
+      "system_name": "FREDERICK COUNTY PUBLIC LIBRARIES",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 66000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 66000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3058,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 8
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 279835,
       "registered_users": 152137,
       "print_materials": 342625,
@@ -10260,7 +25494,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 3179978,
       "physical_circulation": 2328007
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 280,
@@ -10280,15 +25529,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "MANUAL"
       }
     },
-    "system_name": "BILLINGS PUBLIC LIBRARY",
-    "square_feet": 66000,
-    "public_service_hours": 3276,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MT0006-002",
+      "system_id": "MT0006",
+      "system_name": "BILLINGS PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 66000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 66000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3276,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 157509,
       "registered_users": 56382,
       "print_materials": 167312,
@@ -10297,7 +25585,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 697009,
       "physical_circulation": 472258
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 281,
@@ -10321,11 +25624,50 @@ window.MAPPABLE_LIBRARIES = [
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "SIOUXLAND LIBRARIES",
-    "square_feet": 66000,
-    "public_service_hours": 3241,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "SD0141-016",
+      "system_id": "SD0141",
+      "system_name": "SIOUXLAND LIBRARIES",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 66000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 66000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3241,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 12
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 255913,
       "registered_users": 82121,
       "print_materials": 223245,
@@ -10334,7 +25676,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 2129081,
       "physical_circulation": 1521666
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 282,
@@ -10354,15 +25711,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "ROUND ROCK PUBLIC LIBRARY SYSTEM",
-    "square_feet": 66000,
-    "public_service_hours": 3533,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "TX0259-002",
+      "system_id": "TX0259",
+      "system_name": "ROUND ROCK PUBLIC LIBRARY SYSTEM",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 66000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 66000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3533,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "10/01/2023",
+        "end": "09/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 130406,
       "registered_users": 81173,
       "print_materials": 149190,
@@ -10371,7 +25767,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1276618,
       "physical_circulation": 1134108
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 283,
@@ -10391,23 +25802,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "DEKALB PUBLIC LIBRARY",
-    "square_feet": 65786,
-    "public_service_hours": 3508,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IL0135-002",
+      "system_id": "IL0135",
+      "system_name": "DEKALB PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 65786,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 65786,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3508,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2023",
+        "end": "12/31/2023"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 40290,
       "registered_users": 15579,
       "print_materials": 139928,
       "total_physical_items": 153048,
       "annual_visits": 233918,
       "visits_reporting_method": "CT",
-      "physical_circulation": 151489
-    }
+      "physical_circulation": 151489,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 284,
@@ -10427,15 +25895,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "ASCENSION PARISH LIBRARY",
-    "square_feet": 65645,
-    "public_service_hours": 3536,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "LA0037-001",
+      "system_id": "LA0037",
+      "system_name": "ASCENSION PARISH LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 65645,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 65645,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3536,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 4
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 133534,
       "registered_users": 96579,
       "print_materials": 326667,
@@ -10444,7 +25951,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 881800,
       "physical_circulation": 473391
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 285,
@@ -10464,15 +25986,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "CAMARILLO PUBLIC LIBRARY",
-    "square_feet": 65621,
-    "public_service_hours": 3077,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CA0209-001",
+      "system_id": "CA0209",
+      "system_name": "CAMARILLO PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 65621,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 65621,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3077,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 69014,
       "registered_users": 89356,
       "print_materials": 169630,
@@ -10481,7 +26042,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 531192,
       "physical_circulation": 375128
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 286,
@@ -10501,15 +26077,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "LAFAYETTE PUBLIC LIBRARY",
-    "square_feet": 65449,
-    "public_service_hours": 3172,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "LA0052-001",
+      "system_id": "LA0052",
+      "system_name": "LAFAYETTE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 65449,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 65449,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3172,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 8
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 254241,
       "registered_users": 128701,
       "print_materials": 408540,
@@ -10518,7 +26133,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 1671894,
       "physical_circulation": 1370257
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 287,
@@ -10542,19 +26172,76 @@ window.MAPPABLE_LIBRARIES = [
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "NILES-MAINE DISTRICT LIBRARY",
-    "square_feet": 65193,
-    "public_service_hours": 3305,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IL0379-002",
+      "system_id": "IL0379",
+      "system_name": "NILES-MAINE DISTRICT LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 65193,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 65193,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3305,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 59181,
       "registered_users": 16196,
       "print_materials": 202939,
       "total_physical_items": 258815,
       "annual_visits": 207566,
       "visits_reporting_method": "CT",
-      "physical_circulation": 551451
-    }
+      "physical_circulation": 551451,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 288,
@@ -10574,15 +26261,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "SHAKER HEIGHTS PUBLIC LIBRARY",
-    "square_feet": 65179,
-    "public_service_hours": 3588,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "OH0200-002",
+      "system_id": "OH0200",
+      "system_name": "SHAKER HEIGHTS PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 65179,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 65179,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3588,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 1
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 33188,
       "registered_users": 25688,
       "print_materials": 123634,
@@ -10591,7 +26317,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "ES",
       "annual_circulation": 764588,
       "physical_circulation": 460291
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 289,
@@ -10611,15 +26352,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "FOND DU LAC PUBLIC LIBRARY",
-    "square_feet": 65100,
-    "public_service_hours": 3328,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "WI0103-003",
+      "system_id": "WI0103",
+      "system_name": "FOND DU LAC PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 65100,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 65100,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3328,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 1
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 70889,
       "registered_users": 20435,
       "print_materials": 150419,
@@ -10628,7 +26408,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 502908,
       "physical_circulation": 373004
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 290,
@@ -10648,23 +26443,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "ANKENY KIRKENDALL PUBLIC LIBRARY",
-    "square_feet": 65000,
-    "public_service_hours": 3473,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IA0150-002",
+      "system_id": "IA0150",
+      "system_name": "ANKENY KIRKENDALL PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 65000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 65000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3473,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 76078,
       "registered_users": 41405,
       "print_materials": 117451,
       "total_physical_items": 142795,
       "annual_visits": 373604,
       "visits_reporting_method": "CT",
-      "physical_circulation": 371399
-    }
+      "physical_circulation": 371399,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 291,
@@ -10684,23 +26536,80 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "WATERLOO PUBLIC LIBRARY",
-    "square_feet": 65000,
-    "public_service_hours": 3206,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "IA0331-002",
+      "system_id": "IA0331",
+      "system_name": "WATERLOO PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 65000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 65000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3206,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "U_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 68052,
       "registered_users": 42416,
       "print_materials": 81595,
       "total_physical_items": 97827,
       "annual_visits": 136785,
       "visits_reporting_method": "CT",
-      "physical_circulation": 201665
-    }
+      "physical_circulation": 201665,
+      "notes": [
+        "FY 2024 annual circulation was missing in the IMLS system record and is omitted."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 292,
@@ -10720,15 +26629,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "LAWRENCE PUBLIC LIBRARY",
-    "square_feet": 65000,
-    "public_service_hours": 3328,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "KS0131-002",
+      "system_id": "KS0131",
+      "system_name": "LAWRENCE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 65000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 65000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3328,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 96207,
       "registered_users": 43482,
       "print_materials": 156811,
@@ -10737,7 +26685,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 909943,
       "physical_circulation": 602104
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 293,
@@ -10757,15 +26720,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "REDFORD TOWNSHIP DISTRICT LIBRARY",
-    "square_feet": 65000,
-    "public_service_hours": 2927,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MI0402-002",
+      "system_id": "MI0402",
+      "system_name": "REDFORD TOWNSHIP DISTRICT LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 65000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 65000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2927,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "04/01/2023",
+        "end": "03/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 49504,
       "registered_users": 15479,
       "print_materials": 63414,
@@ -10774,7 +26776,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 220391,
       "physical_circulation": 180754
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 294,
@@ -10794,15 +26811,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "BLOUNT COUNTY PUBLIC LIBRARY",
-    "square_feet": 65000,
-    "public_service_hours": 3640,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "TN0053-002",
+      "system_id": "TN0053",
+      "system_name": "BLOUNT COUNTY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 65000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 65000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3640,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 141455,
       "registered_users": 62266,
       "print_materials": 174888,
@@ -10811,7 +26867,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 662920,
       "physical_circulation": 436680
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 295,
@@ -10831,15 +26902,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "HEDBERG PUBLIC LIBRARY",
-    "square_feet": 65000,
-    "public_service_hours": 3120,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "WI0142-002",
+      "system_id": "WI0142",
+      "system_name": "HEDBERG PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 65000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 65000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 3120,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 1
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 80041,
       "registered_users": 32026,
       "print_materials": 147634,
@@ -10848,7 +26958,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 564355,
       "physical_circulation": 427366
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 296,
@@ -10868,15 +26993,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "RACINE PUBLIC LIBRARY",
-    "square_feet": 65000,
-    "public_service_hours": 2912,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "WI0268-004",
+      "system_id": "WI0268",
+      "system_name": "RACINE PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 65000,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 65000,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2912,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "01/01/2024",
+        "end": "12/31/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 137874,
       "registered_users": 33529,
       "print_materials": 156105,
@@ -10885,7 +27049,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 572203,
       "physical_circulation": 438600
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 297,
@@ -10905,15 +27084,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "HUMBOLDT COUNTY LIBRARY",
-    "square_feet": 64800,
-    "public_service_hours": 1545,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CA0039-002",
+      "system_id": "CA0039",
+      "system_name": "HUMBOLDT COUNTY LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 64800,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 64800,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 1545,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 10
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 133100,
       "registered_users": 122767,
       "print_materials": 265611,
@@ -10922,7 +27140,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 493911,
       "physical_circulation": 361385
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 298,
@@ -10942,15 +27175,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "A. K. SMILEY PUBLIC LIBRARY",
-    "square_feet": 64636,
-    "public_service_hours": 2769,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "CA0165-002",
+      "system_id": "CA0165",
+      "system_name": "A. K. SMILEY PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 64636,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 64636,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2769,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 0
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 72696,
       "registered_users": 62586,
       "print_materials": 111766,
@@ -10959,7 +27231,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 272440,
       "physical_circulation": 220540
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 299,
@@ -10979,15 +27266,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "LIVONIA PUBLIC LIBRARY",
-    "square_feet": 64500,
-    "public_service_hours": 2547,
-    "weeks_open": 52,
+    "library": {
+      "outlet_id": "MI0200-002",
+      "system_id": "MI0200",
+      "system_name": "LIVONIA PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 64500,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 64500,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2547,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 52,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "12/01/2022",
+        "end": "11/30/2023"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 2
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 95535,
       "registered_users": 23751,
       "print_materials": 163184,
@@ -10996,7 +27322,22 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 818743,
       "physical_circulation": 648582
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   },
   {
     "rank": 300,
@@ -11016,15 +27357,54 @@ window.MAPPABLE_LIBRARIES = [
         "provider": "Esri World Geocoder via IMLS",
         "crs": "WGS84/EPSG:4326",
         "status": "E",
-        "score": 100.0,
+        "score": 100,
         "match_type": "POINTADDRESS"
       }
     },
-    "system_name": "SAN BERNARDINO PUBLIC LIBRARY",
-    "square_feet": 64300,
-    "public_service_hours": 2080,
-    "weeks_open": 28,
+    "library": {
+      "outlet_id": "CA0110-002",
+      "system_id": "CA0110",
+      "system_name": "SAN BERNARDINO PUBLIC LIBRARY",
+      "outlet_type": "central",
+      "library_type": "public"
+    },
+    "ranking": {
+      "metric": "reported_outlet_floor_area",
+      "value": 64300,
+      "unit": "sq_ft",
+      "reporting_year": 2024,
+      "scope": "building",
+      "definition": "Area on all floors enclosed by the outlet's outer walls, including nonpublic and shared areas used by the library."
+    },
+    "building": {
+      "reported_square_feet": 64300,
+      "square_feet_flag": "R_24",
+      "annual_public_service_hours": 2080,
+      "public_service_hours_flag": "R_24",
+      "weeks_open": 28,
+      "weeks_open_flag": "R_24"
+    },
     "system_statistics": {
+      "scope": "library_system",
+      "reporting_period": {
+        "start": "07/01/2023",
+        "end": "06/30/2024"
+      },
+      "outlet_counts": {
+        "central_libraries": 1,
+        "branch_libraries": 3
+      },
+      "data_flags": {
+        "legal_service_area_population": "R_24",
+        "registered_users": "R_24",
+        "print_materials": "R_24",
+        "total_physical_items": "R_24",
+        "annual_visits": "R_24",
+        "annual_circulation": "R_24",
+        "physical_circulation": "R_24",
+        "central_libraries": "R_24",
+        "branch_libraries": "R_24"
+      },
       "legal_service_area_population": 226541,
       "registered_users": 20509,
       "print_materials": 169988,
@@ -11033,6 +27413,21 @@ window.MAPPABLE_LIBRARIES = [
       "visits_reporting_method": "CT",
       "annual_circulation": 51866,
       "physical_circulation": 40556
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+        "scope": "ranking_building_and_system_data",
+        "note": "IMLS PLS FY 2024 public-use outlet and administrative-entity CSV files; joined on FSCSKEY.",
+        "verified_at": "2026-07-21"
+      },
+      {
+        "url": "https://www.imls.gov/sites/default/files/2026-06/PublicLibrariesSurvey_FiscalYear2024_DataDocumentationandUsersGuide.pdf",
+        "scope": "definitions_and_geocoding_method",
+        "note": "Official definitions for central outlets, square footage, system metrics, imputation flags, and IMLS-added Esri geocodes.",
+        "verified_at": "2026-07-21"
+      }
+    ],
+    "verified_at": "2026-07-21"
   }
 ];

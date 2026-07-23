@@ -8,11 +8,8 @@
   const elements = {
     libraryCount: document.querySelector("#library-count"),
     stateCount: document.querySelector("#state-count"),
-    totalArea: document.querySelector("#total-area"),
     resultsCount: document.querySelector("#results-count"),
     resultsList: document.querySelector("#results-list"),
-    emptyState: document.querySelector("#empty-state"),
-    search: document.querySelector("#library-search"),
     mapStatus: document.querySelector("#map-status"),
     selectedRank: document.querySelector("#selected-rank"),
     selectedTitle: document.querySelector("#selected-title"),
@@ -20,8 +17,32 @@
     selectedArea: document.querySelector("#selected-area"),
     selectedMaterials: document.querySelector("#selected-materials"),
     selectedVisits: document.querySelector("#selected-visits"),
-    selectedCoordinates: document.querySelector("#selected-coordinates"),
     selectionCard: document.querySelector("#selection-card"),
+    sortMetrics: document.querySelectorAll(".selection-metric"),
+    detailDialog: document.querySelector("#library-dialog"),
+    detailClose: document.querySelector("#detail-close"),
+    detailName: document.querySelector("#detail-library-name"),
+    detailRank: document.querySelector("#detail-rank"),
+    detailSystemName: document.querySelector("#detail-system-name"),
+    detailAddress: document.querySelector("#detail-address"),
+    detailArea: document.querySelector("#detail-area"),
+    detailPrintMaterials: document.querySelector("#detail-print-materials"),
+    detailVisits: document.querySelector("#detail-visits"),
+    detailCirculation: document.querySelector("#detail-circulation"),
+    detailRankingDefinition: document.querySelector("#detail-ranking-definition"),
+    detailBuildingFacts: document.querySelector("#detail-building-facts"),
+    detailReportingPeriod: document.querySelector("#detail-reporting-period"),
+    detailSystemFacts: document.querySelector("#detail-system-facts"),
+    detailDataFlags: document.querySelector("#detail-data-flags"),
+    detailNotes: document.querySelector("#detail-notes"),
+    detailSources: document.querySelector("#detail-sources"),
+    detailFullAddress: document.querySelector("#detail-full-address"),
+    detailCounty: document.querySelector("#detail-county"),
+    detailCoordinates: document.querySelector("#detail-coordinates"),
+    detailLibraryIdentity: document.querySelector("#detail-library-identity"),
+    detailGeocode: document.querySelector("#detail-geocode"),
+    detailRanking: document.querySelector("#detail-ranking"),
+    detailVerifiedAt: document.querySelector("#detail-verified-at"),
   };
 
   const numberFormatter = new Intl.NumberFormat("en-US");
@@ -32,27 +53,46 @@
 
   const mapMarkers = new Map();
   let selectedRank = libraries.length ? libraries[0].rank : null;
-  let filteredRanks = new Set(libraries.map((library) => library.rank));
+  let sortKey = "square_feet";
+  let sortDirection = "descending";
   let map = null;
+  let lastDetailTrigger = null;
 
   function titleCase(value) {
-    return value
+    return String(value)
       .toLocaleLowerCase("en-US")
       .replace(/\b[a-z]/g, (letter) => letter.toLocaleUpperCase("en-US"))
       .replace(/\bJr\b/g, "Jr.")
       .replace(/\bDc\b/g, "DC");
   }
 
+  function humanize(value) {
+    return String(value)
+      .replaceAll("_", " ")
+      .replace(/\b\w/g, (letter) => letter.toLocaleUpperCase("en-US"));
+  }
+
   function formatCompact(value) {
     return Number.isFinite(value) ? compactFormatter.format(value) : "Not reported";
   }
 
-  function markerSize(squareFeet) {
-    const values = libraries.map((library) => Math.sqrt(library.square_feet));
-    const minimum = Math.min(...values);
-    const maximum = Math.max(...values);
-    const normalized = (Math.sqrt(squareFeet) - minimum) / (maximum - minimum || 1);
-    return 14 + normalized * 12;
+  function formatNumber(value, suffix = "") {
+    return Number.isFinite(value)
+      ? `${numberFormatter.format(value)}${suffix}`
+      : "Not reported";
+  }
+
+  function formatDate(value) {
+    if (!value) return "Not reported";
+    const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(value);
+    if (!match) return value;
+    const date = new Date(Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3])));
+    return new Intl.DateTimeFormat("en-US", {
+      month: "long",
+      day: "numeric",
+      year: "numeric",
+      timeZone: "UTC",
+    }).format(date);
   }
 
   function createElement(tagName, className, text) {
@@ -62,16 +102,18 @@
     return node;
   }
 
+  function markerSize(squareFeet) {
+    const values = libraries.map((library) => Math.sqrt(library.building.reported_square_feet));
+    const minimum = Math.min(...values);
+    const maximum = Math.max(...values);
+    const normalized = (Math.sqrt(squareFeet) - minimum) / (maximum - minimum || 1);
+    return 14 + normalized * 12;
+  }
+
   function renderSummary() {
     const states = new Set(libraries.map((library) => library.location.state));
-    const totalSquareFeet = libraries.reduce(
-      (total, library) => total + library.square_feet,
-      0
-    );
-
     elements.libraryCount.textContent = numberFormatter.format(libraries.length);
     elements.stateCount.textContent = numberFormatter.format(states.size);
-    elements.totalArea.textContent = `${formatCompact(totalSquareFeet)} sq ft`;
   }
 
   function createMapMarker(library) {
@@ -82,14 +124,20 @@
 
     markerButton.type = "button";
     markerButton.dataset.rank = String(library.rank);
-    markerButton.dataset.label = `#${library.rank} ${name}`;
+    markerButton.dataset.label = `Rank ${library.rank} · ${name}`;
     markerButton.setAttribute(
       "aria-label",
-      `Rank ${library.rank}, ${name}, ${library.location.city}, ${library.location.state}, ${library.value}`
+      `View details for rank ${library.rank}, ${name}, ${library.location.city}, ${library.location.state}`
     );
     markerButton.setAttribute("aria-pressed", "false");
-    markerButton.style.setProperty("--marker-size", `${markerSize(library.square_feet)}px`);
-    markerButton.addEventListener("click", () => selectLibrary(library, { scrollList: true }));
+    markerButton.style.setProperty(
+      "--marker-size",
+      `${markerSize(library.building.reported_square_feet)}px`
+    );
+    markerButton.addEventListener("click", () => {
+      selectLibrary(library, { scrollList: true });
+      openLibraryDetails(library, markerButton);
+    });
     anchor.append(markerButton);
 
     const marker = new maplibregl.Marker({ element: anchor, anchor: "center" })
@@ -141,7 +189,7 @@
 
   function resultCard(library) {
     const card = createElement("button", "result-card");
-    const rank = createElement("span", "result-rank", `#${library.rank}`);
+    const rank = createElement("span", "result-rank");
     const copy = createElement("span", "result-copy");
     const title = createElement("span", "result-title", titleCase(library.title));
     const location = createElement(
@@ -150,32 +198,58 @@
       `${titleCase(library.location.city)}, ${library.location.state}`
     );
     const statistics = library.system_statistics;
-    const context = createElement(
+    const metrics = createElement("span", "result-metrics");
+    const area = createElement("span", "result-value", library.value);
+    const materials = createElement(
       "span",
-      "result-context",
-      `${formatCompact(statistics.print_materials)} system print items · ${formatCompact(statistics.annual_visits)} visits`
+      "result-value",
+      `${formatCompact(statistics.print_materials)} print items`
     );
-    const value = createElement("span", "result-value", library.value);
+    const visits = createElement(
+      "span",
+      "result-value",
+      `${formatCompact(statistics.annual_visits)} visits`
+    );
 
     card.type = "button";
     card.dataset.rank = String(library.rank);
     card.setAttribute("aria-pressed", "false");
     card.setAttribute(
       "aria-label",
-      `Select rank ${library.rank}, ${titleCase(library.title)}, ${library.value}`
+      `View details for rank ${library.rank}, ${titleCase(library.title)}, ${library.value}`
     );
-    copy.append(title, location, context);
-    card.append(rank, copy, value);
-    card.addEventListener("click", () => selectLibrary(library));
+    copy.append(title, location);
+    metrics.append(area, materials, visits);
+    card.append(rank, copy, metrics);
+    card.addEventListener("click", () => {
+      selectLibrary(library);
+      openLibraryDetails(library, card);
+    });
     return card;
+  }
+
+  function sortedLibraries() {
+    const direction = sortDirection === "descending" ? -1 : 1;
+    return [...libraries].sort((left, right) => {
+      const leftValue = sortKey === "square_feet"
+        ? left.building.reported_square_feet
+        : left.system_statistics[sortKey];
+      const rightValue = sortKey === "square_feet"
+        ? right.building.reported_square_feet
+        : right.system_statistics[sortKey];
+      return (leftValue - rightValue) * direction || left.rank - right.rank;
+    });
   }
 
   function renderResults(records) {
     const fragment = document.createDocumentFragment();
-    records.forEach((library) => fragment.appendChild(resultCard(library)));
+    records.forEach((library, index) => {
+      const card = resultCard(library);
+      card.querySelector(".result-rank").textContent = String(index + 1);
+      fragment.appendChild(card);
+    });
     elements.resultsList.replaceChildren(fragment);
     elements.resultsCount.textContent = `${records.length} ${records.length === 1 ? "result" : "results"}`;
-    elements.emptyState.hidden = records.length !== 0;
     updateSelectedStyles();
   }
 
@@ -197,15 +271,13 @@
   function selectLibrary(library, options = {}) {
     selectedRank = library.rank;
     const statistics = library.system_statistics;
-    const coordinates = library.location.coordinates;
 
-    elements.selectedRank.textContent = `#${library.rank}`;
+    elements.selectedRank.textContent = String(library.rank);
     elements.selectedTitle.textContent = titleCase(library.title);
     elements.selectedAddress.textContent = `${titleCase(library.location.address)} · ${titleCase(library.location.city)}, ${library.location.state}`;
     elements.selectedArea.textContent = library.value;
     elements.selectedMaterials.textContent = formatCompact(statistics.print_materials);
     elements.selectedVisits.textContent = formatCompact(statistics.annual_visits);
-    elements.selectedCoordinates.textContent = `${coordinates.lat.toFixed(4)}, ${coordinates.lng.toFixed(4)}`;
     updateSelectedStyles();
 
     if (options.scrollList) {
@@ -216,53 +288,214 @@
     }
   }
 
-  function searchableText(library) {
-    return [
-      library.title,
-      library.system_name,
-      library.location.address,
-      library.location.city,
-      library.location.state,
-      library.location.county,
-    ]
-      .join(" ")
-      .toLocaleLowerCase("en-US");
+  function renderFactGrid(container, facts) {
+    const cards = facts.map(({ label, value, wide = false }) => {
+      const card = createElement("article", `detail-fact${wide ? " is-wide" : ""}`);
+      card.append(
+        createElement("span", "detail-fact-label", label),
+        createElement("strong", "detail-fact-value", value)
+      );
+      return card;
+    });
+    container.replaceChildren(...cards);
   }
 
-  function applySearch() {
-    const query = elements.search.value.trim().toLocaleLowerCase("en-US");
-    const matches = query
-      ? libraries.filter((library) => searchableText(library).includes(query))
-      : libraries;
-
-    filteredRanks = new Set(matches.map((library) => library.rank));
-    renderResults(matches);
-    elements.selectionCard.hidden = matches.length === 0;
-
-    mapMarkers.forEach(({ anchor }, rank) => {
-      anchor.hidden = !filteredRanks.has(rank);
+  function renderCompactFacts(container, facts) {
+    const fragment = document.createDocumentFragment();
+    facts.forEach(({ label, value }) => {
+      fragment.append(
+        createElement("dt", "compact-fact-label", label),
+        createElement("dd", "compact-fact-value", value)
+      );
     });
+    container.replaceChildren(fragment);
+  }
 
-    if (matches.length && !filteredRanks.has(selectedRank)) {
-      selectLibrary(matches[0]);
+  function renderDataFlags(flags) {
+    const flagRows = Object.entries(flags).map(([field, flag]) => {
+      const row = createElement("div", "detail-flag");
+      row.append(
+        createElement("span", "detail-flag-label", humanize(field)),
+        createElement("strong", "detail-flag-value", flag)
+      );
+      return row;
+    });
+    elements.detailDataFlags.replaceChildren(...flagRows);
+  }
+
+  function renderNotes(notes = []) {
+    if (!notes.length) {
+      elements.detailNotes.replaceChildren(
+        createElement("p", "detail-note detail-note-muted", "No record-specific notes were reported.")
+      );
+      return;
     }
+
+    const noteCards = notes.map((note) => createElement("p", "detail-note", note));
+    elements.detailNotes.replaceChildren(...noteCards);
+  }
+
+  function renderSources(sources) {
+    const sourceCards = sources.map((source, index) => {
+      const card = createElement("article", "source-card card");
+      const copy = createElement("div", "source-card-copy");
+      copy.append(
+        createElement("span", "source-card-label", `Source ${index + 1} · ${humanize(source.scope)}`),
+        createElement("p", "source-card-note", source.note),
+        createElement("span", "source-card-date", `Verified ${formatDate(source.verified_at)}`)
+      );
+
+      const link = createElement("a", "source-card-link", "Open source ↗");
+      link.href = source.url;
+      link.target = "_blank";
+      link.rel = "noreferrer";
+      card.append(copy, link);
+      return card;
+    });
+    elements.detailSources.replaceChildren(...sourceCards);
+  }
+
+  function openLibraryDetails(library, trigger) {
+    const location = library.location;
+    const building = library.building;
+    const statistics = library.system_statistics;
+    const circulation = statistics.physical_circulation;
+    const visitMethods = {
+      CT: "Actual count (CT)",
+      ES: "Estimate (ES)",
+      M: "Missing (M)",
+    };
+
+    lastDetailTrigger = trigger;
+    elements.detailName.textContent = titleCase(library.title);
+    elements.detailRank.textContent = `Rank ${library.rank}`;
+    elements.detailSystemName.textContent = titleCase(library.library.system_name);
+    elements.detailAddress.textContent = `${titleCase(location.address)} · ${titleCase(location.city)}, ${location.state} ${location.postal_code}`;
+    elements.detailArea.textContent = library.value;
+    elements.detailPrintMaterials.textContent = formatNumber(statistics.print_materials);
+    elements.detailVisits.textContent = formatNumber(statistics.annual_visits);
+    elements.detailCirculation.textContent = formatNumber(circulation);
+    elements.detailRankingDefinition.textContent = library.ranking.definition;
+    elements.detailReportingPeriod.textContent = `${statistics.reporting_period.start}–${statistics.reporting_period.end}`;
+
+    const buildingFacts = [
+      { label: "Reported floor area", value: library.value },
+      { label: "Square-feet data flag", value: building.square_feet_flag },
+      { label: "Annual public service hours", value: formatNumber(building.annual_public_service_hours) },
+      { label: "Service-hours data flag", value: building.public_service_hours_flag },
+      { label: "Weeks open", value: formatNumber(building.weeks_open) },
+      { label: "Weeks-open data flag", value: building.weeks_open_flag },
+    ];
+    if (building.opened_year) {
+      buildingFacts.push({ label: "Opened", value: String(building.opened_year) });
+    }
+    if (building.architects?.length) {
+      buildingFacts.push({ label: "Architects", value: building.architects.join(", "), wide: true });
+    }
+    if (building.history_summary) {
+      buildingFacts.push({ label: "Building history", value: building.history_summary, wide: true });
+    }
+    renderFactGrid(elements.detailBuildingFacts, buildingFacts);
+
+    renderFactGrid(elements.detailSystemFacts, [
+      { label: "Legal service area population", value: formatNumber(statistics.legal_service_area_population) },
+      { label: "Registered users", value: formatNumber(statistics.registered_users) },
+      { label: "Print materials", value: formatNumber(statistics.print_materials) },
+      { label: "Total physical items", value: formatNumber(statistics.total_physical_items) },
+      { label: "Annual visits", value: formatNumber(statistics.annual_visits) },
+      { label: "Visits reporting method", value: visitMethods[statistics.visits_reporting_method] ?? statistics.visits_reporting_method },
+      { label: "Annual circulation", value: formatNumber(statistics.annual_circulation) },
+      { label: "Physical circulation", value: formatNumber(statistics.physical_circulation) },
+      { label: "Central libraries", value: formatNumber(statistics.outlet_counts.central_libraries) },
+      { label: "Branch libraries", value: formatNumber(statistics.outlet_counts.branch_libraries) },
+      { label: "Measurement scope", value: humanize(statistics.scope) },
+    ]);
+
+    renderDataFlags(statistics.data_flags);
+    renderNotes(statistics.notes);
+    renderSources(library.sources);
+
+    elements.detailFullAddress.textContent = `${titleCase(location.address)}, ${titleCase(location.city)}, ${location.state} ${location.postal_code}`;
+    elements.detailCounty.textContent = `${titleCase(location.county)} County`;
+    elements.detailCoordinates.textContent = `${location.coordinates.lat.toFixed(6)}, ${location.coordinates.lng.toFixed(6)}`;
+
+    renderCompactFacts(elements.detailLibraryIdentity, [
+      { label: "Outlet ID", value: library.library.outlet_id },
+      { label: "System ID", value: library.library.system_id },
+      { label: "System", value: titleCase(library.library.system_name) },
+      { label: "Outlet type", value: humanize(library.library.outlet_type) },
+      { label: "Library type", value: humanize(library.library.library_type) },
+    ]);
+
+    renderCompactFacts(elements.detailGeocode, [
+      { label: "Provider", value: location.geocode.provider },
+      { label: "CRS", value: location.geocode.crs },
+      { label: "Status", value: location.geocode.status },
+      { label: "Score", value: String(location.geocode.score) },
+      { label: "Match type", value: humanize(location.geocode.match_type) },
+    ]);
+
+    renderCompactFacts(elements.detailRanking, [
+      { label: "Metric", value: humanize(library.ranking.metric) },
+      { label: "Value", value: formatNumber(library.ranking.value, " sq ft") },
+      { label: "Unit", value: humanize(library.ranking.unit) },
+      { label: "Reporting year", value: String(library.ranking.reporting_year) },
+      { label: "Scope", value: humanize(library.ranking.scope) },
+    ]);
+
+    elements.detailVerifiedAt.textContent = `Record checked ${formatDate(library.verified_at)}`;
+    elements.detailDialog.showModal();
+    elements.detailDialog.scrollTop = 0;
+    elements.detailClose.focus();
+  }
+
+  function updateSortMetricState() {
+    elements.sortMetrics.forEach((metric) => {
+      const isActive = metric.dataset.sortKey === sortKey;
+      metric.classList.toggle("is-active", isActive);
+      metric.setAttribute("aria-pressed", String(isActive));
+      metric.setAttribute(
+        "aria-label",
+        `${metric.querySelector(".selection-metric-label").textContent}: sorted ${isActive ? sortDirection : "not selected"}`
+      );
+    });
+  }
+
+  function applySort(nextSortKey) {
+    if (sortKey === nextSortKey) {
+      sortDirection = sortDirection === "descending" ? "ascending" : "descending";
+    } else {
+      sortKey = nextSortKey;
+      sortDirection = "descending";
+    }
+
+    updateSortMetricState();
+    renderResults(sortedLibraries());
   }
 
   function initialize() {
     if (!libraries.length) {
       elements.resultsCount.textContent = "0 results";
-      elements.emptyState.hidden = false;
-      elements.emptyState.textContent = "The local library dataset could not be loaded.";
       elements.selectionCard.hidden = true;
       elements.mapStatus.textContent = "Map unavailable";
       return;
     }
 
     renderSummary();
-    renderResults(libraries);
+    updateSortMetricState();
+    renderResults(sortedLibraries());
     selectLibrary(libraries[0]);
     initializeMap();
-    elements.search.addEventListener("input", applySearch);
+
+    elements.sortMetrics.forEach((metric) => {
+      metric.addEventListener("click", () => applySort(metric.dataset.sortKey));
+    });
+
+    elements.detailClose.addEventListener("click", () => elements.detailDialog.close());
+    elements.detailDialog.addEventListener("close", () => {
+      lastDetailTrigger?.focus();
+      lastDetailTrigger = null;
+    });
   }
 
   initialize();

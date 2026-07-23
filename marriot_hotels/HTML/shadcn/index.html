@@ -4,60 +4,346 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light">
-    <title>Mappable</title>
+    <meta name="description" content="Explore the 30 largest Marriott portfolio hotels in the United States, ranked by published guest-room count.">
+    <title>Largest Marriott Hotels | Mappable</title>
+    <link rel="stylesheet" href="vendor/maplibre-gl-5.24.0/maplibre-gl.css">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <main class="app-shell" aria-label="Mappable">
+    <main class="app-shell" aria-label="Largest Marriott hotels map">
       <header class="app-header">
         <a class="wordmark" href="index.html" aria-label="Mappable home">Mappable</a>
         <span class="status-badge" role="status">
           <span class="status-dot" aria-hidden="true"></span>
-          Syncing
+          30 verified hotels
         </span>
       </header>
 
-      <section class="summary-card card" aria-label="Loading search summary">
-        <div class="skeleton skeleton-label"></div>
-        <div class="skeleton skeleton-title"></div>
-        <div class="skeleton skeleton-line"></div>
+      <section class="summary-card card" aria-labelledby="summary-title">
+        <div class="summary-copy">
+          <p class="eyebrow">United States hotel map</p>
+          <h1 id="summary-title">The 30 largest Marriott hotels in America</h1>
+          <p>Ranked by published room count across four Marriott portfolio brands.</p>
+        </div>
+        <div class="summary-metrics" aria-label="Dataset summary">
+          <div><strong>30</strong><span>Hotels</span></div>
+          <div><strong>45,299</strong><span>Rooms</span></div>
+          <div><strong>16</strong><span>States</span></div>
+        </div>
       </section>
 
       <div class="workspace">
-        <section class="results-panel" aria-label="Loading companies">
+        <section class="results-panel" aria-labelledby="results-title">
           <div class="results-heading">
-            <div class="skeleton skeleton-heading"></div>
-            <div class="skeleton skeleton-count"></div>
+            <h2 id="results-title">Hotels by size</h2>
+            <span>30 results</span>
           </div>
-          <div class="results-list">
-            <article class="result-card card" aria-label="Loading result"><div class="skeleton skeleton-icon"></div><div class="result-copy"><div class="skeleton skeleton-result-title"></div><div class="skeleton skeleton-result-line"></div><div class="skeleton skeleton-result-line short"></div></div></article>
-            <article class="result-card card" aria-label="Loading result"><div class="skeleton skeleton-icon"></div><div class="result-copy"><div class="skeleton skeleton-result-title"></div><div class="skeleton skeleton-result-line"></div><div class="skeleton skeleton-result-line short"></div></div></article>
-            <article class="result-card card" aria-label="Loading result"><div class="skeleton skeleton-icon"></div><div class="result-copy"><div class="skeleton skeleton-result-title"></div><div class="skeleton skeleton-result-line"></div><div class="skeleton skeleton-result-line short"></div></div></article>
-            <article class="result-card card" aria-label="Loading result"><div class="skeleton skeleton-icon"></div><div class="result-copy"><div class="skeleton skeleton-result-title"></div><div class="skeleton skeleton-result-line"></div><div class="skeleton skeleton-result-line short"></div></div></article>
-            <article class="result-card card" aria-label="Loading result"><div class="skeleton skeleton-icon"></div><div class="result-copy"><div class="skeleton skeleton-result-title"></div><div class="skeleton skeleton-result-line"></div><div class="skeleton skeleton-result-line short"></div></div></article>
-            <article class="result-card card" aria-label="Loading result"><div class="skeleton skeleton-icon"></div><div class="result-copy"><div class="skeleton skeleton-result-title"></div><div class="skeleton skeleton-result-line"></div><div class="skeleton skeleton-result-line short"></div></div></article>
-          </div>
+          <div class="results-list" id="results-list"></div>
         </section>
 
-        <section class="map-card card" aria-label="Loading map">
+        <section class="map-card card" aria-label="Map of the largest Marriott hotels">
           <div class="map-toolbar">
-            <div class="skeleton skeleton-map-label"></div>
-            <div class="skeleton skeleton-map-control"></div>
+            <span>United States</span>
+            <div class="map-toolbar-actions">
+              <span class="map-status" id="map-status" role="status">Loading map</span>
+              <span class="map-count" aria-label="30 plotted hotels">30</span>
+            </div>
           </div>
-          <div class="map-canvas" aria-hidden="true">
-            <span class="map-road road-a"></span>
-            <span class="map-road road-b"></span>
-            <span class="map-road road-c"></span>
-            <span class="map-block block-a"></span>
-            <span class="map-block block-b"></span>
-            <span class="map-block block-c"></span>
-            <span class="map-pin pin-a"></span>
-            <span class="map-pin pin-b"></span>
-            <span class="map-pin pin-c"></span>
-            <span class="map-pin pin-d"></span>
+          <div class="map-canvas">
+            <div id="map" aria-label="Interactive map of the 30 largest Marriott hotels"></div>
           </div>
         </section>
       </div>
     </main>
+
+    <dialog class="hotel-dialog" aria-labelledby="dialog-hotel-name">
+      <div class="app-shell dialog-shell">
+        <header class="app-header">
+          <a class="wordmark" href="index.html" aria-label="Mappable home">Mappable</a>
+          <button class="close-button" type="button" aria-label="Close hotel details">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </header>
+
+        <div class="dialog-content">
+          <section class="hotel-hero" aria-labelledby="dialog-hotel-name">
+            <p class="eyebrow">Hotel profile</p>
+            <div class="hotel-title-row">
+              <h2 id="dialog-hotel-name"></h2>
+              <span class="detail-badge" id="dialog-rank"></span>
+              <span class="detail-badge room-badge" id="dialog-room-count"></span>
+            </div>
+            <p class="hotel-summary" id="dialog-hotel-summary"></p>
+          </section>
+
+          <div class="detail-layout">
+            <section class="hotel-details" aria-labelledby="details-title">
+              <div class="section-heading">
+                <div>
+                  <p class="eyebrow">Property details</p>
+                  <h3 id="details-title">At a glance</h3>
+                </div>
+              </div>
+              <div class="facts-grid" id="dialog-facts"></div>
+
+              <section class="history-section" id="history-section" aria-labelledby="history-title">
+                <div class="section-heading">
+                  <div>
+                    <p class="eyebrow">Background</p>
+                    <h3 id="history-title">History &amp; context</h3>
+                  </div>
+                </div>
+                <div class="history-list" id="dialog-history"></div>
+              </section>
+            </section>
+
+            <aside class="source-panel" aria-label="Hotel location and sources">
+              <section class="fact-card card">
+                <p class="fact-label">Address</p>
+                <p class="fact-value" id="dialog-address"></p>
+                <p class="fact-note" id="dialog-coordinates"></p>
+              </section>
+              <section class="fact-card card">
+                <p class="fact-label">Data confidence</p>
+                <div class="verified-row"><span class="verified-dot" aria-hidden="true"></span><strong>Verified</strong></div>
+                <p class="fact-note" id="dialog-verified-date"></p>
+              </section>
+              <section class="fact-card card source-card">
+                <p class="fact-label">Sources</p>
+                <div class="source-list" id="dialog-sources"></div>
+              </section>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="hotel-data.js"></script>
+    <script src="vendor/maplibre-gl-5.24.0/maplibre-gl.js"></script>
+    <script>
+      const hotels = window.MAPPABLE_HOTELS || [];
+      const resultsList = document.querySelector('#results-list');
+      const dialog = document.querySelector('.hotel-dialog');
+      const closeButton = document.querySelector('.close-button');
+      const mapStatus = document.querySelector('#map-status');
+      const markerButtons = new Map();
+
+      const formatNumber = (value) => new Intl.NumberFormat('en-US').format(value);
+
+      function formatDate(date) {
+        return new Intl.DateTimeFormat('en-US', {
+          month: 'short',
+          day: 'numeric',
+          year: 'numeric'
+        }).format(new Date(`${date}T12:00:00`));
+      }
+
+      function compactAddress(address) {
+        return address.replace(/, [A-Z]{2} \d{5}(?:-\d{4})?$/, '');
+      }
+
+      function renderResults() {
+        const cards = hotels.map((hotel) => {
+          const card = document.createElement('button');
+          card.className = 'result-card card';
+          card.type = 'button';
+          card.dataset.rank = hotel.rank;
+          card.setAttribute('aria-label', `View number ${hotel.rank}, ${hotel.title}`);
+
+          const heading = document.createElement('span');
+          heading.className = 'result-card-heading';
+
+          const titleGroup = document.createElement('span');
+          titleGroup.className = 'result-title-group';
+
+          const rank = document.createElement('span');
+          rank.className = 'result-rank';
+          rank.textContent = `#${hotel.rank}`;
+
+          const title = document.createElement('strong');
+          title.textContent = hotel.title;
+          titleGroup.append(rank, title);
+
+          const arrow = document.createElement('span');
+          arrow.className = 'card-arrow';
+          arrow.setAttribute('aria-hidden', 'true');
+          arrow.textContent = '→';
+          heading.append(titleGroup, arrow);
+
+          const summary = document.createElement('span');
+          summary.className = 'result-summary';
+          summary.textContent = `${formatNumber(hotel.size.total_guest_rooms)} rooms`;
+
+          const location = document.createElement('span');
+          location.className = 'result-location';
+          location.textContent = `${hotel.location.city}, ${hotel.location.state} · ${compactAddress(hotel.location.address)}`;
+
+          const tags = document.createElement('span');
+          tags.className = 'result-tags';
+          const brand = document.createElement('span');
+          brand.textContent = hotel.brand;
+          tags.append(brand);
+
+          const propertyYear = hotel.building.year_opened || hotel.building.year_built;
+          if (propertyYear) {
+            const year = document.createElement('span');
+            year.textContent = `${hotel.building.year_opened ? 'Opened' : 'Built'} ${propertyYear}`;
+            tags.append(year);
+          }
+
+          card.append(heading, summary, location, tags);
+          card.addEventListener('click', () => showHotel(hotel.rank));
+          card.addEventListener('mouseenter', () => markerButtons.get(hotel.rank)?.classList.add('is-hovered'));
+          card.addEventListener('mouseleave', () => markerButtons.get(hotel.rank)?.classList.remove('is-hovered'));
+          return card;
+        });
+
+        resultsList.replaceChildren(...cards);
+      }
+
+      function createFact(label, value) {
+        const item = document.createElement('article');
+        item.className = 'detail-fact card';
+
+        const factLabel = document.createElement('p');
+        factLabel.className = 'fact-label';
+        factLabel.textContent = label;
+
+        const factValue = document.createElement('p');
+        factValue.className = 'detail-fact-value';
+        factValue.textContent = value;
+        item.append(factLabel, factValue);
+        return item;
+      }
+
+      function renderFacts(hotel) {
+        const facts = [
+          ['Brand', hotel.brand],
+          ['Guest rooms', formatNumber(hotel.size.total_guest_rooms)],
+          hotel.size.suites !== null ? ['Suites', formatNumber(hotel.size.suites)] : null,
+          hotel.building.floors !== null ? ['Floors', formatNumber(hotel.building.floors)] : null,
+          hotel.building.year_opened !== null ? ['Opened', hotel.building.year_opened] : null,
+          hotel.building.year_built !== null ? ['Built', hotel.building.year_built] : null,
+          hotel.building.last_renovated !== null ? ['Last renovated', hotel.building.last_renovated] : null,
+          hotel.building.meeting_space_square_feet !== null
+            ? ['Meeting space', `${formatNumber(hotel.building.meeting_space_square_feet)} sq ft`]
+            : null,
+          hotel.building.building_square_feet !== null
+            ? ['Building area', `${formatNumber(hotel.building.building_square_feet)} sq ft`]
+            : null
+        ].filter(Boolean);
+
+        document.querySelector('#dialog-facts').replaceChildren(
+          ...facts.map(([label, value]) => createFact(label, value))
+        );
+      }
+
+      function renderHistory(hotel) {
+        const section = document.querySelector('#history-section');
+        if (!hotel.history.length) {
+          section.hidden = true;
+          return;
+        }
+
+        section.hidden = false;
+        const items = hotel.history.map((entry) => {
+          const paragraph = document.createElement('p');
+          paragraph.textContent = entry;
+          return paragraph;
+        });
+        document.querySelector('#dialog-history').replaceChildren(...items);
+      }
+
+      function renderSources(hotel) {
+        const links = hotel.sources.map((source) => {
+          const link = document.createElement('a');
+          link.href = source.url;
+          link.target = '_blank';
+          link.rel = 'noreferrer';
+          link.textContent = `${source.publisher} ↗`;
+          return link;
+        });
+        document.querySelector('#dialog-sources').replaceChildren(...links);
+      }
+
+      function showHotel(rank) {
+        const hotel = hotels.find((item) => item.rank === rank);
+        if (!hotel) return;
+
+        document.querySelector('#dialog-hotel-name').textContent = hotel.title;
+        document.querySelector('#dialog-rank').textContent = `#${hotel.rank} largest`;
+        document.querySelector('#dialog-room-count').textContent = `${formatNumber(hotel.size.total_guest_rooms)} rooms`;
+        document.querySelector('#dialog-hotel-summary').textContent = `${hotel.brand} in ${hotel.location.city}, ${hotel.location.state}, ranked by published total guest-room inventory.`;
+        document.querySelector('#dialog-address').textContent = hotel.location.address;
+        document.querySelector('#dialog-coordinates').textContent = `${hotel.location.coordinates.lat.toFixed(5)}, ${hotel.location.coordinates.lng.toFixed(5)}`;
+        document.querySelector('#dialog-verified-date').textContent = `Last checked ${formatDate(hotel.verified_at)}`;
+        renderFacts(hotel);
+        renderHistory(hotel);
+        renderSources(hotel);
+
+        dialog.showModal();
+        dialog.scrollTop = 0;
+        closeButton.focus();
+      }
+
+      function initializeMap() {
+        if (!window.maplibregl || !hotels.length) {
+          mapStatus.textContent = 'Map unavailable';
+          return;
+        }
+
+        const map = new maplibregl.Map({
+          container: 'map',
+          style: 'https://tiles.openfreemap.org/styles/liberty',
+          center: [-98.5, 38.5],
+          zoom: 2.6,
+          minZoom: 1.5,
+          renderWorldCopies: false,
+          attributionControl: true
+        });
+
+        map.addControl(new maplibregl.NavigationControl(), 'top-right');
+
+        const hotelBounds = new maplibregl.LngLatBounds();
+        hotels.forEach((hotel) => {
+          const markerAnchor = document.createElement('div');
+          markerAnchor.className = 'hotel-marker-anchor';
+
+          const marker = document.createElement('button');
+          marker.className = 'hotel-marker';
+          marker.type = 'button';
+          marker.textContent = hotel.rank;
+          marker.title = hotel.title;
+          marker.setAttribute('aria-label', `View number ${hotel.rank}, ${hotel.title}`);
+          marker.addEventListener('click', () => showHotel(hotel.rank));
+          markerAnchor.append(marker);
+          markerButtons.set(hotel.rank, marker);
+
+          const coordinates = [hotel.location.coordinates.lng, hotel.location.coordinates.lat];
+          hotelBounds.extend(coordinates);
+          new maplibregl.Marker({ element: markerAnchor, anchor: 'center' })
+            .setLngLat(coordinates)
+            .addTo(map);
+        });
+
+        map.fitBounds(hotelBounds, {
+          padding: 52,
+          maxZoom: 4.25,
+          duration: 0
+        });
+
+        map.on('load', () => {
+          mapStatus.textContent = 'Map loaded';
+        });
+
+        map.on('error', () => {
+          if (!map.loaded()) mapStatus.textContent = 'Map unavailable';
+        });
+      }
+
+      closeButton.addEventListener('click', () => dialog.close());
+      renderResults();
+      initializeMap();
+    </script>
   </body>
 </html>

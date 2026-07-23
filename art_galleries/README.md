@@ -1,23 +1,32 @@
-# Mappable Base Data Starter
+# Mappable: United States Art Museums
 
-This starter extends the lightweight Mappable prototype base with a durable
-data-ingestion loop. It turns public research into a local, schema-backed
-dataset without adding a database, server, build step, or runtime dependency.
+A static, map-first prototype for exploring 30 renowned art museums and
+independently visited museum campuses across the United States.
 
-## Start a dataset run
+## Open the prototype
 
-1. Copy `data-collection-template.instructions.md` to
-   `data-collection-1.instructions.md` and define the target, constraints, and
-   validation order.
-2. Set that profile and the new output name (for example,
-   `mappable-records1.json`) in `data/workflow-state.json`.
-3. Run `workflow discover`, `workflow validate`, and `workflow finalize` with
-   the DATA-ingest agent. The command details and ownership rules are in
-   `agents/DATA-ingest/data-ingestion-process.md`.
-4. Hand the finalized `data/mappable-recordsN.json` and matching schema to the
-   BUILD-ui agent.
+Open `HTML/shadcn/index.html` directly in a browser. No install, server, package
+manager, or build step is required.
 
-`candidates.json` holds leads, `candidate-validation.json` holds the evidence
-and decision record, and numbered record files hold UI-ready data. Do not use
-an empty `mappable-records.json` as a live run; numbered datasets make each
-run reproducible and prevent accidental overwrite.
+The ranked list, filters, and museum profiles work from local files. The real
+basemap uses the keyless OpenFreeMap Liberty style and therefore needs an
+internet connection for map style and tile requests. MapLibre itself is
+vendored locally under `HTML/shadcn/vendor/` with its license.
+
+## Data flow
+
+- `data/mappable-records1.json` is the finalized source of truth.
+- `data/mappable-records1.schema.json` defines its shape.
+- `HTML/shadcn/data.js` is a generated copy used only so the prototype remains
+  compatible with `file://` browser security rules.
+- `HTML/shadcn/app.js` renders the ranked list, filters, markers, and profiles.
+
+After changing the finalized JSON, regenerate the browser data bundle from the
+project root:
+
+```sh
+node -e 'const fs=require("fs");const records=JSON.parse(fs.readFileSync("data/mappable-records1.json","utf8"));fs.writeFileSync("HTML/shadcn/data.js","/* Generated from ../../data/mappable-records1.json for file:// compatibility. */\nwindow.ART_GALLERIES = "+JSON.stringify(records,null,2)+";\n");'
+```
+
+The ranking methodology and validation rules are documented in
+`data-collection-1.instructions.md`.

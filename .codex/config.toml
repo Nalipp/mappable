@@ -1,0 +1,2 @@
+[mcp_servers.brightdata]
+command = "/Users/natelipp/code/ai_applications/mappable/companies/scripts/brightdata-mcp.sh"

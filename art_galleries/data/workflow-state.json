@@ -8,7 +8,7 @@
     "needs_verification": 0,
     "rejected": 0
   },
-  "last_action": "Finalized 30 validated records from candidate-validation.json and verified all JSON, schemas, ranking invariants, and geospatial fields.",
-  "next_action": "No build or UI work is authorized; dataset is ready for operator review or a later explicit handoff.",
-  "quality": { "status": "ok", "note": "All 30 candidates passed six validation checks; final records conform to the run-1 schema and semantic audit." }
+  "last_action": "Built the static map-first prototype from the 30 finalized records using the company project's Wemo styling and MapLibre/OpenFreeMap pattern.",
+  "next_action": "Open HTML/shadcn/index.html for operator review; refresh HTML/shadcn/data.js whenever the finalized JSON changes.",
+  "quality": { "status": "ok", "note": "All 30 candidates passed validation; the UI bundle matches the finalized JSON and uses one accessible marker per record." }
 }
